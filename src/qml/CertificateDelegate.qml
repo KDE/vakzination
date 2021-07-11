@@ -13,8 +13,8 @@ Column {
     id: root
 
     required property var certificate
-
-    height: childredRect.height
+    required property var showSeparator
+    required property var index
 
     Kirigami.Heading {
 
@@ -44,4 +44,22 @@ Column {
         onClicked: pageStack.push(Qt.resolvedUrl("CertificateDetailsPage.qml"), {cert: root.certificate})
     }
 
+    Item {
+        width: parent.width
+        height: sep.height + Kirigami.Units.largeSpacing
+
+        visible: root.showSeparator
+
+        Kirigami.Separator {
+            id: sep
+            anchors {
+                left: parent.left
+                leftMargin: Kirigami.Units.largeSpacing
+                right: parent.right
+                rightMargin: Kirigami.Units.largeSpacing
+                top: parent.top
+                topMargin: Kirigami.Units.largeSpacing
+            }
+        }
+    }
 }

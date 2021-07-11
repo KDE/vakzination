@@ -15,11 +15,12 @@ Kirigami.ScrollablePage {
     title: i18n("Your vaccinations")
 
     ListView {
-
+        id: listView
         model: CertificatesModel
 
         delegate: CertificateDelegate {
             width: parent.width
+            showSeparator: index  !== listView.count - 1
         }
     }
 }
