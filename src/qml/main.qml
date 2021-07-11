@@ -33,6 +33,7 @@ Kirigami.ApplicationWindow {
     globalDrawer: Kirigami.GlobalDrawer {
         title: i18n("vakzination")
         titleIcon: "applications-graphics"
+        isMenu: true
         actions: [
             Kirigami.Action {
                 text: i18n("Add certificate")
