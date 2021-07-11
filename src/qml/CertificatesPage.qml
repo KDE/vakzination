@@ -22,5 +22,12 @@ Kirigami.ScrollablePage {
             width: parent.width
             showSeparator: index  !== listView.count - 1
         }
+
+        Kirigami.PlaceholderMessage {
+            text: i18n("No certificates saved")
+            visible: listView.count === 0
+            anchors.centerIn: parent
+            width: parent.width - (Kirigami.Units.largeSpacing * 4)
+        }
     }
 }
