@@ -8,6 +8,9 @@ import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.2
 import org.kde.kirigami 2.15 as Kirigami
 
+import Qt.labs.platform 1.1
+import org.kde.vakzination 1.0
+
 Kirigami.ApplicationWindow {
     id: root
 
@@ -16,17 +19,26 @@ Kirigami.ApplicationWindow {
     minimumWidth: Kirigami.Units.gridUnit * 20
     minimumHeight: Kirigami.Units.gridUnit * 20
 
-    property int counter: 0
+
+    FileDialog {
+        id: fileDialog
+        folder: StandardPaths.writableLocation(StandardPaths.DocumentsLocation)
+
+        onAccepted: {
+            CertificatesModel.importCertificate(currentFile)
+        }
+    }
+
 
     globalDrawer: Kirigami.GlobalDrawer {
         title: i18n("vakzination")
         titleIcon: "applications-graphics"
         actions: [
             Kirigami.Action {
-                text: i18n("Plus One")
+                text: i18n("Add certificate")
                 icon.name: "list-add"
                 onTriggered: {
-                    counter += 1
+                    fileDialog.open()
                 }
             }
         ]

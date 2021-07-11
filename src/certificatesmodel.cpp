@@ -3,6 +3,9 @@
 
 #include "certificatesmodel.h"
 
+#include <QDebug>
+#include <QFile>
+
 #include <KHealthCertificate/KHealthCertificateParser>
 
 const QByteArray sample =
@@ -15,9 +18,9 @@ const QByteArray sample =
 CertificatesModel::CertificatesModel(QObject *parent)
     : QAbstractListModel(parent)
 {
-    for (int i = 0; i < 4; i++) {
-        m_vaccinations << KHealthCertificateParser::parse(sample).value<KVaccinationCertificate>();
-    }
+    //     for (int i = 0; i < 4; i++) {
+    //         m_vaccinations << KHealthCertificateParser::parse(sample).value<KVaccinationCertificate>();
+    //     }
 }
 
 QVariant CertificatesModel::data(const QModelIndex &index, int role) const
@@ -35,10 +38,36 @@ QVariant CertificatesModel::data(const QModelIndex &index, int role) const
 int CertificatesModel::rowCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent)
-    return 4;
+    return m_vaccinations.size();
 }
 
 QHash<int, QByteArray> CertificatesModel::roleNames() const
 {
     return {{CertificateRole, "certificate"}};
+}
+
+void CertificatesModel::importCertificate(const QUrl &path)
+{
+    QFile certFile(path.toLocalFile());
+
+    bool ok = certFile.open(QFile::ReadOnly);
+
+    if (!ok) {
+        qWarning() << "Could not open certificate file" << path;
+        return;
+    }
+
+    const QByteArray data = certFile.readAll();
+
+    QVariant maybeCertificate = KHealthCertificateParser::parse(data);
+
+    if (maybeCertificate.isNull()) {
+        qWarning() << "Could not parse certificate" << path;
+    }
+
+    KVaccinationCertificate cert = maybeCertificate.value<KVaccinationCertificate>();
+
+    beginInsertRows({}, m_vaccinations.size(), m_vaccinations.size());
+    m_vaccinations << cert;
+    endInsertRows();
 }

@@ -23,6 +23,8 @@ public:
 
     QHash<int, QByteArray> roleNames() const override;
 
+    Q_INVOKABLE void importCertificate(const QUrl &path);
+
 private:
     QVector<KVaccinationCertificate> m_vaccinations;
 };
