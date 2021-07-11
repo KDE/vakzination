@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-License-Identifier: FSFAP
+  SPDX-FileCopyrightText: 2021 Nicolas Fella <nicolas.fella@gmx.de>
+ -->
+<component type="desktop-application">
+  <id>org.kde.vakzination</id>
+  <name>Vakzination</name>
+  <summary>Manage your vaccination certificates</summary>
+  <metadata_license>FSFAP</metadata_license>
+  <project_license>GPL-2.0-or-later</project_license>
+  <developer_name>KDE Community</developer_name>
+  <description>
+    Manage your vaccination certificates.
+  </description>
+</component>

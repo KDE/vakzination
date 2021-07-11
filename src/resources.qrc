@@ -1,0 +1,12 @@
+<!--
+    SPDX-License-Identifier: CC0-1.0
+    SPDX-FileCopyrightText: 2021 Nicolas Fella <nicolas.fella@gmx.de>
+-->
+<RCC>
+    <qresource prefix="/">
+        <file alias="main.qml">contents/ui/main.qml</file>
+        <file alias="CertificatesPage.qml">contents/ui/CertificatesPage.qml</file>
+        <file alias="CertificateDelegate.qml">contents/ui/CertificateDelegate.qml</file>
+        <file alias="CertificateDetailsPage.qml">contents/ui/CertificateDetailsPage.qml</file>
+    </qresource>
+</RCC>
