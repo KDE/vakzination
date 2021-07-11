@@ -15,12 +15,14 @@ const QByteArray sample =
     "96NF6L/5QW6307KQEPD09WEQDD+Q6TW6FA7C466KCN9E%961A6DL6FA7D46JPCT3E5JDLA7$Q6E464W5TG6..DX%DZJC6/DTZ9 QE5$CB$DA/D JC1/D3Z8WED1ECW.CCWE.Y92OAGY8MY9L+9MPCG/D5 "
     "C5IA5N9$PC5$CUZCY$5Y$527B+A4KZNQG5TKOWWD9FL%I8U$F7O2IBM85CWOC%LEZU4R/BXHDAHN 11$CA5MRI:AONFN7091K9FKIGIY%VWSSSU9%01FO2*FTPQ3C3F";
 
-CertificatesModel::CertificatesModel(QObject *parent)
-    : QAbstractListModel(parent)
+CertificatesModel::CertificatesModel(bool testMode)
+    : QAbstractListModel()
 {
-    //     for (int i = 0; i < 4; i++) {
-    //         m_vaccinations << KHealthCertificateParser::parse(sample).value<KVaccinationCertificate>();
-    //     }
+    if (testMode) {
+        for (int i = 0; i < 4; i++) {
+            m_vaccinations << KHealthCertificateParser::parse(sample).value<KVaccinationCertificate>();
+        }
+    }
 }
 
 QVariant CertificatesModel::data(const QModelIndex &index, int role) const

@@ -16,7 +16,7 @@ public:
     enum Roles { CertificateRole = Qt::UserRole + 1 };
 
 public:
-    explicit CertificatesModel(QObject *parent = nullptr);
+    explicit CertificatesModel(bool testMode);
     QVariant data(const QModelIndex &index, int role) const override;
 
     int rowCount(const QModelIndex &parent) const override;
