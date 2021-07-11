@@ -4,9 +4,9 @@
 -->
 <RCC>
     <qresource prefix="/">
-        <file alias="main.qml">contents/ui/main.qml</file>
-        <file alias="CertificatesPage.qml">contents/ui/CertificatesPage.qml</file>
-        <file alias="CertificateDelegate.qml">contents/ui/CertificateDelegate.qml</file>
-        <file alias="CertificateDetailsPage.qml">contents/ui/CertificateDetailsPage.qml</file>
+        <file alias="main.qml">qml/main.qml</file>
+        <file alias="CertificatesPage.qml">qml/CertificatesPage.qml</file>
+        <file alias="CertificateDelegate.qml">qml/CertificateDelegate.qml</file>
+        <file alias="CertificateDetailsPage.qml">qml/CertificateDetailsPage.qml</file>
     </qresource>
 </RCC>
