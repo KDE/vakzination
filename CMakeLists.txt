@@ -7,8 +7,8 @@ project(vakzination)
 
 include(FeatureSummary)
 
-set(QT5_MIN_VERSION 5.12)
-set(KF5_MIN_VERSION 5.65)
+set(QT5_MIN_VERSION 5.15)
+set(KF5_MIN_VERSION 5.83)
 
 find_package(ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
 
