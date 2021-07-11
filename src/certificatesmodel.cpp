@@ -56,6 +56,7 @@ void CertificatesModel::importCertificate(const QUrl &path)
 
     if (!ok) {
         qWarning() << "Could not open certificate file" << path;
+        Q_EMIT importError();
         return;
     }
 
@@ -65,6 +66,8 @@ void CertificatesModel::importCertificate(const QUrl &path)
 
     if (maybeCertificate.isNull()) {
         qWarning() << "Could not parse certificate" << path;
+        Q_EMIT importError();
+        return;
     }
 
     KVaccinationCertificate cert = maybeCertificate.value<KVaccinationCertificate>();

@@ -14,6 +14,21 @@ Kirigami.ScrollablePage {
 
     title: i18n("Your vaccinations")
 
+    header: Kirigami.InlineMessage {
+        id: importError
+        type: Kirigami.MessageType.Error
+        text: i18n("Certificate could not be imported")
+        showCloseButton: true
+    }
+
+    Connections {
+        target: CertificatesModel
+
+        function onImportError() {
+            importError.visible = true
+        }
+    }
+
     ListView {
         id: listView
         model: CertificatesModel

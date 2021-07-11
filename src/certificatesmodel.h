@@ -25,6 +25,9 @@ public:
 
     Q_INVOKABLE void importCertificate(const QUrl &path);
 
+Q_SIGNALS:
+    void importError();
+
 private:
     QVector<KVaccinationCertificate> m_vaccinations;
 };
