@@ -30,7 +30,7 @@ find_package(KHealthCertificate REQUIRED)
 
 add_subdirectory(src)
 
-install(PROGRAMS org.kde.vakzination.desktop DESTINATION ${KDE_INSTALL_APPDIR})
+install(FILES org.kde.vakzination.desktop DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.vakzination.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
