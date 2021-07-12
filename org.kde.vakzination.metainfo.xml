@@ -9,8 +9,11 @@
   <summary>Manage your vaccination certificates</summary>
   <metadata_license>FSFAP</metadata_license>
   <project_license>GPL-2.0-or-later</project_license>
+  <content_rating type="oars-1.1" />
   <developer_name>KDE Community</developer_name>
+  <url type="homepage">https://invent.kde.org/plasma-mobile/vakzination</url>
+  <url type="bugtracker">https://invent.kde.org/utilities/ktrip/-/issues</url>
   <description>
-    Manage your vaccination certificates.
+    <p>Manage your digital health certificates like vaccination, test, and recovery certificates.</p>
   </description>
 </component>
