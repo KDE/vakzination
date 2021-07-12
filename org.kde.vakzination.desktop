@@ -3,7 +3,8 @@
 [Desktop Entry]
 Name=Vakzination
 Comment=Vaccination Certificate Manager
-Exec=vakzination
+Exec=vakzination %F
 Icon=applications-development
 Type=Application
 Categories=Qt;KDE;Utility;
+X-KDE-HasTempFileOption=true

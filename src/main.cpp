@@ -25,7 +25,9 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     QCommandLineParser parser;
     parser.addOption(QCommandLineOption(QStringLiteral("testmode"), i18n("Show with test data")));
-
+    QCommandLineOption isTemporaryOpt(QStringLiteral("tempfile"), QStringLiteral("Input file is a temporary file and will be deleted after importing."));
+    parser.addOption(isTemporaryOpt);
+    parser.addPositionalArgument(QStringLiteral("file"), i18n("File to import."));
     parser.process(app);
 
     const bool testMode = parser.isSet(QStringLiteral("testmode"));
@@ -33,6 +35,14 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
 
     CertificatesModel model(testMode);
+    for (const auto &file : parser.positionalArguments()) {
+        const auto url = QUrl::fromLocalFile(file);
+        model.importCertificate(url);
+        if (parser.isSet(isTemporaryOpt)) {
+            QFile::remove(url.toLocalFile());
+        }
+    }
+
     qmlRegisterSingletonInstance("org.kde.vakzination", 1, 0, "CertificatesModel", &model);
 
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
