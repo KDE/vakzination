@@ -6,6 +6,9 @@
 
 #include <QAbstractListModel>
 
+#include <KConfig>
+#include <KConfigGroup>
+
 #include <KHealthCertificate/KVaccinationCertificate>
 
 class CertificatesModel : public QAbstractListModel
@@ -29,7 +32,13 @@ Q_SIGNALS:
     void importError();
 
 private:
+    QVector<KVaccinationCertificate> fromStringList(const QStringList rawCertificates);
+    QStringList toStringList(const QVector<KVaccinationCertificate> certificates);
+
     QVector<KVaccinationCertificate> m_vaccinations;
+    KConfig m_config;
+    KConfigGroup m_generalConfig;
+    bool m_testMode;
 };
 
 #endif // CERTIFICATESMODEL_H

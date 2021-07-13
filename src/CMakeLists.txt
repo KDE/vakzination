@@ -10,6 +10,7 @@ target_link_libraries(vakzination
     Qt5::QuickControls2
     Qt5::Svg
     KF5::I18n
+    KF5::ConfigCore
     KHealthCertificate
 )
 install(TARGETS vakzination ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})

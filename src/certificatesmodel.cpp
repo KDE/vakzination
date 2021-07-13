@@ -17,11 +17,19 @@ const QByteArray sample =
 
 CertificatesModel::CertificatesModel(bool testMode)
     : QAbstractListModel()
+    , m_config(QStringLiteral("vakzinationrc"))
+    , m_testMode(testMode)
 {
-    if (testMode) {
+    m_generalConfig = m_config.group(QStringLiteral("General"));
+
+    if (m_testMode) {
         for (int i = 0; i < 4; i++) {
             m_vaccinations << KHealthCertificateParser::parse(sample).value<KVaccinationCertificate>();
         }
+    } else {
+        const QStringList certificates = m_generalConfig.readEntry(QStringLiteral("vaccinations"), QStringList{});
+
+        m_vaccinations = fromStringList(certificates);
     }
 }
 
@@ -74,5 +82,27 @@ void CertificatesModel::importCertificate(const QUrl &path)
 
     beginInsertRows({}, m_vaccinations.size(), m_vaccinations.size());
     m_vaccinations << cert;
+
+    if (!m_testMode) {
+        m_generalConfig.writeEntry(QStringLiteral("vaccinations"), toStringList(m_vaccinations));
+    }
     endInsertRows();
+}
+
+QVector<KVaccinationCertificate> CertificatesModel::fromStringList(const QStringList rawCertificates)
+{
+    QVector<KVaccinationCertificate> res;
+    std::transform(rawCertificates.cbegin(), rawCertificates.cend(), std::back_inserter(res), [](const QString &raw) {
+        return KHealthCertificateParser::parse(raw.toUtf8()).value<KVaccinationCertificate>();
+    });
+    return res;
+}
+
+QStringList CertificatesModel::toStringList(const QVector<KVaccinationCertificate> certificates)
+{
+    QStringList res;
+    std::transform(certificates.cbegin(), certificates.cend(), std::back_inserter(res), [](const KVaccinationCertificate &cert) {
+        return QString::fromUtf8(cert.rawData());
+    });
+    return res;
 }
