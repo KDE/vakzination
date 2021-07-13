@@ -8,6 +8,8 @@
 
 #include <KHealthCertificate/KHealthCertificateParser>
 
+#include <ranges>
+
 const QByteArray sample =
     "HC1:6BF+70790T9WJWG.FKY*4GO0.O1CV2 O5 "
     "N2FBBRW1*70HS8WY04AC*WIFN0AHCD8KD97TK0F90KECTHGWJC0FDC:5AIA%G7X+AQB9746HS80:54IBQF60R6$A80X6S1BTYACG6M+9XG8KIAWNA91AY%67092L4WJCT3EHS8XJC$+"
@@ -91,18 +93,31 @@ void CertificatesModel::importCertificate(const QUrl &path)
 
 QVector<KVaccinationCertificate> CertificatesModel::fromStringList(const QStringList rawCertificates)
 {
-    QVector<KVaccinationCertificate> res;
-    std::transform(rawCertificates.cbegin(), rawCertificates.cend(), std::back_inserter(res), [](const QString &raw) {
-        return KHealthCertificateParser::parse(raw.toUtf8()).value<KVaccinationCertificate>();
-    });
-    return res;
+    auto convertCert = [](const QString &raw) {
+        return KHealthCertificateParser::parse(raw.toUtf8());
+    };
+
+    auto notNull = [](const QVariant &var) -> bool {
+        return !var.isNull();
+    };
+
+    auto toVaccination = [](const QVariant var) {
+        return var.value<KVaccinationCertificate>();
+    };
+
+    auto res = rawCertificates | std::views::transform(convertCert) | std::views::filter(notNull) | std::views::transform(toVaccination);
+
+    return QVector<KVaccinationCertificate>(std::ranges::begin(res), std::ranges::end(res));
 }
 
 QStringList CertificatesModel::toStringList(const QVector<KVaccinationCertificate> certificates)
 {
-    QStringList res;
-    std::transform(certificates.cbegin(), certificates.cend(), std::back_inserter(res), [](const KVaccinationCertificate &cert) {
-        return QString::fromUtf8(cert.rawData());
-    });
-    return res;
+    auto res = certificates | std::views::transform([](auto cert) {
+                   return cert.rawData();
+               })
+        | std::views::transform([](const QByteArray &raw) {
+                   return QString::fromUtf8(raw);
+               });
+
+    return QStringList(std::ranges::begin(res), std::ranges::end(res));
 }
