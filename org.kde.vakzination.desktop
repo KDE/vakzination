@@ -2,7 +2,21 @@
 # SPDX-FileCopyrightText: 2021 Nicolas Fella <nicolas.fella@gmx.de>
 [Desktop Entry]
 Name=Vakzination
+Name[ca]=Vakzination
+Name[es]=Vakzination
+Name[nl]=Vakzination
+Name[pt]=Vakzination
+Name[sv]=Vakzination
+Name[uk]=Vakzination
+Name[x-test]=xxVakzinationxx
 Comment=Vaccination Certificate Manager
+Comment[ca]=Obre el gestor de certificats de vaccinació
+Comment[es]=Gestor de certificados de vacunación
+Comment[nl]=Beheer van vaccinatiecertificaten
+Comment[pt]=Gestor de Certificados de Vacinação
+Comment[sv]=Hantering av vaccinationsbevis
+Comment[uk]=Керування сертифікатами вакцинації
+Comment[x-test]=xxVaccination Certificate Managerxx
 Exec=vakzination %F
 Icon=applications-development
 Type=Application
