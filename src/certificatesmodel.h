@@ -11,6 +11,11 @@
 
 #include <KHealthCertificate/KVaccinationCertificate>
 
+namespace KItinerary
+{
+class ExtractorDocumentNode;
+}
+
 class CertificatesModel : public QAbstractListModel
 {
     Q_OBJECT
@@ -34,6 +39,8 @@ Q_SIGNALS:
 private:
     QVector<KVaccinationCertificate> fromStringList(const QStringList rawCertificates);
     QStringList toStringList(const QVector<KVaccinationCertificate> certificates);
+    bool importCertificate(const QVariant &maybeCertificate);
+    bool findRecursive(const KItinerary::ExtractorDocumentNode &node);
 
     QVector<KVaccinationCertificate> m_vaccinations;
     KConfig m_config;

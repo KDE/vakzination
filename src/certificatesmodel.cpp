@@ -3,8 +3,12 @@
 
 #include "certificatesmodel.h"
 
+#include <KItinerary/ExtractorDocumentNode>
+#include <KItinerary/ExtractorEngine>
+
 #include <QDebug>
 #include <QFile>
+#include <QJsonArray>
 
 #include <KHealthCertificate/KHealthCertificateParser>
 
@@ -73,9 +77,26 @@ void CertificatesModel::importCertificate(const QUrl &path)
     QVariant maybeCertificate = KHealthCertificateParser::parse(data);
 
     if (maybeCertificate.isNull()) {
+        // let's see if this is a PDF containing barcodes instead
+        KItinerary::ExtractorEngine engine;
+        engine.setData(data, path.path());
+        engine.extract();
+        if (findRecursive(engine.rootDocumentNode())) {
+            return;
+        }
+
         qWarning() << "Could not parse certificate" << path;
         Q_EMIT importError();
         return;
+    }
+
+    importCertificate(maybeCertificate);
+}
+
+bool CertificatesModel::importCertificate(const QVariant &maybeCertificate)
+{
+    if (maybeCertificate.userType() != qMetaTypeId<KVaccinationCertificate>()) {
+        return false;
     }
 
     KVaccinationCertificate cert = maybeCertificate.value<KVaccinationCertificate>();
@@ -87,6 +108,7 @@ void CertificatesModel::importCertificate(const QUrl &path)
         m_generalConfig.writeEntry(QStringLiteral("vaccinations"), toStringList(m_vaccinations));
     }
     endInsertRows();
+    return true;
 }
 
 QVector<KVaccinationCertificate> CertificatesModel::fromStringList(const QStringList rawCertificates)
@@ -105,4 +127,27 @@ QStringList CertificatesModel::toStringList(const QVector<KVaccinationCertificat
         return QString::fromUtf8(cert.rawData());
     });
     return res;
+}
+
+bool CertificatesModel::findRecursive(const KItinerary::ExtractorDocumentNode &node)
+{
+    // possibly a barcode
+    if (node.childNodes().size() == 1 && node.mimeType() == QLatin1String("internal/qimage")) {
+        const auto &child = node.childNodes()[0];
+        if (child.isA<QString>()) {
+            return importCertificate(KHealthCertificateParser::parse(child.content<QString>().toUtf8()));
+        }
+        if (child.isA<QByteArray>()) {
+            return importCertificate(KHealthCertificateParser::parse(child.content<QByteArray>()));
+        }
+    }
+
+    // recurse
+    bool found = false;
+    for (const auto &child : node.childNodes()) {
+        if (findRecursive(child)) {
+            found = true;
+        }
+    }
+    return found;
 }

@@ -12,5 +12,6 @@ target_link_libraries(vakzination
     KF5::I18n
     KF5::ConfigCore
     KHealthCertificate
+    KPim::Itinerary
 )
 install(TARGETS vakzination ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
