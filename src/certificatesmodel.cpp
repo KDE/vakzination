@@ -115,7 +115,7 @@ QVector<KVaccinationCertificate> CertificatesModel::fromStringList(const QString
 {
     QVector<KVaccinationCertificate> res;
     std::transform(rawCertificates.cbegin(), rawCertificates.cend(), std::back_inserter(res), [](const QString &raw) {
-        return KHealthCertificateParser::parse(raw.toUtf8()).value<KVaccinationCertificate>();
+        return KHealthCertificateParser::parse(*QByteArray::fromBase64Encoding(raw.toUtf8())).value<KVaccinationCertificate>();
     });
     return res;
 }
@@ -124,7 +124,7 @@ QStringList CertificatesModel::toStringList(const QVector<KVaccinationCertificat
 {
     QStringList res;
     std::transform(certificates.cbegin(), certificates.cend(), std::back_inserter(res), [](const KVaccinationCertificate &cert) {
-        return QString::fromUtf8(cert.rawData());
+        return QString::fromUtf8(cert.rawData().toBase64());
     });
     return res;
 }
