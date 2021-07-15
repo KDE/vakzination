@@ -10,6 +10,7 @@
   <name xml:lang="es">Vakzination</name>
   <name xml:lang="nl">Vakzination</name>
   <name xml:lang="pt">Vakzination</name>
+  <name xml:lang="pt-BR">Vakzination</name>
   <name xml:lang="sv">Vakzination</name>
   <name xml:lang="uk">Vakzination</name>
   <name xml:lang="x-test">xxVakzinationxx</name>
@@ -18,6 +19,7 @@
   <summary xml:lang="es">Gestione sus certificados de vacunación</summary>
   <summary xml:lang="nl">Uw vaccinatiecertificaten beheren</summary>
   <summary xml:lang="pt">Gerir os seus certificados de vacinação</summary>
+  <summary xml:lang="pt-BR">Gerencie seus certificados de vacinação</summary>
   <summary xml:lang="sv">Hantera dina vaccinationsbevis</summary>
   <summary xml:lang="uk">Керування вашими сертифікатами вакцинації</summary>
   <summary xml:lang="x-test">xxManage your vaccination certificatesxx</summary>
@@ -29,6 +31,7 @@
   <developer_name xml:lang="es">Comunidad KDE</developer_name>
   <developer_name xml:lang="nl">KDE-gemeenschap</developer_name>
   <developer_name xml:lang="pt">Comunidade do KDE</developer_name>
+  <developer_name xml:lang="pt-BR">Comunidade KDE</developer_name>
   <developer_name xml:lang="sv">KDE-gemenskapen</developer_name>
   <developer_name xml:lang="uk">Спільнота KDE</developer_name>
   <developer_name xml:lang="x-test">xxKDE Communityxx</developer_name>
@@ -40,6 +43,7 @@
     <p xml:lang="es">Gestione sus certificados digitales de salud, como los de vacunación, pruebas y recuperación.</p>
     <p xml:lang="nl">Uw digitale gezondheidscertificaten zoals vaccinatie, test en herstelcertificaten beheren.</p>
     <p xml:lang="pt">Faça a gestão de certificados digitais de saúde, como os de vacinação, de testes e de recuperação.</p>
+    <p xml:lang="pt-BR">Gerencie seus certificados de saúde digitais, como certificados de vacinação, teste e recuperação.</p>
     <p xml:lang="sv">Hantera dina digitala hälsointyg såsom vaccinations-, test- och tillfrisknandebevis.</p>
     <p xml:lang="uk">Керування вашими цифровими сертифікатами здоров'я, зокрема сертифікатами вакцинації, тестування та одужання.</p>
     <p xml:lang="x-test">xxManage your digital health certificates like vaccination, test, and recovery certificates.xx</p>
