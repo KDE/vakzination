@@ -3,11 +3,16 @@
     SPDX-FileCopyrightText: 2021 Nicolas Fella <nicolas.fella@gmx.de>
 */
 
-#include <QApplication>
 #include <QCommandLineParser>
 #include <QQmlApplicationEngine>
 #include <QUrl>
 #include <QtQml>
+
+#ifdef Q_OS_ANDROID
+#include <QGuiApplication>
+#else
+#include <QApplication>
+#endif
 
 #include <KLocalizedContext>
 #include <KLocalizedString>
@@ -17,7 +22,13 @@
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+
+#ifdef Q_OS_ANDROID
+    QGuiApplication app(argc, argv);
+#else
     QApplication app(argc, argv);
+#endif
+
     QCoreApplication::setOrganizationName("KDE");
     QCoreApplication::setOrganizationDomain("kde.org");
     QCoreApplication::setApplicationName("vakzination");
