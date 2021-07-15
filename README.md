@@ -15,9 +15,9 @@ You can add certificates by opening them from the file system. This can be eithe
 
 ## Get it
 
-Linux: [Nightly Flatpak](https://community.kde.org/Guidelines_and_HOWTOs/Flatpak) builds are availble.
-Android: An [F-Droid repository](https://community.kde.org/Android/FDroid) with nightly builds is availble.
-Windows: Nightly [Windows installers](https://binary-factory.kde.org/view/Windows%2064-bit/job/Vakzination_Nightly_win64/) are available.
+- Linux: [Nightly Flatpak](https://community.kde.org/Guidelines_and_HOWTOs/Flatpak) builds are availble.
+- Android: An [F-Droid repository](https://community.kde.org/Android/FDroid) with nightly builds is availble.
+- Windows: Nightly [Windows installers](https://binary-factory.kde.org/view/Windows%2064-bit/job/Vakzination_Nightly_win64/) are available.
 
 ## Contribute
 
