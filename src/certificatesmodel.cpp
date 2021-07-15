@@ -2,9 +2,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #include "certificatesmodel.h"
+#include "config-vakzination.h"
 
+#if HAVE_KITINERARY
 #include <KItinerary/ExtractorDocumentNode>
 #include <KItinerary/ExtractorEngine>
+#endif
 
 #include <QDebug>
 #include <QFile>
@@ -77,6 +80,7 @@ void CertificatesModel::importCertificate(const QUrl &path)
     QVariant maybeCertificate = KHealthCertificateParser::parse(data);
 
     if (maybeCertificate.isNull()) {
+#if HAVE_KITINERARY
         // let's see if this is a PDF containing barcodes instead
         KItinerary::ExtractorEngine engine;
         engine.setData(data, path.path());
@@ -84,6 +88,7 @@ void CertificatesModel::importCertificate(const QUrl &path)
         if (findRecursive(engine.rootDocumentNode())) {
             return;
         }
+#endif
 
         qWarning() << "Could not find certificate in" << path;
         Q_EMIT importError();
@@ -129,6 +134,7 @@ QStringList CertificatesModel::toStringList(const QVector<KVaccinationCertificat
     return res;
 }
 
+#if HAVE_KITINERARY
 bool CertificatesModel::findRecursive(const KItinerary::ExtractorDocumentNode &node)
 {
     // possibly a barcode
@@ -151,3 +157,4 @@ bool CertificatesModel::findRecursive(const KItinerary::ExtractorDocumentNode &n
     }
     return found;
 }
+#endif

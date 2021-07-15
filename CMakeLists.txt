@@ -33,7 +33,8 @@ find_package(Qt5 ${QT5_MIN_VERSION} REQUIRED COMPONENTS Core Gui Qml QuickContro
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 I18n Config)
 
 find_package(KHealthCertificate REQUIRED)
-find_package(KPimItinerary REQUIRED)
+find_package(KPimItinerary 5.17.40)
+set_package_properties(KPimItinerary PROPERTIES TYPE OPTIONAL PURPOSE "Importing of vaccincation certificates from PDF files.")
 
 if(ANDROID)
     configure_file(${CMAKE_CURRENT_SOURCE_DIR}/android/version.gradle.in ${CMAKE_BINARY_DIR}/version.gradle)

@@ -1,6 +1,11 @@
 # SPDX-License-Identifier: BSD-3-Clause
 # SPDX-FileCopyrightText: 2021 Nicolas Fella <nicolas.fella@gmx.de>
 
+if (TARGET KPim::Itinerary)
+    set(HAVE_KITINERARY TRUE)
+endif()
+configure_file(config-vakzination.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-vakzination.h)
+
 add_executable(vakzination main.cpp certificatesmodel.cpp resources.qrc)
 target_link_libraries(vakzination
     Qt5::Core
@@ -12,6 +17,9 @@ target_link_libraries(vakzination
     KF5::I18n
     KF5::ConfigCore
     KHealthCertificate
-    KPim::Itinerary
 )
+if (TARGET KPim::Itinerary)
+    target_link_libraries(vakzination KPim::Itinerary)
+endif()
+
 install(TARGETS vakzination ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
