@@ -85,7 +85,7 @@ void CertificatesModel::importCertificate(const QUrl &path)
             return;
         }
 
-        qWarning() << "Could not parse certificate" << path;
+        qWarning() << "Could not find certificate in" << path;
         Q_EMIT importError();
         return;
     }
