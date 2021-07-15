@@ -3,6 +3,8 @@
 
 cmake_minimum_required(VERSION 3.16)
 
+set(PROJECT_VERSION 0.1)
+
 project(vakzination)
 
 include(FeatureSummary)
@@ -32,6 +34,10 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 I18n Config)
 
 find_package(KHealthCertificate REQUIRED)
 find_package(KPimItinerary REQUIRED)
+
+if(ANDROID)
+    configure_file(${CMAKE_CURRENT_SOURCE_DIR}/android/version.gradle.in ${CMAKE_BINARY_DIR}/version.gradle)
+endif()
 
 add_subdirectory(src)
 
