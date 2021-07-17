@@ -30,7 +30,7 @@ include(KDEClangFormat)
 include(KDEGitCommitHooks)
 
 find_package(Qt5 ${QT5_MIN_VERSION} REQUIRED COMPONENTS Core Gui Qml QuickControls2 Svg)
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 I18n Config)
+find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 I18n Config Prison)
 
 find_package(KHealthCertificate REQUIRED)
 find_package(KPimItinerary 5.17.40)
