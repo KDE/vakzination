@@ -17,22 +17,26 @@
 
 #include <KHealthCertificate/KHealthCertificateParser>
 
-template<typename T>
-QVector<T> fromStringList(const QStringList rawCertificates)
+QVector<AnyCertificate> CertificatesModel::fromStringList(const QStringList rawCertificates) const
 {
-    QVector<T> res;
-    std::transform(rawCertificates.cbegin(), rawCertificates.cend(), std::back_inserter(res), [](const QString &raw) {
-        return KHealthCertificateParser::parse(*QByteArray::fromBase64Encoding(raw.toUtf8())).value<T>();
+    QVector<AnyCertificate> res;
+    std::transform(rawCertificates.cbegin(), rawCertificates.cend(), std::back_inserter(res), [this](const QString &raw) {
+        return *parseCertificate(*QByteArray::fromBase64Encoding(raw.toUtf8()));
     });
     return res;
 }
 
-template<typename T>
-QStringList toStringList(const QVector<T> certificates)
+QStringList CertificatesModel::toStringList(const QVector<AnyCertificate> certificates) const
 {
     QStringList res;
-    std::transform(certificates.cbegin(), certificates.cend(), std::back_inserter(res), [](const T &cert) {
-        return QString::fromUtf8(cert.rawData().toBase64());
+    std::transform(certificates.cbegin(), certificates.cend(), std::back_inserter(res), [](const AnyCertificate &cert) {
+        QString data;
+        std::visit(
+            [&data](auto &&arg) {
+                data = QString::fromUtf8(arg.rawData().toBase64());
+            },
+            cert);
+        return data;
     });
     return res;
 }
@@ -53,12 +57,11 @@ CertificatesModel::CertificatesModel(bool testMode)
 
     if (m_testMode) {
         for (int i = 0; i < 4; i++) {
-            m_vaccinations << KHealthCertificateParser::parse(sample).value<KVaccinationCertificate>();
+            m_certificates << KHealthCertificateParser::parse(sample).value<KVaccinationCertificate>();
         }
     } else {
-        const QStringList certificates = m_generalConfig.readEntry(QStringLiteral("vaccinations"), QStringList{});
-
-        m_vaccinations = fromStringList<KVaccinationCertificate>(certificates);
+        const QStringList certs = m_generalConfig.readEntry(QStringLiteral("certificates"), QStringList{});
+        m_certificates = fromStringList(certs);
     }
 }
 
@@ -68,7 +71,25 @@ QVariant CertificatesModel::data(const QModelIndex &index, int role) const
 
     switch (role) {
     case CertificateRole: {
-        return m_vaccinations[row];
+        QVariant data;
+        std::visit(
+            [&data](auto &&arg) {
+                data = arg;
+            },
+            m_certificates[row]);
+
+        return data;
+    }
+    case TypeRole: {
+        if (std::holds_alternative<KVaccinationCertificate>(m_certificates[row])) {
+            return KHealthCertificate::Vaccination;
+        }
+        if (std::holds_alternative<KTestCertificate>(m_certificates[row])) {
+            return KHealthCertificate::Test;
+        }
+        if (std::holds_alternative<KRecoveryCertificate>(m_certificates[row])) {
+            return KHealthCertificate::Recovery;
+        }
     }
     };
     return QStringLiteral("deadbeef");
@@ -77,12 +98,15 @@ QVariant CertificatesModel::data(const QModelIndex &index, int role) const
 int CertificatesModel::rowCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent)
-    return m_vaccinations.size();
+    return m_certificates.size();
 }
 
 QHash<int, QByteArray> CertificatesModel::roleNames() const
 {
-    return {{CertificateRole, "certificate"}};
+    return {
+        {CertificateRole, "certificate"},
+        {TypeRole, "type"},
+    };
 }
 
 void CertificatesModel::importCertificate(const QUrl &path)
@@ -92,18 +116,14 @@ void CertificatesModel::importCertificate(const QUrl &path)
     if (maybeResult) {
         AnyCertificate result = *maybeResult;
 
-        if (std::holds_alternative<KVaccinationCertificate>(result)) {
-            beginInsertRows({}, m_vaccinations.size(), m_vaccinations.size());
-            m_vaccinations << std::get<KVaccinationCertificate>(result);
-            if (!m_testMode) {
-                m_generalConfig.writeEntry(QStringLiteral("vaccinations"), toStringList(m_vaccinations));
-            }
-            endInsertRows();
-        } else if (std::holds_alternative<KTestCertificate>(result)) {
-            Q_EMIT importError(i18n("Importing test certificates is not yet supported"));
-        } else {
-            Q_EMIT importError(i18n("Importing recovery certificates is not yet supported"));
+        beginInsertRows({}, m_certificates.size(), m_certificates.size());
+        m_certificates << result;
+
+        if (!m_testMode) {
+            m_generalConfig.writeEntry(QStringLiteral("certificates"), toStringList(m_certificates));
         }
+
+        endInsertRows();
 
     } else {
         qWarning() << "Failed to import" << maybeResult.error();
@@ -154,7 +174,7 @@ tl::expected<AnyCertificate, QString> CertificatesModel::importPrivate(const QUr
     return *maybeCertificate;
 }
 
-std::optional<AnyCertificate> CertificatesModel::parseCertificate(const QByteArray &data)
+std::optional<AnyCertificate> CertificatesModel::parseCertificate(const QByteArray &data) const
 {
     const QVariant maybeCertificate = KHealthCertificateParser::parse(data);
 

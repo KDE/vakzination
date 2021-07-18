@@ -8,11 +8,13 @@ import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.2
 import org.kde.kirigami 2.15 as Kirigami
 import org.kde.prison 1.0 as Prison
+import org.kde.khealthcertificate 1.0 as KHC
 
 Column {
     id: root
 
     required property var certificate
+    required property var type
     required property var showSeparator
     required property var index
 
@@ -20,7 +22,19 @@ Column {
 
         anchors.left: barcode.left
 
-        text: i18n("%1 (%2/%3)", certificate.disease, certificate.dose, certificate.totalDoses)
+        text: {
+            if (root.type === KHC.HealthCertificate.Vaccination) {
+                return i18n("Vaccination %1 (%2/%3)", certificate.disease, certificate.dose, certificate.totalDoses)
+            }
+
+            if (root.type === KHC.HealthCertificate.Test) {
+                return i18n("Test %1", certificate.disease, certificate.dose)
+            }
+
+            if (root.type === KHC.HealthCertificate.Recovery) {
+                return i18n("Recovery %1", certificate.disease)
+            }
+        }
     }
 
     Controls.Label {
@@ -41,7 +55,24 @@ Column {
         anchors.left: barcode.left
 
         text: i18n("Details")
-        onClicked: pageStack.push(Qt.resolvedUrl("CertificateDetailsPage.qml"), {cert: root.certificate})
+        onClicked: {
+
+            var page;
+
+            if (root.type === KHC.HealthCertificate.Vaccination) {
+                page = "CertificateDetailsPage.qml"
+            }
+
+            if (root.type === KHC.HealthCertificate.Test) {
+                page = "TestDetailsPage.qml"
+            }
+
+            if (root.type === KHC.HealthCertificate.Recovery) {
+                page = "RecoveryDetailsPage.qml"
+            }
+
+            pageStack.push(Qt.resolvedUrl(page), {certificate: root.certificate})
+        }
     }
 
     Item {

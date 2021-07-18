@@ -8,5 +8,7 @@
         <file alias="CertificatesPage.qml">qml/CertificatesPage.qml</file>
         <file alias="CertificateDelegate.qml">qml/CertificateDelegate.qml</file>
         <file alias="CertificateDetailsPage.qml">qml/CertificateDetailsPage.qml</file>
+        <file alias="TestDetailsPage.qml">qml/TestDetailsPage.qml</file>
+        <file alias="RecoveryDetailsPage.qml">qml/RecoveryDetailsPage.qml</file>
     </qresource>
 </RCC>

@@ -29,7 +29,10 @@ class CertificatesModel : public QAbstractListModel
     Q_OBJECT
 
 public:
-    enum Roles { CertificateRole = Qt::UserRole + 1 };
+    enum Roles {
+        CertificateRole = Qt::UserRole + 1,
+        TypeRole,
+    };
 
 public:
     explicit CertificatesModel(bool testMode);
@@ -45,11 +48,15 @@ Q_SIGNALS:
     void importError(const QString &error);
 
 private:
+    QVector<AnyCertificate> fromStringList(const QStringList rawCertificates) const;
+    QStringList toStringList(const QVector<AnyCertificate> certificates) const;
+
     std::optional<AnyCertificate> findRecursive(const KItinerary::ExtractorDocumentNode &node);
     tl::expected<AnyCertificate, QString> importPrivate(const QUrl &url);
-    std::optional<AnyCertificate> parseCertificate(const QByteArray &data);
+    std::optional<AnyCertificate> parseCertificate(const QByteArray &data) const;
 
-    QVector<KVaccinationCertificate> m_vaccinations;
+    QVector<AnyCertificate> m_certificates;
+
     KConfig m_config;
     KConfigGroup m_generalConfig;
     bool m_testMode;
