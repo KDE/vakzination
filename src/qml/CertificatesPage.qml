@@ -16,15 +16,19 @@ Kirigami.ScrollablePage {
 
     header: Kirigami.InlineMessage {
         id: importError
+
+        property string error
+
         type: Kirigami.MessageType.Error
-        text: i18n("Certificate could not be imported")
+        text: i18n("Certificate could not be imported: %1", error)
         showCloseButton: true
     }
 
     Connections {
         target: CertificatesModel
 
-        function onImportError() {
+        function onImportError(error) {
+            importError.error = error
             importError.visible = true
         }
     }

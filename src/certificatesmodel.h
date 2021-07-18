@@ -38,7 +38,7 @@ public:
     Q_INVOKABLE void importCertificate(const QUrl &path);
 
 Q_SIGNALS:
-    void importError();
+    void importError(const QString &error);
 
 private:
     QVector<KVaccinationCertificate> fromStringList(const QStringList rawCertificates);

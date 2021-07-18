@@ -79,7 +79,7 @@ void CertificatesModel::importCertificate(const QUrl &path)
         endInsertRows();
     } else {
         qWarning() << "Failed to import" << result.error();
-        Q_EMIT importError();
+        Q_EMIT importError(result.error());
     }
 }
 
