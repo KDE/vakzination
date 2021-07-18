@@ -17,6 +17,26 @@
 
 #include <KHealthCertificate/KHealthCertificateParser>
 
+template<typename T>
+QVector<T> fromStringList(const QStringList rawCertificates)
+{
+    QVector<T> res;
+    std::transform(rawCertificates.cbegin(), rawCertificates.cend(), std::back_inserter(res), [](const QString &raw) {
+        return KHealthCertificateParser::parse(*QByteArray::fromBase64Encoding(raw.toUtf8())).value<T>();
+    });
+    return res;
+}
+
+template<typename T>
+QStringList toStringList(const QVector<T> certificates)
+{
+    QStringList res;
+    std::transform(certificates.cbegin(), certificates.cend(), std::back_inserter(res), [](const T &cert) {
+        return QString::fromUtf8(cert.rawData().toBase64());
+    });
+    return res;
+}
+
 const QByteArray sample =
     "HC1:6BF+70790T9WJWG.FKY*4GO0.O1CV2 O5 "
     "N2FBBRW1*70HS8WY04AC*WIFN0AHCD8KD97TK0F90KECTHGWJC0FDC:5AIA%G7X+AQB9746HS80:54IBQF60R6$A80X6S1BTYACG6M+9XG8KIAWNA91AY%67092L4WJCT3EHS8XJC$+"
@@ -38,7 +58,7 @@ CertificatesModel::CertificatesModel(bool testMode)
     } else {
         const QStringList certificates = m_generalConfig.readEntry(QStringLiteral("vaccinations"), QStringList{});
 
-        m_vaccinations = fromStringList(certificates);
+        m_vaccinations = fromStringList<KVaccinationCertificate>(certificates);
     }
 }
 
@@ -151,24 +171,6 @@ std::optional<AnyCertificate> CertificatesModel::parseCertificate(const QByteArr
     }
 
     return {};
-}
-
-QVector<KVaccinationCertificate> CertificatesModel::fromStringList(const QStringList rawCertificates)
-{
-    QVector<KVaccinationCertificate> res;
-    std::transform(rawCertificates.cbegin(), rawCertificates.cend(), std::back_inserter(res), [](const QString &raw) {
-        return KHealthCertificateParser::parse(*QByteArray::fromBase64Encoding(raw.toUtf8())).value<KVaccinationCertificate>();
-    });
-    return res;
-}
-
-QStringList CertificatesModel::toStringList(const QVector<KVaccinationCertificate> certificates)
-{
-    QStringList res;
-    std::transform(certificates.cbegin(), certificates.cend(), std::back_inserter(res), [](const KVaccinationCertificate &cert) {
-        return QString::fromUtf8(cert.rawData().toBase64());
-    });
-    return res;
 }
 
 #if HAVE_KITINERARY

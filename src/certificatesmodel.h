@@ -45,8 +45,6 @@ Q_SIGNALS:
     void importError(const QString &error);
 
 private:
-    QVector<KVaccinationCertificate> fromStringList(const QStringList rawCertificates);
-    QStringList toStringList(const QVector<KVaccinationCertificate> certificates);
     std::optional<AnyCertificate> findRecursive(const KItinerary::ExtractorDocumentNode &node);
     tl::expected<AnyCertificate, QString> importPrivate(const QUrl &url);
     std::optional<AnyCertificate> parseCertificate(const QByteArray &data);
