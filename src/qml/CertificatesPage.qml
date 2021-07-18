@@ -12,7 +12,7 @@ import org.kde.vakzination 1.0
 
 Kirigami.ScrollablePage {
 
-    title: i18n("Your vaccinations")
+    title: i18n("Your certificates")
 
     header: Kirigami.InlineMessage {
         id: importError
