@@ -11,6 +11,10 @@
 
 #include <KHealthCertificate/KVaccinationCertificate>
 
+#include "expected.h"
+
+#include <optional>
+
 namespace KItinerary
 {
 class ExtractorDocumentNode;
@@ -39,8 +43,9 @@ Q_SIGNALS:
 private:
     QVector<KVaccinationCertificate> fromStringList(const QStringList rawCertificates);
     QStringList toStringList(const QVector<KVaccinationCertificate> certificates);
-    bool importCertificate(const QVariant &maybeCertificate);
-    bool findRecursive(const KItinerary::ExtractorDocumentNode &node);
+    std::optional<KVaccinationCertificate> findRecursive(const KItinerary::ExtractorDocumentNode &node);
+    tl::expected<KVaccinationCertificate, QString> importPrivate(const QUrl &url);
+    std::optional<KVaccinationCertificate> parseCertificate(const QByteArray &data);
 
     QVector<KVaccinationCertificate> m_vaccinations;
     KConfig m_config;

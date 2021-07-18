@@ -13,6 +13,8 @@
 #include <QFile>
 #include <QJsonArray>
 
+#include <KLocalizedString>
+
 #include <KHealthCertificate/KHealthCertificateParser>
 
 const QByteArray sample =
@@ -65,55 +67,74 @@ QHash<int, QByteArray> CertificatesModel::roleNames() const
 
 void CertificatesModel::importCertificate(const QUrl &path)
 {
-    QFile certFile(path.toLocalFile());
+    tl::expected<KVaccinationCertificate, QString> result = importPrivate(path);
+
+    if (result) {
+        beginInsertRows({}, m_vaccinations.size(), m_vaccinations.size());
+        m_vaccinations << *result;
+
+        if (!m_testMode) {
+            m_generalConfig.writeEntry(QStringLiteral("vaccinations"), toStringList(m_vaccinations));
+        }
+        endInsertRows();
+    } else {
+        qWarning() << "Failed to import" << result.error();
+        Q_EMIT importError();
+    }
+}
+
+tl::expected<KVaccinationCertificate, QString> CertificatesModel::importPrivate(const QUrl &url)
+{
+    if (url.isEmpty()) {
+        return tl::make_unexpected(i18n("Empty file url"));
+    }
+
+    if (!url.isValid()) {
+        return tl::make_unexpected(i18n("File URL not valid: %1", url.toDisplayString()));
+    }
+
+    QFile certFile(url.toLocalFile());
 
     bool ok = certFile.open(QFile::ReadOnly);
 
     if (!ok) {
-        qWarning() << "Could not open certificate file" << path;
-        Q_EMIT importError();
-        return;
+        return tl::make_unexpected(i18n("Could not open file: %1", url.toLocalFile()));
     }
 
     const QByteArray data = certFile.readAll();
 
-    QVariant maybeCertificate = KHealthCertificateParser::parse(data);
+    std::optional<KVaccinationCertificate> maybeCertificate = parseCertificate(data);
 
-    if (maybeCertificate.isNull()) {
+    if (!maybeCertificate) {
 #if HAVE_KITINERARY
         // let's see if this is a PDF containing barcodes instead
         KItinerary::ExtractorEngine engine;
-        engine.setData(data, path.path());
+        engine.setData(data, url.path());
         engine.extract();
-        if (findRecursive(engine.rootDocumentNode())) {
-            return;
+        if (auto result = findRecursive(engine.rootDocumentNode())) {
+            return *result;
+        } else {
+            return tl::make_unexpected(i18n("No certificate found in %1", url.toLocalFile()));
+        }
+#else
+        if (url.toLocalFile().endsWith(QLatin1String(".pdf"))) {
+            return tl::make_unexpected(i18n("Importing certificates from PDF is not supported in this build"));
         }
 #endif
-
-        qWarning() << "Could not find certificate in" << path;
-        Q_EMIT importError();
-        return;
     }
 
-    importCertificate(maybeCertificate);
+    return *maybeCertificate;
 }
 
-bool CertificatesModel::importCertificate(const QVariant &maybeCertificate)
+std::optional<KVaccinationCertificate> CertificatesModel::parseCertificate(const QByteArray &data)
 {
+    const QVariant maybeCertificate = KHealthCertificateParser::parse(data);
+
     if (maybeCertificate.userType() != qMetaTypeId<KVaccinationCertificate>()) {
-        return false;
+        return {};
     }
 
-    KVaccinationCertificate cert = maybeCertificate.value<KVaccinationCertificate>();
-
-    beginInsertRows({}, m_vaccinations.size(), m_vaccinations.size());
-    m_vaccinations << cert;
-
-    if (!m_testMode) {
-        m_generalConfig.writeEntry(QStringLiteral("vaccinations"), toStringList(m_vaccinations));
-    }
-    endInsertRows();
-    return true;
+    return maybeCertificate.value<KVaccinationCertificate>();
 }
 
 QVector<KVaccinationCertificate> CertificatesModel::fromStringList(const QStringList rawCertificates)
@@ -135,26 +156,25 @@ QStringList CertificatesModel::toStringList(const QVector<KVaccinationCertificat
 }
 
 #if HAVE_KITINERARY
-bool CertificatesModel::findRecursive(const KItinerary::ExtractorDocumentNode &node)
+std::optional<KVaccinationCertificate> CertificatesModel::findRecursive(const KItinerary::ExtractorDocumentNode &node)
 {
     // possibly a barcode
     if (node.childNodes().size() == 1 && node.mimeType() == QLatin1String("internal/qimage")) {
         const auto &child = node.childNodes()[0];
         if (child.isA<QString>()) {
-            return importCertificate(KHealthCertificateParser::parse(child.content<QString>().toUtf8()));
+            return parseCertificate(child.content<QString>().toUtf8());
         }
         if (child.isA<QByteArray>()) {
-            return importCertificate(KHealthCertificateParser::parse(child.content<QByteArray>()));
+            return parseCertificate(child.content<QByteArray>());
         }
     }
 
     // recurse
-    bool found = false;
     for (const auto &child : node.childNodes()) {
-        if (findRecursive(child)) {
-            found = true;
+        if (auto result = findRecursive(child)) {
+            return result;
         }
     }
-    return found;
+    return {};
 }
 #endif
