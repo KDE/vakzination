@@ -67,23 +67,31 @@ QHash<int, QByteArray> CertificatesModel::roleNames() const
 
 void CertificatesModel::importCertificate(const QUrl &path)
 {
-    tl::expected<KVaccinationCertificate, QString> result = importPrivate(path);
+    tl::expected<AnyCertificate, QString> maybeResult = importPrivate(path);
 
-    if (result) {
-        beginInsertRows({}, m_vaccinations.size(), m_vaccinations.size());
-        m_vaccinations << *result;
+    if (maybeResult) {
+        AnyCertificate result = *maybeResult;
 
-        if (!m_testMode) {
-            m_generalConfig.writeEntry(QStringLiteral("vaccinations"), toStringList(m_vaccinations));
+        if (std::holds_alternative<KVaccinationCertificate>(result)) {
+            beginInsertRows({}, m_vaccinations.size(), m_vaccinations.size());
+            m_vaccinations << std::get<KVaccinationCertificate>(result);
+            if (!m_testMode) {
+                m_generalConfig.writeEntry(QStringLiteral("vaccinations"), toStringList(m_vaccinations));
+            }
+            endInsertRows();
+        } else if (std::holds_alternative<KTestCertificate>(result)) {
+            Q_EMIT importError(i18n("Importing test certificates is not yet supported"));
+        } else {
+            Q_EMIT importError(i18n("Importing recovery certificates is not yet supported"));
         }
-        endInsertRows();
+
     } else {
-        qWarning() << "Failed to import" << result.error();
-        Q_EMIT importError(result.error());
+        qWarning() << "Failed to import" << maybeResult.error();
+        Q_EMIT importError(maybeResult.error());
     }
 }
 
-tl::expected<KVaccinationCertificate, QString> CertificatesModel::importPrivate(const QUrl &url)
+tl::expected<AnyCertificate, QString> CertificatesModel::importPrivate(const QUrl &url)
 {
     if (url.isEmpty()) {
         return tl::make_unexpected(i18n("Empty file url"));
@@ -103,7 +111,7 @@ tl::expected<KVaccinationCertificate, QString> CertificatesModel::importPrivate(
 
     const QByteArray data = certFile.readAll();
 
-    std::optional<KVaccinationCertificate> maybeCertificate = parseCertificate(data);
+    std::optional<AnyCertificate> maybeCertificate = parseCertificate(data);
 
     if (!maybeCertificate) {
 #if HAVE_KITINERARY
@@ -126,15 +134,23 @@ tl::expected<KVaccinationCertificate, QString> CertificatesModel::importPrivate(
     return *maybeCertificate;
 }
 
-std::optional<KVaccinationCertificate> CertificatesModel::parseCertificate(const QByteArray &data)
+std::optional<AnyCertificate> CertificatesModel::parseCertificate(const QByteArray &data)
 {
     const QVariant maybeCertificate = KHealthCertificateParser::parse(data);
 
-    if (maybeCertificate.userType() != qMetaTypeId<KVaccinationCertificate>()) {
-        return {};
+    if (maybeCertificate.userType() == qMetaTypeId<KVaccinationCertificate>()) {
+        return maybeCertificate.value<KVaccinationCertificate>();
     }
 
-    return maybeCertificate.value<KVaccinationCertificate>();
+    if (maybeCertificate.userType() == qMetaTypeId<KTestCertificate>()) {
+        return maybeCertificate.value<KTestCertificate>();
+    }
+
+    if (maybeCertificate.userType() == qMetaTypeId<KRecoveryCertificate>()) {
+        return maybeCertificate.value<KRecoveryCertificate>();
+    }
+
+    return {};
 }
 
 QVector<KVaccinationCertificate> CertificatesModel::fromStringList(const QStringList rawCertificates)
@@ -156,7 +172,7 @@ QStringList CertificatesModel::toStringList(const QVector<KVaccinationCertificat
 }
 
 #if HAVE_KITINERARY
-std::optional<KVaccinationCertificate> CertificatesModel::findRecursive(const KItinerary::ExtractorDocumentNode &node)
+std::optional<AnyCertificate> CertificatesModel::findRecursive(const KItinerary::ExtractorDocumentNode &node)
 {
     // possibly a barcode
     if (node.childNodes().size() == 1 && node.mimeType() == QLatin1String("internal/qimage")) {
