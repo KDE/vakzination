@@ -11,7 +11,7 @@ import org.kde.khealthcertificate 1.0
 
 Kirigami.ScrollablePage {
 
-    required property var cert
+    required property var certificate
 
     title: i18n("Details")
 
@@ -28,12 +28,12 @@ Kirigami.ScrollablePage {
         }
 
         QQC2.Label {
-            text: cert.name
+            text: certificate.name
             Kirigami.FormData.label: "Name:"
         }
         QQC2.Label {
-            text: cert.dateOfBirth.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
-            visible: cert.dateOfBirth.getTime() != 0
+            text: certificate.dateOfBirth.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
+            visible: certificate.dateOfBirth.getTime() != 0
             Kirigami.FormData.label: "Date of birth:"
         }
 
@@ -43,37 +43,37 @@ Kirigami.ScrollablePage {
         }
 
         QQC2.Label {
-            text: cert.date.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
+            text: certificate.date.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
             Kirigami.FormData.label: "Date:"
-            color: daysTo(cert.date, new Date()) >= 14 ? Kirigami.Theme.textColor : Kirigami.Theme.neutralTextColor
+            color: daysTo(certificate.date, new Date()) >= 14 ? Kirigami.Theme.textColor : Kirigami.Theme.neutralTextColor
         }
         QQC2.Label {
-            text: cert.disease
+            text: certificate.disease
             Kirigami.FormData.label: "Disease:"
-            visible: cert.disease
+            visible: certificate.disease
         }
         QQC2.Label {
-            text: cert.vaccineType
+            text: certificate.vaccineType
             Kirigami.FormData.label: "Type:"
-            visible: cert.vaccineType
+            visible: certificate.vaccineType
         }
         QQC2.Label {
-            text: '<a href="' + cert.vaccineUrl + '">' + cert.vaccine + '</a>'
+            text: '<a href="' + certificate.vaccineUrl + '">' + certificate.vaccine + '</a>'
             Kirigami.FormData.label: "Vaccine:"
             onLinkActivated: Qt.openUrlExternally(link)
         }
         QQC2.Label {
-            text: cert.manufacturer
+            text: certificate.manufacturer
             Kirigami.FormData.label: "Manufacturer:"
         }
         QQC2.Label {
-            text: cert.dose + "/" + cert.totalDoses
+            text: certificate.dose + "/" + certificate.totalDoses
             Kirigami.FormData.label: "Dose:"
-            color: cert.dose < cert.totalDoses ? Kirigami.Theme.neutralTextColor : Kirigami.Theme.textColor
+            color: certificate.dose < certificate.totalDoses ? Kirigami.Theme.neutralTextColor : Kirigami.Theme.textColor
         }
         QQC2.Label {
-            //text: KCountry.fromAlpha2(cert.country).emojiFlag + " " + KCountry.fromAlpha2(cert.country).name
-            text: cert.country
+            //text: KCountry.fromAlpha2(certificate.country).emojiFlag + " " + KCountry.fromAlpha2(certificate.country).name
+            text: certificate.country
             Kirigami.FormData.label: "Country:"
         }
 
@@ -83,34 +83,34 @@ Kirigami.ScrollablePage {
         }
 
         QQC2.Label {
-            text: cert.certificateIssuer
+            text: certificate.certificateIssuer
             Kirigami.FormData.label: "Issuer:"
         }
         QQC2.Label {
-            text: cert.certificateId
+            text: certificate.certificateId
             Kirigami.FormData.label: "Identifier:"
         }
         QQC2.Label {
-            text: cert.certificateIssueDate.toLocaleString(Qt.locale(), Locale.ShortFormat)
+            text: certificate.certificateIssueDate.toLocaleString(Qt.locale(), Locale.ShortFormat)
             Kirigami.FormData.label: "Issued:"
         }
         QQC2.Label {
-            text: cert.certificateExpiryDate.toLocaleString(Qt.locale(), Locale.ShortFormat)
+            text: certificate.certificateExpiryDate.toLocaleString(Qt.locale(), Locale.ShortFormat)
             Kirigami.FormData.label: "Expires:"
-            visible: cert.certificateExpiryDate.getTime() != 0
+            visible: certificate.certificateExpiryDate.getTime() != 0
         }
         QQC2.Label {
             text: {
-                switch(cert.signatureState) {
+                switch(certificate.signatureState) {
                     case HealthCertificate.ValidSignature: return "valid";
                     case HealthCertificate.UnknownSignature: return "unknwon";
                     default: return "invalid";
                 }
             }
-            visible: cert.signatureState != HealthCertificate.UncheckedSignature
+            visible: certificate.signatureState != HealthCertificate.UncheckedSignature
             Kirigami.FormData.label: "Signature:"
             color: {
-                switch (cert.signatureState) {
+                switch (certificate.signatureState) {
                     case HealthCertificate.ValidSignature: return  Kirigami.Theme.positiveTextColor;
                     case HealthCertificate.UnknownSignature: return Kirigami.Theme.neutralTextColor;
                     default: return Kirigami.Theme.negativeTextColor;
