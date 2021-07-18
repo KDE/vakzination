@@ -3,3 +3,4 @@
 *.kdev4
 .clang-format
 build
+CMakeLists.txt.user
