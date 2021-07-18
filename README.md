@@ -11,7 +11,12 @@ For other certificate formats please open a feature request and consider sending
 
 ## Importing certificates
 
-You can add certificates by opening them from the file system. This can be either a plain text file containing the data or a PDF that contains the relevant QR code.
+There are multiple ways to add certificates. You can:
+
+- Open a file containing a certificate. This can be either a plain text file containing the data or a PDF that contains the relevant QR code.
+- Pass such a file when launching Vakzination.
+- Paste a certificate from the clipboard.
+- Scan a QR code using [Qrca](https://invent.kde.org/plasma-mobile/qrca/) and have it opened in Vakzination.
 
 ## Get it
 
