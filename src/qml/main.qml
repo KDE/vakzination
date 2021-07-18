@@ -36,10 +36,17 @@ Kirigami.ApplicationWindow {
         isMenu: true
         actions: [
             Kirigami.Action {
-                text: i18n("Add certificate")
-                icon.name: "list-add"
+                text: i18n("Import from file")
+                icon.name: "folder-open"
                 onTriggered: {
                     fileDialog.open()
+                }
+            },
+            Kirigami.Action {
+                text: i18n("Import from clipboard")
+                icon.name: "edit-paste"
+                onTriggered: {
+                    CertificatesModel.importCertificateFromClipboard()
                 }
             }
         ]

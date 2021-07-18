@@ -43,6 +43,7 @@ public:
     QHash<int, QByteArray> roleNames() const override;
 
     Q_INVOKABLE void importCertificate(const QUrl &path);
+    Q_INVOKABLE void importCertificateFromClipboard();
 
 Q_SIGNALS:
     void importError(const QString &error);
@@ -54,6 +55,7 @@ private:
     std::optional<AnyCertificate> findRecursive(const KItinerary::ExtractorDocumentNode &node);
     tl::expected<AnyCertificate, QString> importPrivate(const QUrl &url);
     std::optional<AnyCertificate> parseCertificate(const QByteArray &data) const;
+    void addCertificate(AnyCertificate cert);
 
     QVector<AnyCertificate> m_certificates;
 

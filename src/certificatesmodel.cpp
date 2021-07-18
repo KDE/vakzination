@@ -9,9 +9,12 @@
 #include <KItinerary/ExtractorEngine>
 #endif
 
+#include <QClipboard>
 #include <QDebug>
 #include <QFile>
+#include <QGuiApplication>
 #include <QJsonArray>
+#include <QMimeData>
 
 #include <KLocalizedString>
 
@@ -109,22 +112,24 @@ QHash<int, QByteArray> CertificatesModel::roleNames() const
     };
 }
 
+void CertificatesModel::addCertificate(AnyCertificate cert)
+{
+    beginInsertRows({}, m_certificates.size(), m_certificates.size());
+    m_certificates << cert;
+
+    if (!m_testMode) {
+        m_generalConfig.writeEntry(QStringLiteral("certificates"), toStringList(m_certificates));
+    }
+
+    endInsertRows();
+}
+
 void CertificatesModel::importCertificate(const QUrl &path)
 {
     tl::expected<AnyCertificate, QString> maybeResult = importPrivate(path);
 
     if (maybeResult) {
-        AnyCertificate result = *maybeResult;
-
-        beginInsertRows({}, m_certificates.size(), m_certificates.size());
-        m_certificates << result;
-
-        if (!m_testMode) {
-            m_generalConfig.writeEntry(QStringLiteral("certificates"), toStringList(m_certificates));
-        }
-
-        endInsertRows();
-
+        addCertificate(*maybeResult);
     } else {
         qWarning() << "Failed to import" << maybeResult.error();
         Q_EMIT importError(maybeResult.error());
@@ -216,3 +221,21 @@ std::optional<AnyCertificate> CertificatesModel::findRecursive(const KItinerary:
     return {};
 }
 #endif
+
+void CertificatesModel::importCertificateFromClipboard()
+{
+    std::optional<AnyCertificate> maybeCert;
+
+    const auto md = QGuiApplication::clipboard()->mimeData();
+    if (md->hasText()) {
+        maybeCert = parseCertificate(md->text().toUtf8());
+    } else if (md->hasFormat(QLatin1String("application/octet-stream"))) {
+        maybeCert = parseCertificate(md->data(QLatin1String("application/octet-stream")));
+    }
+
+    if (maybeCert) {
+        addCertificate(*maybeCert);
+    } else {
+        Q_EMIT importError(i18n("No certificate in clipboard"));
+    }
+}
