@@ -33,7 +33,7 @@ Kirigami.ScrollablePage {
         }
         QQC2.Label {
             text: certificate.dateOfBirth.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
-            visible: certificate.dateOfBirth.getTime() != 0
+            visible: !isNaN(certificate.dateOfBirth.getTime())
             Kirigami.FormData.label: "Date of birth:"
         }
 
@@ -97,7 +97,7 @@ Kirigami.ScrollablePage {
         QQC2.Label {
             text: certificate.certificateExpiryDate.toLocaleString(Qt.locale(), Locale.ShortFormat)
             Kirigami.FormData.label: "Expires:"
-            visible: certificate.certificateExpiryDate.getTime() != 0
+            visible: !isNaN(certificate.certificateExpiryDate.getTime())
         }
         QQC2.Label {
             text: {

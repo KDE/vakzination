@@ -24,7 +24,7 @@ Column {
 
         text: {
             if (root.type === KHC.HealthCertificate.Vaccination) {
-                return i18n("Vaccination %1 (%2/%3)", certificate.disease, certificate.dose, certificate.totalDoses)
+                return i18n("Vaccination %1 (%2/%3)", certificate.disease ? certificate.disease : certificate.vaccine, certificate.dose, certificate.totalDoses)
             }
 
             if (root.type === KHC.HealthCertificate.Test) {
