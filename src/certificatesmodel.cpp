@@ -146,7 +146,12 @@ tl::expected<AnyCertificate, QString> CertificatesModel::importPrivate(const QUr
         return tl::make_unexpected(i18n("File URL not valid: %1", url.toDisplayString()));
     }
 
+#ifdef Q_OS_ANDROID
+    // toLocalFile makes content:/ URLs kaputt
+    QFile certFile(url.toString());
+#else
     QFile certFile(url.toLocalFile());
+#endif
 
     bool ok = certFile.open(QFile::ReadOnly);
 
