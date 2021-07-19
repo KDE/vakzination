@@ -6,13 +6,39 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.2
+import Qt.labs.platform 1.1
 import org.kde.kirigami 2.15 as Kirigami
 
 import org.kde.vakzination 1.0
 
 Kirigami.ScrollablePage {
 
-    title: i18n("Your certificates")
+    title: Kirigami.Settings.isMobile ? i18n("Your certificates") : ""
+
+    property var importFileAction: Kirigami.Action {
+        text: i18n("Import from file")
+        icon.name: "folder-open"
+        onTriggered: {
+            fileDialog.open()
+        }
+    }
+
+    property var importClipboardAction: Kirigami.Action {
+        text: i18n("Import from clipboard")
+        icon.name: "edit-paste"
+        onTriggered: {
+            CertificatesModel.importCertificateFromClipboard()
+        }
+    }
+
+    FileDialog {
+        id: fileDialog
+        folder: StandardPaths.writableLocation(StandardPaths.DocumentsLocation)
+
+        onAccepted: {
+            CertificatesModel.importCertificate(currentFile)
+        }
+    }
 
     header: Kirigami.InlineMessage {
         id: importError
@@ -23,6 +49,20 @@ Kirigami.ScrollablePage {
         text: i18n("Certificate could not be imported: %1", error)
         showCloseButton: true
     }
+
+    footer: Controls.ToolBar {
+
+        visible: Kirigami.Settings.isMobile
+
+        Kirigami.ActionToolBar {
+            anchors.fill: parent
+
+            actions: [importFileAction, importClipboardAction]
+        }
+    }
+
+    actions.main: !Kirigami.Settings.isMobile ? importFileAction : undefined
+    actions.right: !Kirigami.Settings.isMobile ? importClipboardAction : undefined
 
     Connections {
         target: CertificatesModel
