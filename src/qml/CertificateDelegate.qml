@@ -10,7 +10,7 @@ import org.kde.kirigami 2.15 as Kirigami
 import org.kde.prison 1.0 as Prison
 import org.kde.khealthcertificate 1.0 as KHC
 
-Column {
+ColumnLayout {
     id: root
 
     required property var certificate
@@ -20,7 +20,7 @@ Column {
 
     Kirigami.Heading {
 
-        anchors.left: barcode.left
+        Layout.alignment: Qt.AlignHCenter
 
         text: {
             if (root.type === KHC.HealthCertificate.Vaccination) {
@@ -38,21 +38,23 @@ Column {
     }
 
     Controls.Label {
-        anchors.left: barcode.left
+        Layout.alignment: Qt.AlignHCenter
         text: certificate.name
     }
 
     Prison.Barcode {
         id: barcode
 
-        anchors.horizontalCenter: parent.horizontalCenter
+        Layout.maximumWidth: implicitWidth
+        Layout.fillWidth: true
+        Layout.alignment: Qt.AlignHCenter
 
         barcodeType: Prison.Barcode.QRCode
         content: certificate.rawData
     }
 
     Controls.Button {
-        anchors.left: barcode.left
+        Layout.alignment: Qt.AlignHCenter
 
         text: i18n("Details")
         onClicked: {
@@ -76,7 +78,7 @@ Column {
     }
 
     Item {
-        width: parent.width
+        Layout.fillWidth: true
         height: sep.height + Kirigami.Units.largeSpacing
 
         visible: root.showSeparator
