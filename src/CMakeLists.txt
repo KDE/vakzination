@@ -22,4 +22,14 @@ if (TARGET KPim::Itinerary)
     target_link_libraries(vakzination KPim::Itinerary)
 endif()
 
+if (ANDROID)
+    kirigami_package_breeze_icons(ICONS
+        folder-open
+        edit-paste
+        dialog-ok
+        question
+        dialog-error-symbolic
+    )
+endif()
+
 install(TARGETS vakzination ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
