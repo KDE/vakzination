@@ -56,6 +56,7 @@ private:
     tl::expected<AnyCertificate, QString> importPrivate(const QUrl &url);
     std::optional<AnyCertificate> parseCertificate(const QByteArray &data) const;
     void addCertificate(AnyCertificate cert);
+    QString toLocalFile(const QUrl &url);
 
     QVector<AnyCertificate> m_certificates;
 

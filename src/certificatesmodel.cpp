@@ -146,17 +146,12 @@ tl::expected<AnyCertificate, QString> CertificatesModel::importPrivate(const QUr
         return tl::make_unexpected(i18n("File URL not valid: %1", url.toDisplayString()));
     }
 
-#ifdef Q_OS_ANDROID
-    // toLocalFile makes content:/ URLs kaputt
-    QFile certFile(url.toString());
-#else
-    QFile certFile(url.toLocalFile());
-#endif
+    QFile certFile(toLocalFile(url));
 
     bool ok = certFile.open(QFile::ReadOnly);
 
     if (!ok) {
-        return tl::make_unexpected(i18n("Could not open file: %1", url.toLocalFile()));
+        return tl::make_unexpected(i18n("Could not open file: %1", toLocalFile(url)));
     }
 
     const QByteArray data = certFile.readAll();
@@ -172,10 +167,10 @@ tl::expected<AnyCertificate, QString> CertificatesModel::importPrivate(const QUr
         if (auto result = findRecursive(engine.rootDocumentNode())) {
             return *result;
         } else {
-            return tl::make_unexpected(i18n("No certificate found in %1", url.toLocalFile()));
+            return tl::make_unexpected(i18n("No certificate found in %1", toLocalFile(url)));
         }
 #else
-        if (url.toLocalFile().endsWith(QLatin1String(".pdf"))) {
+        if (toLocalFile(url).endsWith(QLatin1String(".pdf"))) {
             return tl::make_unexpected(i18n("Importing certificates from PDF is not supported in this build"));
         }
 #endif
@@ -243,4 +238,14 @@ void CertificatesModel::importCertificateFromClipboard()
     } else {
         Q_EMIT importError(i18n("No certificate in clipboard"));
     }
+}
+
+QString CertificatesModel::toLocalFile(const QUrl &url)
+{
+#ifdef Q_OS_ANDROID
+    // toLocalFile makes content:/ URLs kaputt
+    return url.toString();
+#else
+    return url.toLocalFile();
+#endif
 }
