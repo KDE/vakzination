@@ -59,21 +59,21 @@ ColumnLayout {
         text: i18n("Details")
         onClicked: {
 
-            var page;
+            var sheet
 
             if (root.type === KHC.HealthCertificate.Vaccination) {
-                page = "CertificateDetailsPage.qml"
+                sheet = vaccinationSheet.createObject(this, {certificate: root.certificate})
             }
 
             if (root.type === KHC.HealthCertificate.Test) {
-                page = "TestDetailsPage.qml"
+                sheet = testSheet.createObject(this, {certificate: root.certificate})
             }
 
             if (root.type === KHC.HealthCertificate.Recovery) {
-                page = "RecoveryDetailsPage.qml"
+                sheet = recoverySheet.createObject(this, {certificate: root.certificate})
             }
 
-            pageStack.push(Qt.resolvedUrl(page), {certificate: root.certificate})
+            sheet.open()
         }
     }
 
@@ -94,5 +94,23 @@ ColumnLayout {
                 topMargin: Kirigami.Units.largeSpacing
             }
         }
+    }
+
+    Component {
+        id: vaccinationSheet
+
+        VaccinationDetailsSheet {}
+    }
+
+    Component {
+        id: testSheet
+
+        TestDetailsSheet {}
+    }
+
+    Component {
+        id: recoverySheet
+
+        RecoveryDetailsSheet{}
     }
 }

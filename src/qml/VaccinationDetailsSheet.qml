@@ -9,18 +9,19 @@ import QtQuick.Layouts 1.2
 import org.kde.kirigami 2.15 as Kirigami
 import org.kde.khealthcertificate 1.0
 
-Kirigami.ScrollablePage {
+Kirigami.OverlaySheet {
 
     required property var certificate
 
-    title: i18n("Details")
+    header: Kirigami.Heading {
+        text: i18n("Details")
+    }
 
     function daysTo(d1, d2) {
         return (d2.getTime() - d1.getTime()) / (1000 * 60 * 60 * 24);
     }
 
     Kirigami.FormLayout {
-        Layout.fillWidth: true
 
         Item {
             Kirigami.FormData.isSection: true

@@ -7,8 +7,8 @@
         <file alias="main.qml">qml/main.qml</file>
         <file alias="CertificatesPage.qml">qml/CertificatesPage.qml</file>
         <file alias="CertificateDelegate.qml">qml/CertificateDelegate.qml</file>
-        <file alias="CertificateDetailsPage.qml">qml/VaccinationDetailsPage.qml</file>
-        <file alias="TestDetailsPage.qml">qml/TestDetailsPage.qml</file>
-        <file alias="RecoveryDetailsPage.qml">qml/RecoveryDetailsPage.qml</file>
+        <file alias="VaccinationDetailsSheet.qml">qml/VaccinationDetailsSheet.qml</file>
+        <file alias="TestDetailsSheet.qml">qml/TestDetailsSheet.qml</file>
+        <file alias="RecoveryDetailsSheet.qml">qml/RecoveryDetailsSheet.qml</file>
     </qresource>
 </RCC>
