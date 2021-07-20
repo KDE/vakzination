@@ -53,6 +53,7 @@ Kirigami.ScrollablePage {
     footer: Controls.ToolBar {
 
         visible: Kirigami.Settings.isMobile
+        height: visible ? implicitHeight : 0
 
         Kirigami.ActionToolBar {
             anchors.fill: parent
