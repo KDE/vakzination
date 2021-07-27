@@ -7,6 +7,7 @@
   <id>org.kde.vakzination</id>
   <name>Vakzination</name>
   <name xml:lang="ca">Vakzination</name>
+  <name xml:lang="ca-valencia">Vakzination</name>
   <name xml:lang="cs">Vakzination</name>
   <name xml:lang="es">Vakzination</name>
   <name xml:lang="fr">Vakzination</name>
@@ -22,6 +23,7 @@
   <name xml:lang="x-test">xxVakzinationxx</name>
   <summary>Manage your vaccination certificates</summary>
   <summary xml:lang="ca">Gestioneu els vostres certificats de vaccinació</summary>
+  <summary xml:lang="ca-valencia">Gestioneu els vostres certificats de vaccinació</summary>
   <summary xml:lang="es">Gestione sus certificados de vacunación</summary>
   <summary xml:lang="fr">Gérer vos certificats de vaccination</summary>
   <summary xml:lang="it">Gestisci i tuoi certificati di vaccinazione</summary>
@@ -38,6 +40,7 @@
   <content_rating type="oars-1.1"/>
   <developer_name>KDE Community</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
+  <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
   <developer_name xml:lang="cs">Komunita KDE</developer_name>
   <developer_name xml:lang="es">Comunidad KDE</developer_name>
   <developer_name xml:lang="fr">Communauté KDE</developer_name>
@@ -56,6 +59,7 @@
   <description>
     <p>Manage your digital health certificates like vaccination, test, and recovery certificates.</p>
     <p xml:lang="ca">Gestioneu els vostres certificats digitals de salut, com els certificats de vaccinació, proves i recuperació.</p>
+    <p xml:lang="ca-valencia">Gestioneu els vostres certificats digitals de salut, com els certificats de vaccinació, proves i recuperació.</p>
     <p xml:lang="es">Gestione sus certificados digitales de salud, como los de vacunación, pruebas y recuperación.</p>
     <p xml:lang="fr">Gérer vos certificats numériques de santé comme les certificats de vaccination, de tests et de retour à la santé.</p>
     <p xml:lang="it">Gestisci i tuoi certificati sanitari digitali come certificati di vaccinazione, esami e guarigione.</p>
