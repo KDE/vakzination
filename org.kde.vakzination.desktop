@@ -3,6 +3,7 @@
 [Desktop Entry]
 Name=Vakzination
 Name[ca]=Vakzination
+Name[ca@valencia]=Vakzination
 Name[cs]=Vakzination
 Name[es]=Vakzination
 Name[fr]=Vakzination
@@ -18,6 +19,7 @@ Name[uk]=Vakzination
 Name[x-test]=xxVakzinationxx
 Comment=Vaccination Certificate Manager
 Comment[ca]=Obre el gestor de certificats de vaccinació
+Comment[ca@valencia]=Obri el gestor de certificats de vaccinació
 Comment[cs]=Správce certifikátů očkování
 Comment[es]=Gestor de certificados de vacunación
 Comment[fr]=Gestionnaire de certificats de vaccination
