@@ -4,6 +4,7 @@
 */
 
 #include <QCommandLineParser>
+#include <QIcon>
 #include <QQmlApplicationEngine>
 #include <QQuickStyle>
 #include <QUrl>
@@ -28,6 +29,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
     QQuickStyle::setStyle(QStringLiteral("org.kde.breeze"));
 #else
+    QIcon::setFallbackThemeName(QStringLiteral("breeze"));
     QApplication app(argc, argv);
     // Default to org.kde.desktop style unless the user forces another style
     if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
