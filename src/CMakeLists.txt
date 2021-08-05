@@ -6,7 +6,15 @@ if (TARGET KPim::Itinerary)
 endif()
 configure_file(config-vakzination.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-vakzination.h)
 
-add_executable(vakzination main.cpp certificatesmodel.cpp resources.qrc)
+add_library(vakzinationstatic STATIC)
+target_sources(vakzinationstatic PRIVATE certificatesmodel.cpp)
+target_link_libraries(vakzinationstatic PUBLIC Qt::Core PRIVATE KF5::ConfigCore KF5::I18n)
+
+if (TARGET KPim::Itinerary)
+    target_link_libraries(vakzinationstatic PRIVATE KPim::Itinerary)
+endif()
+
+add_executable(vakzination main.cpp resources.qrc)
 target_link_libraries(vakzination
     Qt5::Core
     Qt5::Gui
@@ -17,10 +25,8 @@ target_link_libraries(vakzination
     KF5::I18n
     KF5::ConfigCore
     KHealthCertificate
+    vakzinationstatic
 )
-if (TARGET KPim::Itinerary)
-    target_link_libraries(vakzination KPim::Itinerary)
-endif()
 
 if (ANDROID)
     kirigami_package_breeze_icons(ICONS
