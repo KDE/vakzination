@@ -28,6 +28,7 @@ include(ECMGenerateHeaders)
 include(ECMPoQmTools)
 include(KDEClangFormat)
 include(KDEGitCommitHooks)
+include(ECMAddTests)
 
 find_package(Qt5 ${QT5_MIN_VERSION} REQUIRED COMPONENTS Core Gui Qml QuickControls2 Svg)
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 I18n Config Prison)
@@ -41,6 +42,10 @@ if(ANDROID)
 endif()
 
 add_subdirectory(src)
+
+if(BUILD_TESTING)
+    add_subdirectory(autotests)
+endif()
 
 install(FILES org.kde.vakzination.desktop DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.vakzination.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})

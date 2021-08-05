@@ -8,7 +8,7 @@ configure_file(config-vakzination.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-vakzin
 
 add_library(vakzinationstatic STATIC)
 target_sources(vakzinationstatic PRIVATE certificatesmodel.cpp)
-target_link_libraries(vakzinationstatic PUBLIC Qt::Core PRIVATE KF5::ConfigCore KF5::I18n)
+target_link_libraries(vakzinationstatic PUBLIC Qt::Core KF5::ConfigCore PRIVATE KF5::I18n KHealthCertificate)
 
 if (TARGET KPim::Itinerary)
     target_link_libraries(vakzinationstatic PRIVATE KPim::Itinerary)
@@ -24,7 +24,6 @@ target_link_libraries(vakzination
     Qt5::Svg
     KF5::I18n
     KF5::ConfigCore
-    KHealthCertificate
     vakzinationstatic
 )
 
