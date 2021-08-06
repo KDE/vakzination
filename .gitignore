@@ -4,3 +4,5 @@
 .clang-format
 build
 CMakeLists.txt.user
+.cache
+compile_commands.json
