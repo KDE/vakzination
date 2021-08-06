@@ -15,10 +15,18 @@ class CertificatesModelTest : public QObject
 {
     Q_OBJECT
 private Q_SLOTS:
-    void testEmptyModel()
+    void initTestCase()
     {
         QStandardPaths::setTestModeEnabled(true);
 
+        // cleanup persisted content from previous runs
+        KConfig config(QStringLiteral("vakzinationrc"));
+        auto general = config.group(QStringLiteral("General"));
+        general.deleteEntry(QStringLiteral("certificates"));
+    }
+
+    void testEmptyModel()
+    {
         CertificatesModel model(false);
         QAbstractItemModelTester modelTest(&model);
 
@@ -27,8 +35,6 @@ private Q_SLOTS:
 
     void testBuiltinCerts()
     {
-        QStandardPaths::setTestModeEnabled(true);
-
         CertificatesModel model(true);
         QAbstractItemModelTester modelTest(&model);
 
@@ -39,8 +45,6 @@ private Q_SLOTS:
 
     void testImportPdf()
     {
-        QStandardPaths::setTestModeEnabled(true);
-
         CertificatesModel model(true);
         QAbstractItemModelTester modelTest(&model);
 
@@ -61,8 +65,6 @@ private Q_SLOTS:
 
     void testImportPlain()
     {
-        QStandardPaths::setTestModeEnabled(true);
-
         CertificatesModel model(true);
         QAbstractItemModelTester modelTest(&model);
 
@@ -78,8 +80,6 @@ private Q_SLOTS:
 
     void testNonexistantImport()
     {
-        QStandardPaths::setTestModeEnabled(true);
-
         CertificatesModel model(true);
         QAbstractItemModelTester modelTest(&model);
 
@@ -96,8 +96,6 @@ private Q_SLOTS:
 
     void testNonsenseFile()
     {
-        QStandardPaths::setTestModeEnabled(true);
-
         CertificatesModel model(true);
         QAbstractItemModelTester modelTest(&model);
 
@@ -110,6 +108,32 @@ private Q_SLOTS:
         QCOMPARE(errorSpy.first().first().toString(), i18n("No certificate found in %1", testFile.toLocalFile()));
 
         QCOMPARE(model.rowCount({}), 4);
+    }
+
+    void testPersistence()
+    {
+        {
+            CertificatesModel model(false);
+            QAbstractItemModelTester modelTest(&model);
+            model.importCertificate(QUrl::fromLocalFile(QFINDTESTDATA("full-vaccination.txt")));
+            model.importCertificate(QUrl::fromLocalFile(QFINDTESTDATA("partial-vaccination.divoc")));
+            QCOMPARE(model.rowCount({}), 2);
+        }
+
+        {
+            KConfig config(QStringLiteral("vakzinationrc"));
+            auto general = config.group(QStringLiteral("General"));
+            auto certs = general.readEntry(QStringLiteral("certificates"), QStringList{});
+            QCOMPARE(certs.size(), 2);
+            certs.push_back(QStringLiteral("garbage"));
+            general.writeEntry(QStringLiteral("certificates"), certs);
+        }
+
+        {
+            CertificatesModel model(false);
+            QAbstractItemModelTester modelTest(&model);
+            QCOMPARE(model.rowCount({}), 2);
+        }
     }
 };
 
