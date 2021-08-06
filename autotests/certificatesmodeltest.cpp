@@ -3,6 +3,7 @@
 
 #include "certificatesmodel.h"
 
+#include <QAbstractItemModelTester>
 #include <QSignalSpy>
 #include <QTest>
 
@@ -17,6 +18,7 @@ private Q_SLOTS:
         QStandardPaths::setTestModeEnabled(true);
 
         CertificatesModel model(false);
+        QAbstractItemModelTester modelTest(&model);
 
         QCOMPARE(model.rowCount({}), 0);
     }
@@ -26,6 +28,7 @@ private Q_SLOTS:
         QStandardPaths::setTestModeEnabled(true);
 
         CertificatesModel model(true);
+        QAbstractItemModelTester modelTest(&model);
 
         QCOMPARE(model.rowCount({}), 4);
 
@@ -37,6 +40,7 @@ private Q_SLOTS:
         QStandardPaths::setTestModeEnabled(true);
 
         CertificatesModel model(true);
+        QAbstractItemModelTester modelTest(&model);
 
         const QUrl testFile = QUrl::fromLocalFile(QFINDTESTDATA("negative-pcr-test-fr.pdf"));
 
@@ -55,6 +59,7 @@ private Q_SLOTS:
         QStandardPaths::setTestModeEnabled(true);
 
         CertificatesModel model(true);
+        QAbstractItemModelTester modelTest(&model);
 
         const QUrl testFile = QStringLiteral("/does/not/exist");
 

@@ -95,7 +95,7 @@ QVariant CertificatesModel::data(const QModelIndex &index, int role) const
         }
     }
     };
-    return QStringLiteral("deadbeef");
+    return {};
 }
 
 int CertificatesModel::rowCount(const QModelIndex &parent) const
