@@ -93,6 +93,24 @@ private Q_SLOTS:
 
         QCOMPARE(model.rowCount({}), 4);
     }
+
+    void testNonsenseFile()
+    {
+        QStandardPaths::setTestModeEnabled(true);
+
+        CertificatesModel model(true);
+        QAbstractItemModelTester modelTest(&model);
+
+        const QUrl testFile = QUrl::fromLocalFile(QFINDTESTDATA("nonsense.txt"));
+
+        QSignalSpy errorSpy(&model, &CertificatesModel::importError);
+        model.importCertificate(testFile);
+
+        QCOMPARE(errorSpy.count(), 1);
+        QCOMPARE(errorSpy.first().first().toString(), i18n("No certificate found in %1", testFile.toLocalFile()));
+
+        QCOMPARE(model.rowCount({}), 4);
+    }
 };
 
 QTEST_MAIN(CertificatesModelTest)
