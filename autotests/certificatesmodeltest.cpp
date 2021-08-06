@@ -37,7 +37,7 @@ private Q_SLOTS:
         QCOMPARE(model.data(model.index(0), CertificatesModel::TypeRole), KHealthCertificate::Vaccination);
     }
 
-    void testImport()
+    void testImportPdf()
     {
         QStandardPaths::setTestModeEnabled(true);
 
@@ -57,6 +57,23 @@ private Q_SLOTS:
         QCOMPARE(errorSpy.count(), 1);
         QCOMPARE(errorSpy.first().first().toString(), i18n("Importing certificates from PDF is not supported in this build"));
 #endif
+    }
+
+    void testImportPlain()
+    {
+        QStandardPaths::setTestModeEnabled(true);
+
+        CertificatesModel model(true);
+        QAbstractItemModelTester modelTest(&model);
+
+        const QUrl testFile = QUrl::fromLocalFile(QFINDTESTDATA("full-vaccination.txt"));
+
+        QSignalSpy errorSpy(&model, &CertificatesModel::importError);
+        model.importCertificate(testFile);
+
+        QCOMPARE(errorSpy.count(), 0);
+        QCOMPARE(model.rowCount({}), 5);
+        QCOMPARE(model.data(model.index(4), CertificatesModel::TypeRole), KHealthCertificate::Vaccination);
     }
 
     void testNonexistantImport()
