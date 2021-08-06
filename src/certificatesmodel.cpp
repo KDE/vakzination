@@ -23,9 +23,13 @@
 QVector<AnyCertificate> CertificatesModel::fromStringList(const QStringList rawCertificates) const
 {
     QVector<AnyCertificate> res;
-    std::transform(rawCertificates.cbegin(), rawCertificates.cend(), std::back_inserter(res), [this](const QString &raw) {
-        return *parseCertificate(*QByteArray::fromBase64Encoding(raw.toUtf8()));
-    });
+    res.reserve(rawCertificates.size());
+    for (const auto &rawCertificate : rawCertificates) {
+        const auto cert = parseCertificate(*QByteArray::fromBase64Encoding(rawCertificate.toUtf8()));
+        if (cert) {
+            res.push_back(*cert);
+        }
+    }
     return res;
 }
 
