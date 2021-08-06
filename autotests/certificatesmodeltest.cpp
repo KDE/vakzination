@@ -9,6 +9,8 @@
 
 #include <KLocalizedString>
 
+#include "config-vakzination.h"
+
 class CertificatesModelTest : public QObject
 {
     Q_OBJECT
@@ -47,11 +49,14 @@ private Q_SLOTS:
         QSignalSpy errorSpy(&model, &CertificatesModel::importError);
         model.importCertificate(testFile);
 
+#if HAVE_KITINERARY
         QCOMPARE(errorSpy.count(), 0);
-
         QCOMPARE(model.rowCount({}), 5);
-
         QCOMPARE(model.data(model.index(4), CertificatesModel::TypeRole), KHealthCertificate::Test);
+#else
+        QCOMPARE(errorSpy.count(), 1);
+        QCOMPARE(errorSpy.first().first().toString(), i18n("Importing certificates from PDF is not supported in this build"));
+#endif
     }
 
     void testNonexistantImport()
