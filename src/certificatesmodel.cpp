@@ -37,13 +37,11 @@ QStringList CertificatesModel::toStringList(const QVector<AnyCertificate> certif
 {
     QStringList res;
     std::transform(certificates.cbegin(), certificates.cend(), std::back_inserter(res), [](const AnyCertificate &cert) {
-        QString data;
-        std::visit(
-            [&data](auto &&arg) {
-                data = QString::fromUtf8(arg.rawData().toBase64());
+        return std::visit(
+            [](auto &&arg) {
+                return QString::fromUtf8(arg.rawData().toBase64());
             },
             cert);
-        return data;
     });
     return res;
 }
@@ -78,14 +76,11 @@ QVariant CertificatesModel::data(const QModelIndex &index, int role) const
 
     switch (role) {
     case CertificateRole: {
-        QVariant data;
-        std::visit(
-            [&data](auto &&arg) {
-                data = arg;
+        return std::visit(
+            [](auto &&arg) -> QVariant {
+                return arg;
             },
             m_certificates[row]);
-
-        return data;
     }
     case TypeRole: {
         if (std::holds_alternative<KVaccinationCertificate>(m_certificates[row])) {
