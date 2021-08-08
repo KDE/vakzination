@@ -177,6 +177,7 @@ tl::expected<AnyCertificate, QString> CertificatesModel::importPrivate(const QUr
         if (toLocalFile(url).endsWith(QLatin1String(".pdf"))) {
             return tl::make_unexpected(i18n("Importing certificates from PDF is not supported in this build"));
         }
+        return tl::make_unexpected(i18n("No certificate found in %1", toLocalFile(url)));
 #endif
     }
 
