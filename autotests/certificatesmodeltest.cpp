@@ -63,6 +63,26 @@ private Q_SLOTS:
 #endif
     }
 
+    void testImportPng()
+    {
+        CertificatesModel model(true);
+        QAbstractItemModelTester modelTest(&model);
+
+        const QUrl testFile = QUrl::fromLocalFile(QFINDTESTDATA("full-vaccination.png"));
+
+        QSignalSpy errorSpy(&model, &CertificatesModel::importError);
+        model.importCertificate(testFile);
+
+#if HAVE_KITINERARY
+        QCOMPARE(errorSpy.count(), 0);
+        QCOMPARE(model.rowCount({}), 5);
+        QCOMPARE(model.data(model.index(4), CertificatesModel::TypeRole), KHealthCertificate::Vaccination);
+#else
+        QCOMPARE(errorSpy.count(), 1);
+        QCOMPARE(errorSpy.first().first().toString(), i18n("Importing certificates from images is not supported in this build"));
+#endif
+    }
+
     void testImportPlain()
     {
         CertificatesModel model(true);
