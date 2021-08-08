@@ -74,7 +74,9 @@ Kirigami.OverlaySheet {
             Kirigami.FormData.label: i18n("Test Center:")
         }
         QQC2.Label {
-            text: Localizer.countryFlag(certificate.country) + " " + Localizer.countryName(certificate.country)
+            // TODO reenable once we have the right KI18n API
+            //text: Localizer.countryFlag(certificate.country) + " " + Localizer.countryName(certificate.country)
+            text: certificate.country
             Kirigami.FormData.label: i18n("Country:")
         }
 
