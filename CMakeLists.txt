@@ -40,6 +40,8 @@ if(ANDROID)
     configure_file(${CMAKE_CURRENT_SOURCE_DIR}/android/version.gradle.in ${CMAKE_BINARY_DIR}/version.gradle)
 endif()
 
+add_definitions(-DQT_NO_KEYWORDS)
+
 add_subdirectory(src)
 
 if(BUILD_TESTING)
