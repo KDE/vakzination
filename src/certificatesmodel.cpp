@@ -2,12 +2,9 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #include "certificatesmodel.h"
-#include "config-vakzination.h"
 
-#if HAVE_KITINERARY
 #include <KItinerary/ExtractorDocumentNode>
 #include <KItinerary/ExtractorEngine>
-#endif
 
 #include <QClipboard>
 #include <QDebug>
@@ -158,7 +155,6 @@ tl::expected<AnyCertificate, QString> CertificatesModel::importPrivate(const QUr
     std::optional<AnyCertificate> maybeCertificate = parseCertificate(data);
 
     if (!maybeCertificate) {
-#if HAVE_KITINERARY
         // let's see if this is a PDF containing barcodes instead
         KItinerary::ExtractorEngine engine;
         engine.setData(data, url.path());
@@ -168,17 +164,6 @@ tl::expected<AnyCertificate, QString> CertificatesModel::importPrivate(const QUr
         } else {
             return tl::make_unexpected(i18n("No certificate found in %1", toLocalFile(url)));
         }
-#else
-        if (toLocalFile(url).endsWith(QLatin1String(".pdf"))) {
-            return tl::make_unexpected(i18n("Importing certificates from PDF is not supported in this build"));
-        }
-
-        if (toLocalFile(url).endsWith(QLatin1String(".png")) || toLocalFile(url).endsWith(QLatin1String(".jpg"))) {
-            return tl::make_unexpected(i18n("Importing certificates from images is not supported in this build"));
-        }
-
-        return tl::make_unexpected(i18n("No certificate found in %1", toLocalFile(url)));
-#endif
     }
 
     return *maybeCertificate;
@@ -203,7 +188,6 @@ std::optional<AnyCertificate> CertificatesModel::parseCertificate(const QByteArr
     return {};
 }
 
-#if HAVE_KITINERARY
 std::optional<AnyCertificate> CertificatesModel::findRecursive(const KItinerary::ExtractorDocumentNode &node)
 {
     // possibly a barcode
@@ -225,7 +209,6 @@ std::optional<AnyCertificate> CertificatesModel::findRecursive(const KItinerary:
     }
     return {};
 }
-#endif
 
 void CertificatesModel::importCertificateFromClipboard()
 {

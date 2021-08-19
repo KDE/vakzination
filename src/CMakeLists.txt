@@ -1,18 +1,9 @@
 # SPDX-License-Identifier: BSD-3-Clause
 # SPDX-FileCopyrightText: 2021 Nicolas Fella <nicolas.fella@gmx.de>
 
-if (TARGET KPim::Itinerary)
-    set(HAVE_KITINERARY TRUE)
-endif()
-configure_file(config-vakzination.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-vakzination.h)
-
 add_library(vakzinationstatic STATIC)
 target_sources(vakzinationstatic PRIVATE certificatesmodel.cpp)
-target_link_libraries(vakzinationstatic PUBLIC Qt::Core Qt::Gui KF5::ConfigCore KHealthCertificate PRIVATE KF5::I18n)
-
-if (TARGET KPim::Itinerary)
-    target_link_libraries(vakzinationstatic PRIVATE KPim::Itinerary)
-endif()
+target_link_libraries(vakzinationstatic PUBLIC Qt::Core Qt::Gui KF5::ConfigCore KHealthCertificate PRIVATE KF5::I18n KPim::Itinerary)
 
 add_executable(vakzination main.cpp resources.qrc)
 target_link_libraries(vakzination
