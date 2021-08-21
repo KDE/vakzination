@@ -91,7 +91,7 @@ private Q_SLOTS:
         CertificatesModel model(true);
         QAbstractItemModelTester modelTest(&model);
 
-        const QUrl testFile = QStringLiteral("/does/not/exist");
+        const QUrl testFile(QStringLiteral("/does/not/exist"));
 
         QSignalSpy errorSpy(&model, &CertificatesModel::importError);
         model.importCertificate(testFile);

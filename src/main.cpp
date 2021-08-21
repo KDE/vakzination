@@ -37,10 +37,10 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     }
 #endif
 
-    QCoreApplication::setOrganizationName("KDE");
-    QCoreApplication::setOrganizationDomain("kde.org");
-    QCoreApplication::setApplicationName("vakzination");
-    QGuiApplication::setApplicationDisplayName("Vakzination");
+    QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
+    QCoreApplication::setOrganizationDomain(QStringLiteral("kde.org"));
+    QCoreApplication::setApplicationName(QStringLiteral("vakzination"));
+    QGuiApplication::setApplicationDisplayName(QStringLiteral("Vakzination"));
 
     QCommandLineParser parser;
     parser.addOption(QCommandLineOption(QStringLiteral("testmode"), i18n("Show with test data")));
