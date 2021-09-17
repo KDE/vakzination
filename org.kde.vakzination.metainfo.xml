@@ -26,6 +26,7 @@
   <summary>Manage your vaccination certificates</summary>
   <summary xml:lang="ca">Gestioneu els vostres certificats de vaccinació</summary>
   <summary xml:lang="ca-valencia">Gestioneu els vostres certificats de vaccinació</summary>
+  <summary xml:lang="cs">Spravujte svoje očkovací certifikáty</summary>
   <summary xml:lang="en-GB">Manage your vaccination certificates</summary>
   <summary xml:lang="es">Gestione sus certificados de vacunación</summary>
   <summary xml:lang="fr">Gérer vos certificats de vaccination</summary>
@@ -66,6 +67,7 @@
     <p>Manage your digital health certificates like vaccination, test, and recovery certificates.</p>
     <p xml:lang="ca">Gestioneu els vostres certificats digitals de salut, com els certificats de vaccinació, proves i recuperació.</p>
     <p xml:lang="ca-valencia">Gestioneu els vostres certificats digitals de salut, com els certificats de vaccinació, proves i recuperació.</p>
+    <p xml:lang="cs">Spravujte svoje zdravotní certifikáty jako očkování, testy a zotavení.</p>
     <p xml:lang="en-GB">Manage your digital health certificates like vaccination, test, and recovery certificates.</p>
     <p xml:lang="es">Gestione sus certificados digitales de salud, como los de vacunación, pruebas y recuperación.</p>
     <p xml:lang="fr">Gérer vos certificats numériques de santé comme les certificats de vaccination, de tests et de retour à la santé.</p>
