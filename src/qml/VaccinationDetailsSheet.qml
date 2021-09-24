@@ -68,7 +68,7 @@ Kirigami.OverlaySheet {
             Kirigami.FormData.label: "Manufacturer:"
         }
         QQC2.Label {
-            text: certificate.dose + "/" + certificate.totalDoses
+            text: certificate.totalDoses > 0 ? i18n("%1/%2", certificate.dose, certificate.totalDoses) : certificate.dose
             Kirigami.FormData.label: "Dose:"
             color: certificate.dose < certificate.totalDoses ? Kirigami.Theme.neutralTextColor : Kirigami.Theme.textColor
         }
@@ -76,6 +76,7 @@ Kirigami.OverlaySheet {
             //text: KCountry.fromAlpha2(certificate.country).emojiFlag + " " + KCountry.fromAlpha2(certificate.country).name
             text: certificate.country
             Kirigami.FormData.label: "Country:"
+            visible: certificate.country
         }
 
         Kirigami.Separator {
@@ -90,6 +91,7 @@ Kirigami.OverlaySheet {
         QQC2.Label {
             text: certificate.certificateId
             Kirigami.FormData.label: "Identifier:"
+            visible: certificate.certificateId
         }
         QQC2.Label {
             text: certificate.certificateIssueDate.toLocaleString(Qt.locale(), Locale.ShortFormat)
