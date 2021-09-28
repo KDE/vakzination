@@ -25,81 +25,81 @@ Kirigami.OverlaySheet {
 
         Item {
             Kirigami.FormData.isSection: true
-            Kirigami.FormData.label: "Person"
+            Kirigami.FormData.label: i18n("Person")
         }
 
         QQC2.Label {
             text: certificate.name
-            Kirigami.FormData.label: "Name:"
+            Kirigami.FormData.label: i18n("Name:")
         }
         QQC2.Label {
             text: certificate.dateOfBirth.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
             visible: !isNaN(certificate.dateOfBirth.getTime())
-            Kirigami.FormData.label: "Date of birth:"
+            Kirigami.FormData.label: i18n("Date of birth:")
         }
 
         Kirigami.Separator {
             Kirigami.FormData.isSection: true
-            Kirigami.FormData.label: "Vaccination"
+            Kirigami.FormData.label: i18n("Vaccination")
         }
 
         QQC2.Label {
             text: certificate.date.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
-            Kirigami.FormData.label: "Date:"
+            Kirigami.FormData.label: i18n("Date:")
             color: daysTo(certificate.date, new Date()) >= 14 ? Kirigami.Theme.textColor : Kirigami.Theme.neutralTextColor
         }
         QQC2.Label {
             text: certificate.disease
-            Kirigami.FormData.label: "Disease:"
+            Kirigami.FormData.label: i18n("Disease:")
             visible: certificate.disease
         }
         QQC2.Label {
             text: certificate.vaccineType
-            Kirigami.FormData.label: "Type:"
+            Kirigami.FormData.label: i18n("Type:")
             visible: certificate.vaccineType
         }
         QQC2.Label {
-            text: '<a href="' + certificate.vaccineUrl + '">' + certificate.vaccine + '</a>'
-            Kirigami.FormData.label: "Vaccine:"
+            text: certificate.vaccineUrl != "" ? '<a href="' + certificate.vaccineUrl + '">' + certificate.vaccine + '</a>' : certificate.vaccine
+            Kirigami.FormData.label: i18n("Vaccine:")
             onLinkActivated: Qt.openUrlExternally(link)
         }
         QQC2.Label {
             text: certificate.manufacturer
-            Kirigami.FormData.label: "Manufacturer:"
+            Kirigami.FormData.label: i18n("Manufacturer:")
         }
         QQC2.Label {
             text: certificate.totalDoses > 0 ? i18n("%1/%2", certificate.dose, certificate.totalDoses) : certificate.dose
-            Kirigami.FormData.label: "Dose:"
+            Kirigami.FormData.label: i18n("Dose:")
             color: certificate.dose < certificate.totalDoses ? Kirigami.Theme.neutralTextColor : Kirigami.Theme.textColor
         }
         QQC2.Label {
             //text: KCountry.fromAlpha2(certificate.country).emojiFlag + " " + KCountry.fromAlpha2(certificate.country).name
             text: certificate.country
-            Kirigami.FormData.label: "Country:"
+            Kirigami.FormData.label: i18n("Country:")
             visible: certificate.country
         }
 
         Kirigami.Separator {
             Kirigami.FormData.isSection: true
-            Kirigami.FormData.label: "Certificate"
+            Kirigami.FormData.label: i18n("Certificate")
         }
 
         QQC2.Label {
             text: certificate.certificateIssuer
-            Kirigami.FormData.label: "Issuer:"
+            Kirigami.FormData.label: i18n("Issuer:")
         }
         QQC2.Label {
             text: certificate.certificateId
-            Kirigami.FormData.label: "Identifier:"
+            Kirigami.FormData.label: i18n("Identifier:")
             visible: certificate.certificateId
         }
         QQC2.Label {
             text: certificate.certificateIssueDate.toLocaleString(Qt.locale(), Locale.ShortFormat)
-            Kirigami.FormData.label: "Issued:"
+            Kirigami.FormData.label: i18n("Issued:")
         }
         QQC2.Label {
             text: certificate.certificateExpiryDate.toLocaleString(Qt.locale(), Locale.ShortFormat)
-            Kirigami.FormData.label: "Expires:"
+            Kirigami.FormData.label: i18n("Expires:")
             visible: !isNaN(certificate.certificateExpiryDate.getTime())
         }
         QQC2.Label {
