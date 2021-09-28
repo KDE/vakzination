@@ -46,3 +46,4 @@ Icon=applications-development
 Type=Application
 Categories=Qt;KDE;Utility;
 X-KDE-HasTempFileOption=true
+X-KDE-FormFactor=desktop;tablet;handset;
