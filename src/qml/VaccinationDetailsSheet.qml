@@ -102,23 +102,28 @@ Kirigami.OverlaySheet {
             Kirigami.FormData.label: i18n("Expires:")
             visible: !isNaN(certificate.certificateExpiryDate.getTime())
         }
-        QQC2.Label {
-            text: {
+        Kirigami.Icon {
+            source: {
                 switch(certificate.signatureState) {
-                    case HealthCertificate.ValidSignature: return "valid";
-                    case HealthCertificate.UnknownSignature: return "unknwon";
-                    default: return "invalid";
+                    case HealthCertificate.ValidSignature: return "dialog-ok";
+                    case HealthCertificate.UnknownSignature: return "question";
+                    case HealthCertificate.InvalidSignature:
+                    default:
+                        return "dialog-error-symbolic";
+                }
+            }
+            height: Kirigami.Units.gridUnit
+            Kirigami.FormData.label: i18n("Signature:")
+            color: {
+                switch(certificate.signatureState) {
+                    case HealthCertificate.ValidSignature: return Kirigami.Theme.positiveTextColor;
+                    case HealthCertificate.UnknownSignature: return Kirigami.Theme.neutralTextColor;
+                    case HealthCertificate.InvalidSignature:
+                    default:
+                        return Kirigami.Theme.negativeTextColor;
                 }
             }
             visible: certificate.signatureState != HealthCertificate.UncheckedSignature
-            Kirigami.FormData.label: "Signature:"
-            color: {
-                switch (certificate.signatureState) {
-                    case HealthCertificate.ValidSignature: return  Kirigami.Theme.positiveTextColor;
-                    case HealthCertificate.UnknownSignature: return Kirigami.Theme.neutralTextColor;
-                    default: return Kirigami.Theme.negativeTextColor;
-                }
-            }
         }
     }
 }
