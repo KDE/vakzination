@@ -122,17 +122,15 @@ void CertificatesModel::addCertificate(AnyCertificate cert)
 
 void CertificatesModel::importCertificate(const QUrl &path)
 {
-    tl::expected<AnyCertificate, QString> maybeResult = importPrivate(path);
+    tl::expected<int, QString> maybeResult = importPrivate(path);
 
-    if (maybeResult) {
-        addCertificate(*maybeResult);
-    } else {
+    if (!maybeResult) {
         qWarning() << "Failed to import" << maybeResult.error();
         Q_EMIT importError(maybeResult.error());
     }
 }
 
-tl::expected<AnyCertificate, QString> CertificatesModel::importPrivate(const QUrl &url)
+tl::expected<int, QString> CertificatesModel::importPrivate(const QUrl &url)
 {
     if (url.isEmpty()) {
         return tl::make_unexpected(i18n("Empty file url"));
@@ -153,20 +151,20 @@ tl::expected<AnyCertificate, QString> CertificatesModel::importPrivate(const QUr
     const QByteArray data = certFile.readAll();
 
     std::optional<AnyCertificate> maybeCertificate = parseCertificate(data);
-
-    if (!maybeCertificate) {
+    if (maybeCertificate) {
+        addCertificate(*maybeCertificate);
+        return 1;
+    } else {
         // let's see if this is a PDF containing barcodes instead
         KItinerary::ExtractorEngine engine;
         engine.setData(data, url.path());
         engine.extract();
-        if (auto result = findRecursive(engine.rootDocumentNode())) {
-            return *result;
+        if (auto count = findRecursive(engine.rootDocumentNode())) {
+            return count;
         } else {
             return tl::make_unexpected(i18n("No certificate found in %1", toLocalFile(url)));
         }
     }
-
-    return *maybeCertificate;
 }
 
 std::optional<AnyCertificate> CertificatesModel::parseCertificate(const QByteArray &data) const
@@ -188,26 +186,30 @@ std::optional<AnyCertificate> CertificatesModel::parseCertificate(const QByteArr
     return {};
 }
 
-std::optional<AnyCertificate> CertificatesModel::findRecursive(const KItinerary::ExtractorDocumentNode &node)
+int CertificatesModel::findRecursive(const KItinerary::ExtractorDocumentNode &node)
 {
     // possibly a barcode
     if (node.childNodes().size() == 1 && node.mimeType() == QLatin1String("internal/qimage")) {
         const auto &child = node.childNodes()[0];
+        std::optional<AnyCertificate> cert;
         if (child.isA<QString>()) {
-            return parseCertificate(child.content<QString>().toUtf8());
+            cert = parseCertificate(child.content<QString>().toUtf8());
+        } else if (child.isA<QByteArray>()) {
+            cert = parseCertificate(child.content<QByteArray>());
         }
-        if (child.isA<QByteArray>()) {
-            return parseCertificate(child.content<QByteArray>());
+
+        if (cert) {
+            addCertificate(*cert);
+            return 1;
         }
     }
 
     // recurse
+    int count = 0;
     for (const auto &child : node.childNodes()) {
-        if (auto result = findRecursive(child)) {
-            return result;
-        }
+        count += findRecursive(child);
     }
-    return {};
+    return count;
 }
 
 void CertificatesModel::importCertificateFromClipboard()

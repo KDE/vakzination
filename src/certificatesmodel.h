@@ -52,8 +52,8 @@ private:
     QVector<AnyCertificate> fromStringList(const QStringList rawCertificates) const;
     QStringList toStringList(const QVector<AnyCertificate> certificates) const;
 
-    std::optional<AnyCertificate> findRecursive(const KItinerary::ExtractorDocumentNode &node);
-    tl::expected<AnyCertificate, QString> importPrivate(const QUrl &url);
+    int findRecursive(const KItinerary::ExtractorDocumentNode &node);
+    tl::expected<int, QString> importPrivate(const QUrl &url);
     std::optional<AnyCertificate> parseCertificate(const QByteArray &data) const;
     void addCertificate(AnyCertificate cert);
     QString toLocalFile(const QUrl &url);
