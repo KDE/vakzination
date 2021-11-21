@@ -45,5 +45,6 @@ Exec=vakzination %F
 Icon=applications-development
 Type=Application
 Categories=Qt;KDE;Utility;
+MimeType=application/pdf;
 X-KDE-HasTempFileOption=true
 X-KDE-FormFactor=desktop;tablet;handset;
