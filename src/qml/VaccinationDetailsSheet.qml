@@ -47,6 +47,7 @@ Kirigami.OverlaySheet {
             text: certificate.date.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
             Kirigami.FormData.label: i18n("Date:")
             color: daysTo(certificate.date, new Date()) >= 14 ? Kirigami.Theme.textColor : Kirigami.Theme.neutralTextColor
+            visible: !isNaN(certificate.date.getTime())
         }
         QQC2.Label {
             text: certificate.disease
@@ -62,15 +63,18 @@ Kirigami.OverlaySheet {
             text: certificate.vaccineUrl != "" ? '<a href="' + certificate.vaccineUrl + '">' + certificate.vaccine + '</a>' : certificate.vaccine
             Kirigami.FormData.label: i18n("Vaccine:")
             onLinkActivated: Qt.openUrlExternally(link)
+            visible: text !== ""
         }
         QQC2.Label {
             text: certificate.manufacturer
             Kirigami.FormData.label: i18n("Manufacturer:")
+            visible: text !== ""
         }
         QQC2.Label {
             text: certificate.totalDoses > 0 ? i18n("%1/%2", certificate.dose, certificate.totalDoses) : certificate.dose
             Kirigami.FormData.label: i18n("Dose:")
             color: certificate.dose < certificate.totalDoses ? Kirigami.Theme.neutralTextColor : Kirigami.Theme.textColor
+            visible: certificate.dose > 0
         }
         QQC2.Label {
             //text: KCountry.fromAlpha2(certificate.country).emojiFlag + " " + KCountry.fromAlpha2(certificate.country).name

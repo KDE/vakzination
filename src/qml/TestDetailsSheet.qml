@@ -47,6 +47,7 @@ Kirigami.OverlaySheet {
             text: certificate.date.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
             Kirigami.FormData.label: i18n("Date:")
             color: daysTo(certificate.date, new Date()) >= 2 ? Kirigami.Theme.neutralTextColor : Kirigami.Theme.textColor
+            visible: !isNaN(certificate.date.getTime())
         }
         QQC2.Label {
             text: certificate.disease
@@ -65,13 +66,24 @@ Kirigami.OverlaySheet {
             onLinkActivated: Qt.openUrlExternally(link)
         }
         QQC2.Label {
-            text: certificate.resultString
+            text: {
+                if (certificate.resultString !== "") {
+                    return certificate.resultString;
+                }
+                switch (certificate.result) {
+                    case KHC.TestCertificate.Positive:
+                        return i18nc('test result', 'Positive');
+                    case KHC.TestCertificate.Negative:
+                        return i18nc('test result', 'Negative');
+                }
+            }
             Kirigami.FormData.label: i18n("Result:")
             color: certificate.result == KHC.TestCertificate.Positive ? Kirigami.Theme.negativeTextColor : Kirigami.Theme.textColor
         }
         QQC2.Label {
             text: certificate.testCenter
             Kirigami.FormData.label: i18n("Test Center:")
+            visible: text !== ""
         }
         QQC2.Label {
             // TODO reenable once we have the right KI18n API
@@ -93,6 +105,7 @@ Kirigami.OverlaySheet {
             text: certificate.certificateId
             Kirigami.FormData.label: i18n("Identifier:")
             wrapMode: Text.Wrap
+            visible: text !== ""
         }
         QQC2.Label {
             text: certificate.certificateIssueDate.toLocaleString(Qt.locale(), Locale.ShortFormat)
