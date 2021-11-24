@@ -100,6 +100,7 @@ Kirigami.OverlaySheet {
         QQC2.Label {
             text: certificate.certificateIssuer
             Kirigami.FormData.label: i18n("Issuer:")
+            visible: text !== ""
         }
         QQC2.Label {
             text: certificate.certificateId
