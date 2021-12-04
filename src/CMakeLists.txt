@@ -6,6 +6,7 @@ target_sources(vakzinationstatic PRIVATE certificatesmodel.cpp)
 target_link_libraries(vakzinationstatic PUBLIC Qt::Core Qt::Gui KF5::ConfigCore KHealthCertificate PRIVATE KF5::I18n KPim::Itinerary)
 
 add_executable(vakzination main.cpp resources.qrc)
+target_include_directories(vakzination PRIVATE ${CMAKE_BINARY_DIR})
 target_link_libraries(vakzination
     Qt5::Core
     Qt5::Gui

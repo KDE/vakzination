@@ -3,9 +3,9 @@
 
 cmake_minimum_required(VERSION 3.16)
 
-set(PROJECT_VERSION 0.1)
-
 project(vakzination)
+
+set(PROJECT_VERSION "21.12")
 
 set(QT5_MIN_VERSION 5.15)
 set(KF5_MIN_VERSION 5.85)
@@ -28,6 +28,11 @@ include(ECMPoQmTools)
 include(KDEClangFormat)
 include(KDEGitCommitHooks)
 include(ECMAddTests)
+
+ecm_setup_version(${PROJECT_VERSION}
+    VARIABLE_PREFIX VAKZINATION
+    VERSION_HEADER ${CMAKE_CURRENT_BINARY_DIR}/version.h
+)
 
 find_package(Qt5 ${QT5_MIN_VERSION} REQUIRED COMPONENTS Core Gui Qml QuickControls2 Svg)
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 I18n Config Prison)

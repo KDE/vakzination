@@ -20,6 +20,7 @@
 #include <KLocalizedString>
 
 #include "certificatesmodel.h"
+#include "version.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
@@ -40,6 +41,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
     QCoreApplication::setOrganizationDomain(QStringLiteral("kde.org"));
     QCoreApplication::setApplicationName(QStringLiteral("vakzination"));
+    QCoreApplication::setApplicationVersion(QStringLiteral(VAKZINATION_VERSION_STRING));
     QGuiApplication::setApplicationDisplayName(QStringLiteral("Vakzination"));
 
     QCommandLineParser parser;
@@ -47,6 +49,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCommandLineOption isTemporaryOpt(QStringLiteral("tempfile"), QStringLiteral("Input file is a temporary file and will be deleted after importing."));
     parser.addOption(isTemporaryOpt);
     parser.addPositionalArgument(QStringLiteral("file"), i18n("File to import."));
+    parser.addVersionOption();
     parser.process(app);
 
     const bool testMode = parser.isSet(QStringLiteral("testmode"));
