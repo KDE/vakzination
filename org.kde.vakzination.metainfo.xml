@@ -67,6 +67,11 @@
   <developer_name xml:lang="x-test">xxKDE Communityxx</developer_name>
   <url type="homepage">https://invent.kde.org/plasma-mobile/vakzination</url>
   <url type="bugtracker">https://invent.kde.org/utilities/ktrip/-/issues</url>
+  <releases>
+    <release version="21.12" date="2021-12-07">
+      <url>https://www.plasma-mobile.org/2021/12/07/plasma-mobile-gear-21-12/</url>
+    </release>
+  </releases>
   <description>
     <p>Manage your digital health certificates like vaccination, test, and recovery certificates.</p>
     <p xml:lang="ca">Gestioneu els vostres certificats digitals de salut, com els certificats de vaccinació, proves i recuperació.</p>
