@@ -29,6 +29,7 @@
   <summary xml:lang="ca">Gestioneu els vostres certificats de vaccinació</summary>
   <summary xml:lang="ca-valencia">Gestioneu els vostres certificats de vaccinació</summary>
   <summary xml:lang="cs">Spravujte svoje očkovací certifikáty</summary>
+  <summary xml:lang="de">Verwalten Sie Ihre Impfnachweise</summary>
   <summary xml:lang="el">Διαχειριστείτε τα πιστοποιητικά εμβολιασμού σας</summary>
   <summary xml:lang="en-GB">Manage your vaccination certificates</summary>
   <summary xml:lang="es">Gestione sus certificados de vacunación</summary>
@@ -50,6 +51,7 @@
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
   <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
   <developer_name xml:lang="cs">Komunita KDE</developer_name>
+  <developer_name xml:lang="de">KDE-Gemeinschaft</developer_name>
   <developer_name xml:lang="el">Η Κοινότητα του KDE</developer_name>
   <developer_name xml:lang="en-GB">KDE Community</developer_name>
   <developer_name xml:lang="es">Comunidad KDE</developer_name>
@@ -77,6 +79,7 @@
     <p xml:lang="ca">Gestioneu els vostres certificats digitals de salut, com els certificats de vaccinació, proves i recuperació.</p>
     <p xml:lang="ca-valencia">Gestioneu els vostres certificats digitals de salut, com els certificats de vaccinació, proves i recuperació.</p>
     <p xml:lang="cs">Spravujte svoje zdravotní certifikáty jako očkování, testy a zotavení.</p>
+    <p xml:lang="de">Verwalten Sie Ihre digitalen Gesundheitsnachweise wie Impf-, Test- und Genesungsnachweise.</p>
     <p xml:lang="el">Διαχειριστείτε τα ψηφιακά πιστοποιητικά της υγείας σας όπως πιστοποιητικά εμβολιασμών, ελέγχων και ανάρρωσης.</p>
     <p xml:lang="en-GB">Manage your digital health certificates like vaccination, test, and recovery certificates.</p>
     <p xml:lang="es">Gestione sus certificados digitales de salud, como los de vacunación, pruebas y recuperación.</p>
