@@ -14,6 +14,7 @@
   <name xml:lang="en-GB">Vakzination</name>
   <name xml:lang="es">Vakzination</name>
   <name xml:lang="fr">Vakzination</name>
+  <name xml:lang="hu">Vakzination</name>
   <name xml:lang="it">Vakzination</name>
   <name xml:lang="ko">Vakzination</name>
   <name xml:lang="nl">Vakzination</name>
@@ -34,6 +35,7 @@
   <summary xml:lang="en-GB">Manage your vaccination certificates</summary>
   <summary xml:lang="es">Gestione sus certificados de vacunación</summary>
   <summary xml:lang="fr">Gérer vos certificats de vaccination</summary>
+  <summary xml:lang="hu">Oltási igazolványok kezelése</summary>
   <summary xml:lang="it">Gestisci i tuoi certificati di vaccinazione</summary>
   <summary xml:lang="ko">예방 접종 증명서 관리</summary>
   <summary xml:lang="nl">Uw vaccinatiecertificaten beheren</summary>
@@ -56,6 +58,7 @@
   <developer_name xml:lang="en-GB">KDE Community</developer_name>
   <developer_name xml:lang="es">Comunidad KDE</developer_name>
   <developer_name xml:lang="fr">Communauté KDE</developer_name>
+  <developer_name xml:lang="hu">A KDE Közösség</developer_name>
   <developer_name xml:lang="it">Comunità KDE</developer_name>
   <developer_name xml:lang="ko">KDE 커뮤니티</developer_name>
   <developer_name xml:lang="nl">KDE-gemeenschap</developer_name>
@@ -84,6 +87,7 @@
     <p xml:lang="en-GB">Manage your digital health certificates like vaccination, test, and recovery certificates.</p>
     <p xml:lang="es">Gestione sus certificados digitales de salud, como los de vacunación, pruebas y recuperación.</p>
     <p xml:lang="fr">Gérer vos certificats numériques de santé comme les certificats de vaccination, de tests et de retour à la santé.</p>
+    <p xml:lang="hu">Kezelje digitális egészségügyi tanúsítványait, például oltási, teszt- és felépülési igazolásait.</p>
     <p xml:lang="it">Gestisci i tuoi certificati sanitari digitali come certificati di vaccinazione, esami e guarigione.</p>
     <p xml:lang="ko">예방 접종, 검사, 완치 증명 등 디지털 건강 증명서를 관리합니다.</p>
     <p xml:lang="nl">Uw digitale gezondheidscertificaten zoals vaccinatie, test en herstelcertificaten beheren.</p>
