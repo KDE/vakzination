@@ -18,6 +18,7 @@
   <name xml:lang="it">Vakzination</name>
   <name xml:lang="ko">Vakzination</name>
   <name xml:lang="nl">Vakzination</name>
+  <name xml:lang="pa">ਵੇਕਜ਼ੀਨੇਸ਼ਨ</name>
   <name xml:lang="pl">Vakzination</name>
   <name xml:lang="pt">Vakzination</name>
   <name xml:lang="pt-BR">Vakzination</name>
@@ -39,6 +40,7 @@
   <summary xml:lang="it">Gestisci i tuoi certificati di vaccinazione</summary>
   <summary xml:lang="ko">예방 접종 증명서 관리</summary>
   <summary xml:lang="nl">Uw vaccinatiecertificaten beheren</summary>
+  <summary xml:lang="pa">ਤੁਹਾਡੇ ਟੀਕਾਕਰਨ ਦੇ ਸਰਟੀਫਿਕੇਟ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ</summary>
   <summary xml:lang="pl">Zarządzaj swoimi certyfikatami szczepień</summary>
   <summary xml:lang="pt">Gerir os seus certificados de vacinação</summary>
   <summary xml:lang="pt-BR">Gerencie seus certificados de vacinação</summary>
@@ -62,6 +64,7 @@
   <developer_name xml:lang="it">Comunità KDE</developer_name>
   <developer_name xml:lang="ko">KDE 커뮤니티</developer_name>
   <developer_name xml:lang="nl">KDE-gemeenschap</developer_name>
+  <developer_name xml:lang="pa">ਕੇਡੀਈ ਕਮਿਊਨਟੀ</developer_name>
   <developer_name xml:lang="pl">Społeczność KDE</developer_name>
   <developer_name xml:lang="pt">Comunidade do KDE</developer_name>
   <developer_name xml:lang="pt-BR">Comunidade KDE</developer_name>
