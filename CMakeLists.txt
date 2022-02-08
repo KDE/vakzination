@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.16)
 
 project(vakzination)
 
-set(PROJECT_VERSION "21.12")
+set(PROJECT_VERSION "22.02")
 
 set(QT5_MIN_VERSION 5.15)
 set(KF5_MIN_VERSION 5.85)
