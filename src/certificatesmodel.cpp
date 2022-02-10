@@ -5,6 +5,7 @@
 
 #include <KItinerary/ExtractorDocumentNode>
 #include <KItinerary/ExtractorEngine>
+#include <kitinerary_version.h>
 
 #include <QClipboard>
 #include <QDebug>
@@ -157,6 +158,11 @@ tl::expected<int, QString> CertificatesModel::importPrivate(const QUrl &url)
     } else {
         // let's see if this is a PDF containing barcodes instead
         KItinerary::ExtractorEngine engine;
+#if KITINERARY_VERSION >= QT_VERSION_CHECK(5, 19, 41)
+        // user opened the file, so we can be reasonably sure they assume it contains
+        // relevant content, so try expensive extraction methods too
+        engine.setHints(KItinerary::ExtractorEngine::ExtractFullPageRasterImages);
+#endif
         engine.setData(data, url.path());
         engine.extract();
         if (auto count = findRecursive(engine.rootDocumentNode())) {
