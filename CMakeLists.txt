@@ -46,6 +46,8 @@ endif()
 
 add_definitions(-DQT_NO_KEYWORDS)
 
+ki18n_install(po)
+
 add_subdirectory(src)
 
 if(BUILD_TESTING)
