@@ -1,0 +1,251 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the vakzination package.
+#
+# Matjaž Jeran <matjaz.jeran@amis.net>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: vakzination\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-02-27 00:51+0000\n"
+"PO-Revision-Date: 2021-09-30 08:16+0200\n"
+"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.12.2\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
+
+#: certificatesmodel.cpp:137
+#, kde-format
+msgid "Empty file url"
+msgstr "Spletni naslov prazne datoteke"
+
+#: certificatesmodel.cpp:141
+#, kde-format
+msgid "File URL not valid: %1"
+msgstr "Spletni naslov datoteke ni veljaven: %1"
+
+#: certificatesmodel.cpp:149
+#, kde-format
+msgid "Could not open file: %1"
+msgstr "Ni bilo mogoče odpreti datoteke: %1"
+
+#: certificatesmodel.cpp:171
+#, kde-format
+msgid "No certificate found in %1"
+msgstr "Ni mogoče najti potrdila v %1"
+
+#: certificatesmodel.cpp:235
+#, kde-format
+msgid "No certificate in clipboard"
+msgstr "Ni potrdila na odložišču"
+
+#: main.cpp:48
+#, kde-format
+msgid "Show with test data"
+msgstr "Prikaži s testnimi podatki"
+
+#: main.cpp:51
+#, kde-format
+msgid "File to import."
+msgstr "Datoteka za uvoz."
+
+#: qml/CertificateDelegate.qml:27
+#, kde-format
+msgid "Vaccination %1 (%2/%3)"
+msgstr "Cepljenje %1 (%2/%3)"
+
+#: qml/CertificateDelegate.qml:31
+#, kde-format
+msgid "Test %1"
+msgstr "Test %1"
+
+#: qml/CertificateDelegate.qml:35
+#, kde-format
+msgid "Recovery %1"
+msgstr "Ozdravljenje %1"
+
+#: qml/CertificateDelegate.qml:59 qml/RecoveryDetailsSheet.qml:17
+#: qml/TestDetailsSheet.qml:17 qml/VaccinationDetailsSheet.qml:17
+#, kde-format
+msgid "Details"
+msgstr "Podrobnosti"
+
+#: qml/CertificatesPage.qml:16
+#, kde-format
+msgid "Your certificates"
+msgstr "Vaša potrdila"
+
+#: qml/CertificatesPage.qml:19
+#, kde-format
+msgid "Import from file"
+msgstr "Uvozi iz datoteke"
+
+#: qml/CertificatesPage.qml:27
+#, kde-format
+msgid "Import from clipboard"
+msgstr "Uvozi iz odložišča"
+
+#: qml/CertificatesPage.qml:49
+#, kde-format
+msgid "Certificate could not be imported: %1"
+msgstr "Potrdila in bilo mogoče uvoziti: %1"
+
+#: qml/CertificatesPage.qml:87
+#, kde-format
+msgid "No certificates saved"
+msgstr "Ni shranjenih potrdil"
+
+#: qml/main.qml:16
+#, kde-format
+msgid "Your Certificates"
+msgstr "Vaša potrdila"
+
+#: qml/RecoveryDetailsSheet.qml:28 qml/TestDetailsSheet.qml:28
+#: qml/VaccinationDetailsSheet.qml:28
+#, kde-format
+msgid "Person"
+msgstr "Oseba"
+
+#: qml/RecoveryDetailsSheet.qml:33 qml/TestDetailsSheet.qml:33
+#: qml/VaccinationDetailsSheet.qml:33
+#, kde-format
+msgid "Name:"
+msgstr "Ime:"
+
+#: qml/RecoveryDetailsSheet.qml:38 qml/TestDetailsSheet.qml:38
+#: qml/VaccinationDetailsSheet.qml:38
+#, kde-format
+msgid "Date of birth:"
+msgstr "Datum rojstva:"
+
+#: qml/RecoveryDetailsSheet.qml:43
+#, kde-format
+msgid "Recovery"
+msgstr "Ozdravljen"
+
+#: qml/RecoveryDetailsSheet.qml:48
+#, kde-format
+msgid "Positive test:"
+msgstr "Pozitivni test:"
+
+#: qml/RecoveryDetailsSheet.qml:52 qml/TestDetailsSheet.qml:54
+#: qml/VaccinationDetailsSheet.qml:54
+#, kde-format
+msgid "Disease:"
+msgstr "Bolezen:"
+
+#: qml/RecoveryDetailsSheet.qml:56
+#, kde-format
+msgid "Valid from:"
+msgstr "Veljavno od:"
+
+#: qml/RecoveryDetailsSheet.qml:60
+#, kde-format
+msgid "Valid until:"
+msgstr "Veljavno do:"
+
+#: qml/RecoveryDetailsSheet.qml:65 qml/TestDetailsSheet.qml:97
+#: qml/VaccinationDetailsSheet.qml:88
+#, kde-format
+msgid "Certificate"
+msgstr "Potrdilo"
+
+#: qml/RecoveryDetailsSheet.qml:70 qml/TestDetailsSheet.qml:102
+#: qml/VaccinationDetailsSheet.qml:93
+#, kde-format
+msgid "Issuer:"
+msgstr "Izdajatelj:"
+
+#: qml/RecoveryDetailsSheet.qml:75 qml/TestDetailsSheet.qml:107
+#: qml/VaccinationDetailsSheet.qml:98
+#, kde-format
+msgid "Identifier:"
+msgstr "Identifikator:"
+
+#: qml/RecoveryDetailsSheet.qml:80 qml/TestDetailsSheet.qml:113
+#: qml/VaccinationDetailsSheet.qml:103
+#, kde-format
+msgid "Issued:"
+msgstr "Izdano:"
+
+#: qml/RecoveryDetailsSheet.qml:84 qml/TestDetailsSheet.qml:117
+#: qml/VaccinationDetailsSheet.qml:107
+#, kde-format
+msgid "Expires:"
+msgstr "Poteče:"
+
+#: qml/RecoveryDetailsSheet.qml:98 qml/TestDetailsSheet.qml:131
+#: qml/VaccinationDetailsSheet.qml:121
+#, kde-format
+msgid "Signature:"
+msgstr "Podpis:"
+
+#: qml/TestDetailsSheet.qml:43
+#, kde-format
+msgid "Test"
+msgstr "Test"
+
+#: qml/TestDetailsSheet.qml:48 qml/VaccinationDetailsSheet.qml:48
+#, kde-format
+msgid "Date:"
+msgstr "Datum:"
+
+#: qml/TestDetailsSheet.qml:59 qml/VaccinationDetailsSheet.qml:59
+#, kde-format
+msgid "Type:"
+msgstr "Vrsta:"
+
+#: qml/TestDetailsSheet.qml:65
+#, kde-format
+msgid "Test:"
+msgstr "Test:"
+
+#: qml/TestDetailsSheet.qml:80
+#, kde-format
+msgid "Result:"
+msgstr "Rezultat:"
+
+#: qml/TestDetailsSheet.qml:85
+#, kde-format
+msgid "Test Center:"
+msgstr "Testni center:"
+
+#: qml/TestDetailsSheet.qml:92 qml/VaccinationDetailsSheet.qml:82
+#, kde-format
+msgid "Country:"
+msgstr "Država:"
+
+#: qml/VaccinationDetailsSheet.qml:43
+#, kde-format
+msgid "Vaccination"
+msgstr "Cepljenje"
+
+#: qml/VaccinationDetailsSheet.qml:64
+#, kde-format
+msgid "Vaccine:"
+msgstr "Cepivo:"
+
+#: qml/VaccinationDetailsSheet.qml:70
+#, kde-format
+msgid "Manufacturer:"
+msgstr "Proizvajalec:"
+
+#: qml/VaccinationDetailsSheet.qml:74
+#, kde-format
+msgid "%1/%2"
+msgstr "%1/%2"
+
+#: qml/VaccinationDetailsSheet.qml:75
+#, kde-format
+msgid "Dose:"
+msgstr "Doza:"
+
+#~ msgid "Importing certificates from PDF is not supported in this build"
+#~ msgstr "Uvoz potrdila iz PDF datoteke ni podprto v tej verziji"
+
+#~ msgid "Importing certificates from images is not supported in this build"
+#~ msgstr "Uvoz potrdil iz slik ni podprto v tej sestavi programa"

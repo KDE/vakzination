@@ -1,0 +1,250 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the vakzination package.
+#
+# Steve Allewell <steve.allewell@gmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: vakzination\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-02-27 00:51+0000\n"
+"PO-Revision-Date: 2021-10-10 11:12+0100\n"
+"Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
+"Language-Team: British English <kde-l10n-en_gb@kde.org>\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 21.08.1\n"
+
+#: certificatesmodel.cpp:137
+#, kde-format
+msgid "Empty file url"
+msgstr "Empty file URL"
+
+#: certificatesmodel.cpp:141
+#, kde-format
+msgid "File URL not valid: %1"
+msgstr "File URL not valid: %1"
+
+#: certificatesmodel.cpp:149
+#, kde-format
+msgid "Could not open file: %1"
+msgstr "Could not open file: %1"
+
+#: certificatesmodel.cpp:171
+#, kde-format
+msgid "No certificate found in %1"
+msgstr "No certificate found in %1"
+
+#: certificatesmodel.cpp:235
+#, kde-format
+msgid "No certificate in clipboard"
+msgstr "No certificate in clipboard"
+
+#: main.cpp:48
+#, kde-format
+msgid "Show with test data"
+msgstr "Show with test data"
+
+#: main.cpp:51
+#, kde-format
+msgid "File to import."
+msgstr "File to import."
+
+#: qml/CertificateDelegate.qml:27
+#, kde-format
+msgid "Vaccination %1 (%2/%3)"
+msgstr "Vaccination %1 (%2/%3)"
+
+#: qml/CertificateDelegate.qml:31
+#, kde-format
+msgid "Test %1"
+msgstr "Test %1"
+
+#: qml/CertificateDelegate.qml:35
+#, kde-format
+msgid "Recovery %1"
+msgstr "Recovery %1"
+
+#: qml/CertificateDelegate.qml:59 qml/RecoveryDetailsSheet.qml:17
+#: qml/TestDetailsSheet.qml:17 qml/VaccinationDetailsSheet.qml:17
+#, kde-format
+msgid "Details"
+msgstr "Details"
+
+#: qml/CertificatesPage.qml:16
+#, kde-format
+msgid "Your certificates"
+msgstr "Your certificates"
+
+#: qml/CertificatesPage.qml:19
+#, kde-format
+msgid "Import from file"
+msgstr "Import from file"
+
+#: qml/CertificatesPage.qml:27
+#, kde-format
+msgid "Import from clipboard"
+msgstr "Import from clipboard"
+
+#: qml/CertificatesPage.qml:49
+#, kde-format
+msgid "Certificate could not be imported: %1"
+msgstr "Certificate could not be imported: %1"
+
+#: qml/CertificatesPage.qml:87
+#, kde-format
+msgid "No certificates saved"
+msgstr "No certificates saved"
+
+#: qml/main.qml:16
+#, kde-format
+msgid "Your Certificates"
+msgstr "Your Certificates"
+
+#: qml/RecoveryDetailsSheet.qml:28 qml/TestDetailsSheet.qml:28
+#: qml/VaccinationDetailsSheet.qml:28
+#, kde-format
+msgid "Person"
+msgstr "Person"
+
+#: qml/RecoveryDetailsSheet.qml:33 qml/TestDetailsSheet.qml:33
+#: qml/VaccinationDetailsSheet.qml:33
+#, kde-format
+msgid "Name:"
+msgstr "Name:"
+
+#: qml/RecoveryDetailsSheet.qml:38 qml/TestDetailsSheet.qml:38
+#: qml/VaccinationDetailsSheet.qml:38
+#, kde-format
+msgid "Date of birth:"
+msgstr "Date of birth:"
+
+#: qml/RecoveryDetailsSheet.qml:43
+#, kde-format
+msgid "Recovery"
+msgstr "Recovery"
+
+#: qml/RecoveryDetailsSheet.qml:48
+#, kde-format
+msgid "Positive test:"
+msgstr "Positive test:"
+
+#: qml/RecoveryDetailsSheet.qml:52 qml/TestDetailsSheet.qml:54
+#: qml/VaccinationDetailsSheet.qml:54
+#, kde-format
+msgid "Disease:"
+msgstr "Disease:"
+
+#: qml/RecoveryDetailsSheet.qml:56
+#, kde-format
+msgid "Valid from:"
+msgstr "Valid from:"
+
+#: qml/RecoveryDetailsSheet.qml:60
+#, kde-format
+msgid "Valid until:"
+msgstr "Valid until:"
+
+#: qml/RecoveryDetailsSheet.qml:65 qml/TestDetailsSheet.qml:97
+#: qml/VaccinationDetailsSheet.qml:88
+#, kde-format
+msgid "Certificate"
+msgstr "Certificate"
+
+#: qml/RecoveryDetailsSheet.qml:70 qml/TestDetailsSheet.qml:102
+#: qml/VaccinationDetailsSheet.qml:93
+#, kde-format
+msgid "Issuer:"
+msgstr "Issuer:"
+
+#: qml/RecoveryDetailsSheet.qml:75 qml/TestDetailsSheet.qml:107
+#: qml/VaccinationDetailsSheet.qml:98
+#, kde-format
+msgid "Identifier:"
+msgstr "Identifier:"
+
+#: qml/RecoveryDetailsSheet.qml:80 qml/TestDetailsSheet.qml:113
+#: qml/VaccinationDetailsSheet.qml:103
+#, kde-format
+msgid "Issued:"
+msgstr "Issued:"
+
+#: qml/RecoveryDetailsSheet.qml:84 qml/TestDetailsSheet.qml:117
+#: qml/VaccinationDetailsSheet.qml:107
+#, kde-format
+msgid "Expires:"
+msgstr "Expires:"
+
+#: qml/RecoveryDetailsSheet.qml:98 qml/TestDetailsSheet.qml:131
+#: qml/VaccinationDetailsSheet.qml:121
+#, kde-format
+msgid "Signature:"
+msgstr "Signature:"
+
+#: qml/TestDetailsSheet.qml:43
+#, kde-format
+msgid "Test"
+msgstr "Test"
+
+#: qml/TestDetailsSheet.qml:48 qml/VaccinationDetailsSheet.qml:48
+#, kde-format
+msgid "Date:"
+msgstr "Date:"
+
+#: qml/TestDetailsSheet.qml:59 qml/VaccinationDetailsSheet.qml:59
+#, kde-format
+msgid "Type:"
+msgstr "Type:"
+
+#: qml/TestDetailsSheet.qml:65
+#, kde-format
+msgid "Test:"
+msgstr "Test:"
+
+#: qml/TestDetailsSheet.qml:80
+#, kde-format
+msgid "Result:"
+msgstr "Result:"
+
+#: qml/TestDetailsSheet.qml:85
+#, kde-format
+msgid "Test Center:"
+msgstr "Test Center:"
+
+#: qml/TestDetailsSheet.qml:92 qml/VaccinationDetailsSheet.qml:82
+#, kde-format
+msgid "Country:"
+msgstr "Country:"
+
+#: qml/VaccinationDetailsSheet.qml:43
+#, kde-format
+msgid "Vaccination"
+msgstr "Vaccination"
+
+#: qml/VaccinationDetailsSheet.qml:64
+#, kde-format
+msgid "Vaccine:"
+msgstr "Vaccine:"
+
+#: qml/VaccinationDetailsSheet.qml:70
+#, kde-format
+msgid "Manufacturer:"
+msgstr "Manufacturer:"
+
+#: qml/VaccinationDetailsSheet.qml:74
+#, kde-format
+msgid "%1/%2"
+msgstr "%1/%2"
+
+#: qml/VaccinationDetailsSheet.qml:75
+#, kde-format
+msgid "Dose:"
+msgstr "Dose:"
+
+#~ msgid "Importing certificates from PDF is not supported in this build"
+#~ msgstr "Importing certificates from PDF is not supported in this build"
+
+#~ msgid "Importing certificates from images is not supported in this build"
+#~ msgstr "Importing certificates from images is not supported in this build"

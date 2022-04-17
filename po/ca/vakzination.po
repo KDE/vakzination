@@ -1,0 +1,262 @@
+# Translation of vakzination.po to Catalan
+# Copyright (C) 2021 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+#
+# Josep M. Ferrer <txemaq@gmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: vakzination\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-02-27 00:51+0000\n"
+"PO-Revision-Date: 2021-09-29 14:15+0200\n"
+"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 20.12.0\n"
+
+#: certificatesmodel.cpp:137
+#, kde-format
+msgid "Empty file url"
+msgstr "URL de fitxer buit"
+
+#: certificatesmodel.cpp:141
+#, kde-format
+msgid "File URL not valid: %1"
+msgstr "URL de fitxer no vàlid: %1"
+
+#: certificatesmodel.cpp:149
+#, kde-format
+msgid "Could not open file: %1"
+msgstr "No s'ha pogut obrir el fitxer: %1"
+
+#: certificatesmodel.cpp:171
+#, kde-format
+msgid "No certificate found in %1"
+msgstr "No s'ha trobat cap certificat a %1"
+
+#: certificatesmodel.cpp:235
+#, kde-format
+msgid "No certificate in clipboard"
+msgstr "No hi ha cap certificat al porta-retalls"
+
+#: main.cpp:48
+#, kde-format
+msgid "Show with test data"
+msgstr "Mostra amb dades de prova"
+
+#: main.cpp:51
+#, kde-format
+msgid "File to import."
+msgstr "Fitxer a importar."
+
+#: qml/CertificateDelegate.qml:27
+#, kde-format
+msgid "Vaccination %1 (%2/%3)"
+msgstr "Vaccinació %1 (%2/%3)"
+
+#: qml/CertificateDelegate.qml:31
+#, kde-format
+msgid "Test %1"
+msgstr "Prova %1"
+
+#: qml/CertificateDelegate.qml:35
+#, kde-format
+msgid "Recovery %1"
+msgstr "Recuperació %1"
+
+#: qml/CertificateDelegate.qml:59 qml/RecoveryDetailsSheet.qml:17
+#: qml/TestDetailsSheet.qml:17 qml/VaccinationDetailsSheet.qml:17
+#, kde-format
+msgid "Details"
+msgstr "Detalls"
+
+#: qml/CertificatesPage.qml:16
+#, kde-format
+msgid "Your certificates"
+msgstr "Els vostres certificats"
+
+#: qml/CertificatesPage.qml:19
+#, kde-format
+msgid "Import from file"
+msgstr "Importa des d'un fitxer"
+
+#: qml/CertificatesPage.qml:27
+#, kde-format
+msgid "Import from clipboard"
+msgstr "Importa des del porta-retalls"
+
+#: qml/CertificatesPage.qml:49
+#, kde-format
+msgid "Certificate could not be imported: %1"
+msgstr "No s'ha pogut importar el certificat: %1"
+
+#: qml/CertificatesPage.qml:87
+#, kde-format
+msgid "No certificates saved"
+msgstr "No s'ha desat cap certificat"
+
+#: qml/main.qml:16
+#, kde-format
+msgid "Your Certificates"
+msgstr "Els vostres certificats"
+
+#: qml/RecoveryDetailsSheet.qml:28 qml/TestDetailsSheet.qml:28
+#: qml/VaccinationDetailsSheet.qml:28
+#, kde-format
+msgid "Person"
+msgstr "Persona"
+
+#: qml/RecoveryDetailsSheet.qml:33 qml/TestDetailsSheet.qml:33
+#: qml/VaccinationDetailsSheet.qml:33
+#, kde-format
+msgid "Name:"
+msgstr "Nom:"
+
+#: qml/RecoveryDetailsSheet.qml:38 qml/TestDetailsSheet.qml:38
+#: qml/VaccinationDetailsSheet.qml:38
+#, kde-format
+msgid "Date of birth:"
+msgstr "Data de naixement:"
+
+#: qml/RecoveryDetailsSheet.qml:43
+#, kde-format
+msgid "Recovery"
+msgstr "Recuperació"
+
+#: qml/RecoveryDetailsSheet.qml:48
+#, kde-format
+msgid "Positive test:"
+msgstr "Prova positiva:"
+
+#: qml/RecoveryDetailsSheet.qml:52 qml/TestDetailsSheet.qml:54
+#: qml/VaccinationDetailsSheet.qml:54
+#, kde-format
+msgid "Disease:"
+msgstr "Malaltia:"
+
+#: qml/RecoveryDetailsSheet.qml:56
+#, kde-format
+msgid "Valid from:"
+msgstr "Vàlid des de:"
+
+#: qml/RecoveryDetailsSheet.qml:60
+#, kde-format
+msgid "Valid until:"
+msgstr "Vàlid fins a:"
+
+#: qml/RecoveryDetailsSheet.qml:65 qml/TestDetailsSheet.qml:97
+#: qml/VaccinationDetailsSheet.qml:88
+#, kde-format
+msgid "Certificate"
+msgstr "Certificat"
+
+#: qml/RecoveryDetailsSheet.qml:70 qml/TestDetailsSheet.qml:102
+#: qml/VaccinationDetailsSheet.qml:93
+#, kde-format
+msgid "Issuer:"
+msgstr "Emissor:"
+
+#: qml/RecoveryDetailsSheet.qml:75 qml/TestDetailsSheet.qml:107
+#: qml/VaccinationDetailsSheet.qml:98
+#, kde-format
+msgid "Identifier:"
+msgstr "Identificador:"
+
+#: qml/RecoveryDetailsSheet.qml:80 qml/TestDetailsSheet.qml:113
+#: qml/VaccinationDetailsSheet.qml:103
+#, kde-format
+msgid "Issued:"
+msgstr "Emès el:"
+
+#: qml/RecoveryDetailsSheet.qml:84 qml/TestDetailsSheet.qml:117
+#: qml/VaccinationDetailsSheet.qml:107
+#, kde-format
+msgid "Expires:"
+msgstr "Caduca:"
+
+#: qml/RecoveryDetailsSheet.qml:98 qml/TestDetailsSheet.qml:131
+#: qml/VaccinationDetailsSheet.qml:121
+#, kde-format
+msgid "Signature:"
+msgstr "Signatura:"
+
+#: qml/TestDetailsSheet.qml:43
+#, kde-format
+msgid "Test"
+msgstr "Prova"
+
+#: qml/TestDetailsSheet.qml:48 qml/VaccinationDetailsSheet.qml:48
+#, kde-format
+msgid "Date:"
+msgstr "Data:"
+
+#: qml/TestDetailsSheet.qml:59 qml/VaccinationDetailsSheet.qml:59
+#, kde-format
+msgid "Type:"
+msgstr "Tipus:"
+
+#: qml/TestDetailsSheet.qml:65
+#, kde-format
+msgid "Test:"
+msgstr "Prova:"
+
+#: qml/TestDetailsSheet.qml:80
+#, kde-format
+msgid "Result:"
+msgstr "Resultat:"
+
+#: qml/TestDetailsSheet.qml:85
+#, kde-format
+msgid "Test Center:"
+msgstr "Centre de proves:"
+
+#: qml/TestDetailsSheet.qml:92 qml/VaccinationDetailsSheet.qml:82
+#, kde-format
+msgid "Country:"
+msgstr "País:"
+
+#: qml/VaccinationDetailsSheet.qml:43
+#, kde-format
+msgid "Vaccination"
+msgstr "Vaccinació"
+
+#: qml/VaccinationDetailsSheet.qml:64
+#, kde-format
+msgid "Vaccine:"
+msgstr "Vaccí:"
+
+#: qml/VaccinationDetailsSheet.qml:70
+#, kde-format
+msgid "Manufacturer:"
+msgstr "Fabricant:"
+
+#: qml/VaccinationDetailsSheet.qml:74
+#, kde-format
+msgid "%1/%2"
+msgstr "%1/%2"
+
+#: qml/VaccinationDetailsSheet.qml:75
+#, kde-format
+msgid "Dose:"
+msgstr "Dosi:"
+
+#~ msgid "Importing certificates from PDF is not supported in this build"
+#~ msgstr ""
+#~ "En aquesta compilació no està implementada la importació de certificats a "
+#~ "partir d'un PDF"
+
+#~ msgid "Importing certificates from images is not supported in this build"
+#~ msgstr ""
+#~ "En aquesta compilació no està implementada la importació de certificats a "
+#~ "partir d'imatges"
+
+#~ msgid "vakzination"
+#~ msgstr "vakzination"
+
+#~ msgid "Your vaccinations"
+#~ msgstr "Vaccinacions"
