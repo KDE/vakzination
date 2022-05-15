@@ -32,7 +32,7 @@ msgstr "URL de fitxer no vàlid: %1"
 #: certificatesmodel.cpp:149
 #, kde-format
 msgid "Could not open file: %1"
-msgstr "No s'ha pogut obri el fitxer: %1"
+msgstr "No s'ha pogut obrir el fitxer: %1"
 
 #: certificatesmodel.cpp:171
 #, kde-format
