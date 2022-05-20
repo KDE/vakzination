@@ -52,7 +52,7 @@ msgstr "Mostra amb dades de prova"
 #: main.cpp:51
 #, kde-format
 msgid "File to import."
-msgstr "Fitxer a importar."
+msgstr "Fitxer que s'ha d'importar."
 
 #: qml/CertificateDelegate.qml:27
 #, kde-format
