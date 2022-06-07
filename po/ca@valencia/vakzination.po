@@ -22,17 +22,17 @@ msgstr ""
 #: certificatesmodel.cpp:137
 #, kde-format
 msgid "Empty file url"
-msgstr "URL de fitxer buit"
+msgstr "URL de ficher buit"
 
 #: certificatesmodel.cpp:141
 #, kde-format
 msgid "File URL not valid: %1"
-msgstr "URL de fitxer no vàlid: %1"
+msgstr "URL de ficher no vàlit: %1"
 
 #: certificatesmodel.cpp:149
 #, kde-format
 msgid "Could not open file: %1"
-msgstr "No s'ha pogut obrir el fitxer: %1"
+msgstr "No s'ha pogut obrir el ficher: %1"
 
 #: certificatesmodel.cpp:171
 #, kde-format
@@ -52,7 +52,7 @@ msgstr "Mostra amb dades de prova"
 #: main.cpp:51
 #, kde-format
 msgid "File to import."
-msgstr "Fitxer que s'ha d'importar."
+msgstr "Ficher que s'ha d'importar."
 
 #: qml/CertificateDelegate.qml:27
 #, kde-format
@@ -83,7 +83,7 @@ msgstr "Els vostres certificats"
 #: qml/CertificatesPage.qml:19
 #, kde-format
 msgid "Import from file"
-msgstr "Importa des d'un fitxer"
+msgstr "Importa des d'un ficher"
 
 #: qml/CertificatesPage.qml:27
 #, kde-format
@@ -142,12 +142,12 @@ msgstr "Malaltia:"
 #: qml/RecoveryDetailsSheet.qml:56
 #, kde-format
 msgid "Valid from:"
-msgstr "Vàlid des de:"
+msgstr "Vàlit des de:"
 
 #: qml/RecoveryDetailsSheet.qml:60
 #, kde-format
 msgid "Valid until:"
-msgstr "Vàlid fins a:"
+msgstr "Vàlit fins a:"
 
 #: qml/RecoveryDetailsSheet.qml:65 qml/TestDetailsSheet.qml:97
 #: qml/VaccinationDetailsSheet.qml:88
