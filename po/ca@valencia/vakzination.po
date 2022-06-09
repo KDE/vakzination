@@ -22,17 +22,17 @@ msgstr ""
 #: certificatesmodel.cpp:137
 #, kde-format
 msgid "Empty file url"
-msgstr "URL de ficher buit"
+msgstr "URL de fitxer buit"
 
 #: certificatesmodel.cpp:141
 #, kde-format
 msgid "File URL not valid: %1"
-msgstr "URL de ficher no vàlit: %1"
+msgstr "URL de fitxer no vàlit: %1"
 
 #: certificatesmodel.cpp:149
 #, kde-format
 msgid "Could not open file: %1"
-msgstr "No s'ha pogut obrir el ficher: %1"
+msgstr "No s'ha pogut obrir el fitxer: %1"
 
 #: certificatesmodel.cpp:171
 #, kde-format
@@ -52,7 +52,7 @@ msgstr "Mostra amb dades de prova"
 #: main.cpp:51
 #, kde-format
 msgid "File to import."
-msgstr "Ficher que s'ha d'importar."
+msgstr "Fitxer que s'ha d'importar."
 
 #: qml/CertificateDelegate.qml:27
 #, kde-format
@@ -83,7 +83,7 @@ msgstr "Els vostres certificats"
 #: qml/CertificatesPage.qml:19
 #, kde-format
 msgid "Import from file"
-msgstr "Importa des d'un ficher"
+msgstr "Importa des d'un fitxer"
 
 #: qml/CertificatesPage.qml:27
 #, kde-format
