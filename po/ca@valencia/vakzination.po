@@ -27,7 +27,7 @@ msgstr "URL de fitxer buit"
 #: certificatesmodel.cpp:141
 #, kde-format
 msgid "File URL not valid: %1"
-msgstr "URL de fitxer no vàlit: %1"
+msgstr "URL de fitxer no vàlid: %1"
 
 #: certificatesmodel.cpp:149
 #, kde-format
@@ -142,12 +142,12 @@ msgstr "Malaltia:"
 #: qml/RecoveryDetailsSheet.qml:56
 #, kde-format
 msgid "Valid from:"
-msgstr "Vàlit des de:"
+msgstr "Vàlid des de:"
 
 #: qml/RecoveryDetailsSheet.qml:60
 #, kde-format
 msgid "Valid until:"
-msgstr "Vàlit fins a:"
+msgstr "Vàlid fins a:"
 
 #: qml/RecoveryDetailsSheet.qml:65 qml/TestDetailsSheet.qml:97
 #: qml/VaccinationDetailsSheet.qml:88
