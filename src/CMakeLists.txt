@@ -8,12 +8,12 @@ target_link_libraries(vakzinationstatic PUBLIC Qt::Core Qt::Gui KF5::ConfigCore 
 add_executable(vakzination main.cpp resources.qrc)
 target_include_directories(vakzination PRIVATE ${CMAKE_BINARY_DIR})
 target_link_libraries(vakzination
-    Qt5::Core
-    Qt5::Gui
-    Qt5::Qml
-    Qt5::Quick
-    Qt5::QuickControls2
-    Qt5::Svg
+    Qt::Core
+    Qt::Gui
+    Qt::Qml
+    Qt::Quick
+    Qt::QuickControls2
+    Qt::Svg
     KF5::I18n
     KF5::ConfigCore
     vakzinationstatic
@@ -27,6 +27,8 @@ if (ANDROID)
         question
         dialog-error-symbolic
     )
+else()
+    target_link_libraries(vakzination Qt::Widgets)
 endif()
 
 install(TARGETS vakzination ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
