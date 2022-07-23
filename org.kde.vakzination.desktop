@@ -53,6 +53,6 @@ Exec=vakzination %F
 Icon=applications-development
 Type=Application
 Categories=Qt;KDE;Utility;
-MimeType=application/pdf;
+MimeType=application/pdf;application/vnd.apple.pkpass;
 X-KDE-HasTempFileOption=true
 X-KDE-FormFactor=desktop;tablet;handset;

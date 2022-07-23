@@ -194,8 +194,9 @@ std::optional<AnyCertificate> CertificatesModel::parseCertificate(const QByteArr
 
 int CertificatesModel::findRecursive(const KItinerary::ExtractorDocumentNode &node)
 {
-    // possibly a barcode
-    if (node.childNodes().size() == 1 && node.mimeType() == QLatin1String("internal/qimage")) {
+    // can possibly contain a barcode
+    if (node.childNodes().size() == 1
+        && (node.mimeType() == QLatin1String("internal/qimage") || node.mimeType() == QLatin1String("application/vnd.apple.pkpass"))) {
         const auto &child = node.childNodes()[0];
         std::optional<AnyCertificate> cert;
         if (child.isA<QString>()) {
