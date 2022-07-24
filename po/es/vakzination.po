@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-02-27 00:51+0000\n"
+"POT-Creation-Date: 2022-07-24 00:47+0000\n"
 "PO-Revision-Date: 2021-09-29 12:20+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -39,7 +39,7 @@ msgstr "No ha sido posible abrir el archivo: %1"
 msgid "No certificate found in %1"
 msgstr "No se ha encontrado ningún certificado en %1"
 
-#: certificatesmodel.cpp:235
+#: certificatesmodel.cpp:236
 #, kde-format
 msgid "No certificate in clipboard"
 msgstr "No hay ningún certificado en el portapapeles"
