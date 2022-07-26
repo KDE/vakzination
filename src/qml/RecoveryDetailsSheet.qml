@@ -78,6 +78,7 @@ Kirigami.OverlaySheet {
             QQC2.Label {
                 text: certificate.certificateIssueDate.toLocaleString(Qt.locale(), Locale.ShortFormat)
                 Kirigami.FormData.label: i18n("Issued:")
+                visible: !isNaN(certificate.certificateIssueDate.getTime())
             }
             QQC2.Label {
                 text: certificate.certificateExpiryDate.toLocaleString(Qt.locale(), Locale.ShortFormat)
