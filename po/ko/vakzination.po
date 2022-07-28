@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-07-24 00:47+0000\n"
+"POT-Creation-Date: 2022-07-28 00:48+0000\n"
 "PO-Revision-Date: 2021-11-12 01:05+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -171,14 +171,14 @@ msgstr "식별자:"
 msgid "Issued:"
 msgstr "발급 시간:"
 
-#: qml/RecoveryDetailsSheet.qml:84 qml/TestDetailsSheet.qml:117
-#: qml/VaccinationDetailsSheet.qml:107
+#: qml/RecoveryDetailsSheet.qml:85 qml/TestDetailsSheet.qml:118
+#: qml/VaccinationDetailsSheet.qml:108
 #, kde-format
 msgid "Expires:"
 msgstr "만료 시간:"
 
-#: qml/RecoveryDetailsSheet.qml:98 qml/TestDetailsSheet.qml:131
-#: qml/VaccinationDetailsSheet.qml:121
+#: qml/RecoveryDetailsSheet.qml:99 qml/TestDetailsSheet.qml:132
+#: qml/VaccinationDetailsSheet.qml:122
 #, kde-format
 msgid "Signature:"
 msgstr "서명:"

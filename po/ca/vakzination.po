@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-07-24 00:47+0000\n"
+"POT-Creation-Date: 2022-07-28 00:48+0000\n"
 "PO-Revision-Date: 2021-09-29 14:15+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -173,14 +173,14 @@ msgstr "Identificador:"
 msgid "Issued:"
 msgstr "Emès el:"
 
-#: qml/RecoveryDetailsSheet.qml:84 qml/TestDetailsSheet.qml:117
-#: qml/VaccinationDetailsSheet.qml:107
+#: qml/RecoveryDetailsSheet.qml:85 qml/TestDetailsSheet.qml:118
+#: qml/VaccinationDetailsSheet.qml:108
 #, kde-format
 msgid "Expires:"
 msgstr "Caduca:"
 
-#: qml/RecoveryDetailsSheet.qml:98 qml/TestDetailsSheet.qml:131
-#: qml/VaccinationDetailsSheet.qml:121
+#: qml/RecoveryDetailsSheet.qml:99 qml/TestDetailsSheet.qml:132
+#: qml/VaccinationDetailsSheet.qml:122
 #, kde-format
 msgid "Signature:"
 msgstr "Signatura:"

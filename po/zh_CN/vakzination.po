@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-07-24 00:47+0000\n"
+"POT-Creation-Date: 2022-07-28 00:48+0000\n"
 "PO-Revision-Date: 2022-07-16 05:20\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -171,14 +171,14 @@ msgstr "标识符："
 msgid "Issued:"
 msgstr "颁发时间："
 
-#: qml/RecoveryDetailsSheet.qml:84 qml/TestDetailsSheet.qml:117
-#: qml/VaccinationDetailsSheet.qml:107
+#: qml/RecoveryDetailsSheet.qml:85 qml/TestDetailsSheet.qml:118
+#: qml/VaccinationDetailsSheet.qml:108
 #, kde-format
 msgid "Expires:"
 msgstr "过期时间："
 
-#: qml/RecoveryDetailsSheet.qml:98 qml/TestDetailsSheet.qml:131
-#: qml/VaccinationDetailsSheet.qml:121
+#: qml/RecoveryDetailsSheet.qml:99 qml/TestDetailsSheet.qml:132
+#: qml/VaccinationDetailsSheet.qml:122
 #, kde-format
 msgid "Signature:"
 msgstr "签名："
