@@ -8,6 +8,7 @@ import QtQuick.Controls 2.15 as QQC2
 import QtQuick.Layouts 1.2
 import org.kde.kirigami 2.15 as Kirigami
 import org.kde.khealthcertificate 1.0
+import org.kde.i18n.localeData 1.0
 
 Kirigami.OverlaySheet {
 
@@ -77,8 +78,7 @@ Kirigami.OverlaySheet {
             visible: certificate.dose > 0
         }
         QQC2.Label {
-            //text: KCountry.fromAlpha2(certificate.country).emojiFlag + " " + KCountry.fromAlpha2(certificate.country).name
-            text: certificate.country
+            text: i18nc("%1 a flag emoji, %2 is a country name", "%1 %2", Country.fromAlpha2(certificate.country).emojiFlag, Country.fromAlpha2(certificate.country).name)
             Kirigami.FormData.label: i18n("Country:")
             visible: certificate.country
         }

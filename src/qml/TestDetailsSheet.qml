@@ -8,6 +8,7 @@ import QtQuick.Controls 2.15 as QQC2
 import QtQuick.Layouts 1.2
 import org.kde.kirigami 2.15 as Kirigami
 import org.kde.khealthcertificate 1.0 as KHC
+import org.kde.i18n.localeData 1.0
 
 Kirigami.OverlaySheet {
 
@@ -86,10 +87,9 @@ Kirigami.OverlaySheet {
             visible: text !== ""
         }
         QQC2.Label {
-            // TODO reenable once we have the right KI18n API
-            //text: Localizer.countryFlag(certificate.country) + " " + Localizer.countryName(certificate.country)
-            text: certificate.country
+            text: i18nc("%1 a flag emoji, %2 is a country name", "%1 %2", Country.fromAlpha2(certificate.country).emojiFlag, Country.fromAlpha2(certificate.country).name)
             Kirigami.FormData.label: i18n("Country:")
+            visible: certificate.country
         }
 
         Kirigami.Separator {
