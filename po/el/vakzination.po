@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-07-28 00:48+0000\n"
+"POT-Creation-Date: 2022-08-02 00:48+0000\n"
 "PO-Revision-Date: 2021-10-04 11:08+0300\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -68,7 +68,7 @@ msgid "Recovery %1"
 msgstr "Ανάρρωση %1"
 
 #: qml/CertificateDelegate.qml:59 qml/RecoveryDetailsSheet.qml:17
-#: qml/TestDetailsSheet.qml:17 qml/VaccinationDetailsSheet.qml:17
+#: qml/TestDetailsSheet.qml:18 qml/VaccinationDetailsSheet.qml:18
 #, kde-format
 msgid "Details"
 msgstr "Λεπτομέρειες"
@@ -103,20 +103,20 @@ msgstr "Δεν έγινε αποθήκευση πιστοποιητικού"
 msgid "Your Certificates"
 msgstr "Τα πιστοποιητικά σας"
 
-#: qml/RecoveryDetailsSheet.qml:28 qml/TestDetailsSheet.qml:28
-#: qml/VaccinationDetailsSheet.qml:28
+#: qml/RecoveryDetailsSheet.qml:28 qml/TestDetailsSheet.qml:29
+#: qml/VaccinationDetailsSheet.qml:29
 #, kde-format
 msgid "Person"
 msgstr "Πρόσωπο"
 
-#: qml/RecoveryDetailsSheet.qml:33 qml/TestDetailsSheet.qml:33
-#: qml/VaccinationDetailsSheet.qml:33
+#: qml/RecoveryDetailsSheet.qml:33 qml/TestDetailsSheet.qml:34
+#: qml/VaccinationDetailsSheet.qml:34
 #, kde-format
 msgid "Name:"
 msgstr "Όνομα:"
 
-#: qml/RecoveryDetailsSheet.qml:38 qml/TestDetailsSheet.qml:38
-#: qml/VaccinationDetailsSheet.qml:38
+#: qml/RecoveryDetailsSheet.qml:38 qml/TestDetailsSheet.qml:39
+#: qml/VaccinationDetailsSheet.qml:39
 #, kde-format
 msgid "Date of birth:"
 msgstr "Ημερομηνία γέννησης:"
@@ -131,8 +131,8 @@ msgstr "Ανάρρωση"
 msgid "Positive test:"
 msgstr "Θετικό τεστ:"
 
-#: qml/RecoveryDetailsSheet.qml:52 qml/TestDetailsSheet.qml:54
-#: qml/VaccinationDetailsSheet.qml:54
+#: qml/RecoveryDetailsSheet.qml:52 qml/TestDetailsSheet.qml:55
+#: qml/VaccinationDetailsSheet.qml:55
 #, kde-format
 msgid "Disease:"
 msgstr "Νόσος:"
@@ -183,62 +183,68 @@ msgstr "Λήγει:"
 msgid "Signature:"
 msgstr "Υπογραφή:"
 
-#: qml/TestDetailsSheet.qml:43
+#: qml/TestDetailsSheet.qml:44
 #, kde-format
 msgid "Test"
 msgstr "Τεστ"
 
-#: qml/TestDetailsSheet.qml:48 qml/VaccinationDetailsSheet.qml:48
+#: qml/TestDetailsSheet.qml:49 qml/VaccinationDetailsSheet.qml:49
 #, kde-format
 msgid "Date:"
 msgstr "Ημερομηνία:"
 
-#: qml/TestDetailsSheet.qml:59 qml/VaccinationDetailsSheet.qml:59
+#: qml/TestDetailsSheet.qml:60 qml/VaccinationDetailsSheet.qml:60
 #, kde-format
 msgid "Type:"
 msgstr "Τύπος:"
 
-#: qml/TestDetailsSheet.qml:65
+#: qml/TestDetailsSheet.qml:66
 #, kde-format
 msgid "Test:"
 msgstr "Τεστ:"
 
-#: qml/TestDetailsSheet.qml:80
+#: qml/TestDetailsSheet.qml:81
 #, kde-format
 msgid "Result:"
 msgstr "Αποτέλεσμα:"
 
-#: qml/TestDetailsSheet.qml:85
+#: qml/TestDetailsSheet.qml:86
 #, kde-format
 msgid "Test Center:"
 msgstr "Κέντρο ελέγχου:"
 
-#: qml/TestDetailsSheet.qml:92 qml/VaccinationDetailsSheet.qml:82
+#: qml/TestDetailsSheet.qml:90 qml/VaccinationDetailsSheet.qml:81
+#, kde-format
+msgctxt "%1 a flag emoji, %2 is a country name"
+msgid "%1 %2"
+msgstr ""
+
+#: qml/TestDetailsSheet.qml:91 qml/VaccinationDetailsSheet.qml:82
 #, kde-format
 msgid "Country:"
 msgstr "Χώρα:"
 
-#: qml/VaccinationDetailsSheet.qml:43
+#: qml/VaccinationDetailsSheet.qml:44
 #, kde-format
 msgid "Vaccination"
 msgstr "Εμβολιασμός"
 
-#: qml/VaccinationDetailsSheet.qml:64
+#: qml/VaccinationDetailsSheet.qml:65
 #, kde-format
 msgid "Vaccine:"
 msgstr "Εμβόλιο:"
 
-#: qml/VaccinationDetailsSheet.qml:70
+#: qml/VaccinationDetailsSheet.qml:71
 #, kde-format
 msgid "Manufacturer:"
 msgstr "Παρασκευαστής:"
 
-#: qml/VaccinationDetailsSheet.qml:74
+#: qml/VaccinationDetailsSheet.qml:75
 #, kde-format
 msgid "%1/%2"
 msgstr "%1/%2"
 
-#: qml/VaccinationDetailsSheet.qml:75
+#: qml/VaccinationDetailsSheet.qml:76
 #, kde-format
 msgid "Dose:"
 msgstr "Δόση:"

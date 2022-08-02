@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-07-28 00:48+0000\n"
+"POT-Creation-Date: 2022-08-02 00:48+0000\n"
 "PO-Revision-Date: 2021-09-30 08:42+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@neuf.fr>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
@@ -65,7 +65,7 @@ msgid "Recovery %1"
 msgstr "Récupération %1"
 
 #: qml/CertificateDelegate.qml:59 qml/RecoveryDetailsSheet.qml:17
-#: qml/TestDetailsSheet.qml:17 qml/VaccinationDetailsSheet.qml:17
+#: qml/TestDetailsSheet.qml:18 qml/VaccinationDetailsSheet.qml:18
 #, kde-format
 msgid "Details"
 msgstr "Détails"
@@ -100,20 +100,20 @@ msgstr "Aucun certificat enregistré."
 msgid "Your Certificates"
 msgstr "Vos certificats"
 
-#: qml/RecoveryDetailsSheet.qml:28 qml/TestDetailsSheet.qml:28
-#: qml/VaccinationDetailsSheet.qml:28
+#: qml/RecoveryDetailsSheet.qml:28 qml/TestDetailsSheet.qml:29
+#: qml/VaccinationDetailsSheet.qml:29
 #, kde-format
 msgid "Person"
 msgstr "Personne"
 
-#: qml/RecoveryDetailsSheet.qml:33 qml/TestDetailsSheet.qml:33
-#: qml/VaccinationDetailsSheet.qml:33
+#: qml/RecoveryDetailsSheet.qml:33 qml/TestDetailsSheet.qml:34
+#: qml/VaccinationDetailsSheet.qml:34
 #, kde-format
 msgid "Name:"
 msgstr "Nom :"
 
-#: qml/RecoveryDetailsSheet.qml:38 qml/TestDetailsSheet.qml:38
-#: qml/VaccinationDetailsSheet.qml:38
+#: qml/RecoveryDetailsSheet.qml:38 qml/TestDetailsSheet.qml:39
+#: qml/VaccinationDetailsSheet.qml:39
 #, kde-format
 msgid "Date of birth:"
 msgstr "Date de naissance :"
@@ -128,8 +128,8 @@ msgstr "Récupération"
 msgid "Positive test:"
 msgstr "Test positif :"
 
-#: qml/RecoveryDetailsSheet.qml:52 qml/TestDetailsSheet.qml:54
-#: qml/VaccinationDetailsSheet.qml:54
+#: qml/RecoveryDetailsSheet.qml:52 qml/TestDetailsSheet.qml:55
+#: qml/VaccinationDetailsSheet.qml:55
 #, kde-format
 msgid "Disease:"
 msgstr "Maladie :"
@@ -180,62 +180,68 @@ msgstr "Expire le :"
 msgid "Signature:"
 msgstr "Signature :"
 
-#: qml/TestDetailsSheet.qml:43
+#: qml/TestDetailsSheet.qml:44
 #, kde-format
 msgid "Test"
 msgstr "Tester"
 
-#: qml/TestDetailsSheet.qml:48 qml/VaccinationDetailsSheet.qml:48
+#: qml/TestDetailsSheet.qml:49 qml/VaccinationDetailsSheet.qml:49
 #, kde-format
 msgid "Date:"
 msgstr "Date :"
 
-#: qml/TestDetailsSheet.qml:59 qml/VaccinationDetailsSheet.qml:59
+#: qml/TestDetailsSheet.qml:60 qml/VaccinationDetailsSheet.qml:60
 #, kde-format
 msgid "Type:"
 msgstr "Type :"
 
-#: qml/TestDetailsSheet.qml:65
+#: qml/TestDetailsSheet.qml:66
 #, kde-format
 msgid "Test:"
 msgstr "Test :"
 
-#: qml/TestDetailsSheet.qml:80
+#: qml/TestDetailsSheet.qml:81
 #, kde-format
 msgid "Result:"
 msgstr "Résultat :"
 
-#: qml/TestDetailsSheet.qml:85
+#: qml/TestDetailsSheet.qml:86
 #, kde-format
 msgid "Test Center:"
 msgstr "Centre de tests :"
 
-#: qml/TestDetailsSheet.qml:92 qml/VaccinationDetailsSheet.qml:82
+#: qml/TestDetailsSheet.qml:90 qml/VaccinationDetailsSheet.qml:81
+#, kde-format
+msgctxt "%1 a flag emoji, %2 is a country name"
+msgid "%1 %2"
+msgstr ""
+
+#: qml/TestDetailsSheet.qml:91 qml/VaccinationDetailsSheet.qml:82
 #, kde-format
 msgid "Country:"
 msgstr "Pays :"
 
-#: qml/VaccinationDetailsSheet.qml:43
+#: qml/VaccinationDetailsSheet.qml:44
 #, kde-format
 msgid "Vaccination"
 msgstr "Vaccination"
 
-#: qml/VaccinationDetailsSheet.qml:64
+#: qml/VaccinationDetailsSheet.qml:65
 #, kde-format
 msgid "Vaccine:"
 msgstr "Vaccin :"
 
-#: qml/VaccinationDetailsSheet.qml:70
+#: qml/VaccinationDetailsSheet.qml:71
 #, kde-format
 msgid "Manufacturer:"
 msgstr "Fabricant :"
 
-#: qml/VaccinationDetailsSheet.qml:74
+#: qml/VaccinationDetailsSheet.qml:75
 #, kde-format
 msgid "%1/%2"
 msgstr "%1 / %2"
 
-#: qml/VaccinationDetailsSheet.qml:75
+#: qml/VaccinationDetailsSheet.qml:76
 #, kde-format
 msgid "Dose:"
 msgstr "Dose :"
