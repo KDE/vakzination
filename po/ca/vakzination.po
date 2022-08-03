@@ -1,15 +1,15 @@
 # Translation of vakzination.po to Catalan
-# Copyright (C) 2021 This_file_is_part_of_KDE
+# Copyright (C) 2021-2022 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Josep M. Ferrer <txemaq@gmail.com>, 2021.
+# Josep M. Ferrer <txemaq@gmail.com>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-08-02 00:48+0000\n"
-"PO-Revision-Date: 2021-09-29 14:15+0200\n"
+"PO-Revision-Date: 2022-08-02 16:38+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -219,7 +219,7 @@ msgstr "Centre de proves:"
 #, kde-format
 msgctxt "%1 a flag emoji, %2 is a country name"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: qml/TestDetailsSheet.qml:91 qml/VaccinationDetailsSheet.qml:82
 #, kde-format
@@ -250,19 +250,3 @@ msgstr "%1/%2"
 #, kde-format
 msgid "Dose:"
 msgstr "Dosi:"
-
-#~ msgid "Importing certificates from PDF is not supported in this build"
-#~ msgstr ""
-#~ "En aquesta compilació no està implementada la importació de certificats a "
-#~ "partir d'un PDF"
-
-#~ msgid "Importing certificates from images is not supported in this build"
-#~ msgstr ""
-#~ "En aquesta compilació no està implementada la importació de certificats a "
-#~ "partir d'imatges"
-
-#~ msgid "vakzination"
-#~ msgstr "vakzination"
-
-#~ msgid "Your vaccinations"
-#~ msgstr "Vaccinacions"
