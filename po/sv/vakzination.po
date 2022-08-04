@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the vakzination package.
 #
-# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2021.
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-08-02 00:48+0000\n"
-"PO-Revision-Date: 2021-09-29 19:11+0200\n"
+"PO-Revision-Date: 2022-08-03 09:13+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -217,7 +217,7 @@ msgstr "Testcenter:"
 #, kde-format
 msgctxt "%1 a flag emoji, %2 is a country name"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: qml/TestDetailsSheet.qml:91 qml/VaccinationDetailsSheet.qml:82
 #, kde-format

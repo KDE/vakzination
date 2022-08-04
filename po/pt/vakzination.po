@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-08-02 00:48+0000\n"
-"PO-Revision-Date: 2021-08-14 09:46+0100\n"
+"PO-Revision-Date: 2022-08-03 16:20+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -213,7 +213,7 @@ msgstr "Centro de Testes:"
 #, kde-format
 msgctxt "%1 a flag emoji, %2 is a country name"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: qml/TestDetailsSheet.qml:91 qml/VaccinationDetailsSheet.qml:82
 #, kde-format
@@ -244,10 +244,3 @@ msgstr "%1/%2"
 #, kde-format
 msgid "Dose:"
 msgstr "Dose:"
-
-#~ msgid "Importing certificates from PDF is not supported in this build"
-#~ msgstr "A importação de certificados do PDF não é suportada nesta versão"
-
-#~ msgid "Importing certificates from images is not supported in this build"
-#~ msgstr ""
-#~ "A importação de certificados das imagens não é suportada nesta versão"

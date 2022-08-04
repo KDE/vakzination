@@ -1,20 +1,20 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the vakzination package.
 #
-# Matjaž Jeran <matjaz.jeran@amis.net>, 2021.
+# Matjaž Jeran <matjaz.jeran@amis.net>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-08-02 00:48+0000\n"
-"PO-Revision-Date: 2021-09-30 08:16+0200\n"
+"PO-Revision-Date: 2022-08-03 06:48+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 20.12.2\n"
+"X-Generator: Lokalize 22.04.1\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 
@@ -218,7 +218,7 @@ msgstr "Testni center:"
 #, kde-format
 msgctxt "%1 a flag emoji, %2 is a country name"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: qml/TestDetailsSheet.qml:91 qml/VaccinationDetailsSheet.qml:82
 #, kde-format
