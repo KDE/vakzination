@@ -1,0 +1,253 @@
+# Translation for vakzination.po to Euskara/Basque (eu).
+# Copyright (C) 2022 This file is copyright:
+# This file is distributed under the same license as the vakzination package.
+# KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
+#
+# Translators:
+# Jon Intxaurbe <joinzar@gmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: vakzination\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-08-02 00:48+0000\n"
+"PO-Revision-Date: 2022-08-17 23:39+0200\n"
+"Last-Translator: Jon Intxaurbe <joinzar@gmail.com>\n"
+"Language-Team: Basque <kde-i18n-eu@kde.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 22.04.3\n"
+
+#: certificatesmodel.cpp:137
+#, kde-format
+msgid "Empty file url"
+msgstr "Fitxategiaren URL hutsa"
+
+#: certificatesmodel.cpp:141
+#, kde-format
+msgid "File URL not valid: %1"
+msgstr "Fitxategiaren URLa ez da baliozkoa: %1"
+
+#: certificatesmodel.cpp:149
+#, kde-format
+msgid "Could not open file: %1"
+msgstr "Ezin izan da %1 fitxategia zabaldu"
+
+#: certificatesmodel.cpp:171
+#, kde-format
+msgid "No certificate found in %1"
+msgstr "Ez da aurkitu ziurtagiririk %1(e)an"
+
+#: certificatesmodel.cpp:236
+#, kde-format
+msgid "No certificate in clipboard"
+msgstr "Ez dago ziurtagiririk arbelean"
+
+#: main.cpp:48
+#, kde-format
+msgid "Show with test data"
+msgstr "Erakutsi probako datuekin"
+
+#: main.cpp:51
+#, kde-format
+msgid "File to import."
+msgstr "Inportatuko den fitxategia."
+
+#: qml/CertificateDelegate.qml:27
+#, kde-format
+msgid "Vaccination %1 (%2/%3)"
+msgstr "Txertaketa %1 (%2/%3)"
+
+#: qml/CertificateDelegate.qml:31
+#, kde-format
+msgid "Test %1"
+msgstr "Proba %1"
+
+#: qml/CertificateDelegate.qml:35
+#, kde-format
+msgid "Recovery %1"
+msgstr "Osatzea %1"
+
+#: qml/CertificateDelegate.qml:59 qml/RecoveryDetailsSheet.qml:17
+#: qml/TestDetailsSheet.qml:18 qml/VaccinationDetailsSheet.qml:18
+#, kde-format
+msgid "Details"
+msgstr "Xehetasunak"
+
+#: qml/CertificatesPage.qml:16
+#, kde-format
+msgid "Your certificates"
+msgstr "Zure ziurtagiriak"
+
+#: qml/CertificatesPage.qml:19
+#, kde-format
+msgid "Import from file"
+msgstr "Fitxategitik inportatu"
+
+#: qml/CertificatesPage.qml:27
+#, kde-format
+msgid "Import from clipboard"
+msgstr "Arbeletik inportatu"
+
+#: qml/CertificatesPage.qml:49
+#, kde-format
+msgid "Certificate could not be imported: %1"
+msgstr "Ezin izan da ziurtagiria inportatu: %1"
+
+#: qml/CertificatesPage.qml:87
+#, kde-format
+msgid "No certificates saved"
+msgstr "Ez dira ziurtagiriak gorde"
+
+#: qml/main.qml:16
+#, kde-format
+msgid "Your Certificates"
+msgstr "Zure ziurtagiriak"
+
+#: qml/RecoveryDetailsSheet.qml:28 qml/TestDetailsSheet.qml:29
+#: qml/VaccinationDetailsSheet.qml:29
+#, kde-format
+msgid "Person"
+msgstr "Pertsona"
+
+#: qml/RecoveryDetailsSheet.qml:33 qml/TestDetailsSheet.qml:34
+#: qml/VaccinationDetailsSheet.qml:34
+#, kde-format
+msgid "Name:"
+msgstr "Izena:"
+
+#: qml/RecoveryDetailsSheet.qml:38 qml/TestDetailsSheet.qml:39
+#: qml/VaccinationDetailsSheet.qml:39
+#, kde-format
+msgid "Date of birth:"
+msgstr "Jaioteguna:"
+
+#: qml/RecoveryDetailsSheet.qml:43
+#, kde-format
+msgid "Recovery"
+msgstr "Osatzea"
+
+#: qml/RecoveryDetailsSheet.qml:48
+#, kde-format
+msgid "Positive test:"
+msgstr "Proba positiboa:"
+
+#: qml/RecoveryDetailsSheet.qml:52 qml/TestDetailsSheet.qml:55
+#: qml/VaccinationDetailsSheet.qml:55
+#, kde-format
+msgid "Disease:"
+msgstr "Gaixotasuna:"
+
+#: qml/RecoveryDetailsSheet.qml:56
+#, kde-format
+msgid "Valid from:"
+msgstr "Noiztik balio du:"
+
+#: qml/RecoveryDetailsSheet.qml:60
+#, kde-format
+msgid "Valid until:"
+msgstr "Noiz arte balio du:"
+
+#: qml/RecoveryDetailsSheet.qml:65 qml/TestDetailsSheet.qml:97
+#: qml/VaccinationDetailsSheet.qml:88
+#, kde-format
+msgid "Certificate"
+msgstr "Ziurtagiria"
+
+#: qml/RecoveryDetailsSheet.qml:70 qml/TestDetailsSheet.qml:102
+#: qml/VaccinationDetailsSheet.qml:93
+#, kde-format
+msgid "Issuer:"
+msgstr "Igorlea:"
+
+#: qml/RecoveryDetailsSheet.qml:75 qml/TestDetailsSheet.qml:107
+#: qml/VaccinationDetailsSheet.qml:98
+#, kde-format
+msgid "Identifier:"
+msgstr "Identifikatzailea:"
+
+#: qml/RecoveryDetailsSheet.qml:80 qml/TestDetailsSheet.qml:113
+#: qml/VaccinationDetailsSheet.qml:103
+#, kde-format
+msgid "Issued:"
+msgstr "Emanda:"
+
+#: qml/RecoveryDetailsSheet.qml:85 qml/TestDetailsSheet.qml:118
+#: qml/VaccinationDetailsSheet.qml:108
+#, kde-format
+msgid "Expires:"
+msgstr "Iraungitze-data:"
+
+#: qml/RecoveryDetailsSheet.qml:99 qml/TestDetailsSheet.qml:132
+#: qml/VaccinationDetailsSheet.qml:122
+#, kde-format
+msgid "Signature:"
+msgstr "Sinadura:"
+
+#: qml/TestDetailsSheet.qml:44
+#, kde-format
+msgid "Test"
+msgstr "Proba"
+
+#: qml/TestDetailsSheet.qml:49 qml/VaccinationDetailsSheet.qml:49
+#, kde-format
+msgid "Date:"
+msgstr "Data:"
+
+#: qml/TestDetailsSheet.qml:60 qml/VaccinationDetailsSheet.qml:60
+#, kde-format
+msgid "Type:"
+msgstr "Mota:"
+
+#: qml/TestDetailsSheet.qml:66
+#, kde-format
+msgid "Test:"
+msgstr "Proba:"
+
+#: qml/TestDetailsSheet.qml:81
+#, kde-format
+msgid "Result:"
+msgstr "Emaitza:"
+
+#: qml/TestDetailsSheet.qml:86
+#, kde-format
+msgid "Test Center:"
+msgstr "Proba egin duen Zentroa:"
+
+#: qml/TestDetailsSheet.qml:90 qml/VaccinationDetailsSheet.qml:81
+#, kde-format
+msgctxt "%1 a flag emoji, %2 is a country name"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: qml/TestDetailsSheet.qml:91 qml/VaccinationDetailsSheet.qml:82
+#, kde-format
+msgid "Country:"
+msgstr "Herrialdea:"
+
+#: qml/VaccinationDetailsSheet.qml:44
+#, kde-format
+msgid "Vaccination"
+msgstr "Txertaketa"
+
+#: qml/VaccinationDetailsSheet.qml:65
+#, kde-format
+msgid "Vaccine:"
+msgstr "Txertoa:"
+
+#: qml/VaccinationDetailsSheet.qml:71
+#, kde-format
+msgid "Manufacturer:"
+msgstr "Fabrikatzailea:"
+
+#: qml/VaccinationDetailsSheet.qml:75
+#, kde-format
+msgid "%1/%2"
+msgstr "%1/%2"
+
+#: qml/VaccinationDetailsSheet.qml:76
+#, kde-format
+msgid "Dose:"
+msgstr "Dosia: "
