@@ -13,6 +13,7 @@
   <name xml:lang="el">Vakzination</name>
   <name xml:lang="en-GB">Vakzination</name>
   <name xml:lang="es">Vakzination</name>
+  <name xml:lang="eu">Vakzination</name>
   <name xml:lang="fr">Vakzination</name>
   <name xml:lang="hu">Vakzination</name>
   <name xml:lang="it">Vakzination</name>
@@ -37,6 +38,7 @@
   <summary xml:lang="el">Διαχειριστείτε τα πιστοποιητικά εμβολιασμού σας</summary>
   <summary xml:lang="en-GB">Manage your vaccination certificates</summary>
   <summary xml:lang="es">Gestione sus certificados de vacunación</summary>
+  <summary xml:lang="eu">Kudeatu zure txertaketa-ziurtagiriak</summary>
   <summary xml:lang="fr">Gérer vos certificats de vaccination</summary>
   <summary xml:lang="hu">Oltási igazolványok kezelése</summary>
   <summary xml:lang="it">Gestisci i tuoi certificati di vaccinazione</summary>
@@ -63,6 +65,7 @@
   <developer_name xml:lang="el">Η Κοινότητα του KDE</developer_name>
   <developer_name xml:lang="en-GB">KDE Community</developer_name>
   <developer_name xml:lang="es">Comunidad KDE</developer_name>
+  <developer_name xml:lang="eu">KDE Komunitatea</developer_name>
   <developer_name xml:lang="fr">Communauté KDE</developer_name>
   <developer_name xml:lang="hu">A KDE Közösség</developer_name>
   <developer_name xml:lang="it">Comunità KDE</developer_name>
@@ -109,6 +112,7 @@
     <p xml:lang="el">Διαχειριστείτε τα ψηφιακά πιστοποιητικά της υγείας σας όπως πιστοποιητικά εμβολιασμών, ελέγχων και ανάρρωσης.</p>
     <p xml:lang="en-GB">Manage your digital health certificates like vaccination, test, and recovery certificates.</p>
     <p xml:lang="es">Gestione sus certificados digitales de salud, como los de vacunación, pruebas y recuperación.</p>
+    <p xml:lang="eu">Kudeatu zure osasun ziurtagiri digitalak, hala nola txertaketa, proba eta osatze-ziurtagiriak.</p>
     <p xml:lang="fr">Gérer vos certificats numériques de santé comme les certificats de vaccination, de tests et de retour à la santé.</p>
     <p xml:lang="hu">Kezelje digitális egészségügyi tanúsítványait, például oltási, teszt- és felépülési igazolásait.</p>
     <p xml:lang="it">Gestisci i tuoi certificati sanitari digitali come certificati di vaccinazione, esami e guarigione.</p>
