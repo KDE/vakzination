@@ -42,7 +42,7 @@ msgstr "No s'ha trobat cap certificat a %1"
 #: certificatesmodel.cpp:236
 #, kde-format
 msgid "No certificate in clipboard"
-msgstr "No hi ha cap certificat al porta-retalls"
+msgstr "No hi ha cap certificat en el porta-retalls"
 
 #: main.cpp:48
 #, kde-format
