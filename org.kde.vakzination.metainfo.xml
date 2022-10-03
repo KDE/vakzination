@@ -17,6 +17,7 @@
   <name xml:lang="fr">Vakzination</name>
   <name xml:lang="hu">Vakzination</name>
   <name xml:lang="it">Vakzination</name>
+  <name xml:lang="ka">Vakzination</name>
   <name xml:lang="ko">Vakzination</name>
   <name xml:lang="nl">Vakzination</name>
   <name xml:lang="pa">ਵੇਕਜ਼ੀਨੇਸ਼ਨ</name>
@@ -42,6 +43,7 @@
   <summary xml:lang="fr">Gérer vos certificats de vaccination</summary>
   <summary xml:lang="hu">Oltási igazolványok kezelése</summary>
   <summary xml:lang="it">Gestisci i tuoi certificati di vaccinazione</summary>
+  <summary xml:lang="ka">თქვენი ვაქცინაციის სერტიფიკატების მართვა</summary>
   <summary xml:lang="ko">예방 접종 증명서 관리</summary>
   <summary xml:lang="nl">Uw vaccinatiecertificaten beheren</summary>
   <summary xml:lang="pa">ਤੁਹਾਡੇ ਟੀਕਾਕਰਨ ਦੇ ਸਰਟੀਫਿਕੇਟ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ</summary>
@@ -69,6 +71,7 @@
   <developer_name xml:lang="fr">Communauté KDE</developer_name>
   <developer_name xml:lang="hu">A KDE Közösség</developer_name>
   <developer_name xml:lang="it">Comunità KDE</developer_name>
+  <developer_name xml:lang="ka">KDE-ის საზოგადოება</developer_name>
   <developer_name xml:lang="ko">KDE 커뮤니티</developer_name>
   <developer_name xml:lang="nl">KDE-gemeenschap</developer_name>
   <developer_name xml:lang="pa">ਕੇਡੀਈ ਕਮਿਊਨਟੀ</developer_name>
@@ -119,6 +122,7 @@
     <p xml:lang="fr">Gérer vos certificats numériques de santé comme les certificats de vaccination, de tests et de retour à la santé.</p>
     <p xml:lang="hu">Kezelje digitális egészségügyi tanúsítványait, például oltási, teszt- és felépülési igazolásait.</p>
     <p xml:lang="it">Gestisci i tuoi certificati sanitari digitali come certificati di vaccinazione, esami e guarigione.</p>
+    <p xml:lang="ka">მართეთ თქვენი ციფრული ჯანმრთელობის სერტიფიკატები. როგორიცაა მაგალითად ვაქცინაციის, ტესტების და გამოკეთების სერტიფიკატები.</p>
     <p xml:lang="ko">예방 접종, 검사, 완치 증명 등 디지털 건강 증명서를 관리합니다.</p>
     <p xml:lang="nl">Uw digitale gezondheidscertificaten zoals vaccinatie, test en herstelcertificaten beheren.</p>
     <p xml:lang="pl">Zarządzaj swoimi cyfrowymi certyfikatami od szczepień, testów i z ośrodków leczniczych.</p>
