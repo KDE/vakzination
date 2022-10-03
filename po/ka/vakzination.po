@@ -1,243 +1,244 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the vakzination package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: kdeorg\n"
+"Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-08-02 00:48+0000\n"
-"PO-Revision-Date: 2022-10-02 15:50\n"
-"Last-Translator: \n"
-"Language-Team: Chinese Simplified\n"
-"Language: zh_CN\n"
+"PO-Revision-Date: 2022-10-02 08:14+0200\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
+"Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Crowdin-Project: kdeorg\n"
-"X-Crowdin-Project-ID: 269464\n"
-"X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf5-trunk/messages/vakzination/vakzination.pot\n"
-"X-Crowdin-File-ID: 25552\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #: certificatesmodel.cpp:137
 #, kde-format
 msgid "Empty file url"
-msgstr "空文件 URL"
+msgstr "ფაილის URL ცარიელია"
 
 #: certificatesmodel.cpp:141
 #, kde-format
 msgid "File URL not valid: %1"
-msgstr "文件 URL 无效：%1"
+msgstr "ფაილის URL არასწორია: %1"
 
 #: certificatesmodel.cpp:149
 #, kde-format
 msgid "Could not open file: %1"
-msgstr "无法打开文件：%1"
+msgstr "ფაილის გახსნის შეცდომა: %1"
 
 #: certificatesmodel.cpp:171
 #, kde-format
 msgid "No certificate found in %1"
-msgstr "未在 %1 中找到证书"
+msgstr "%1-ში სერტიფიკატები ვერ ვიპოვე"
 
 #: certificatesmodel.cpp:236
 #, kde-format
 msgid "No certificate in clipboard"
-msgstr "剪贴板中没有证书"
+msgstr "ბუფერში სერტიფიკატი ვერ ვიპოვე"
 
 #: main.cpp:48
 #, kde-format
 msgid "Show with test data"
-msgstr "显示检测数据"
+msgstr "ტესტის მონაცემებთან ერთად ჩვენება"
 
 #: main.cpp:51
 #, kde-format
 msgid "File to import."
-msgstr "要导入的文件。"
+msgstr "შემოსატანი ფაილი."
 
 #: qml/CertificateDelegate.qml:27
 #, kde-format
 msgid "Vaccination %1 (%2/%3)"
-msgstr "疫苗接种 %1 (%2/%3)"
+msgstr "ვაქცინაცია %1 (%2/%3)"
 
 #: qml/CertificateDelegate.qml:31
 #, kde-format
 msgid "Test %1"
-msgstr "检测 %1"
+msgstr "ტესტი %1"
 
 #: qml/CertificateDelegate.qml:35
 #, kde-format
 msgid "Recovery %1"
-msgstr "康复 %1"
+msgstr "გამოკეთება %1"
 
 #: qml/CertificateDelegate.qml:59 qml/RecoveryDetailsSheet.qml:17
 #: qml/TestDetailsSheet.qml:18 qml/VaccinationDetailsSheet.qml:18
 #, kde-format
 msgid "Details"
-msgstr "详情"
+msgstr "დეტალები"
 
 #: qml/CertificatesPage.qml:16
 #, kde-format
 msgid "Your certificates"
-msgstr "您的证书"
+msgstr "თქვენი სერტიფიკატები"
 
 #: qml/CertificatesPage.qml:19
 #, kde-format
 msgid "Import from file"
-msgstr "从文件导入"
+msgstr "ფაილიდან შემოტანა"
 
 #: qml/CertificatesPage.qml:27
 #, kde-format
 msgid "Import from clipboard"
-msgstr "从剪切板导入"
+msgstr "გაცვლის ბუფერიდან შემოტანა"
 
 #: qml/CertificatesPage.qml:49
 #, kde-format
 msgid "Certificate could not be imported: %1"
-msgstr "证书无法导入：%1"
+msgstr "სერტიფიკატის შემოტანა შეუძლებელია: %1"
 
 #: qml/CertificatesPage.qml:87
 #, kde-format
 msgid "No certificates saved"
-msgstr "未保存证书"
+msgstr "სერტიფიკატი არ შენახულა"
 
 #: qml/main.qml:16
 #, kde-format
 msgid "Your Certificates"
-msgstr "您的证书"
+msgstr "თქვენი სერტიფიკატები"
 
 #: qml/RecoveryDetailsSheet.qml:28 qml/TestDetailsSheet.qml:29
 #: qml/VaccinationDetailsSheet.qml:29
 #, kde-format
 msgid "Person"
-msgstr "人员"
+msgstr "პიროვნება"
 
 #: qml/RecoveryDetailsSheet.qml:33 qml/TestDetailsSheet.qml:34
 #: qml/VaccinationDetailsSheet.qml:34
 #, kde-format
 msgid "Name:"
-msgstr "姓名："
+msgstr "სახელი:"
 
 #: qml/RecoveryDetailsSheet.qml:38 qml/TestDetailsSheet.qml:39
 #: qml/VaccinationDetailsSheet.qml:39
 #, kde-format
 msgid "Date of birth:"
-msgstr "出生日期："
+msgstr "დაბადების თარიღი:"
 
 #: qml/RecoveryDetailsSheet.qml:43
 #, kde-format
 msgid "Recovery"
-msgstr "康复"
+msgstr "გამოკეთება"
 
 #: qml/RecoveryDetailsSheet.qml:48
 #, kde-format
 msgid "Positive test:"
-msgstr "阳性检测结果："
+msgstr "დადებითი ტესტი:"
 
 #: qml/RecoveryDetailsSheet.qml:52 qml/TestDetailsSheet.qml:55
 #: qml/VaccinationDetailsSheet.qml:55
 #, kde-format
 msgid "Disease:"
-msgstr "疾病名称："
+msgstr "დაავადება:"
 
 #: qml/RecoveryDetailsSheet.qml:56
 #, kde-format
 msgid "Valid from:"
-msgstr "生效日期："
+msgstr "ძალაშია:"
 
 #: qml/RecoveryDetailsSheet.qml:60
 #, kde-format
 msgid "Valid until:"
-msgstr "失效日期："
+msgstr "ვადა:"
 
 #: qml/RecoveryDetailsSheet.qml:65 qml/TestDetailsSheet.qml:97
 #: qml/VaccinationDetailsSheet.qml:88
 #, kde-format
 msgid "Certificate"
-msgstr "证书"
+msgstr "სერტიფიკატი"
 
 #: qml/RecoveryDetailsSheet.qml:70 qml/TestDetailsSheet.qml:102
 #: qml/VaccinationDetailsSheet.qml:93
 #, kde-format
 msgid "Issuer:"
-msgstr "颁发者："
+msgstr "გამომცემელი:"
 
 #: qml/RecoveryDetailsSheet.qml:75 qml/TestDetailsSheet.qml:107
 #: qml/VaccinationDetailsSheet.qml:98
 #, kde-format
 msgid "Identifier:"
-msgstr "标识符："
+msgstr "იდენტიფიკატორი:"
 
 #: qml/RecoveryDetailsSheet.qml:80 qml/TestDetailsSheet.qml:113
 #: qml/VaccinationDetailsSheet.qml:103
 #, kde-format
 msgid "Issued:"
-msgstr "颁发时间："
+msgstr "გამოცებულია:"
 
 #: qml/RecoveryDetailsSheet.qml:85 qml/TestDetailsSheet.qml:118
 #: qml/VaccinationDetailsSheet.qml:108
 #, kde-format
 msgid "Expires:"
-msgstr "过期时间："
+msgstr "იწურება:"
 
 #: qml/RecoveryDetailsSheet.qml:99 qml/TestDetailsSheet.qml:132
 #: qml/VaccinationDetailsSheet.qml:122
 #, kde-format
 msgid "Signature:"
-msgstr "签名："
+msgstr "ხელმოწერა :"
 
 #: qml/TestDetailsSheet.qml:44
 #, kde-format
 msgid "Test"
-msgstr "检测结果"
+msgstr "შემოწმება"
 
 #: qml/TestDetailsSheet.qml:49 qml/VaccinationDetailsSheet.qml:49
 #, kde-format
 msgid "Date:"
-msgstr "日期："
+msgstr "თარიღი:"
 
 #: qml/TestDetailsSheet.qml:60 qml/VaccinationDetailsSheet.qml:60
 #, kde-format
 msgid "Type:"
-msgstr "类型："
+msgstr "ტიპი:"
 
 #: qml/TestDetailsSheet.qml:66
 #, kde-format
 msgid "Test:"
-msgstr "检测："
+msgstr "ტესტი:"
 
 #: qml/TestDetailsSheet.qml:81
 #, kde-format
 msgid "Result:"
-msgstr "结果："
+msgstr "შედეგი:"
 
 #: qml/TestDetailsSheet.qml:86
 #, kde-format
 msgid "Test Center:"
-msgstr "检测机构："
+msgstr "ტესტირების ცენტრი:"
 
 #: qml/TestDetailsSheet.qml:90 qml/VaccinationDetailsSheet.qml:81
 #, kde-format
 msgctxt "%1 a flag emoji, %2 is a country name"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: qml/TestDetailsSheet.qml:91 qml/VaccinationDetailsSheet.qml:82
 #, kde-format
 msgid "Country:"
-msgstr "国家："
+msgstr "ქვეყანა:"
 
 #: qml/VaccinationDetailsSheet.qml:44
 #, kde-format
 msgid "Vaccination"
-msgstr "疫苗接种"
+msgstr "ვაქცინაცია"
 
 #: qml/VaccinationDetailsSheet.qml:65
 #, kde-format
 msgid "Vaccine:"
-msgstr "疫苗："
+msgstr "ვაქცინა:"
 
 #: qml/VaccinationDetailsSheet.qml:71
 #, kde-format
 msgid "Manufacturer:"
-msgstr "厂商："
+msgstr "მწარმოებელი:"
 
 #: qml/VaccinationDetailsSheet.qml:75
 #, kde-format
@@ -247,4 +248,4 @@ msgstr "%1/%2"
 #: qml/VaccinationDetailsSheet.qml:76
 #, kde-format
 msgid "Dose:"
-msgstr "接种次数："
+msgstr "დოზა:"
