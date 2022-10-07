@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-02 00:48+0000\n"
+"POT-Creation-Date: 2022-10-07 00:49+0000\n"
 "PO-Revision-Date: 2022-08-02 19:25+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -42,12 +42,12 @@ msgstr "Geen certificaten gevonden in %1"
 msgid "No certificate in clipboard"
 msgstr "Geen certificaten in klembord"
 
-#: main.cpp:48
+#: main.cpp:49
 #, kde-format
 msgid "Show with test data"
 msgstr "Met testgegevens tonen"
 
-#: main.cpp:51
+#: main.cpp:52
 #, kde-format
 msgid "File to import."
 msgstr "Te importeren bestand."

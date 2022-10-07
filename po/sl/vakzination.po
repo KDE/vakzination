@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-02 00:48+0000\n"
+"POT-Creation-Date: 2022-10-07 00:49+0000\n"
 "PO-Revision-Date: 2022-08-03 06:48+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -43,12 +43,12 @@ msgstr "Ni mogoče najti potrdila v %1"
 msgid "No certificate in clipboard"
 msgstr "Ni potrdila na odložišču"
 
-#: main.cpp:48
+#: main.cpp:49
 #, kde-format
 msgid "Show with test data"
 msgstr "Prikaži s testnimi podatki"
 
-#: main.cpp:51
+#: main.cpp:52
 #, kde-format
 msgid "File to import."
 msgstr "Datoteka za uvoz."

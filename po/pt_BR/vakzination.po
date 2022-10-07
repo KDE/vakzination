@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-02 00:48+0000\n"
+"POT-Creation-Date: 2022-10-07 00:49+0000\n"
 "PO-Revision-Date: 2022-08-05 18:47-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -42,12 +42,12 @@ msgstr "Nenhum certificado encontrando em %1"
 msgid "No certificate in clipboard"
 msgstr "Nenhum certificado na área de transferência"
 
-#: main.cpp:48
+#: main.cpp:49
 #, kde-format
 msgid "Show with test data"
 msgstr "Mostrar com dados de testes"
 
-#: main.cpp:51
+#: main.cpp:52
 #, kde-format
 msgid "File to import."
 msgstr "Arquivo a importar."

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-02 00:48+0000\n"
+"POT-Creation-Date: 2022-10-07 00:49+0000\n"
 "PO-Revision-Date: 2022-08-17 23:39+0200\n"
 "Last-Translator: Jon Intxaurbe <joinzar@gmail.com>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -45,12 +45,12 @@ msgstr "Ez da aurkitu ziurtagiririk %1(e)an"
 msgid "No certificate in clipboard"
 msgstr "Ez dago ziurtagiririk arbelean"
 
-#: main.cpp:48
+#: main.cpp:49
 #, kde-format
 msgid "Show with test data"
 msgstr "Erakutsi probako datuekin"
 
-#: main.cpp:51
+#: main.cpp:52
 #, kde-format
 msgid "File to import."
 msgstr "Inportatuko den fitxategia."
