@@ -10,3 +10,6 @@ Dependencies:
     'frameworks/prison' : '@stable'
     'pim/khealthcertificate' : '@stable'
     'pim/kitinerary' : '@stable'
+- 'on': ['Linux/Qt6', 'FreeBSD/Qt6', 'Android/Qt6', 'Windows/Qt6']
+  'require':
+    'pim/kitinerary' : '@latest'
