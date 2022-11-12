@@ -13,3 +13,6 @@ Dependencies:
 - 'on': ['Linux/Qt6', 'FreeBSD/Qt6', 'Android/Qt6', 'Windows/Qt6']
   'require':
     'pim/kitinerary' : '@latest'
+
+Options:
+  require-passing-tests-on: [ 'Linux' ]
