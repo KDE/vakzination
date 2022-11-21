@@ -16,6 +16,7 @@ target_link_libraries(vakzination
     Qt::Svg
     KF5::I18n
     KF5::ConfigCore
+    KF5::CoreAddons
     vakzinationstatic
 )
 

@@ -16,6 +16,7 @@
 #include <QApplication>
 #endif
 
+#include <KAboutData>
 #include <KLocalizedContext>
 #include <KLocalizedString>
 
@@ -39,18 +40,26 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     }
 #endif
 
-    QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
-    QCoreApplication::setOrganizationDomain(QStringLiteral("kde.org"));
-    QCoreApplication::setApplicationName(QStringLiteral("vakzination"));
-    QCoreApplication::setApplicationVersion(QStringLiteral(VAKZINATION_VERSION_STRING));
-    QGuiApplication::setApplicationDisplayName(QStringLiteral("Vakzination"));
+    KLocalizedString::setApplicationDomain("vakzination");
+
+    KAboutData about(QStringLiteral("vakzination"),
+                     i18n("Vakzination"),
+                     QStringLiteral(VAKZINATION_VERSION_STRING),
+                     i18n("Vakzination manages your health certificates like vaccination, test, and recovery certificates."),
+                     KAboutLicense::GPL_V2,
+                     i18n("© 2021-2022 KDE Community"));
+
+    about.addAuthor(i18n("Nicolas Fella"), i18n("Maintainer"), QStringLiteral("nicolas.fella@gmx.de"));
+    about.setTranslator(i18nc("NAME OF TRANSLATORS", "Your names"), i18nc("EMAIL OF TRANSLATORS", "Your emails"));
+    about.setOrganizationDomain("kde.org");
+    KAboutData::setApplicationData(about);
 
     QCommandLineParser parser;
+    about.setupCommandLine(&parser);
     parser.addOption(QCommandLineOption(QStringLiteral("testmode"), i18n("Show with test data")));
     QCommandLineOption isTemporaryOpt(QStringLiteral("tempfile"), QStringLiteral("Input file is a temporary file and will be deleted after importing."));
     parser.addOption(isTemporaryOpt);
     parser.addPositionalArgument(QStringLiteral("file"), i18n("File to import."));
-    parser.addVersionOption();
     parser.process(app);
 
     const bool testMode = parser.isSet(QStringLiteral("testmode"));

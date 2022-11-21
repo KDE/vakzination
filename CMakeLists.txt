@@ -35,7 +35,7 @@ ecm_setup_version(${PROJECT_VERSION}
 )
 
 find_package(Qt${QT_MAJOR_VERSION} ${QT5_MIN_VERSION} REQUIRED COMPONENTS Core Gui Qml QuickControls2 Svg)
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 I18n Config Prison)
+find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 I18n Config Prison CoreAddons)
 
 find_package(KHealthCertificate REQUIRED)
 find_package(KPimItinerary 5.18.0 REQUIRED)
