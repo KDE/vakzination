@@ -61,6 +61,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     parser.addOption(isTemporaryOpt);
     parser.addPositionalArgument(QStringLiteral("file"), i18n("File to import."));
     parser.process(app);
+    about.processCommandLine(&parser);
 
     const bool testMode = parser.isSet(QStringLiteral("testmode"));
 
