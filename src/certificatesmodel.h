@@ -38,12 +38,15 @@ public:
     explicit CertificatesModel(bool testMode);
     QVariant data(const QModelIndex &index, int role) const override;
 
-    int rowCount(const QModelIndex &parent) const override;
+    int rowCount(const QModelIndex &parent = {}) const override;
 
     QHash<int, QByteArray> roleNames() const override;
 
     Q_INVOKABLE void importCertificate(const QUrl &path);
     Q_INVOKABLE void importCertificateFromClipboard();
+
+    Q_INVOKABLE bool removeRow(int row, const QModelIndex &parent = {}); // not exported to QML in Qt5 yet
+    Q_INVOKABLE bool removeRows(int row, int count, const QModelIndex &parent = {}) override;
 
 Q_SIGNALS:
     void importError(const QString &error);

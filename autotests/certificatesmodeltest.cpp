@@ -18,9 +18,12 @@ private Q_SLOTS:
         QStandardPaths::setTestModeEnabled(true);
 
         // cleanup persisted content from previous runs
-        KConfig config(QStringLiteral("vakzinationrc"));
-        auto general = config.group(QStringLiteral("General"));
-        general.deleteEntry(QStringLiteral("certificates"));
+        CertificatesModel model(false);
+        QAbstractItemModelTester modelTest(&model);
+        if (model.rowCount()) {
+            model.removeRows(0, model.rowCount());
+        }
+        QCOMPARE(model.rowCount(), 0);
     }
 
     void testEmptyModel()
@@ -141,6 +144,14 @@ private Q_SLOTS:
             CertificatesModel model(false);
             QAbstractItemModelTester modelTest(&model);
             QCOMPARE(model.rowCount({}), 2);
+            model.removeRow(0);
+            QCOMPARE(model.rowCount({}), 1);
+        }
+
+        {
+            CertificatesModel model(false);
+            QAbstractItemModelTester modelTest(&model);
+            QCOMPARE(model.rowCount({}), 1);
         }
     }
 };

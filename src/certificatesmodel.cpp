@@ -246,3 +246,23 @@ QString CertificatesModel::toLocalFile(const QUrl &url)
     return url.toLocalFile();
 #endif
 }
+
+bool CertificatesModel::removeRow(int row, const QModelIndex &parent)
+{
+    return QAbstractListModel::removeRow(row, parent);
+}
+
+bool CertificatesModel::removeRows(int row, int count, const QModelIndex &parent)
+{
+    if (parent.isValid()) {
+        return false;
+    }
+
+    beginRemoveRows({}, row, row + count - 1);
+    m_certificates.erase(m_certificates.begin() + row, m_certificates.begin() + row + count);
+    if (!m_testMode) {
+        m_generalConfig.writeEntry(QStringLiteral("certificates"), toStringList(m_certificates));
+    }
+    endRemoveRows();
+    return true;
+}
