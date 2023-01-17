@@ -9,6 +9,8 @@
 
 #include <KLocalizedString>
 
+#include <KItinerary/ExtractorCapabilities>
+
 class CertificatesModelTest : public QObject
 {
     Q_OBJECT
@@ -61,6 +63,10 @@ private Q_SLOTS:
 
     void testImportPng()
     {
+        if (KItinerary::ExtractorCapabilities::capabilitiesString().contains(QLatin1String("zxing (1.4.0)"))) {
+            QSKIP("Using ZXing version incapable of decoding test data - skipping");
+        }
+
         CertificatesModel model(true);
         QAbstractItemModelTester modelTest(&model);
 

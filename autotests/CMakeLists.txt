@@ -3,4 +3,4 @@
 
 find_package(Qt${QT_MAJOR_VERSION}Test REQUIRED)
 
-ecm_add_test(certificatesmodeltest.cpp TEST_NAME certificatesmodeltest LINK_LIBRARIES vakzinationstatic Qt::Test KF5::I18n)
+ecm_add_test(certificatesmodeltest.cpp TEST_NAME certificatesmodeltest LINK_LIBRARIES vakzinationstatic Qt::Test KF5::I18n KPim::Itinerary)
