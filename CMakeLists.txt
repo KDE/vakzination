@@ -8,6 +8,9 @@ project(vakzination)
 set(PROJECT_VERSION "22.11")
 
 set(QT5_MIN_VERSION 5.15)
+if (ANDROID)
+    set(QT5_MIN_VERSION 5.15.8)
+endif()
 set(KF5_MIN_VERSION 5.90)
 
 set(CMAKE_CXX_STANDARD 17)
