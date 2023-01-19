@@ -221,15 +221,22 @@ int CertificatesModel::findRecursive(const KItinerary::ExtractorDocumentNode &no
 
 void CertificatesModel::importCertificateFromClipboard()
 {
-    std::optional<AnyCertificate> maybeCert;
-
     const auto md = QGuiApplication::clipboard()->mimeData();
     if (md->hasText()) {
-        maybeCert = parseCertificate(md->text().toUtf8());
+        importCertificateFromText(md->text());
     } else if (md->hasFormat(QLatin1String("application/octet-stream"))) {
-        maybeCert = parseCertificate(md->data(QLatin1String("application/octet-stream")));
+        importCertificateFromData(md->data(QLatin1String("application/octet-stream")));
     }
+}
 
+void CertificatesModel::importCertificateFromText(const QString &text)
+{
+    importCertificateFromData(text.toUtf8());
+}
+
+void CertificatesModel::importCertificateFromData(const QByteArray &data)
+{
+    auto maybeCert = parseCertificate(data);
     if (maybeCert) {
         addCertificate(*maybeCert);
     } else {
