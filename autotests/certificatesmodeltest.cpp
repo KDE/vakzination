@@ -11,6 +11,8 @@
 
 #include <KItinerary/ExtractorCapabilities>
 
+#include <khealthcertificate/khealthcertificate_version.h>
+
 class CertificatesModelTest : public QObject
 {
     Q_OBJECT
@@ -179,6 +181,17 @@ private Q_SLOTS:
             QCOMPARE(model.rowCount({}), 1);
         }
     }
+#if KHEALTHCERTIFICATE_VERSION >= QT_VERSION_CHECK(22, 11, 40)
+    void testDeduplication()
+    {
+        CertificatesModel model(true);
+        QAbstractItemModelTester modelTest(&model);
+        model.importCertificate(QUrl::fromLocalFile(QFINDTESTDATA("full-vaccination.txt")));
+        QCOMPARE(model.rowCount({}), 5);
+        model.importCertificate(QUrl::fromLocalFile(QFINDTESTDATA("full-vaccination.txt")));
+        QCOMPARE(model.rowCount({}), 5);
+    }
+#endif
 };
 
 QTEST_MAIN(CertificatesModelTest)

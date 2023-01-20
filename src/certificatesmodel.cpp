@@ -17,6 +17,7 @@
 #include <KLocalizedString>
 
 #include <KHealthCertificate/KHealthCertificateParser>
+#include <khealthcertificate/khealthcertificate_version.h>
 
 QVector<AnyCertificate> CertificatesModel::fromStringList(const QStringList rawCertificates) const
 {
@@ -45,11 +46,10 @@ QStringList CertificatesModel::toStringList(const QVector<AnyCertificate> certif
 }
 
 const QByteArray sample =
-    "HC1:6BF+70790T9WJWG.FKY*4GO0.O1CV2 O5 "
-    "N2FBBRW1*70HS8WY04AC*WIFN0AHCD8KD97TK0F90KECTHGWJC0FDC:5AIA%G7X+AQB9746HS80:54IBQF60R6$A80X6S1BTYACG6M+9XG8KIAWNA91AY%67092L4WJCT3EHS8XJC$+"
-    "DXJCCWENF6OF63W5NW6WF6%JC QE/IAYJC5LEW34U3ET7DXC9 QE-ED8%E.JCBECB1A-:8$96646AL60A60S6Q$D.UDRYA "
-    "96NF6L/5QW6307KQEPD09WEQDD+Q6TW6FA7C466KCN9E%961A6DL6FA7D46JPCT3E5JDLA7$Q6E464W5TG6..DX%DZJC6/DTZ9 QE5$CB$DA/D JC1/D3Z8WED1ECW.CCWE.Y92OAGY8MY9L+9MPCG/D5 "
-    "C5IA5N9$PC5$CUZCY$5Y$527B+A4KZNQG5TKOWWD9FL%I8U$F7O2IBM85CWOC%LEZU4R/BXHDAHN 11$CA5MRI:AONFN7091K9FKIGIY%VWSSSU9%01FO2*FTPQ3C3F";
+    "HC1:NCF570.90T9WTWGVLKG99.+VKV9NT3RH1X*4%AB3XK4F36:G$MB2F3F*K+UR3JCYHAY50.FK6ZK7:EDOLFVCPD0B$D% "
+    "D3IA4W5646946%96X476KCN9E%961A69L6QW6B46XJCCWENF6OF63W5Y96B46WJCT3E2+8WJC0FD4:473DSDDF+ANG7ZHAFM89A6A1A71B/M8RY971BS1BAC9$+ADB8ZCAM%6//6.JCP9EJY8L/5M/"
+    "5546.96D46%JCIQE1C93KC.SC4KCD3DX47B46IL6646I*6..DX%DLPCG/DZ-CFZA71A1T8W.CZ-C4%E-3E4VCI3D7WEMY95IAWY8I3DD "
+    "CGECQED$PC5$CUZCY$5Y$5JPCT3E5JDLA7KF6D463W5WA6%78%VIKQS*9OE.U37WGJG.1J5PF9WOASFU3UI69PKJEH2F:SY2SCYKFOMVGP OLGW31.J5OVSAFBGON19H+HCSIA7P:65P0F-QR/GS:2";
 
 CertificatesModel::CertificatesModel(bool testMode)
     : QAbstractListModel()
@@ -111,6 +111,13 @@ QHash<int, QByteArray> CertificatesModel::roleNames() const
 
 void CertificatesModel::addCertificate(AnyCertificate cert)
 {
+#if KHEALTHCERTIFICATE_VERSION >= QT_VERSION_CHECK(22, 11, 40)
+    const auto it = std::find(m_certificates.begin(), m_certificates.end(), cert);
+    if (it != m_certificates.end()) { // certificate is already known
+        return;
+    }
+#endif
+
     beginInsertRows({}, m_certificates.size(), m_certificates.size());
     m_certificates << cert;
 
