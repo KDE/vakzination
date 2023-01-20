@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-07 00:49+0000\n"
+"POT-Creation-Date: 2023-01-20 01:00+0000\n"
 "PO-Revision-Date: 2022-08-05 18:47-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -37,17 +37,57 @@ msgstr "Não foi possível abrir o arquivo: %1"
 msgid "No certificate found in %1"
 msgstr "Nenhum certificado encontrando em %1"
 
-#: certificatesmodel.cpp:236
+#: certificatesmodel.cpp:243
 #, kde-format
 msgid "No certificate in clipboard"
 msgstr "Nenhum certificado na área de transferência"
 
-#: main.cpp:49
+#: main.cpp:46
+#, fuzzy, kde-format
+#| msgid "vakzination"
+msgid "Vakzination"
+msgstr "vakzination"
+
+#: main.cpp:48
+#, kde-format
+msgid ""
+"Vakzination manages your health certificates like vaccination, test, and "
+"recovery certificates."
+msgstr ""
+
+#: main.cpp:50
+#, kde-format
+msgid "© 2021-2022 KDE Community"
+msgstr ""
+
+#: main.cpp:52
+#, kde-format
+msgid "Nicolas Fella"
+msgstr ""
+
+#: main.cpp:52
+#, kde-format
+msgid "Maintainer"
+msgstr ""
+
+#: main.cpp:53
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#: main.cpp:53
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#: main.cpp:59
 #, kde-format
 msgid "Show with test data"
 msgstr "Mostrar com dados de testes"
 
-#: main.cpp:52
+#: main.cpp:62
 #, kde-format
 msgid "File to import."
 msgstr "Arquivo a importar."
@@ -248,9 +288,6 @@ msgstr "%1/%2"
 #, kde-format
 msgid "Dose:"
 msgstr "Dose:"
-
-#~ msgid "vakzination"
-#~ msgstr "vakzination"
 
 #~ msgid "Your vaccinations"
 #~ msgstr "Suas vacinas"

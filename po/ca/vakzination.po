@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-07 00:49+0000\n"
+"POT-Creation-Date: 2023-01-20 01:00+0000\n"
 "PO-Revision-Date: 2022-08-02 16:38+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -39,17 +39,57 @@ msgstr "No s'ha pogut obrir el fitxer: %1"
 msgid "No certificate found in %1"
 msgstr "No s'ha trobat cap certificat a %1"
 
-#: certificatesmodel.cpp:236
+#: certificatesmodel.cpp:243
 #, kde-format
 msgid "No certificate in clipboard"
 msgstr "No hi ha cap certificat al porta-retalls"
 
-#: main.cpp:49
+#: main.cpp:46
+#, fuzzy, kde-format
+#| msgid "Vaccination"
+msgid "Vakzination"
+msgstr "Vaccinació"
+
+#: main.cpp:48
+#, kde-format
+msgid ""
+"Vakzination manages your health certificates like vaccination, test, and "
+"recovery certificates."
+msgstr ""
+
+#: main.cpp:50
+#, kde-format
+msgid "© 2021-2022 KDE Community"
+msgstr ""
+
+#: main.cpp:52
+#, kde-format
+msgid "Nicolas Fella"
+msgstr ""
+
+#: main.cpp:52
+#, kde-format
+msgid "Maintainer"
+msgstr ""
+
+#: main.cpp:53
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#: main.cpp:53
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#: main.cpp:59
 #, kde-format
 msgid "Show with test data"
 msgstr "Mostra amb dades de prova"
 
-#: main.cpp:52
+#: main.cpp:62
 #, kde-format
 msgid "File to import."
 msgstr "Fitxer a importar."
