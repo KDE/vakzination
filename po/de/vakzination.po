@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-20 01:00+0000\n"
+"POT-Creation-Date: 2023-01-22 01:00+0000\n"
 "PO-Revision-Date: 2022-08-20 20:52+0200\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -15,27 +15,27 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 21.12.3\n"
 
-#: certificatesmodel.cpp:137
+#: certificatesmodel.cpp:144
 #, kde-format
 msgid "Empty file url"
 msgstr "Leerer Datei-Pfad"
 
-#: certificatesmodel.cpp:141
+#: certificatesmodel.cpp:148
 #, kde-format
 msgid "File URL not valid: %1"
 msgstr "Datei-Pfad nicht gültig: %1"
 
-#: certificatesmodel.cpp:149
+#: certificatesmodel.cpp:156
 #, kde-format
 msgid "Could not open file: %1"
 msgstr "Datei kann nicht geöffnet werden: %1"
 
-#: certificatesmodel.cpp:171
+#: certificatesmodel.cpp:178
 #, kde-format
 msgid "No certificate found in %1"
 msgstr "Kein Nachweis gefunden in %1"
 
-#: certificatesmodel.cpp:243
+#: certificatesmodel.cpp:250
 #, kde-format
 msgid "No certificate in clipboard"
 msgstr "Kein Nachweis in der Zwischenablage"

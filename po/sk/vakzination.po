@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-20 01:00+0000\n"
+"POT-Creation-Date: 2023-01-22 01:00+0000\n"
 "PO-Revision-Date: 2021-11-15 18:50+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -15,27 +15,27 @@ msgstr ""
 "X-Generator: Lokalize 21.08.3\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: certificatesmodel.cpp:137
+#: certificatesmodel.cpp:144
 #, kde-format
 msgid "Empty file url"
 msgstr ""
 
-#: certificatesmodel.cpp:141
+#: certificatesmodel.cpp:148
 #, kde-format
 msgid "File URL not valid: %1"
 msgstr ""
 
-#: certificatesmodel.cpp:149
+#: certificatesmodel.cpp:156
 #, kde-format
 msgid "Could not open file: %1"
 msgstr "Nepodarilo sa otvoriť súbor: %1"
 
-#: certificatesmodel.cpp:171
+#: certificatesmodel.cpp:178
 #, kde-format
 msgid "No certificate found in %1"
 msgstr ""
 
-#: certificatesmodel.cpp:243
+#: certificatesmodel.cpp:250
 #, kde-format
 msgid "No certificate in clipboard"
 msgstr ""

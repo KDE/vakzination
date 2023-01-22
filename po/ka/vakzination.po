@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-20 01:00+0000\n"
-"PO-Revision-Date: 2022-10-02 08:14+0200\n"
+"POT-Creation-Date: 2023-01-22 01:00+0000\n"
+"PO-Revision-Date: 2023-01-21 07:26+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,38 +16,37 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
-#: certificatesmodel.cpp:137
+#: certificatesmodel.cpp:144
 #, kde-format
 msgid "Empty file url"
 msgstr "ფაილის URL ცარიელია"
 
-#: certificatesmodel.cpp:141
+#: certificatesmodel.cpp:148
 #, kde-format
 msgid "File URL not valid: %1"
 msgstr "ფაილის URL არასწორია: %1"
 
-#: certificatesmodel.cpp:149
+#: certificatesmodel.cpp:156
 #, kde-format
 msgid "Could not open file: %1"
 msgstr "ფაილის გახსნის შეცდომა: %1"
 
-#: certificatesmodel.cpp:171
+#: certificatesmodel.cpp:178
 #, kde-format
 msgid "No certificate found in %1"
 msgstr "%1-ში სერტიფიკატები ვერ ვიპოვე"
 
-#: certificatesmodel.cpp:243
+#: certificatesmodel.cpp:250
 #, kde-format
 msgid "No certificate in clipboard"
 msgstr "ბუფერში სერტიფიკატი ვერ ვიპოვე"
 
 #: main.cpp:46
-#, fuzzy, kde-format
-#| msgid "Vaccination"
+#, kde-format
 msgid "Vakzination"
-msgstr "ვაქცინაცია"
+msgstr "Vakzination"
 
 #: main.cpp:48
 #, kde-format
@@ -55,33 +54,35 @@ msgid ""
 "Vakzination manages your health certificates like vaccination, test, and "
 "recovery certificates."
 msgstr ""
+"Vakzination მართავს თქვენი ჯანმრთელობის ისეთ სერტიფიკატებს, როგორიცაა "
+"ვაქცინაციის, ტესტირების და გამოკეთების სერტიფიკატები."
 
 #: main.cpp:50
 #, kde-format
 msgid "© 2021-2022 KDE Community"
-msgstr ""
+msgstr "© 2021-2022 KDE -ის საზოგადოება"
 
 #: main.cpp:52
 #, kde-format
 msgid "Nicolas Fella"
-msgstr ""
+msgstr "Nicolas Fella"
 
 #: main.cpp:52
 #, kde-format
 msgid "Maintainer"
-msgstr ""
+msgstr "წამყვანი პროგრამისტი"
 
 #: main.cpp:53
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Temuri Doghonadze"
 
 #: main.cpp:53
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "Temuri.doghonadze@gmail.com"
 
 #: main.cpp:59
 #, kde-format
