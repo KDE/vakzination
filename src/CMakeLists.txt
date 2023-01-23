@@ -22,11 +22,14 @@ target_link_libraries(vakzination
 
 if (ANDROID)
     kirigami_package_breeze_icons(ICONS
-        folder-open
-        edit-paste
-        dialog-ok
-        question
         dialog-error-symbolic
+        dialog-ok
+        edit-paste
+        flashlight-off
+        flashlight-on
+        folder-open
+        question
+        view-barcode-qr
     )
 else()
     target_link_libraries(vakzination Qt::Widgets)

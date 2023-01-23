@@ -229,26 +229,32 @@ int CertificatesModel::findRecursive(const KItinerary::ExtractorDocumentNode &no
 void CertificatesModel::importCertificateFromClipboard()
 {
     const auto md = QGuiApplication::clipboard()->mimeData();
+    bool result = false;
     if (md->hasText()) {
-        importCertificateFromText(md->text());
+        result = importCertificateFromText(md->text());
     } else if (md->hasFormat(QLatin1String("application/octet-stream"))) {
-        importCertificateFromData(md->data(QLatin1String("application/octet-stream")));
+        result = importCertificateFromData(md->data(QLatin1String("application/octet-stream")));
+    }
+
+    if (!result) {
+        Q_EMIT importError(i18n("No certificate in clipboard"));
     }
 }
 
-void CertificatesModel::importCertificateFromText(const QString &text)
+bool CertificatesModel::importCertificateFromText(const QString &text)
 {
-    importCertificateFromData(text.toUtf8());
+    return importCertificateFromData(text.toUtf8());
 }
 
-void CertificatesModel::importCertificateFromData(const QByteArray &data)
+bool CertificatesModel::importCertificateFromData(const QByteArray &data)
 {
     auto maybeCert = parseCertificate(data);
     if (maybeCert) {
         addCertificate(*maybeCert);
-    } else {
-        Q_EMIT importError(i18n("No certificate in clipboard"));
+        return true;
     }
+
+    return false;
 }
 
 QString CertificatesModel::toLocalFile(const QUrl &url)

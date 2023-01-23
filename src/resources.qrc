@@ -10,5 +10,6 @@
         <file alias="VaccinationDetailsSheet.qml">qml/VaccinationDetailsSheet.qml</file>
         <file alias="TestDetailsSheet.qml">qml/TestDetailsSheet.qml</file>
         <file alias="RecoveryDetailsSheet.qml">qml/RecoveryDetailsSheet.qml</file>
+        <file alias="ScanBarcodePage.qml">qml/ScanBarcodePage.qml</file>
     </qresource>
 </RCC>

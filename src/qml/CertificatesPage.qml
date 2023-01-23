@@ -31,6 +31,14 @@ Kirigami.ScrollablePage {
         }
     }
 
+    property var scanBarcodeAction: Kirigami.Action {
+        text: i18n("Scan QR code")
+        icon.name: "view-barcode-qr"
+        onTriggered: {
+            applicationWindow().pageStack.push(scanBarcodePage);
+        }
+    }
+
     FileDialog {
         id: fileDialog
         folder: StandardPaths.writableLocation(StandardPaths.DocumentsLocation)
@@ -38,6 +46,11 @@ Kirigami.ScrollablePage {
         onAccepted: {
             CertificatesModel.importCertificate(currentFile)
         }
+    }
+
+    Component {
+        id: scanBarcodePage
+        ScanBarcodePage {}
     }
 
     header: Kirigami.InlineMessage {
@@ -58,12 +71,13 @@ Kirigami.ScrollablePage {
         Kirigami.ActionToolBar {
             anchors.fill: parent
 
-            actions: [importFileAction, importClipboardAction]
+            actions: [importFileAction, importClipboardAction, scanBarcodeAction]
         }
     }
 
     actions.main: !Kirigami.Settings.isMobile ? importFileAction : undefined
     actions.right: !Kirigami.Settings.isMobile ? importClipboardAction : undefined
+    actions.left: !Kirigami.Settings.isMobile ? scanBarcodeAction : undefined
 
     Connections {
         target: CertificatesModel
