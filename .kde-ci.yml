@@ -6,6 +6,7 @@ Dependencies:
   'require':
     'frameworks/kcoreaddons' : '@stable'
     'frameworks/ki18n' : '@stable'
+    'frameworks/kconfig' : '@stable'
     'frameworks/kirigami' : '@stable'
     'frameworks/prison' : '@stable'
     'pim/khealthcertificate' : '@stable'
