@@ -3,9 +3,8 @@
 
 cmake_minimum_required(VERSION 3.16)
 
-project(vakzination)
-
-set(PROJECT_VERSION "22.11")
+set(PROJECT_VERSION "23.01")
+project(vakzination VERSION ${PROJECT_VERSION})
 
 set(QT5_MIN_VERSION 5.15)
 if (ANDROID)
