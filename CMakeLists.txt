@@ -37,8 +37,13 @@ ecm_setup_version(${PROJECT_VERSION}
     VERSION_HEADER ${CMAKE_CURRENT_BINARY_DIR}/version.h
 )
 
+if (QT_MAJOR_VERSION EQUAL "6")
+    set(KF_MAJOR_VERSION "6")
+else()
+    set(KF_MAJOR_VERSION "5")
+endif()
 find_package(Qt${QT_MAJOR_VERSION} ${QT5_MIN_VERSION} REQUIRED COMPONENTS Core Gui Qml QuickControls2 Svg)
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 I18n Config Prison CoreAddons)
+find_package(KF${KF_MAJOR_VERSION} ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 I18n Config Prison CoreAddons)
 
 find_package(KHealthCertificate REQUIRED)
 find_package(KPimItinerary 5.18.0 REQUIRED)

@@ -3,7 +3,7 @@
 
 add_library(vakzinationstatic STATIC)
 target_sources(vakzinationstatic PRIVATE certificatesmodel.cpp)
-target_link_libraries(vakzinationstatic PUBLIC Qt::Core Qt::Gui KF5::ConfigCore KHealthCertificate PRIVATE KF5::I18n KPim::Itinerary)
+target_link_libraries(vakzinationstatic PUBLIC Qt::Core Qt::Gui KF${KF_MAJOR_VERSION}::ConfigCore KHealthCertificate PRIVATE KF${KF_MAJOR_VERSION}::I18n KPim::Itinerary)
 
 add_executable(vakzination main.cpp resources.qrc)
 target_include_directories(vakzination PRIVATE ${CMAKE_BINARY_DIR})
@@ -14,9 +14,9 @@ target_link_libraries(vakzination
     Qt::Quick
     Qt::QuickControls2
     Qt::Svg
-    KF5::I18n
-    KF5::ConfigCore
-    KF5::CoreAddons
+    KF${KF_MAJOR_VERSION}::I18n
+    KF${KF_MAJOR_VERSION}::ConfigCore
+    KF${KF_MAJOR_VERSION}::CoreAddons
     vakzinationstatic
 )
 
