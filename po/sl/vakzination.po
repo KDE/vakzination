@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-22 01:00+0000\n"
+"POT-Creation-Date: 2023-01-30 01:00+0000\n"
 "PO-Revision-Date: 2023-01-21 09:41+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -38,7 +38,7 @@ msgstr "Ni bilo mogoče odpreti datoteke: %1"
 msgid "No certificate found in %1"
 msgstr "Ni mogoče najti potrdila v %1"
 
-#: certificatesmodel.cpp:250
+#: certificatesmodel.cpp:240
 #, kde-format
 msgid "No certificate in clipboard"
 msgstr "Ni potrdila na odložišču"
@@ -130,12 +130,17 @@ msgstr "Uvozi iz datoteke"
 msgid "Import from clipboard"
 msgstr "Uvozi iz odložišča"
 
-#: qml/CertificatesPage.qml:49
+#: qml/CertificatesPage.qml:35 qml/ScanBarcodePage.qml:16
+#, kde-format
+msgid "Scan QR code"
+msgstr ""
+
+#: qml/CertificatesPage.qml:62
 #, kde-format
 msgid "Certificate could not be imported: %1"
 msgstr "Potrdila in bilo mogoče uvoziti: %1"
 
-#: qml/CertificatesPage.qml:87
+#: qml/CertificatesPage.qml:101
 #, kde-format
 msgid "No certificates saved"
 msgstr "Ni shranjenih potrdil"
@@ -224,6 +229,16 @@ msgstr "Poteče:"
 #, kde-format
 msgid "Signature:"
 msgstr "Podpis:"
+
+#: qml/ScanBarcodePage.qml:25
+#, kde-format
+msgid "Light"
+msgstr ""
+
+#: qml/ScanBarcodePage.qml:78
+#, kde-format
+msgid "No camera available."
+msgstr ""
 
 #: qml/TestDetailsSheet.qml:44
 #, kde-format

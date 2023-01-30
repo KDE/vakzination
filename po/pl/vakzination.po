@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-22 01:00+0000\n"
+"POT-Creation-Date: 2023-01-30 01:00+0000\n"
 "PO-Revision-Date: 2022-08-07 06:56+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -38,7 +38,7 @@ msgstr "Nie można otworzyć pliku: %1"
 msgid "No certificate found in %1"
 msgstr "Nie znaleziono żadnego certyfikatu w %1"
 
-#: certificatesmodel.cpp:250
+#: certificatesmodel.cpp:240
 #, kde-format
 msgid "No certificate in clipboard"
 msgstr "Nie ma żadnego certyfikatu w schowku"
@@ -129,12 +129,17 @@ msgstr "Zaimportuj z pliku"
 msgid "Import from clipboard"
 msgstr "Zaimportuj ze schowka"
 
-#: qml/CertificatesPage.qml:49
+#: qml/CertificatesPage.qml:35 qml/ScanBarcodePage.qml:16
+#, kde-format
+msgid "Scan QR code"
+msgstr ""
+
+#: qml/CertificatesPage.qml:62
 #, kde-format
 msgid "Certificate could not be imported: %1"
 msgstr "Nie można zaimportować certyfikatu: %1"
 
-#: qml/CertificatesPage.qml:87
+#: qml/CertificatesPage.qml:101
 #, kde-format
 msgid "No certificates saved"
 msgstr "Nie zapisano żadnych certyfikatów"
@@ -223,6 +228,16 @@ msgstr "Wygasa:"
 #, kde-format
 msgid "Signature:"
 msgstr "Podpis:"
+
+#: qml/ScanBarcodePage.qml:25
+#, kde-format
+msgid "Light"
+msgstr ""
+
+#: qml/ScanBarcodePage.qml:78
+#, kde-format
+msgid "No camera available."
+msgstr ""
 
 #: qml/TestDetailsSheet.qml:44
 #, kde-format
