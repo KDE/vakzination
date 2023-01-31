@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-30 01:00+0000\n"
-"PO-Revision-Date: 2023-01-21 07:26+0100\n"
+"PO-Revision-Date: 2023-01-30 09:41+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -133,7 +133,7 @@ msgstr "გაცვლის ბუფერიდან შემოტან�
 #: qml/CertificatesPage.qml:35 qml/ScanBarcodePage.qml:16
 #, kde-format
 msgid "Scan QR code"
-msgstr ""
+msgstr "QR კოდის სკანირება"
 
 #: qml/CertificatesPage.qml:62
 #, kde-format
@@ -233,12 +233,12 @@ msgstr "ხელმოწერა :"
 #: qml/ScanBarcodePage.qml:25
 #, kde-format
 msgid "Light"
-msgstr ""
+msgstr "სინათლე"
 
 #: qml/ScanBarcodePage.qml:78
 #, kde-format
 msgid "No camera available."
-msgstr ""
+msgstr "კამერა მიუწვდომელია."
 
 #: qml/TestDetailsSheet.qml:44
 #, kde-format

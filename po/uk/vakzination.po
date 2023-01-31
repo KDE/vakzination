@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-30 01:00+0000\n"
-"PO-Revision-Date: 2023-01-20 08:34+0200\n"
+"PO-Revision-Date: 2023-01-30 08:54+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -133,7 +133,7 @@ msgstr "Імпортувати з буфера обміну"
 #: qml/CertificatesPage.qml:35 qml/ScanBarcodePage.qml:16
 #, kde-format
 msgid "Scan QR code"
-msgstr ""
+msgstr "Сканувати QR-код"
 
 #: qml/CertificatesPage.qml:62
 #, kde-format
@@ -233,12 +233,12 @@ msgstr "Підпис:"
 #: qml/ScanBarcodePage.qml:25
 #, kde-format
 msgid "Light"
-msgstr ""
+msgstr "Світло"
 
 #: qml/ScanBarcodePage.qml:78
 #, kde-format
 msgid "No camera available."
-msgstr ""
+msgstr "Немає доступних камер."
 
 #: qml/TestDetailsSheet.qml:44
 #, kde-format
