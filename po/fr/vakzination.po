@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-30 01:00+0000\n"
-"PO-Revision-Date: 2023-01-20 19:14+0100\n"
+"PO-Revision-Date: 2023-01-31 19:14+0100\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard]neuf.fr>\n"
 "Language-Team: fr\n"
 "Language: fr\n"
@@ -130,7 +130,7 @@ msgstr "Importer à partir du presse-papier"
 #: qml/CertificatesPage.qml:35 qml/ScanBarcodePage.qml:16
 #, kde-format
 msgid "Scan QR code"
-msgstr ""
+msgstr "Lire un code « QR »"
 
 #: qml/CertificatesPage.qml:62
 #, kde-format
@@ -230,12 +230,12 @@ msgstr "Signature :"
 #: qml/ScanBarcodePage.qml:25
 #, kde-format
 msgid "Light"
-msgstr ""
+msgstr "Léger"
 
 #: qml/ScanBarcodePage.qml:78
 #, kde-format
 msgid "No camera available."
-msgstr ""
+msgstr "Aucun appareil photo disponible."
 
 #: qml/TestDetailsSheet.qml:44
 #, kde-format
