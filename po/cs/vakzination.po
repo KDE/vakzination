@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-30 01:00+0000\n"
-"PO-Revision-Date: 2023-01-24 15:32+0100\n"
+"PO-Revision-Date: 2023-01-31 14:50+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -53,6 +53,8 @@ msgid ""
 "Vakzination manages your health certificates like vaccination, test, and "
 "recovery certificates."
 msgstr ""
+"Vakzination spravuje zdravotní certifikáty jako očkování, testy a "
+"certifikáty o zotavení."
 
 #: main.cpp:50
 #, kde-format
@@ -130,7 +132,7 @@ msgstr "Importovat ze schránky"
 #: qml/CertificatesPage.qml:35 qml/ScanBarcodePage.qml:16
 #, kde-format
 msgid "Scan QR code"
-msgstr ""
+msgstr "Skenovat kód QR"
 
 #: qml/CertificatesPage.qml:62
 #, kde-format
@@ -230,12 +232,12 @@ msgstr "Podpis:"
 #: qml/ScanBarcodePage.qml:25
 #, kde-format
 msgid "Light"
-msgstr ""
+msgstr "Lehce"
 
 #: qml/ScanBarcodePage.qml:78
 #, kde-format
 msgid "No camera available."
-msgstr ""
+msgstr "Není dostupný fotoaparát."
 
 #: qml/TestDetailsSheet.qml:44
 #, kde-format
