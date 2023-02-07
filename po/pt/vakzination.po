@@ -233,7 +233,7 @@ msgstr ""
 #: qml/ScanBarcodePage.qml:78
 #, kde-format
 msgid "No camera available."
-msgstr ""
+msgstr "Nenhuma câmara disponível."
 
 #: qml/TestDetailsSheet.qml:44
 #, kde-format
