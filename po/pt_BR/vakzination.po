@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the vakzination package.
 #
-# Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2021, 2022.
+# Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-30 01:00+0000\n"
-"PO-Revision-Date: 2022-08-05 18:47-0300\n"
+"PO-Revision-Date: 2023-02-07 10:57-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -43,10 +43,9 @@ msgid "No certificate in clipboard"
 msgstr "Nenhum certificado na área de transferência"
 
 #: main.cpp:46
-#, fuzzy, kde-format
-#| msgid "vakzination"
+#, kde-format
 msgid "Vakzination"
-msgstr "vakzination"
+msgstr "Vakzination"
 
 #: main.cpp:48
 #, kde-format
@@ -54,33 +53,35 @@ msgid ""
 "Vakzination manages your health certificates like vaccination, test, and "
 "recovery certificates."
 msgstr ""
+"O Vakzination gerencia seus certificados de saúde como certificados de "
+"vacinação, teste e recuperação."
 
 #: main.cpp:50
 #, kde-format
 msgid "© 2021-2022 KDE Community"
-msgstr ""
+msgstr "© 2022-2021 Comunidade KDE"
 
 #: main.cpp:52
 #, kde-format
 msgid "Nicolas Fella"
-msgstr ""
+msgstr "Nicolas Fella"
 
 #: main.cpp:52
 #, kde-format
 msgid "Maintainer"
-msgstr ""
+msgstr "Mantenedor"
 
 #: main.cpp:53
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Luiz Fernando Ranghetti"
 
 #: main.cpp:53
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "elchevive@opensuse.org"
 
 #: main.cpp:59
 #, kde-format
@@ -131,7 +132,7 @@ msgstr "Importar da área de transferência"
 #: qml/CertificatesPage.qml:35 qml/ScanBarcodePage.qml:16
 #, kde-format
 msgid "Scan QR code"
-msgstr ""
+msgstr "Escanear código QR"
 
 #: qml/CertificatesPage.qml:62
 #, kde-format
@@ -231,12 +232,12 @@ msgstr "Assinatura:"
 #: qml/ScanBarcodePage.qml:25
 #, kde-format
 msgid "Light"
-msgstr ""
+msgstr "Claro"
 
 #: qml/ScanBarcodePage.qml:78
 #, kde-format
 msgid "No camera available."
-msgstr ""
+msgstr "Não há câmera disponível."
 
 #: qml/TestDetailsSheet.qml:44
 #, kde-format
