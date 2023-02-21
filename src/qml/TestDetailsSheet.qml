@@ -24,7 +24,7 @@ Kirigami.OverlaySheet {
 
     Kirigami.FormLayout {
 
-        Item {
+        Kirigami.Separator {
             Kirigami.FormData.isSection: true
             Kirigami.FormData.label: i18n("Person")
         }
@@ -117,6 +117,7 @@ Kirigami.OverlaySheet {
             text: certificate.certificateExpiryDate.toLocaleString(Qt.locale(), Locale.ShortFormat)
             Kirigami.FormData.label: i18n("Expires:")
             visible: !isNaN(certificate.certificateExpiryDate.getTime())
+            color: certificate.certificateExpiryDate.getTime() < Date.now() ? Kirigami.Theme.negativeTextColor : Kirigami.Theme.textColor
         }
         Kirigami.Icon {
             source: {

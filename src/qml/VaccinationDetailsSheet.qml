@@ -24,7 +24,7 @@ Kirigami.OverlaySheet {
 
     Kirigami.FormLayout {
 
-        Item {
+        Kirigami.Separator {
             Kirigami.FormData.isSection: true
             Kirigami.FormData.label: i18n("Person")
         }
@@ -45,9 +45,17 @@ Kirigami.OverlaySheet {
         }
 
         QQC2.Label {
-            text: certificate.date.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
+            readonly property int days: daysTo(certificate.date, new Date())
+            text: {
+                const formattedDate = certificate.date.toLocaleDateString(Qt.locale(), Locale.ShortFormat);
+                if (days > 0) {
+                    return i18np("%2 (%1 day ago)", "%2 (%1 days ago)", days, formattedDate);
+                }
+                return formattedDate;
+            }
             Kirigami.FormData.label: i18n("Date:")
-            color: daysTo(certificate.date, new Date()) >= 14 ? Kirigami.Theme.textColor : Kirigami.Theme.neutralTextColor
+            color: certificate.vaccinationState != VaccinationCertificate.VaccinationTooRecent ? Kirigami.Theme.positiveTextColor : Kirigami.Theme.neutralTextColor
+            font.bold: true
             visible: !isNaN(certificate.date.getTime())
         }
         QQC2.Label {
@@ -74,7 +82,8 @@ Kirigami.OverlaySheet {
         QQC2.Label {
             text: certificate.totalDoses > 0 ? i18n("%1/%2", certificate.dose, certificate.totalDoses) : certificate.dose
             Kirigami.FormData.label: i18n("Dose:")
-            color: certificate.dose < certificate.totalDoses ? Kirigami.Theme.neutralTextColor : Kirigami.Theme.textColor
+            color: certificate.dose < certificate.totalDoses ? Kirigami.Theme.neutralTextColor : Kirigami.Theme.positiveTextColor
+            font.bold: true
             visible: certificate.dose > 0
         }
         QQC2.Label {
@@ -96,6 +105,7 @@ Kirigami.OverlaySheet {
         QQC2.Label {
             text: certificate.certificateId
             Kirigami.FormData.label: i18n("Identifier:")
+            wrapMode: Text.Wrap
             visible: certificate.certificateId
         }
         QQC2.Label {
@@ -107,6 +117,7 @@ Kirigami.OverlaySheet {
             text: certificate.certificateExpiryDate.toLocaleString(Qt.locale(), Locale.ShortFormat)
             Kirigami.FormData.label: i18n("Expires:")
             visible: !isNaN(certificate.certificateExpiryDate.getTime())
+            color: certificate.certificateExpiryDate.getTime() < Date.now() ? Kirigami.Theme.negativeTextColor : Kirigami.Theme.textColor
         }
         Kirigami.Icon {
             source: {
