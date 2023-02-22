@@ -7,7 +7,7 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15 as QQC2
 import QtQuick.Layouts 1.2
 import org.kde.kirigami 2.15 as Kirigami
-import org.kde.khealthcertificate 1.0
+import org.kde.khealthcertificate 1.0 as KHC
 import org.kde.i18n.localeData 1.0
 
 Kirigami.OverlaySheet {
@@ -54,7 +54,7 @@ Kirigami.OverlaySheet {
                 return formattedDate;
             }
             Kirigami.FormData.label: i18n("Date:")
-            color: certificate.vaccinationState != VaccinationCertificate.VaccinationTooRecent ? Kirigami.Theme.positiveTextColor : Kirigami.Theme.neutralTextColor
+            color: certificate.vaccinationState != KHC.VaccinationCertificate.VaccinationTooRecent ? Kirigami.Theme.positiveTextColor : Kirigami.Theme.neutralTextColor
             font.bold: true
             visible: !isNaN(certificate.date.getTime())
         }
@@ -122,9 +122,9 @@ Kirigami.OverlaySheet {
         Kirigami.Icon {
             source: {
                 switch(certificate.signatureState) {
-                    case HealthCertificate.ValidSignature: return "dialog-ok";
-                    case HealthCertificate.UnknownSignature: return "question";
-                    case HealthCertificate.InvalidSignature:
+                    case KHC.HealthCertificate.ValidSignature: return "dialog-ok";
+                    case KHC.HealthCertificate.UnknownSignature: return "question";
+                    case KHC.HealthCertificate.InvalidSignature:
                     default:
                         return "dialog-error-symbolic";
                 }
@@ -133,14 +133,14 @@ Kirigami.OverlaySheet {
             Kirigami.FormData.label: i18n("Signature:")
             color: {
                 switch(certificate.signatureState) {
-                    case HealthCertificate.ValidSignature: return Kirigami.Theme.positiveTextColor;
-                    case HealthCertificate.UnknownSignature: return Kirigami.Theme.neutralTextColor;
-                    case HealthCertificate.InvalidSignature:
+                    case KHC.HealthCertificate.ValidSignature: return Kirigami.Theme.positiveTextColor;
+                    case KHC.HealthCertificate.UnknownSignature: return Kirigami.Theme.neutralTextColor;
+                    case KHC.HealthCertificate.InvalidSignature:
                     default:
                         return Kirigami.Theme.negativeTextColor;
                 }
             }
-            visible: certificate.signatureState != HealthCertificate.UncheckedSignature
+            visible: certificate.signatureState != KHC.HealthCertificate.UncheckedSignature
         }
     }
 }
