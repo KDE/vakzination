@@ -1,50 +1,52 @@
-# Frederik Schwarzer <schwarzer@kde.org>, 2021, 2022.
-# Alois Spitzbart <spitz234@hotmail.com>, 2021.
+# Lithuanian translations for vakzination package.
+# Copyright (C) 2023 This file is copyright:
+# This file is distributed under the same license as the vakzination package.
+# Automatically generated, 2023.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-30 01:00+0000\n"
-"PO-Revision-Date: 2022-08-20 20:52+0200\n"
-"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
-"Language-Team: German <kde-i18n-de@kde.org>\n"
-"Language: de\n"
+"PO-Revision-Date: 2023-01-30 01:00+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
+"%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: certificatesmodel.cpp:144
 #, kde-format
 msgid "Empty file url"
-msgstr "Leerer Datei-Pfad"
+msgstr ""
 
 #: certificatesmodel.cpp:148
 #, kde-format
 msgid "File URL not valid: %1"
-msgstr "Datei-Pfad nicht gültig: %1"
+msgstr ""
 
 #: certificatesmodel.cpp:156
 #, kde-format
 msgid "Could not open file: %1"
-msgstr "Datei kann nicht geöffnet werden: %1"
+msgstr ""
 
 #: certificatesmodel.cpp:178
 #, kde-format
 msgid "No certificate found in %1"
-msgstr "Kein Nachweis gefunden in %1"
+msgstr ""
 
 #: certificatesmodel.cpp:240
 #, kde-format
 msgid "No certificate in clipboard"
-msgstr "Kein Nachweis in der Zwischenablage"
+msgstr ""
 
 #: main.cpp:46
-#, fuzzy, kde-format
-#| msgid "Vaccination"
+#, kde-format
 msgid "Vakzination"
-msgstr "Impfung"
+msgstr ""
 
 #: main.cpp:48
 #, kde-format
@@ -83,48 +85,48 @@ msgstr ""
 #: main.cpp:59
 #, kde-format
 msgid "Show with test data"
-msgstr "Mit Testdaten anzeigen"
+msgstr ""
 
 #: main.cpp:62
 #, kde-format
 msgid "File to import."
-msgstr "Zu importierende Datei."
+msgstr ""
 
 #: qml/CertificateDelegate.qml:27
 #, kde-format
 msgid "Vaccination %1 (%2/%3)"
-msgstr "Impfung %1 (%2/%3)"
+msgstr ""
 
 #: qml/CertificateDelegate.qml:31
 #, kde-format
 msgid "Test %1"
-msgstr "Test %1"
+msgstr ""
 
 #: qml/CertificateDelegate.qml:35
 #, kde-format
 msgid "Recovery %1"
-msgstr "Genesen %1"
+msgstr ""
 
 #: qml/CertificateDelegate.qml:59 qml/RecoveryDetailsSheet.qml:17
 #: qml/TestDetailsSheet.qml:18 qml/VaccinationDetailsSheet.qml:18
 #, kde-format
 msgid "Details"
-msgstr "Details"
+msgstr ""
 
 #: qml/CertificatesPage.qml:16
 #, kde-format
 msgid "Your certificates"
-msgstr "Ihre Nachweise"
+msgstr ""
 
 #: qml/CertificatesPage.qml:19
 #, kde-format
 msgid "Import from file"
-msgstr "Aus Datei importieren"
+msgstr ""
 
 #: qml/CertificatesPage.qml:27
 #, kde-format
 msgid "Import from clipboard"
-msgstr "Aus Zwischenablage importieren"
+msgstr ""
 
 #: qml/CertificatesPage.qml:35 qml/ScanBarcodePage.qml:16
 #, kde-format
@@ -134,97 +136,97 @@ msgstr ""
 #: qml/CertificatesPage.qml:62
 #, kde-format
 msgid "Certificate could not be imported: %1"
-msgstr "Der Nachweis kann nicht importiert werden: %1"
+msgstr ""
 
 #: qml/CertificatesPage.qml:101
 #, kde-format
 msgid "No certificates saved"
-msgstr "Keine Nachweise gespeichert"
+msgstr ""
 
 #: qml/main.qml:16
 #, kde-format
 msgid "Your Certificates"
-msgstr "Ihre Nachweise"
+msgstr ""
 
 #: qml/RecoveryDetailsSheet.qml:28 qml/TestDetailsSheet.qml:29
 #: qml/VaccinationDetailsSheet.qml:29
 #, kde-format
 msgid "Person"
-msgstr "Person"
+msgstr ""
 
 #: qml/RecoveryDetailsSheet.qml:33 qml/TestDetailsSheet.qml:34
 #: qml/VaccinationDetailsSheet.qml:34
 #, kde-format
 msgid "Name:"
-msgstr "Name:"
+msgstr ""
 
 #: qml/RecoveryDetailsSheet.qml:38 qml/TestDetailsSheet.qml:39
 #: qml/VaccinationDetailsSheet.qml:39
 #, kde-format
 msgid "Date of birth:"
-msgstr "Geburtsdatum:"
+msgstr ""
 
 #: qml/RecoveryDetailsSheet.qml:43
 #, kde-format
 msgid "Recovery"
-msgstr "Genesen"
+msgstr ""
 
 #: qml/RecoveryDetailsSheet.qml:48
 #, kde-format
 msgid "Positive test:"
-msgstr "Positiv getestet:"
+msgstr ""
 
 #: qml/RecoveryDetailsSheet.qml:52 qml/TestDetailsSheet.qml:55
 #: qml/VaccinationDetailsSheet.qml:55
 #, kde-format
 msgid "Disease:"
-msgstr "Krankheit:"
+msgstr ""
 
 #: qml/RecoveryDetailsSheet.qml:56
 #, kde-format
 msgid "Valid from:"
-msgstr "Gültig ab:"
+msgstr ""
 
 #: qml/RecoveryDetailsSheet.qml:60
 #, kde-format
 msgid "Valid until:"
-msgstr "Gültig bis:"
+msgstr ""
 
 #: qml/RecoveryDetailsSheet.qml:65 qml/TestDetailsSheet.qml:97
 #: qml/VaccinationDetailsSheet.qml:88
 #, kde-format
 msgid "Certificate"
-msgstr "Nachweis"
+msgstr ""
 
 #: qml/RecoveryDetailsSheet.qml:70 qml/TestDetailsSheet.qml:102
 #: qml/VaccinationDetailsSheet.qml:93
 #, kde-format
 msgid "Issuer:"
-msgstr "Aussteller:"
+msgstr ""
 
 #: qml/RecoveryDetailsSheet.qml:75 qml/TestDetailsSheet.qml:107
 #: qml/VaccinationDetailsSheet.qml:98
 #, kde-format
 msgid "Identifier:"
-msgstr "Bezeichner:"
+msgstr ""
 
 #: qml/RecoveryDetailsSheet.qml:80 qml/TestDetailsSheet.qml:113
 #: qml/VaccinationDetailsSheet.qml:103
 #, kde-format
 msgid "Issued:"
-msgstr "Ausgestellt:"
+msgstr ""
 
 #: qml/RecoveryDetailsSheet.qml:85 qml/TestDetailsSheet.qml:118
 #: qml/VaccinationDetailsSheet.qml:108
 #, kde-format
 msgid "Expires:"
-msgstr "Gültig bis:"
+msgstr ""
 
 #: qml/RecoveryDetailsSheet.qml:99 qml/TestDetailsSheet.qml:132
 #: qml/VaccinationDetailsSheet.qml:122
 #, kde-format
 msgid "Signature:"
-msgstr "Signatur:"
+msgstr ""
 
 #: qml/ScanBarcodePage.qml:25
 #, kde-format
@@ -239,65 +241,65 @@ msgstr ""
 #: qml/TestDetailsSheet.qml:44
 #, kde-format
 msgid "Test"
-msgstr "Test"
+msgstr ""
 
 #: qml/TestDetailsSheet.qml:49 qml/VaccinationDetailsSheet.qml:49
 #, kde-format
 msgid "Date:"
-msgstr "Datum:"
+msgstr ""
 
 #: qml/TestDetailsSheet.qml:60 qml/VaccinationDetailsSheet.qml:60
 #, kde-format
 msgid "Type:"
-msgstr "Typ:"
+msgstr ""
 
 #: qml/TestDetailsSheet.qml:66
 #, kde-format
 msgid "Test:"
-msgstr "Test:"
+msgstr ""
 
 #: qml/TestDetailsSheet.qml:81
 #, kde-format
 msgid "Result:"
-msgstr "Ergebnis:"
+msgstr ""
 
 #: qml/TestDetailsSheet.qml:86
 #, kde-format
 msgid "Test Center:"
-msgstr "Testzentrum:"
+msgstr ""
 
 #: qml/TestDetailsSheet.qml:90 qml/VaccinationDetailsSheet.qml:81
 #, kde-format
 msgctxt "%1 a flag emoji, %2 is a country name"
 msgid "%1 %2"
-msgstr "%1 %2"
+msgstr ""
 
 #: qml/TestDetailsSheet.qml:91 qml/VaccinationDetailsSheet.qml:82
 #, kde-format
 msgid "Country:"
-msgstr "Land:"
+msgstr ""
 
 #: qml/VaccinationDetailsSheet.qml:44
 #, kde-format
 msgid "Vaccination"
-msgstr "Impfung"
+msgstr ""
 
 #: qml/VaccinationDetailsSheet.qml:65
 #, kde-format
 msgid "Vaccine:"
-msgstr "Impfstoff:"
+msgstr ""
 
 #: qml/VaccinationDetailsSheet.qml:71
 #, kde-format
 msgid "Manufacturer:"
-msgstr "Hersteller:"
+msgstr ""
 
 #: qml/VaccinationDetailsSheet.qml:75
 #, kde-format
 msgid "%1/%2"
-msgstr "%1/%2"
+msgstr ""
 
 #: qml/VaccinationDetailsSheet.qml:76
 #, kde-format
 msgid "Dose:"
-msgstr "Dosis:"
+msgstr ""
