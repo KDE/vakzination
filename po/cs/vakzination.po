@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-30 01:00+0000\n"
+"POT-Creation-Date: 2023-03-07 00:48+0000\n"
 "PO-Revision-Date: 2023-01-31 14:50+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -178,7 +178,7 @@ msgid "Positive test:"
 msgstr "Pozitivní test:"
 
 #: qml/RecoveryDetailsSheet.qml:52 qml/TestDetailsSheet.qml:55
-#: qml/VaccinationDetailsSheet.qml:55
+#: qml/VaccinationDetailsSheet.qml:63
 #, kde-format
 msgid "Disease:"
 msgstr "Onemocnění:"
@@ -194,37 +194,37 @@ msgid "Valid until:"
 msgstr "Platný do:"
 
 #: qml/RecoveryDetailsSheet.qml:65 qml/TestDetailsSheet.qml:97
-#: qml/VaccinationDetailsSheet.qml:88
+#: qml/VaccinationDetailsSheet.qml:97
 #, kde-format
 msgid "Certificate"
 msgstr "Certifikát"
 
 #: qml/RecoveryDetailsSheet.qml:70 qml/TestDetailsSheet.qml:102
-#: qml/VaccinationDetailsSheet.qml:93
+#: qml/VaccinationDetailsSheet.qml:102
 #, kde-format
 msgid "Issuer:"
 msgstr "Vydavatel:"
 
 #: qml/RecoveryDetailsSheet.qml:75 qml/TestDetailsSheet.qml:107
-#: qml/VaccinationDetailsSheet.qml:98
+#: qml/VaccinationDetailsSheet.qml:107
 #, kde-format
 msgid "Identifier:"
 msgstr "Identifikátor:"
 
 #: qml/RecoveryDetailsSheet.qml:80 qml/TestDetailsSheet.qml:113
-#: qml/VaccinationDetailsSheet.qml:103
+#: qml/VaccinationDetailsSheet.qml:113
 #, kde-format
 msgid "Issued:"
 msgstr "Vydáno:"
 
 #: qml/RecoveryDetailsSheet.qml:85 qml/TestDetailsSheet.qml:118
-#: qml/VaccinationDetailsSheet.qml:108
+#: qml/VaccinationDetailsSheet.qml:118
 #, kde-format
 msgid "Expires:"
 msgstr "Vyprší:"
 
-#: qml/RecoveryDetailsSheet.qml:99 qml/TestDetailsSheet.qml:132
-#: qml/VaccinationDetailsSheet.qml:122
+#: qml/RecoveryDetailsSheet.qml:100 qml/TestDetailsSheet.qml:133
+#: qml/VaccinationDetailsSheet.qml:133
 #, kde-format
 msgid "Signature:"
 msgstr "Podpis:"
@@ -244,12 +244,12 @@ msgstr "Není dostupný fotoaparát."
 msgid "Test"
 msgstr "Test"
 
-#: qml/TestDetailsSheet.qml:49 qml/VaccinationDetailsSheet.qml:49
+#: qml/TestDetailsSheet.qml:49 qml/VaccinationDetailsSheet.qml:56
 #, kde-format
 msgid "Date:"
 msgstr "Datum:"
 
-#: qml/TestDetailsSheet.qml:60 qml/VaccinationDetailsSheet.qml:60
+#: qml/TestDetailsSheet.qml:60 qml/VaccinationDetailsSheet.qml:68
 #, kde-format
 msgid "Type:"
 msgstr "Typ:"
@@ -269,13 +269,13 @@ msgstr "Výsledek:"
 msgid "Test Center:"
 msgstr "Testovací centrum:"
 
-#: qml/TestDetailsSheet.qml:90 qml/VaccinationDetailsSheet.qml:81
+#: qml/TestDetailsSheet.qml:90 qml/VaccinationDetailsSheet.qml:90
 #, kde-format
 msgctxt "%1 a flag emoji, %2 is a country name"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: qml/TestDetailsSheet.qml:91 qml/VaccinationDetailsSheet.qml:82
+#: qml/TestDetailsSheet.qml:91 qml/VaccinationDetailsSheet.qml:91
 #, kde-format
 msgid "Country:"
 msgstr "Země:"
@@ -285,22 +285,30 @@ msgstr "Země:"
 msgid "Vaccination"
 msgstr "Očkování"
 
-#: qml/VaccinationDetailsSheet.qml:65
+#: qml/VaccinationDetailsSheet.qml:52
+#, kde-format
+msgid "%2 (%1 day ago)"
+msgid_plural "%2 (%1 days ago)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: qml/VaccinationDetailsSheet.qml:73
 #, kde-format
 msgid "Vaccine:"
 msgstr "Vakcína:"
 
-#: qml/VaccinationDetailsSheet.qml:71
+#: qml/VaccinationDetailsSheet.qml:79
 #, kde-format
 msgid "Manufacturer:"
 msgstr "Výrobce:"
 
-#: qml/VaccinationDetailsSheet.qml:75
+#: qml/VaccinationDetailsSheet.qml:83
 #, kde-format
 msgid "%1/%2"
 msgstr "%1/%2"
 
-#: qml/VaccinationDetailsSheet.qml:76
+#: qml/VaccinationDetailsSheet.qml:84
 #, kde-format
 msgid "Dose:"
 msgstr "Dávka:"
