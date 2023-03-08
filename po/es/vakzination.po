@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-07 00:48+0000\n"
-"PO-Revision-Date: 2023-01-30 20:53+0100\n"
+"PO-Revision-Date: 2023-03-07 16:59+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: certificatesmodel.cpp:144
 #, kde-format
@@ -291,8 +291,8 @@ msgstr "Vacunación"
 #, kde-format
 msgid "%2 (%1 day ago)"
 msgid_plural "%2 (%1 days ago)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%2 (hace %1 día)"
+msgstr[1] "%2 (hace %1 días)"
 
 #: qml/VaccinationDetailsSheet.qml:73
 #, kde-format
