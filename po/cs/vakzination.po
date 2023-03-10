@@ -289,9 +289,9 @@ msgstr "Očkování"
 #, kde-format
 msgid "%2 (%1 day ago)"
 msgid_plural "%2 (%1 days ago)"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%2 (včera)"
+msgstr[1] "%2 (před %1 dny)"
+msgstr[2] "%2 (před %1 dny)"
 
 #: qml/VaccinationDetailsSheet.qml:73
 #, kde-format
