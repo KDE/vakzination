@@ -10,13 +10,9 @@ import org.kde.kirigami 2.15 as Kirigami
 import org.kde.khealthcertificate 1.0 as KHC
 import org.kde.i18n.localeData 1.0
 
-Kirigami.OverlaySheet {
+ColumnLayout {
 
     required property var certificate
-
-    header: Kirigami.Heading {
-        text: i18n("Details")
-    }
 
     function daysTo(d1, d2) {
         return (d2.getTime() - d1.getTime()) / (1000 * 60 * 60 * 24);

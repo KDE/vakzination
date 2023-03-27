@@ -4,24 +4,81 @@
 */
 
 import QtQuick 2.15
-import QtQuick.Controls 2.15 as Controls
+import QtQuick.Controls 2.15 as QQC2
 import QtQuick.Layouts 1.2
-import org.kde.kirigami 2.15 as Kirigami
+import org.kde.kirigami 2.19 as Kirigami
+import org.kde.khealthcertificate 1.0 as KHC
 
 import org.kde.vakzination 1.0
 
-Kirigami.ScrollablePage {
-
+Kirigami.Page {
+    id: root
     title: Kirigami.Settings.isMobile ? i18n("Your certificates") : ""
 
-    header: Kirigami.InlineMessage {
-        id: importError
+    leftPadding: 0
+    rightPadding: 0
+    topPadding: 0
+    bottomPadding: 0
 
-        property string error
+    readonly property bool hasValidCertificate: {
+        if (certSelector.count === 0 || !certSelector.currentValue) {
+            return false;
+        }
 
-        type: Kirigami.MessageType.Error
-        text: i18n("Certificate could not be imported: %1", error)
-        showCloseButton: true
+        switch (certSelector.currentValue.type) {
+            case KHC.HealthCertificate.Vaccination:
+            case KHC.HealthCertificate.Test:
+            case KHC.HealthCertificate.Recovery:
+                return true;
+            default:
+                return false;
+        }
+    }
+
+    header: ColumnLayout {
+        spacing: 0
+        Kirigami.InlineMessage {
+            id: importError
+
+            property string error
+
+            type: Kirigami.MessageType.Error
+            text: i18n("Certificate could not be imported: %1", error)
+            showCloseButton: true
+        }
+
+        QQC2.ComboBox {
+            id: certSelector
+            Layout.margins: Kirigami.Units.largeSpacing
+            Layout.fillWidth: true
+            model: CertificatesModel
+            valueRole: "certificate"
+            textRole: "display"
+            visible: certSelector.count > 0
+        }
+        Kirigami.Separator {
+            Layout.fillWidth: true
+            visible: certSelector.visible
+        }
+    }
+
+    Component {
+        id: vaccinationDetails
+        VaccinationDetailsSheet {
+            certificate: certSelector.currentValue
+        }
+    }
+    Component {
+        id: testDetails
+        TestDetailsSheet {
+            certificate: certSelector.currentValue
+        }
+    }
+    Component {
+        id: recoveryDetails
+        RecoveryDetailsSheet {
+            certificate: certSelector.currentValue
+        }
     }
 
     Connections {
@@ -33,20 +90,61 @@ Kirigami.ScrollablePage {
         }
     }
 
-    ListView {
-        id: listView
-        model: CertificatesModel
+    QQC2.SwipeView {
+        id: swipeView
+        visible: hasValidCertificate
+        anchors.fill: parent
 
-        delegate: CertificateDelegate {
-            width: parent.width
-            showSeparator: index  !== listView.count - 1
+        CertificateDelegate {
+            certificate: certSelector.currentValue
+            implicitWidth: parent.width
         }
 
-        Kirigami.PlaceholderMessage {
-            text: i18n("No certificates saved")
-            visible: listView.count === 0
-            anchors.centerIn: parent
-            width: parent.width - (Kirigami.Units.largeSpacing * 4)
+        Kirigami.ScrollablePage {
+            padding: Kirigami.Units.largeSpacing
+            Loader {
+                id: loader
+                width: parent.width
+                sourceComponent: {
+                    if (!hasValidCertificate) {
+                        return undefined;
+                    }
+                    switch (certSelector.currentValue.type) {
+                        case KHC.HealthCertificate.Vaccination:
+                            return vaccinationDetails;
+                        case KHC.HealthCertificate.Test:
+                            return testDetails;
+                        case KHC.HealthCertificate.Recovery:
+                            return recoveryDetails;
+                        default:
+                            return undefined;
+                    }
+                }
+            }
         }
+    }
+    Kirigami.PlaceholderMessage {
+        text: i18n("No certificates saved")
+        visible: certSelector.count === 0
+        anchors.centerIn: swipeView
+        width: parent.width - (Kirigami.Units.largeSpacing * 4)
+    }
+
+    footer: Kirigami.NavigationTabBar {
+        visible: hasValidCertificate
+        actions: [
+            Kirigami.Action {
+                text: i18n('Certificate')
+                icon.name: 'view-barcode-qr'
+                onTriggered: swipeView.currentIndex = 0
+                checked: swipeView.currentIndex === 0
+            },
+            Kirigami.Action {
+                text: i18n('Detail')
+                icon.name: 'view-list-details'
+                onTriggered: swipeView.currentIndex = 1;
+                checked: swipeView.currentIndex === 1
+            }
+        ]
     }
 }

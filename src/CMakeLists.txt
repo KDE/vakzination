@@ -32,6 +32,7 @@ if (ANDROID)
         folder-open
         question
         view-barcode-qr
+        view-list-details
     )
 else()
     target_link_libraries(vakzination Qt::Widgets)

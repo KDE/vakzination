@@ -9,13 +9,9 @@ import QtQuick.Layouts 1.2
 import org.kde.kirigami 2.15 as Kirigami
 import org.kde.khealthcertificate 1.0 as KHC
 
-Kirigami.OverlaySheet {
+ColumnLayout {
 
     required property var certificate
-
-    header: Kirigami.Heading {
-        text: i18n("Details")
-    }
 
     function daysTo(d1, d2) {
         return (d2.getTime() - d1.getTime()) / (1000 * 60 * 60 * 24);
