@@ -1,6 +1,8 @@
 # SPDX-License-Identifier: BSD-3-Clause
 # SPDX-FileCopyrightText: 2021 Nicolas Fella <nicolas.fella@gmx.de>
 
+add_definitions(-DTRANSLATION_DOMAIN=\"vakzination\")
+
 add_library(vakzinationstatic STATIC)
 target_sources(vakzinationstatic PRIVATE certificatesmodel.cpp)
 target_link_libraries(vakzinationstatic PUBLIC Qt::Core Qt::Gui KF${KF_MAJOR_VERSION}::ConfigCore KHealthCertificate PRIVATE KF${KF_MAJOR_VERSION}::I18n KPim::Itinerary)

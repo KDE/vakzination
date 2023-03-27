@@ -71,8 +71,31 @@ CertificatesModel::CertificatesModel(bool testMode)
 QVariant CertificatesModel::data(const QModelIndex &index, int role) const
 {
     const int row = index.row();
+    if (!checkIndex(index) || row < 0) {
+        return {};
+    }
 
     switch (role) {
+    case Qt::DisplayRole: {
+        if (std::holds_alternative<KVaccinationCertificate>(m_certificates[row])) {
+            const auto cert = std::get<KVaccinationCertificate>(m_certificates[row]);
+            if (cert.dose() > 0 && cert.totalDoses() > 0) {
+                return i18n("Vaccination %1/%2 (%3)", cert.dose(), cert.totalDoses(), cert.name());
+            }
+            return i18n("Vaccination (%1)", cert.name());
+        }
+        if (std::holds_alternative<KTestCertificate>(m_certificates[row])) {
+            const auto cert = std::get<KTestCertificate>(m_certificates[row]);
+            return i18n("Test %1 (%2)",
+                        QLocale().toString(cert.date().isValid() ? cert.date() : cert.certificateIssueDate().date(), QLocale::NarrowFormat),
+                        cert.name());
+        }
+        if (std::holds_alternative<KRecoveryCertificate>(m_certificates[row])) {
+            const auto cert = std::get<KRecoveryCertificate>(m_certificates[row]);
+            return i18n("Recovery (%1)", cert.name());
+        }
+        return {};
+    }
     case CertificateRole: {
         return std::visit(
             [](auto &&arg) -> QVariant {
@@ -103,10 +126,10 @@ int CertificatesModel::rowCount(const QModelIndex &parent) const
 
 QHash<int, QByteArray> CertificatesModel::roleNames() const
 {
-    return {
-        {CertificateRole, "certificate"},
-        {TypeRole, "type"},
-    };
+    auto n = QAbstractListModel::roleNames();
+    n.insert(CertificateRole, "certificate");
+    n.insert(TypeRole, "type");
+    return n;
 }
 
 void CertificatesModel::addCertificate(AnyCertificate cert)
