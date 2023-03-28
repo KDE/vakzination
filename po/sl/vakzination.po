@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-07 00:48+0000\n"
+"POT-Creation-Date: 2023-03-28 00:49+0000\n"
 "PO-Revision-Date: 2023-03-07 06:22+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -115,40 +115,40 @@ msgstr "Ozdravljenje %1"
 msgid "Details"
 msgstr "Podrobnosti"
 
-#: qml/CertificatesPage.qml:16
+#: qml/CertificatesPage.qml:15
 #, kde-format
 msgid "Your certificates"
 msgstr "Vaša potrdila"
 
-#: qml/CertificatesPage.qml:19
-#, kde-format
-msgid "Import from file"
-msgstr "Uvozi iz datoteke"
-
-#: qml/CertificatesPage.qml:27
-#, kde-format
-msgid "Import from clipboard"
-msgstr "Uvozi iz odložišča"
-
-#: qml/CertificatesPage.qml:35 qml/ScanBarcodePage.qml:16
-#, kde-format
-msgid "Scan QR code"
-msgstr "Optično preberi kodo QR"
-
-#: qml/CertificatesPage.qml:62
+#: qml/CertificatesPage.qml:23
 #, kde-format
 msgid "Certificate could not be imported: %1"
 msgstr "Potrdila in bilo mogoče uvoziti: %1"
 
-#: qml/CertificatesPage.qml:101
+#: qml/CertificatesPage.qml:46
 #, kde-format
 msgid "No certificates saved"
 msgstr "Ni shranjenih potrdil"
 
-#: qml/main.qml:16
+#: qml/main.qml:17
 #, kde-format
 msgid "Your Certificates"
 msgstr "Vaša potrdila"
+
+#: qml/main.qml:23
+#, kde-format
+msgid "Import from file"
+msgstr "Uvozi iz datoteke"
+
+#: qml/main.qml:28
+#, kde-format
+msgid "Import from clipboard"
+msgstr "Uvozi iz odložišča"
+
+#: qml/main.qml:33 qml/ScanBarcodePage.qml:16
+#, kde-format
+msgid "Scan QR code"
+msgstr "Optično preberi kodo QR"
 
 #: qml/RecoveryDetailsSheet.qml:28 qml/TestDetailsSheet.qml:29
 #: qml/VaccinationDetailsSheet.qml:29

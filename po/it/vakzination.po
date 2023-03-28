@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-07 00:48+0000\n"
+"POT-Creation-Date: 2023-03-28 00:49+0000\n"
 "PO-Revision-Date: 2023-03-08 13:55+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -114,40 +114,40 @@ msgstr "Guarigione %1"
 msgid "Details"
 msgstr "Dettagli"
 
-#: qml/CertificatesPage.qml:16
+#: qml/CertificatesPage.qml:15
 #, kde-format
 msgid "Your certificates"
 msgstr "I tuoi certificati"
 
-#: qml/CertificatesPage.qml:19
-#, kde-format
-msgid "Import from file"
-msgstr "Importa da file"
-
-#: qml/CertificatesPage.qml:27
-#, kde-format
-msgid "Import from clipboard"
-msgstr "Importa dagli appunti"
-
-#: qml/CertificatesPage.qml:35 qml/ScanBarcodePage.qml:16
-#, kde-format
-msgid "Scan QR code"
-msgstr "Scansione codice QR"
-
-#: qml/CertificatesPage.qml:62
+#: qml/CertificatesPage.qml:23
 #, kde-format
 msgid "Certificate could not be imported: %1"
 msgstr "Impossibile importare il certificato: %1"
 
-#: qml/CertificatesPage.qml:101
+#: qml/CertificatesPage.qml:46
 #, kde-format
 msgid "No certificates saved"
 msgstr "Nessun certificato salvato"
 
-#: qml/main.qml:16
+#: qml/main.qml:17
 #, kde-format
 msgid "Your Certificates"
 msgstr "I tuoi certificati"
+
+#: qml/main.qml:23
+#, kde-format
+msgid "Import from file"
+msgstr "Importa da file"
+
+#: qml/main.qml:28
+#, kde-format
+msgid "Import from clipboard"
+msgstr "Importa dagli appunti"
+
+#: qml/main.qml:33 qml/ScanBarcodePage.qml:16
+#, kde-format
+msgid "Scan QR code"
+msgstr "Scansione codice QR"
 
 #: qml/RecoveryDetailsSheet.qml:28 qml/TestDetailsSheet.qml:29
 #: qml/VaccinationDetailsSheet.qml:29

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-07 00:48+0000\n"
+"POT-Creation-Date: 2023-03-28 00:49+0000\n"
 "PO-Revision-Date: 2022-01-03 11:03-0800\n"
 "Last-Translator: A S Alam <aalam@satluj.org>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
@@ -113,40 +113,40 @@ msgstr "ਰਿਕਵਰੀ %1"
 msgid "Details"
 msgstr "ਵੇਰਵੇ"
 
-#: qml/CertificatesPage.qml:16
+#: qml/CertificatesPage.qml:15
 #, kde-format
 msgid "Your certificates"
 msgstr "ਤੁਹਾਡੇ ਸਰਟੀਫਿਕੇਟ"
 
-#: qml/CertificatesPage.qml:19
-#, kde-format
-msgid "Import from file"
-msgstr "ਫਾਇਲ ਤੋਂ ਇੰਪੋਰਟ ਕਰੋ"
-
-#: qml/CertificatesPage.qml:27
-#, kde-format
-msgid "Import from clipboard"
-msgstr "ਕਲਿੱਪਬੋਰਡ ਤੋਂ ਇੰਪੋਰਟ ਕਰੋ"
-
-#: qml/CertificatesPage.qml:35 qml/ScanBarcodePage.qml:16
-#, kde-format
-msgid "Scan QR code"
-msgstr ""
-
-#: qml/CertificatesPage.qml:62
+#: qml/CertificatesPage.qml:23
 #, kde-format
 msgid "Certificate could not be imported: %1"
 msgstr ""
 
-#: qml/CertificatesPage.qml:101
+#: qml/CertificatesPage.qml:46
 #, kde-format
 msgid "No certificates saved"
 msgstr "ਕੋਈ ਸਰਟੀਫਿਕੇਟ ਨਹੀਂ ਸੰਭਾਲਿਆ"
 
-#: qml/main.qml:16
+#: qml/main.qml:17
 #, kde-format
 msgid "Your Certificates"
 msgstr "ਤੁਹਾਡੇ ਸਰਟੀਫਿਕੇਟ"
+
+#: qml/main.qml:23
+#, kde-format
+msgid "Import from file"
+msgstr "ਫਾਇਲ ਤੋਂ ਇੰਪੋਰਟ ਕਰੋ"
+
+#: qml/main.qml:28
+#, kde-format
+msgid "Import from clipboard"
+msgstr "ਕਲਿੱਪਬੋਰਡ ਤੋਂ ਇੰਪੋਰਟ ਕਰੋ"
+
+#: qml/main.qml:33 qml/ScanBarcodePage.qml:16
+#, kde-format
+msgid "Scan QR code"
+msgstr ""
 
 #: qml/RecoveryDetailsSheet.qml:28 qml/TestDetailsSheet.qml:29
 #: qml/VaccinationDetailsSheet.qml:29

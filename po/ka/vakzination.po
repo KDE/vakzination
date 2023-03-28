@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-07 00:48+0000\n"
+"POT-Creation-Date: 2023-03-28 00:49+0000\n"
 "PO-Revision-Date: 2023-03-08 10:03+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -115,40 +115,40 @@ msgstr "გამოკეთება %1"
 msgid "Details"
 msgstr "დეტალები"
 
-#: qml/CertificatesPage.qml:16
+#: qml/CertificatesPage.qml:15
 #, kde-format
 msgid "Your certificates"
 msgstr "თქვენი სერტიფიკატები"
 
-#: qml/CertificatesPage.qml:19
-#, kde-format
-msgid "Import from file"
-msgstr "ფაილიდან შემოტანა"
-
-#: qml/CertificatesPage.qml:27
-#, kde-format
-msgid "Import from clipboard"
-msgstr "გაცვლის ბუფერიდან შემოტანა"
-
-#: qml/CertificatesPage.qml:35 qml/ScanBarcodePage.qml:16
-#, kde-format
-msgid "Scan QR code"
-msgstr "QR კოდის სკანირება"
-
-#: qml/CertificatesPage.qml:62
+#: qml/CertificatesPage.qml:23
 #, kde-format
 msgid "Certificate could not be imported: %1"
 msgstr "სერტიფიკატის შემოტანა შეუძლებელია: %1"
 
-#: qml/CertificatesPage.qml:101
+#: qml/CertificatesPage.qml:46
 #, kde-format
 msgid "No certificates saved"
 msgstr "სერტიფიკატი არ შენახულა"
 
-#: qml/main.qml:16
+#: qml/main.qml:17
 #, kde-format
 msgid "Your Certificates"
 msgstr "თქვენი სერტიფიკატები"
+
+#: qml/main.qml:23
+#, kde-format
+msgid "Import from file"
+msgstr "ფაილიდან შემოტანა"
+
+#: qml/main.qml:28
+#, kde-format
+msgid "Import from clipboard"
+msgstr "გაცვლის ბუფერიდან შემოტანა"
+
+#: qml/main.qml:33 qml/ScanBarcodePage.qml:16
+#, kde-format
+msgid "Scan QR code"
+msgstr "QR კოდის სკანირება"
 
 #: qml/RecoveryDetailsSheet.qml:28 qml/TestDetailsSheet.qml:29
 #: qml/VaccinationDetailsSheet.qml:29

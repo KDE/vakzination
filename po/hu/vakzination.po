@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-07 00:48+0000\n"
+"POT-Creation-Date: 2023-03-28 00:49+0000\n"
 "PO-Revision-Date: 2021-12-31 15:47+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -113,40 +113,40 @@ msgstr "%1. felépülés"
 msgid "Details"
 msgstr "Részletek"
 
-#: qml/CertificatesPage.qml:16
+#: qml/CertificatesPage.qml:15
 #, kde-format
 msgid "Your certificates"
 msgstr "Az Ön tanúsítványai"
 
-#: qml/CertificatesPage.qml:19
-#, kde-format
-msgid "Import from file"
-msgstr "Importálás fájlból"
-
-#: qml/CertificatesPage.qml:27
-#, kde-format
-msgid "Import from clipboard"
-msgstr "Importálás a vágólapról"
-
-#: qml/CertificatesPage.qml:35 qml/ScanBarcodePage.qml:16
-#, kde-format
-msgid "Scan QR code"
-msgstr ""
-
-#: qml/CertificatesPage.qml:62
+#: qml/CertificatesPage.qml:23
 #, kde-format
 msgid "Certificate could not be imported: %1"
 msgstr "A tanúsítvány nem importálható: %1"
 
-#: qml/CertificatesPage.qml:101
+#: qml/CertificatesPage.qml:46
 #, kde-format
 msgid "No certificates saved"
 msgstr "Nincsenek mentve tanúsítványok"
 
-#: qml/main.qml:16
+#: qml/main.qml:17
 #, kde-format
 msgid "Your Certificates"
 msgstr "Az Ön tanúsítványai"
+
+#: qml/main.qml:23
+#, kde-format
+msgid "Import from file"
+msgstr "Importálás fájlból"
+
+#: qml/main.qml:28
+#, kde-format
+msgid "Import from clipboard"
+msgstr "Importálás a vágólapról"
+
+#: qml/main.qml:33 qml/ScanBarcodePage.qml:16
+#, kde-format
+msgid "Scan QR code"
+msgstr ""
 
 #: qml/RecoveryDetailsSheet.qml:28 qml/TestDetailsSheet.qml:29
 #: qml/VaccinationDetailsSheet.qml:29
