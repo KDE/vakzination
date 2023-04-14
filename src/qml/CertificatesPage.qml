@@ -35,6 +35,34 @@ Kirigami.Page {
         }
     }
 
+    actions {
+        contextualActions: [
+            Kirigami.Action {
+                iconName: "edit-delete"
+                text: i18n("Delete")
+                onTriggered: deleteWarningDialog.open()
+                enabled: root.hasValidCertificate
+            }
+        ]
+    }
+
+    Kirigami.PromptDialog {
+        id: deleteWarningDialog
+        title: i18n("Delete Certificate")
+        subtitle: i18n("Do you really want to delete this certificate?")
+        standardButtons: QQC2.Dialog.Cancel
+        customFooterActions: [
+            Kirigami.Action {
+                text: i18n("Delete")
+                icon.name: "edit-delete"
+                onTriggered: {
+                    CertificatesModel.removeRow(certSelector.currentIndex);
+                    deleteWarningDialog.close();
+                }
+            }
+        ]
+    }
+
     header: ColumnLayout {
         spacing: 0
         Kirigami.InlineMessage {
