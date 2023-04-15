@@ -18,28 +18,24 @@ msgstr ""
 "X-Generator: Lokalize 22.12.1\n"
 
 #: certificatesmodel.cpp:83
-#, fuzzy, kde-format
-#| msgid "Vaccination %1 (%2/%3)"
+#, kde-format
 msgid "Vaccination %1/%2 (%3)"
-msgstr "Očkování %1/ (%2/%3)"
+msgstr "Očkování %1/%2 (%3)"
 
 #: certificatesmodel.cpp:85
-#, fuzzy, kde-format
-#| msgid "Vaccination"
+#, kde-format
 msgid "Vaccination (%1)"
-msgstr "Očkování"
+msgstr "Očkování (%1)"
 
 #: certificatesmodel.cpp:89
-#, fuzzy, kde-format
-#| msgid "Test %1"
+#, kde-format
 msgid "Test %1 (%2)"
-msgstr "Test %1"
+msgstr "Test %1 (%2)"
 
 #: certificatesmodel.cpp:95
-#, fuzzy, kde-format
-#| msgid "Recovery %1"
+#, kde-format
 msgid "Recovery (%1)"
-msgstr "Zotavení %1"
+msgstr "Zotavení (%1)"
 
 #: certificatesmodel.cpp:167
 #, kde-format
@@ -330,6 +326,3 @@ msgstr "%1/%2"
 #, kde-format
 msgid "Dose:"
 msgstr "Dávka:"
-
-#~ msgid "Details"
-#~ msgstr "Podrobnosti"

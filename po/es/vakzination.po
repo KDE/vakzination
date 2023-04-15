@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-14 00:48+0000\n"
-"PO-Revision-Date: 2023-03-07 16:59+0100\n"
+"PO-Revision-Date: 2023-04-15 01:07+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,31 +17,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.03.90\n"
 
 #: certificatesmodel.cpp:83
-#, fuzzy, kde-format
-#| msgid "Vaccination %1 (%2/%3)"
+#, kde-format
 msgid "Vaccination %1/%2 (%3)"
-msgstr "Vacunación %1 (%2/%3)"
+msgstr "Vacunación %1/%2 (%3)"
 
 #: certificatesmodel.cpp:85
-#, fuzzy, kde-format
-#| msgid "Vaccination"
+#, kde-format
 msgid "Vaccination (%1)"
-msgstr "Vacunación"
+msgstr "Vacunación (%1)"
 
 #: certificatesmodel.cpp:89
-#, fuzzy, kde-format
-#| msgid "Test %1"
+#, kde-format
 msgid "Test %1 (%2)"
-msgstr "Prueba %1"
+msgstr "Prueba %1 (%2)"
 
 #: certificatesmodel.cpp:95
-#, fuzzy, kde-format
-#| msgid "Recovery %1"
+#, kde-format
 msgid "Recovery (%1)"
-msgstr "Recuperación %1"
+msgstr "Recuperación (%1)"
 
 #: certificatesmodel.cpp:167
 #, kde-format

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-14 00:48+0000\n"
-"PO-Revision-Date: 2023-03-07 13:23+0300\n"
+"PO-Revision-Date: 2023-04-14 10:23+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,31 +15,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.03.70\n"
 
 #: certificatesmodel.cpp:83
-#, fuzzy, kde-format
-#| msgid "Vaccination %1 (%2/%3)"
+#, kde-format
 msgid "Vaccination %1/%2 (%3)"
-msgstr "Aşı %1 (%2/%3)"
+msgstr "Aşılanma %1/%2 (%3)"
 
 #: certificatesmodel.cpp:85
-#, fuzzy, kde-format
-#| msgid "Vaccination"
+#, kde-format
 msgid "Vaccination (%1)"
-msgstr "Aşılanma"
+msgstr "Aşılanma (%1)"
 
 #: certificatesmodel.cpp:89
-#, fuzzy, kde-format
-#| msgid "Test %1"
+#, kde-format
 msgid "Test %1 (%2)"
-msgstr "Sınama %1"
+msgstr "Sınama %1 (%2)"
 
 #: certificatesmodel.cpp:95
-#, fuzzy, kde-format
-#| msgid "Recovery %1"
+#, kde-format
 msgid "Recovery (%1)"
-msgstr "İyileşme %1"
+msgstr "İyileşme (%1)"
 
 #: certificatesmodel.cpp:167
 #, kde-format
@@ -120,7 +116,7 @@ msgstr "İçe aktarılacak dosya."
 #: qml/CertificateDelegate.qml:29
 #, kde-format
 msgid "Vaccination %1 (%2/%3)"
-msgstr "Aşı %1 (%2/%3)"
+msgstr "Aşılanma %1 (%2/%3)"
 
 #: qml/CertificateDelegate.qml:33
 #, kde-format

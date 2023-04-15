@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-14 00:48+0000\n"
-"PO-Revision-Date: 2023-03-07 19:56+0200\n"
+"PO-Revision-Date: 2023-04-14 17:46+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -19,28 +19,24 @@ msgstr ""
 "X-Generator: Lokalize 20.12.0\n"
 
 #: certificatesmodel.cpp:83
-#, fuzzy, kde-format
-#| msgid "Vaccination %1 (%2/%3)"
+#, kde-format
 msgid "Vaccination %1/%2 (%3)"
-msgstr "Вакцинування %1 (%2 з %3)"
+msgstr "Вакцинація %1 з %2 (%3)"
 
 #: certificatesmodel.cpp:85
-#, fuzzy, kde-format
-#| msgid "Vaccination"
+#, kde-format
 msgid "Vaccination (%1)"
-msgstr "Вакцинація"
+msgstr "Вакцинація (%1)"
 
 #: certificatesmodel.cpp:89
-#, fuzzy, kde-format
-#| msgid "Test %1"
+#, kde-format
 msgid "Test %1 (%2)"
-msgstr "Тест %1"
+msgstr "Тест %1 (%2)"
 
 #: certificatesmodel.cpp:95
-#, fuzzy, kde-format
-#| msgid "Recovery %1"
+#, kde-format
 msgid "Recovery (%1)"
-msgstr "Одужання %1"
+msgstr "Одужання (%1)"
 
 #: certificatesmodel.cpp:167
 #, kde-format
