@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-14 00:48+0000\n"
+"POT-Creation-Date: 2023-04-16 00:49+0000\n"
 "PO-Revision-Date: 2021-11-15 18:50+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -134,12 +134,28 @@ msgstr "Obnova %1"
 msgid "Your certificates"
 msgstr "Vaše certifikáty"
 
-#: qml/CertificatesPage.qml:46
+#: qml/CertificatesPage.qml:42 qml/CertificatesPage.qml:56
+#, kde-format
+msgid "Delete"
+msgstr ""
+
+#: qml/CertificatesPage.qml:51
+#, fuzzy, kde-format
+#| msgid "Certificate"
+msgid "Delete Certificate"
+msgstr "Certifikát"
+
+#: qml/CertificatesPage.qml:52
+#, kde-format
+msgid "Do you really want to delete this certificate?"
+msgstr ""
+
+#: qml/CertificatesPage.qml:74
 #, kde-format
 msgid "Certificate could not be imported: %1"
 msgstr ""
 
-#: qml/CertificatesPage.qml:127
+#: qml/CertificatesPage.qml:155
 #, kde-format
 msgid "No certificates saved"
 msgstr ""

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-14 00:48+0000\n"
+"POT-Creation-Date: 2023-04-16 00:49+0000\n"
 "PO-Revision-Date: 2022-08-20 20:52+0200\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 21.12.3\n"
 
 #: certificatesmodel.cpp:83
@@ -134,12 +134,28 @@ msgstr "Genesen %1"
 msgid "Your certificates"
 msgstr "Ihre Nachweise"
 
-#: qml/CertificatesPage.qml:46
+#: qml/CertificatesPage.qml:42 qml/CertificatesPage.qml:56
+#, kde-format
+msgid "Delete"
+msgstr ""
+
+#: qml/CertificatesPage.qml:51
+#, fuzzy, kde-format
+#| msgid "Certificate"
+msgid "Delete Certificate"
+msgstr "Nachweis"
+
+#: qml/CertificatesPage.qml:52
+#, kde-format
+msgid "Do you really want to delete this certificate?"
+msgstr ""
+
+#: qml/CertificatesPage.qml:74
 #, kde-format
 msgid "Certificate could not be imported: %1"
 msgstr "Der Nachweis kann nicht importiert werden: %1"
 
-#: qml/CertificatesPage.qml:127
+#: qml/CertificatesPage.qml:155
 #, kde-format
 msgid "No certificates saved"
 msgstr "Keine Nachweise gespeichert"

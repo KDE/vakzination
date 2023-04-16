@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-14 00:48+0000\n"
-"PO-Revision-Date: 2023-03-08 13:55+0100\n"
+"POT-Creation-Date: 2023-04-16 00:49+0000\n"
+"PO-Revision-Date: 2023-04-14 17:00+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -18,28 +18,24 @@ msgstr ""
 "X-Generator: Lokalize 22.12.3\n"
 
 #: certificatesmodel.cpp:83
-#, fuzzy, kde-format
-#| msgid "Vaccination %1 (%2/%3)"
+#, kde-format
 msgid "Vaccination %1/%2 (%3)"
-msgstr "Vaccinazione %1 (%2/%3)"
+msgstr "Vaccinazione %1/%2 (%3)"
 
 #: certificatesmodel.cpp:85
-#, fuzzy, kde-format
-#| msgid "Vaccination"
+#, kde-format
 msgid "Vaccination (%1)"
-msgstr "Vaccinazione"
+msgstr "Vaccinazione (%1)"
 
 #: certificatesmodel.cpp:89
-#, fuzzy, kde-format
-#| msgid "Test %1"
+#, kde-format
 msgid "Test %1 (%2)"
-msgstr "Esame %1"
+msgstr "Esame %1 (%2)"
 
 #: certificatesmodel.cpp:95
-#, fuzzy, kde-format
-#| msgid "Recovery %1"
+#, kde-format
 msgid "Recovery (%1)"
-msgstr "Guarigione %1"
+msgstr "Guarigione (%1)"
 
 #: certificatesmodel.cpp:167
 #, kde-format
@@ -137,12 +133,28 @@ msgstr "Guarigione %1"
 msgid "Your certificates"
 msgstr "I tuoi certificati"
 
-#: qml/CertificatesPage.qml:46
+#: qml/CertificatesPage.qml:42 qml/CertificatesPage.qml:56
+#, kde-format
+msgid "Delete"
+msgstr ""
+
+#: qml/CertificatesPage.qml:51
+#, fuzzy, kde-format
+#| msgid "Certificate"
+msgid "Delete Certificate"
+msgstr "Certificato"
+
+#: qml/CertificatesPage.qml:52
+#, kde-format
+msgid "Do you really want to delete this certificate?"
+msgstr ""
+
+#: qml/CertificatesPage.qml:74
 #, kde-format
 msgid "Certificate could not be imported: %1"
 msgstr "Impossibile importare il certificato: %1"
 
-#: qml/CertificatesPage.qml:127
+#: qml/CertificatesPage.qml:155
 #, kde-format
 msgid "No certificates saved"
 msgstr "Nessun certificato salvato"

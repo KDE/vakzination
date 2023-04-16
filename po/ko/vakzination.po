@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-14 00:48+0000\n"
+"POT-Creation-Date: 2023-04-16 00:49+0000\n"
 "PO-Revision-Date: 2023-03-01 01:32+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -135,12 +135,28 @@ msgstr "완치 %1"
 msgid "Your certificates"
 msgstr "내 증명서"
 
-#: qml/CertificatesPage.qml:46
+#: qml/CertificatesPage.qml:42 qml/CertificatesPage.qml:56
+#, kde-format
+msgid "Delete"
+msgstr ""
+
+#: qml/CertificatesPage.qml:51
+#, fuzzy, kde-format
+#| msgid "Certificate"
+msgid "Delete Certificate"
+msgstr "증명서"
+
+#: qml/CertificatesPage.qml:52
+#, kde-format
+msgid "Do you really want to delete this certificate?"
+msgstr ""
+
+#: qml/CertificatesPage.qml:74
 #, kde-format
 msgid "Certificate could not be imported: %1"
 msgstr "증명서를 가져올 수 없음: %1"
 
-#: qml/CertificatesPage.qml:127
+#: qml/CertificatesPage.qml:155
 #, kde-format
 msgid "No certificates saved"
 msgstr "저장한 증명서 없음"
