@@ -32,17 +32,44 @@ QVector<AnyCertificate> CertificatesModel::fromStringList(const QStringList rawC
     return res;
 }
 
+static QByteArray certRawData(const AnyCertificate &cert)
+{
+    return std::visit(
+        [](auto &&c) {
+            return c.rawData();
+        },
+        cert);
+}
+
 QStringList CertificatesModel::toStringList(const QVector<AnyCertificate> certificates) const
 {
     QStringList res;
     std::transform(certificates.cbegin(), certificates.cend(), std::back_inserter(res), [](const AnyCertificate &cert) {
-        return std::visit(
-            [](auto &&arg) {
-                return QString::fromUtf8(arg.rawData().toBase64());
-            },
-            cert);
+        return QString::fromUtf8(certRawData(cert).toBase64());
     });
     return res;
+}
+
+static QDateTime certRelevantUntil(const AnyCertificate &cert)
+{
+    return std::visit(
+        [](auto &&c) {
+            return KHealthCertificate::relevantUntil(c);
+        },
+        cert);
+}
+
+static bool certLessThan(const AnyCertificate &lhs, const AnyCertificate &rhs)
+{
+    const auto lhsDt = certRelevantUntil(lhs);
+    const auto rhsDt = certRelevantUntil(rhs);
+    if (lhsDt == rhsDt) {
+        return certRawData(lhs) < certRawData(rhs); // ensure a stable sorting in all cases
+    }
+    if (!lhsDt.isValid()) {
+        return false;
+    }
+    return !rhsDt.isValid() || lhsDt > rhsDt;
 }
 
 const QByteArray sample =
@@ -66,6 +93,8 @@ CertificatesModel::CertificatesModel(bool testMode)
         const QStringList certs = m_generalConfig.readEntry(QStringLiteral("certificates"), QStringList{});
         m_certificates = fromStringList(certs);
     }
+
+    std::sort(m_certificates.begin(), m_certificates.end(), certLessThan);
 }
 
 QVariant CertificatesModel::data(const QModelIndex &index, int role) const
@@ -135,14 +164,16 @@ QHash<int, QByteArray> CertificatesModel::roleNames() const
 void CertificatesModel::addCertificate(AnyCertificate cert)
 {
 #if KHEALTHCERTIFICATE_VERSION >= QT_VERSION_CHECK(22, 11, 40)
-    const auto it = std::find(m_certificates.begin(), m_certificates.end(), cert);
+    auto it = std::find(m_certificates.begin(), m_certificates.end(), cert);
     if (it != m_certificates.end()) { // certificate is already known
         return;
     }
 #endif
 
-    beginInsertRows({}, m_certificates.size(), m_certificates.size());
-    m_certificates << cert;
+    it = std::lower_bound(m_certificates.begin(), m_certificates.end(), cert, certLessThan);
+    const auto row = std::distance(m_certificates.begin(), it);
+    beginInsertRows({}, row, row);
+    m_certificates.insert(it, cert);
 
     if (!m_testMode) {
         m_generalConfig.writeEntry(QStringLiteral("certificates"), toStringList(m_certificates));
