@@ -54,4 +54,18 @@ Kirigami.ApplicationWindow {
         id: scanBarcodePage
         ScanBarcodePage {}
     }
+
+    DropArea {
+        onEntered: {
+            if (!drag.hasUrls) {
+                drag.accepted = false;
+            }
+        }
+        onDropped: {
+            for (const i in drop.urls) {
+                CertificatesModel.importCertificate(drop.urls[i]);
+            }
+        }
+        anchors.fill: parent
+    }
 }
