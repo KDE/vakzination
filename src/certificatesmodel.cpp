@@ -16,8 +16,8 @@
 
 #include <KLocalizedString>
 
-#include <KHealthCertificate/KHealthCertificateParser>
-#include <khealthcertificate/khealthcertificate_version.h>
+#include <KHealthCertificateParser>
+#include <khealthcertificate_version.h>
 
 QVector<AnyCertificate> CertificatesModel::fromStringList(const QStringList rawCertificates) const
 {

@@ -9,9 +9,9 @@
 #include <KConfig>
 #include <KConfigGroup>
 
-#include <KHealthCertificate/KRecoveryCertificate>
-#include <KHealthCertificate/KTestCertificate>
-#include <KHealthCertificate/KVaccinationCertificate>
+#include <KRecoveryCertificate>
+#include <KTestCertificate>
+#include <KVaccinationCertificate>
 
 #include "expected.h"
 

@@ -11,7 +11,7 @@
 
 #include <KItinerary/ExtractorCapabilities>
 
-#include <khealthcertificate/khealthcertificate_version.h>
+#include <khealthcertificate_version.h>
 
 class CertificatesModelTest : public QObject
 {
