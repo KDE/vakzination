@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-16 00:49+0000\n"
+"POT-Creation-Date: 2023-04-17 00:49+0000\n"
 "PO-Revision-Date: 2023-03-01 01:32+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -17,51 +17,51 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 21.12.3\n"
 
-#: certificatesmodel.cpp:83
+#: certificatesmodel.cpp:112
 #, fuzzy, kde-format
 #| msgid "Vaccination %1 (%2/%3)"
 msgid "Vaccination %1/%2 (%3)"
 msgstr "예방 접종 %1(%2/%3)"
 
-#: certificatesmodel.cpp:85
+#: certificatesmodel.cpp:114
 #, fuzzy, kde-format
 #| msgid "Vaccination"
 msgid "Vaccination (%1)"
 msgstr "예방 접종"
 
-#: certificatesmodel.cpp:89
+#: certificatesmodel.cpp:118
 #, fuzzy, kde-format
 #| msgid "Test %1"
 msgid "Test %1 (%2)"
 msgstr "검사 %1"
 
-#: certificatesmodel.cpp:95
+#: certificatesmodel.cpp:124
 #, fuzzy, kde-format
 #| msgid "Recovery %1"
 msgid "Recovery (%1)"
 msgstr "완치 %1"
 
-#: certificatesmodel.cpp:167
+#: certificatesmodel.cpp:198
 #, kde-format
 msgid "Empty file url"
 msgstr "파일 URL이 비어 있음"
 
-#: certificatesmodel.cpp:171
+#: certificatesmodel.cpp:202
 #, kde-format
 msgid "File URL not valid: %1"
 msgstr "파일 URL이 잘못됨: %1"
 
-#: certificatesmodel.cpp:179
+#: certificatesmodel.cpp:210
 #, kde-format
 msgid "Could not open file: %1"
 msgstr "파일을 열 수 없음: %1"
 
-#: certificatesmodel.cpp:201
+#: certificatesmodel.cpp:232
 #, kde-format
 msgid "No certificate found in %1"
 msgstr "%1에서 증명서를 찾을 수 없음"
 
-#: certificatesmodel.cpp:263
+#: certificatesmodel.cpp:294
 #, kde-format
 msgid "No certificate in clipboard"
 msgstr "클립보드에 증명서 없음"

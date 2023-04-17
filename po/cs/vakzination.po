@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-16 00:49+0000\n"
+"POT-Creation-Date: 2023-04-17 00:49+0000\n"
 "PO-Revision-Date: 2023-01-31 14:50+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -17,47 +17,47 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Lokalize 22.12.1\n"
 
-#: certificatesmodel.cpp:83
+#: certificatesmodel.cpp:112
 #, kde-format
 msgid "Vaccination %1/%2 (%3)"
 msgstr "Očkování %1/%2 (%3)"
 
-#: certificatesmodel.cpp:85
+#: certificatesmodel.cpp:114
 #, kde-format
 msgid "Vaccination (%1)"
 msgstr "Očkování (%1)"
 
-#: certificatesmodel.cpp:89
+#: certificatesmodel.cpp:118
 #, kde-format
 msgid "Test %1 (%2)"
 msgstr "Test %1 (%2)"
 
-#: certificatesmodel.cpp:95
+#: certificatesmodel.cpp:124
 #, kde-format
 msgid "Recovery (%1)"
 msgstr "Zotavení (%1)"
 
-#: certificatesmodel.cpp:167
+#: certificatesmodel.cpp:198
 #, kde-format
 msgid "Empty file url"
 msgstr "Prázdný soubor URL"
 
-#: certificatesmodel.cpp:171
+#: certificatesmodel.cpp:202
 #, kde-format
 msgid "File URL not valid: %1"
 msgstr "Soubor URL není platný: %1"
 
-#: certificatesmodel.cpp:179
+#: certificatesmodel.cpp:210
 #, kde-format
 msgid "Could not open file: %1"
 msgstr "Nelze otevřít soubor: %1"
 
-#: certificatesmodel.cpp:201
+#: certificatesmodel.cpp:232
 #, kde-format
 msgid "No certificate found in %1"
 msgstr "V %1 nebyl nalezen žádný certifikát"
 
-#: certificatesmodel.cpp:263
+#: certificatesmodel.cpp:294
 #, kde-format
 msgid "No certificate in clipboard"
 msgstr "Ve schránce není žádný certifikát"

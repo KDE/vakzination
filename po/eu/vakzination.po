@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-16 00:49+0000\n"
+"POT-Creation-Date: 2023-04-17 00:49+0000\n"
 "PO-Revision-Date: 2023-04-11 00:04+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -21,51 +21,51 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 22.12.3\n"
 
-#: certificatesmodel.cpp:83
+#: certificatesmodel.cpp:112
 #, fuzzy, kde-format
 #| msgid "Vaccination %1 (%2/%3)"
 msgid "Vaccination %1/%2 (%3)"
 msgstr "Txertaketa %1 (%2/%3)"
 
-#: certificatesmodel.cpp:85
+#: certificatesmodel.cpp:114
 #, fuzzy, kde-format
 #| msgid "Vaccination"
 msgid "Vaccination (%1)"
 msgstr "Txertaketa"
 
-#: certificatesmodel.cpp:89
+#: certificatesmodel.cpp:118
 #, fuzzy, kde-format
 #| msgid "Test %1"
 msgid "Test %1 (%2)"
 msgstr "Proba %1"
 
-#: certificatesmodel.cpp:95
+#: certificatesmodel.cpp:124
 #, fuzzy, kde-format
 #| msgid "Recovery %1"
 msgid "Recovery (%1)"
 msgstr "Osatzea %1"
 
-#: certificatesmodel.cpp:167
+#: certificatesmodel.cpp:198
 #, kde-format
 msgid "Empty file url"
 msgstr "Fitxategiaren URL hutsa"
 
-#: certificatesmodel.cpp:171
+#: certificatesmodel.cpp:202
 #, kde-format
 msgid "File URL not valid: %1"
 msgstr "Fitxategiaren URLa ez da baliozkoa: %1"
 
-#: certificatesmodel.cpp:179
+#: certificatesmodel.cpp:210
 #, kde-format
 msgid "Could not open file: %1"
 msgstr "Ezin izan da %1 fitxategia zabaldu"
 
-#: certificatesmodel.cpp:201
+#: certificatesmodel.cpp:232
 #, kde-format
 msgid "No certificate found in %1"
 msgstr "Ez da aurkitu ziurtagiririk %1(e)an"
 
-#: certificatesmodel.cpp:263
+#: certificatesmodel.cpp:294
 #, kde-format
 msgid "No certificate in clipboard"
 msgstr "Ez dago ziurtagiririk arbelean"

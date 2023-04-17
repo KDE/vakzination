@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-16 00:49+0000\n"
+"POT-Creation-Date: 2023-04-17 00:49+0000\n"
 "PO-Revision-Date: 2021-12-31 15:47+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -17,51 +17,51 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 21.12.0\n"
 
-#: certificatesmodel.cpp:83
+#: certificatesmodel.cpp:112
 #, fuzzy, kde-format
 #| msgid "Vaccination %1 (%2/%3)"
 msgid "Vaccination %1/%2 (%3)"
 msgstr "%1. oltás (%2/%3)"
 
-#: certificatesmodel.cpp:85
+#: certificatesmodel.cpp:114
 #, fuzzy, kde-format
 #| msgid "Vaccination"
 msgid "Vaccination (%1)"
 msgstr "Oltás"
 
-#: certificatesmodel.cpp:89
+#: certificatesmodel.cpp:118
 #, fuzzy, kde-format
 #| msgid "Test %1"
 msgid "Test %1 (%2)"
 msgstr "%1. teszt"
 
-#: certificatesmodel.cpp:95
+#: certificatesmodel.cpp:124
 #, fuzzy, kde-format
 #| msgid "Recovery %1"
 msgid "Recovery (%1)"
 msgstr "%1. felépülés"
 
-#: certificatesmodel.cpp:167
+#: certificatesmodel.cpp:198
 #, kde-format
 msgid "Empty file url"
 msgstr "Üres fájl URL"
 
-#: certificatesmodel.cpp:171
+#: certificatesmodel.cpp:202
 #, kde-format
 msgid "File URL not valid: %1"
 msgstr "A fájl URL-je érvénytelen: %1"
 
-#: certificatesmodel.cpp:179
+#: certificatesmodel.cpp:210
 #, kde-format
 msgid "Could not open file: %1"
 msgstr "Nem sikerült megnyitni a fájlt: %1"
 
-#: certificatesmodel.cpp:201
+#: certificatesmodel.cpp:232
 #, kde-format
 msgid "No certificate found in %1"
 msgstr "Nem található tanúsítvány itt: %1"
 
-#: certificatesmodel.cpp:263
+#: certificatesmodel.cpp:294
 #, kde-format
 msgid "No certificate in clipboard"
 msgstr "Nincs tanúsítvány a vágólapon"

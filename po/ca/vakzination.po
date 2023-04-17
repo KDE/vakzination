@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-16 00:49+0000\n"
-"PO-Revision-Date: 2023-04-14 17:18+0200\n"
+"POT-Creation-Date: 2023-04-17 00:49+0000\n"
+"PO-Revision-Date: 2023-04-16 10:50+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -17,49 +17,49 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 20.12.0\n"
 
-#: certificatesmodel.cpp:83
+#: certificatesmodel.cpp:112
 #, kde-format
 msgid "Vaccination %1/%2 (%3)"
 msgstr "Vaccinació %1/%2 (%3)"
 
-#: certificatesmodel.cpp:85
+#: certificatesmodel.cpp:114
 #, kde-format
 msgid "Vaccination (%1)"
 msgstr "Vaccinació (%1)"
 
-#: certificatesmodel.cpp:89
+#: certificatesmodel.cpp:118
 #, kde-format
 msgid "Test %1 (%2)"
 msgstr "Prova %1 (%2)"
 
-#: certificatesmodel.cpp:95
+#: certificatesmodel.cpp:124
 #, kde-format
 msgid "Recovery (%1)"
 msgstr "Recuperació (%1)"
 
-#: certificatesmodel.cpp:167
+#: certificatesmodel.cpp:198
 #, kde-format
 msgid "Empty file url"
 msgstr "URL de fitxer buit"
 
-#: certificatesmodel.cpp:171
+#: certificatesmodel.cpp:202
 #, kde-format
 msgid "File URL not valid: %1"
 msgstr "URL de fitxer no vàlid: %1"
 
-#: certificatesmodel.cpp:179
+#: certificatesmodel.cpp:210
 #, kde-format
 msgid "Could not open file: %1"
 msgstr "No s'ha pogut obrir el fitxer: %1"
 
-#: certificatesmodel.cpp:201
+#: certificatesmodel.cpp:232
 #, kde-format
 msgid "No certificate found in %1"
 msgstr "No s'ha trobat cap certificat a %1"
 
-#: certificatesmodel.cpp:263
+#: certificatesmodel.cpp:294
 #, kde-format
 msgid "No certificate in clipboard"
 msgstr "No hi ha cap certificat al porta-retalls"
@@ -138,18 +138,17 @@ msgstr "Els vostres certificats"
 #: qml/CertificatesPage.qml:42 qml/CertificatesPage.qml:56
 #, kde-format
 msgid "Delete"
-msgstr ""
+msgstr "Suprimeix"
 
 #: qml/CertificatesPage.qml:51
-#, fuzzy, kde-format
-#| msgid "Certificate"
+#, kde-format
 msgid "Delete Certificate"
-msgstr "Certificat"
+msgstr "Suprimeix el certificat"
 
 #: qml/CertificatesPage.qml:52
 #, kde-format
 msgid "Do you really want to delete this certificate?"
-msgstr ""
+msgstr "Segur que voleu suprimir aquest certificat?"
 
 #: qml/CertificatesPage.qml:74
 #, kde-format

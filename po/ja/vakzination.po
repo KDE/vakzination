@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-16 00:49+0000\n"
+"POT-Creation-Date: 2023-04-17 00:49+0000\n"
 "PO-Revision-Date: 2021-07-18 18:15-0700\n"
 "Last-Translator: Japanese KDE translation team <kde-jp@kde.org>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -14,47 +14,47 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 
-#: certificatesmodel.cpp:83
+#: certificatesmodel.cpp:112
 #, kde-format
 msgid "Vaccination %1/%2 (%3)"
 msgstr ""
 
-#: certificatesmodel.cpp:85
+#: certificatesmodel.cpp:114
 #, kde-format
 msgid "Vaccination (%1)"
 msgstr ""
 
-#: certificatesmodel.cpp:89
+#: certificatesmodel.cpp:118
 #, kde-format
 msgid "Test %1 (%2)"
 msgstr ""
 
-#: certificatesmodel.cpp:95
+#: certificatesmodel.cpp:124
 #, kde-format
 msgid "Recovery (%1)"
 msgstr ""
 
-#: certificatesmodel.cpp:167
+#: certificatesmodel.cpp:198
 #, kde-format
 msgid "Empty file url"
 msgstr ""
 
-#: certificatesmodel.cpp:171
+#: certificatesmodel.cpp:202
 #, kde-format
 msgid "File URL not valid: %1"
 msgstr ""
 
-#: certificatesmodel.cpp:179
+#: certificatesmodel.cpp:210
 #, kde-format
 msgid "Could not open file: %1"
 msgstr ""
 
-#: certificatesmodel.cpp:201
+#: certificatesmodel.cpp:232
 #, kde-format
 msgid "No certificate found in %1"
 msgstr ""
 
-#: certificatesmodel.cpp:263
+#: certificatesmodel.cpp:294
 #, kde-format
 msgid "No certificate in clipboard"
 msgstr ""

@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-16 00:49+0000\n"
-"PO-Revision-Date: 2023-03-08 14:27+0100\n"
+"POT-Creation-Date: 2023-04-17 00:49+0000\n"
+"PO-Revision-Date: 2023-04-15 20:22+0200\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard]neuf.fr>\n"
 "Language-Team: fr\n"
 "Language: fr\n"
@@ -15,51 +15,47 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Lokalize 22.12.3\n"
 
-#: certificatesmodel.cpp:83
-#, fuzzy, kde-format
-#| msgid "Vaccination %1 (%2/%3)"
+#: certificatesmodel.cpp:112
+#, kde-format
 msgid "Vaccination %1/%2 (%3)"
-msgstr "Vaccination %1 (%2 / %3)"
+msgstr "Vaccination %1 / %2 (%3)"
 
-#: certificatesmodel.cpp:85
-#, fuzzy, kde-format
-#| msgid "Vaccination"
+#: certificatesmodel.cpp:114
+#, kde-format
 msgid "Vaccination (%1)"
-msgstr "Vaccination"
+msgstr "Vaccination (%1)"
 
-#: certificatesmodel.cpp:89
-#, fuzzy, kde-format
-#| msgid "Test %1"
+#: certificatesmodel.cpp:118
+#, kde-format
 msgid "Test %1 (%2)"
-msgstr "Tester %1"
+msgstr "Test %1 (%2)"
 
-#: certificatesmodel.cpp:95
-#, fuzzy, kde-format
-#| msgid "Recovery %1"
+#: certificatesmodel.cpp:124
+#, kde-format
 msgid "Recovery (%1)"
-msgstr "Récupération %1"
+msgstr "Récupération (%1)"
 
-#: certificatesmodel.cpp:167
+#: certificatesmodel.cpp:198
 #, kde-format
 msgid "Empty file url"
 msgstr "URL de fichier vide"
 
-#: certificatesmodel.cpp:171
+#: certificatesmodel.cpp:202
 #, kde-format
 msgid "File URL not valid: %1"
 msgstr "URL de fichier non valable : %1"
 
-#: certificatesmodel.cpp:179
+#: certificatesmodel.cpp:210
 #, kde-format
 msgid "Could not open file: %1"
 msgstr "Impossible d'ouvrir le fichier : %1"
 
-#: certificatesmodel.cpp:201
+#: certificatesmodel.cpp:232
 #, kde-format
 msgid "No certificate found in %1"
 msgstr "Aucun certificat trouvé dans %1."
 
-#: certificatesmodel.cpp:263
+#: certificatesmodel.cpp:294
 #, kde-format
 msgid "No certificate in clipboard"
 msgstr "Aucun certificat dans le presse-papier."
