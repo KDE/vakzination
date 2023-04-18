@@ -6,6 +6,7 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15 as QQC2
 import QtQuick.Layouts 1.2
+import Qt.labs.settings 1.0
 import org.kde.kirigami 2.19 as Kirigami
 import org.kde.khealthcertificate 1.0 as KHC
 
@@ -88,6 +89,10 @@ Kirigami.Page {
             Layout.fillWidth: true
             visible: certSelector.visible
         }
+    }
+
+    Settings {
+        property alias currentCertificateIndex: certSelector.currentIndex
     }
 
     Component {
