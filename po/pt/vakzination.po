@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-17 00:49+0000\n"
-"PO-Revision-Date: 2023-03-07 09:26+0000\n"
+"PO-Revision-Date: 2023-04-17 14:31+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -14,28 +14,24 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: certificatesmodel.cpp:112
-#, fuzzy, kde-format
-#| msgid "Vaccination %1 (%2/%3)"
+#, kde-format
 msgid "Vaccination %1/%2 (%3)"
-msgstr "Vacina %1 (%2/%3)"
+msgstr "Vacina %1/%2 (%3)"
 
 #: certificatesmodel.cpp:114
-#, fuzzy, kde-format
-#| msgid "Vaccination"
+#, kde-format
 msgid "Vaccination (%1)"
-msgstr "Vacinação"
+msgstr "Vacinação (%1)"
 
 #: certificatesmodel.cpp:118
-#, fuzzy, kde-format
-#| msgid "Test %1"
+#, kde-format
 msgid "Test %1 (%2)"
-msgstr "Teste %1"
+msgstr "Teste %1 (%2)"
 
 #: certificatesmodel.cpp:124
-#, fuzzy, kde-format
-#| msgid "Recovery %1"
+#, kde-format
 msgid "Recovery (%1)"
-msgstr "Recuperação %1"
+msgstr "Recuperação (%1)"
 
 #: certificatesmodel.cpp:198
 #, kde-format
@@ -136,18 +132,17 @@ msgstr "Os seus certificados"
 #: qml/CertificatesPage.qml:42 qml/CertificatesPage.qml:56
 #, kde-format
 msgid "Delete"
-msgstr ""
+msgstr "Apagar"
 
 #: qml/CertificatesPage.qml:51
-#, fuzzy, kde-format
-#| msgid "Certificate"
+#, kde-format
 msgid "Delete Certificate"
-msgstr "Certificado"
+msgstr "Apagar o Certificado"
 
 #: qml/CertificatesPage.qml:52
 #, kde-format
 msgid "Do you really want to delete this certificate?"
-msgstr ""
+msgstr "Deseja realmente apagar este certificado?"
 
 #: qml/CertificatesPage.qml:74
 #, kde-format
@@ -341,6 +336,3 @@ msgstr "%1/%2"
 #, kde-format
 msgid "Dose:"
 msgstr "Dose:"
-
-#~ msgid "Details"
-#~ msgstr "Detalhes"
