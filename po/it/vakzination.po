@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-17 00:49+0000\n"
-"PO-Revision-Date: 2023-04-14 17:00+0200\n"
+"PO-Revision-Date: 2023-04-17 09:47+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -136,18 +136,17 @@ msgstr "I tuoi certificati"
 #: qml/CertificatesPage.qml:42 qml/CertificatesPage.qml:56
 #, kde-format
 msgid "Delete"
-msgstr ""
+msgstr "Elimina"
 
 #: qml/CertificatesPage.qml:51
-#, fuzzy, kde-format
-#| msgid "Certificate"
+#, kde-format
 msgid "Delete Certificate"
-msgstr "Certificato"
+msgstr "Elimina certificato"
 
 #: qml/CertificatesPage.qml:52
 #, kde-format
 msgid "Do you really want to delete this certificate?"
-msgstr ""
+msgstr "Vuoi davvero eliminare questo certificato?"
 
 #: qml/CertificatesPage.qml:74
 #, kde-format
