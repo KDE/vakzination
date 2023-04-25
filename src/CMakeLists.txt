@@ -5,7 +5,7 @@ add_definitions(-DTRANSLATION_DOMAIN=\"vakzination\")
 
 add_library(vakzinationstatic STATIC)
 target_sources(vakzinationstatic PRIVATE certificatesmodel.cpp)
-target_link_libraries(vakzinationstatic PUBLIC Qt::Core Qt::Gui KF${KF_MAJOR_VERSION}::ConfigCore KHealthCertificate PRIVATE KF${KF_MAJOR_VERSION}::I18n KPim::Itinerary)
+target_link_libraries(vakzinationstatic PUBLIC Qt::Core Qt::Gui KF${KF_MAJOR_VERSION}::ConfigCore KHealthCertificate PRIVATE KF${KF_MAJOR_VERSION}::I18n KPim${KF_MAJOR_VERSION}::Itinerary)
 
 add_executable(vakzination main.cpp resources.qrc)
 target_include_directories(vakzination PRIVATE ${CMAKE_BINARY_DIR})
