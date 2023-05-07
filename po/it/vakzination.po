@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-17 00:49+0000\n"
+"POT-Creation-Date: 2023-05-07 00:52+0000\n"
 "PO-Revision-Date: 2023-04-17 09:47+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -128,32 +128,32 @@ msgstr "Esame %1"
 msgid "Recovery %1"
 msgstr "Guarigione %1"
 
-#: qml/CertificatesPage.qml:16
+#: qml/CertificatesPage.qml:17
 #, kde-format
 msgid "Your certificates"
 msgstr "I tuoi certificati"
 
-#: qml/CertificatesPage.qml:42 qml/CertificatesPage.qml:56
+#: qml/CertificatesPage.qml:43 qml/CertificatesPage.qml:57
 #, kde-format
 msgid "Delete"
 msgstr "Elimina"
 
-#: qml/CertificatesPage.qml:51
+#: qml/CertificatesPage.qml:52
 #, kde-format
 msgid "Delete Certificate"
 msgstr "Elimina certificato"
 
-#: qml/CertificatesPage.qml:52
+#: qml/CertificatesPage.qml:53
 #, kde-format
 msgid "Do you really want to delete this certificate?"
 msgstr "Vuoi davvero eliminare questo certificato?"
 
-#: qml/CertificatesPage.qml:74
+#: qml/CertificatesPage.qml:75
 #, kde-format
 msgid "Certificate could not be imported: %1"
 msgstr "Impossibile importare il certificato: %1"
 
-#: qml/CertificatesPage.qml:155
+#: qml/CertificatesPage.qml:160
 #, kde-format
 msgid "No certificates saved"
 msgstr "Nessun certificato salvato"
