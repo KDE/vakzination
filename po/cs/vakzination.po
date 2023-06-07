@@ -136,18 +136,17 @@ msgstr "Vaše certifikáty"
 #: qml/CertificatesPage.qml:43 qml/CertificatesPage.qml:57
 #, kde-format
 msgid "Delete"
-msgstr ""
+msgstr "Smazat"
 
 #: qml/CertificatesPage.qml:52
-#, fuzzy, kde-format
-#| msgid "Certificate"
+#, kde-format
 msgid "Delete Certificate"
-msgstr "Certifikát"
+msgstr "Smazat certifikát"
 
 #: qml/CertificatesPage.qml:53
 #, kde-format
 msgid "Do you really want to delete this certificate?"
-msgstr ""
+msgstr "Opravdu si přejete smazat tento certifikát?"
 
 #: qml/CertificatesPage.qml:75
 #, kde-format
