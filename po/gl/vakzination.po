@@ -106,7 +106,7 @@ msgstr "adrian@chaves.io"
 #: main.cpp:59
 #, kde-format
 msgid "Show with test data"
-msgstr "Mostrar cos datos da proba."
+msgstr "Amosar cos datos da proba."
 
 #: main.cpp:62
 #, kde-format
