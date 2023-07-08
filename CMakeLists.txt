@@ -13,7 +13,7 @@ project(vakzination VERSION ${RELEASE_SERVICE_VERSION})
 
 set(QT5_MIN_VERSION 5.15)
 if (ANDROID)
-    set(QT5_MIN_VERSION 5.15.8)
+    set(QT5_MIN_VERSION 5.15.10)
 endif()
 set(KF5_MIN_VERSION 5.90)
 
