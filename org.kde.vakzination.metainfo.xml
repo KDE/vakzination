@@ -12,6 +12,7 @@
   <name xml:lang="de">Vakzination</name>
   <name xml:lang="el">Vakzination</name>
   <name xml:lang="en-GB">Vakzination</name>
+  <name xml:lang="eo">Vakzination</name>
   <name xml:lang="es">Vakzination</name>
   <name xml:lang="eu">Vakzination</name>
   <name xml:lang="fr">Vakzination</name>
@@ -39,6 +40,7 @@
   <summary xml:lang="de">Verwalten Sie Ihre Impfnachweise</summary>
   <summary xml:lang="el">Διαχειριστείτε τα πιστοποιητικά εμβολιασμού σας</summary>
   <summary xml:lang="en-GB">Manage your vaccination certificates</summary>
+  <summary xml:lang="eo">Administru viajn atestilojn de vakcinado</summary>
   <summary xml:lang="es">Gestione sus certificados de vacunación</summary>
   <summary xml:lang="eu">Kudeatu zure txertaketa-ziurtagiriak</summary>
   <summary xml:lang="fr">Gérer vos certificats de vaccination</summary>
@@ -68,6 +70,7 @@
   <developer_name xml:lang="de">KDE-Gemeinschaft</developer_name>
   <developer_name xml:lang="el">Η Κοινότητα του KDE</developer_name>
   <developer_name xml:lang="en-GB">KDE Community</developer_name>
+  <developer_name xml:lang="eo">Komunumo de KDE</developer_name>
   <developer_name xml:lang="es">Comunidad KDE</developer_name>
   <developer_name xml:lang="eu">KDE Komunitatea</developer_name>
   <developer_name xml:lang="fr">Communauté KDE</developer_name>
@@ -127,6 +130,7 @@
     <p xml:lang="de">Verwalten Sie Ihre digitalen Gesundheitsnachweise wie Impf-, Test- und Genesungsnachweise.</p>
     <p xml:lang="el">Διαχειριστείτε τα ψηφιακά πιστοποιητικά της υγείας σας όπως πιστοποιητικά εμβολιασμών, ελέγχων και ανάρρωσης.</p>
     <p xml:lang="en-GB">Manage your digital health certificates like vaccination, test, and recovery certificates.</p>
+    <p xml:lang="eo">Administru viajn ciferecajn san-atestojn kiel pri vakcinado, testo kaj resaniĝo.</p>
     <p xml:lang="es">Gestione sus certificados digitales de salud, como los de vacunación, pruebas y recuperación.</p>
     <p xml:lang="eu">Kudeatu zure osasun ziurtagiri digitalak, hala nola txertaketa, proba eta osatze-ziurtagiriak.</p>
     <p xml:lang="fr">Gérer vos certificats numériques de santé comme les certificats de vaccination, de tests et de retour à la santé.</p>
