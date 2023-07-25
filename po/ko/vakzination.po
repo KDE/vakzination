@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-07 00:52+0000\n"
-"PO-Revision-Date: 2023-03-01 01:32+0100\n"
+"PO-Revision-Date: 2023-07-25 01:21+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -15,31 +15,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: certificatesmodel.cpp:112
-#, fuzzy, kde-format
-#| msgid "Vaccination %1 (%2/%3)"
+#, kde-format
 msgid "Vaccination %1/%2 (%3)"
-msgstr "예방 접종 %1(%2/%3)"
+msgstr "예방 접종 %1/%2(%3)"
 
 #: certificatesmodel.cpp:114
-#, fuzzy, kde-format
-#| msgid "Vaccination"
+#, kde-format
 msgid "Vaccination (%1)"
-msgstr "예방 접종"
+msgstr "예방 접종(%1)"
 
 #: certificatesmodel.cpp:118
-#, fuzzy, kde-format
-#| msgid "Test %1"
+#, kde-format
 msgid "Test %1 (%2)"
-msgstr "검사 %1"
+msgstr "검사 %1(%2)"
 
 #: certificatesmodel.cpp:124
-#, fuzzy, kde-format
-#| msgid "Recovery %1"
+#, kde-format
 msgid "Recovery (%1)"
-msgstr "완치 %1"
+msgstr "완치(%1)"
 
 #: certificatesmodel.cpp:198
 #, kde-format
@@ -138,18 +134,17 @@ msgstr "내 증명서"
 #: qml/CertificatesPage.qml:43 qml/CertificatesPage.qml:57
 #, kde-format
 msgid "Delete"
-msgstr ""
+msgstr "삭제"
 
 #: qml/CertificatesPage.qml:52
-#, fuzzy, kde-format
-#| msgid "Certificate"
+#, kde-format
 msgid "Delete Certificate"
-msgstr "증명서"
+msgstr "증명서 삭제"
 
 #: qml/CertificatesPage.qml:53
 #, kde-format
 msgid "Do you really want to delete this certificate?"
-msgstr ""
+msgstr "이 증명서를 삭제하시겠습니까?"
 
 #: qml/CertificatesPage.qml:75
 #, kde-format
@@ -321,7 +316,7 @@ msgstr "예방 접종"
 #, kde-format
 msgid "%2 (%1 day ago)"
 msgid_plural "%2 (%1 days ago)"
-msgstr[0] ""
+msgstr[0] "%2(%1일 전)"
 
 #: qml/VaccinationDetailsSheet.qml:69
 #, kde-format
