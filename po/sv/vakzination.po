@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the vakzination package.
 #
-# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2021, 2022.
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-07 00:52+0000\n"
-"PO-Revision-Date: 2022-08-03 09:13+0200\n"
+"PO-Revision-Date: 2023-07-31 11:41+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -18,28 +18,24 @@ msgstr ""
 "X-Generator: Lokalize 20.08.1\n"
 
 #: certificatesmodel.cpp:112
-#, fuzzy, kde-format
-#| msgid "Vaccination %1 (%2/%3)"
+#, kde-format
 msgid "Vaccination %1/%2 (%3)"
-msgstr "Vaccination %1 (%2/%3)"
+msgstr "Vaccination %1/%2 (%3)"
 
 #: certificatesmodel.cpp:114
-#, fuzzy, kde-format
-#| msgid "Vaccination"
+#, kde-format
 msgid "Vaccination (%1)"
-msgstr "Vaccination"
+msgstr "Vaccination (%1)"
 
 #: certificatesmodel.cpp:118
-#, fuzzy, kde-format
-#| msgid "Test %1"
+#, kde-format
 msgid "Test %1 (%2)"
-msgstr "Test %1"
+msgstr "Test %1 (%2)"
 
 #: certificatesmodel.cpp:124
-#, fuzzy, kde-format
-#| msgid "Recovery %1"
+#, kde-format
 msgid "Recovery (%1)"
-msgstr "Tillfrisknad %1"
+msgstr "Tillfrisknad (%1)"
 
 #: certificatesmodel.cpp:198
 #, kde-format
@@ -67,10 +63,9 @@ msgid "No certificate in clipboard"
 msgstr "Inget bevis på klippbordet"
 
 #: main.cpp:46
-#, fuzzy, kde-format
-#| msgid "vakzination"
+#, kde-format
 msgid "Vakzination"
-msgstr "vakzination"
+msgstr "Vakzination"
 
 #: main.cpp:48
 #, kde-format
@@ -78,33 +73,35 @@ msgid ""
 "Vakzination manages your health certificates like vaccination, test, and "
 "recovery certificates."
 msgstr ""
+"Vakzination hanterar dina hälsointyg såsom vaccinations-, test- och "
+"friskintyg."
 
 #: main.cpp:50
 #, kde-format
 msgid "© 2021-2022 KDE Community"
-msgstr ""
+msgstr "© 2021-2022 KDE-gemenskapen"
 
 #: main.cpp:52
 #, kde-format
 msgid "Nicolas Fella"
-msgstr ""
+msgstr "Nicolas Fella"
 
 #: main.cpp:52
 #, kde-format
 msgid "Maintainer"
-msgstr ""
+msgstr "Underhåll"
 
 #: main.cpp:53
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Stefan Asserhäll"
 
 #: main.cpp:53
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "stefan.asserhall@bredband.net"
 
 #: main.cpp:59
 #, kde-format
@@ -139,18 +136,17 @@ msgstr "Dina bevis"
 #: qml/CertificatesPage.qml:43 qml/CertificatesPage.qml:57
 #, kde-format
 msgid "Delete"
-msgstr ""
+msgstr "Ta bort"
 
 #: qml/CertificatesPage.qml:52
-#, fuzzy, kde-format
-#| msgid "Certificate"
+#, kde-format
 msgid "Delete Certificate"
-msgstr "Bevis"
+msgstr "Ta bort intyg"
 
 #: qml/CertificatesPage.qml:53
 #, kde-format
 msgid "Do you really want to delete this certificate?"
-msgstr ""
+msgstr "Vill du verkligen ta bort intyget?"
 
 #: qml/CertificatesPage.qml:75
 #, kde-format
@@ -180,7 +176,7 @@ msgstr "Importera från klippbordet"
 #: qml/main.qml:33 qml/ScanBarcodePage.qml:16
 #, kde-format
 msgid "Scan QR code"
-msgstr ""
+msgstr "Läs QR-kod"
 
 #: qml/RecoveryDetailsSheet.qml:24 qml/TestDetailsSheet.qml:25
 #: qml/VaccinationDetailsSheet.qml:25
@@ -265,12 +261,12 @@ msgstr "Signatur:"
 #: qml/ScanBarcodePage.qml:25
 #, kde-format
 msgid "Light"
-msgstr ""
+msgstr "Ljus"
 
 #: qml/ScanBarcodePage.qml:78
 #, kde-format
 msgid "No camera available."
-msgstr ""
+msgstr "Ingen kamera tillgänglig."
 
 #: qml/TestDetailsSheet.qml:40
 #, kde-format
@@ -322,8 +318,8 @@ msgstr "Vaccination"
 #, kde-format
 msgid "%2 (%1 day ago)"
 msgid_plural "%2 (%1 days ago)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%2 (för %1 dag sedan)"
+msgstr[1] "%2 (för %1 dagar sedan)"
 
 #: qml/VaccinationDetailsSheet.qml:69
 #, kde-format
