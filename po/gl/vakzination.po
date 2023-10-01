@@ -50,7 +50,7 @@ msgstr "O URL do ficheiro non é válido: %1"
 #: certificatesmodel.cpp:210
 #, kde-format
 msgid "Could not open file: %1"
-msgstr "Non se puido abrir o ficheiro: %1"
+msgstr "Non foi posíbel abrir o ficheiro: %1"
 
 #: certificatesmodel.cpp:232
 #, kde-format
@@ -151,7 +151,7 @@ msgstr "Seguro que quere eliminar o certificado?"
 #: qml/CertificatesPage.qml:75
 #, kde-format
 msgid "Certificate could not be imported: %1"
-msgstr "Non se puido importar o certificado: %1"
+msgstr "Non foi posíbel importar o certificado: %1"
 
 #: qml/CertificatesPage.qml:160
 #, kde-format
