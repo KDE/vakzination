@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the vakzination package.
 #
-# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2021, 2022.
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-07 00:52+0000\n"
-"PO-Revision-Date: 2022-08-07 06:56+0200\n"
+"PO-Revision-Date: 2023-10-22 10:40+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -16,31 +16,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 22.04.1\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #: certificatesmodel.cpp:112
-#, fuzzy, kde-format
-#| msgid "Vaccination %1 (%2/%3)"
+#, kde-format
 msgid "Vaccination %1/%2 (%3)"
-msgstr "Szczepienie %1 (%2/%3)"
+msgstr "Szczepienie %1/%2 (%3)"
 
 #: certificatesmodel.cpp:114
-#, fuzzy, kde-format
-#| msgid "Vaccination"
+#, kde-format
 msgid "Vaccination (%1)"
-msgstr "Szczepienie"
+msgstr "Szczepienie (%1)"
 
 #: certificatesmodel.cpp:118
-#, fuzzy, kde-format
-#| msgid "Test %1"
+#, kde-format
 msgid "Test %1 (%2)"
-msgstr "Badanie %1"
+msgstr "Badanie %1 (%2)"
 
 #: certificatesmodel.cpp:124
-#, fuzzy, kde-format
-#| msgid "Recovery %1"
+#, kde-format
 msgid "Recovery (%1)"
-msgstr "Zdrowienie %1"
+msgstr "Zdrowienie (%1)"
 
 #: certificatesmodel.cpp:198
 #, kde-format
@@ -68,10 +64,9 @@ msgid "No certificate in clipboard"
 msgstr "Nie ma żadnego certyfikatu w schowku"
 
 #: main.cpp:46
-#, fuzzy, kde-format
-#| msgid "Vaccination"
+#, kde-format
 msgid "Vakzination"
-msgstr "Szczepienie"
+msgstr "Vakzination"
 
 #: main.cpp:48
 #, kde-format
@@ -79,33 +74,35 @@ msgid ""
 "Vakzination manages your health certificates like vaccination, test, and "
 "recovery certificates."
 msgstr ""
+"Vakzination zarządza twoimi certyfikatami zdrowia takimi jak szczepienia, "
+"badania oraz certyfikaty ozdrowienia."
 
 #: main.cpp:50
 #, kde-format
 msgid "© 2021-2022 KDE Community"
-msgstr ""
+msgstr "© 2021-2022 Społeczność KDE"
 
 #: main.cpp:52
 #, kde-format
 msgid "Nicolas Fella"
-msgstr ""
+msgstr "Nicolas Fella"
 
 #: main.cpp:52
 #, kde-format
 msgid "Maintainer"
-msgstr ""
+msgstr "Opiekun"
 
 #: main.cpp:53
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Łukasz Wojniłowicz"
 
 #: main.cpp:53
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "lukasz.wojnilowicz@gmail.com"
 
 #: main.cpp:59
 #, kde-format
@@ -140,18 +137,17 @@ msgstr "Twoje certyfikaty"
 #: qml/CertificatesPage.qml:43 qml/CertificatesPage.qml:57
 #, kde-format
 msgid "Delete"
-msgstr ""
+msgstr "Usuń"
 
 #: qml/CertificatesPage.qml:52
-#, fuzzy, kde-format
-#| msgid "Certificate"
+#, kde-format
 msgid "Delete Certificate"
-msgstr "Certyfikat:"
+msgstr "Usuń certyfikat"
 
 #: qml/CertificatesPage.qml:53
 #, kde-format
 msgid "Do you really want to delete this certificate?"
-msgstr ""
+msgstr "Czy na pewno usunąć ten certyfikat?"
 
 #: qml/CertificatesPage.qml:75
 #, kde-format
@@ -181,7 +177,7 @@ msgstr "Zaimportuj ze schowka"
 #: qml/main.qml:33 qml/ScanBarcodePage.qml:16
 #, kde-format
 msgid "Scan QR code"
-msgstr ""
+msgstr "Zeskanuj kodu QR"
 
 #: qml/RecoveryDetailsSheet.qml:24 qml/TestDetailsSheet.qml:25
 #: qml/VaccinationDetailsSheet.qml:25
@@ -266,12 +262,12 @@ msgstr "Podpis:"
 #: qml/ScanBarcodePage.qml:25
 #, kde-format
 msgid "Light"
-msgstr ""
+msgstr "Światło"
 
 #: qml/ScanBarcodePage.qml:78
 #, kde-format
 msgid "No camera available."
-msgstr ""
+msgstr "Nie ma dostępnego żadnego aparatu."
 
 #: qml/TestDetailsSheet.qml:40
 #, kde-format
@@ -323,9 +319,9 @@ msgstr "Szczepienie"
 #, kde-format
 msgid "%2 (%1 day ago)"
 msgid_plural "%2 (%1 days ago)"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%2 (%1 dzień temu)"
+msgstr[1] "%2 (%1 dni temu)"
+msgstr[2] "%2 (%1 dni temu)"
 
 #: qml/VaccinationDetailsSheet.qml:69
 #, kde-format
