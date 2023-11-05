@@ -31,7 +31,6 @@
   <name xml:lang="sv">Vakzination</name>
   <name xml:lang="tr">Aşıcı</name>
   <name xml:lang="uk">Vakzination</name>
-  <name xml:lang="x-test">xxVakzinationxx</name>
   <name xml:lang="zh-CN">Vakzination</name>
   <summary>Manage your vaccination certificates</summary>
   <summary xml:lang="ca">Gestioneu els vostres certificats de vaccinació</summary>
@@ -58,7 +57,6 @@
   <summary xml:lang="sv">Hantera dina vaccinationsbevis</summary>
   <summary xml:lang="tr">Aşı Sertifikası Yöneticisi</summary>
   <summary xml:lang="uk">Керування вашими сертифікатами вакцинації</summary>
-  <summary xml:lang="x-test">xxManage your vaccination certificatesxx</summary>
   <summary xml:lang="zh-CN">管理您的疫苗接种证明</summary>
   <metadata_license>FSFAP</metadata_license>
   <project_license>GPL-2.0-or-later</project_license>
@@ -89,7 +87,6 @@
   <developer_name xml:lang="sv">KDE-gemenskapen</developer_name>
   <developer_name xml:lang="tr">KDE Topluluğu</developer_name>
   <developer_name xml:lang="uk">Спільнота KDE</developer_name>
-  <developer_name xml:lang="x-test">xxKDE Communityxx</developer_name>
   <developer_name xml:lang="zh-CN">KDE 社区</developer_name>
   <launchable type="desktop-id">org.kde.vakzination.desktop</launchable>
   <url type="homepage">https://invent.kde.org/plasma-mobile/vakzination</url>
@@ -147,7 +144,6 @@
     <p xml:lang="sv">Hantera dina digitala hälsointyg såsom vaccinations-, test- och tillfrisknandebevis.</p>
     <p xml:lang="tr">Aşı, sınama veya iyileşme sertifikaları gibi sayısal sağlık sertifikalarınızı yönetin.</p>
     <p xml:lang="uk">Керування вашими цифровими сертифікатами здоров'я, зокрема сертифікатами вакцинації, тестування та одужання.</p>
-    <p xml:lang="x-test">xxManage your digital health certificates like vaccination, test, and recovery certificates.xx</p>
     <p xml:lang="zh-CN">管理您的数字健康证书，如疫苗接种、检测结果和康复证书。</p>
   </description>
 </component>
