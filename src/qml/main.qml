@@ -3,10 +3,11 @@
     SPDX-FileCopyrightText: 2021 Nicolas Fella <nicolas.fella@gmx.de>
 */
 
+import QtCore
 import QtQuick 2.15
 import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.2
-import Qt.labs.platform 1.1
+import QtQuick.Dialogs
 import org.kde.kirigami 2.15 as Kirigami
 
 import org.kde.vakzination 1.0
@@ -46,8 +47,8 @@ Kirigami.ApplicationWindow {
 
     FileDialog {
         id: fileDialog
-        folder: StandardPaths.writableLocation(StandardPaths.DocumentsLocation)
-        onAccepted: CertificatesModel.importCertificate(currentFile)
+        currentFolder: StandardPaths.writableLocation(StandardPaths.DocumentsLocation)
+        onAccepted: CertificatesModel.importCertificate(selectedFile)
     }
 
     Component {

@@ -2,16 +2,7 @@
 # SPDX-License-Identifier: CC0-1.0
 
 Dependencies:
-- 'on': ['Linux/Qt5', 'FreeBSD/Qt5', 'Windows/Qt5', 'Android/Qt5']
-  'require':
-    'frameworks/kcoreaddons' : '@stable'
-    'frameworks/ki18n' : '@stable'
-    'frameworks/kconfig' : '@stable'
-    'frameworks/kirigami' : '@stable'
-    'frameworks/prison' : '@stable'
-    'pim/khealthcertificate' : '@stable'
-    'pim/kitinerary' : '@stable'
-- 'on': ['Linux/Qt6', 'FreeBSD/Qt6', 'Android/Qt6', 'Windows/Qt6']
+- 'on': ['Linux', 'FreeBSD', 'Android', 'Windows']
   'require':
     'frameworks/kcoreaddons' : '@latest-kf6'
     'frameworks/ki18n' : '@latest-kf6'

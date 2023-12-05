@@ -3,10 +3,10 @@
     SPDX-FileCopyrightText: 2021 Nicolas Fella <nicolas.fella@gmx.de>
 */
 
+import QtCore
 import QtQuick 2.15
 import QtQuick.Controls 2.15 as QQC2
 import QtQuick.Layouts 1.2
-import Qt.labs.settings 1.0
 import org.kde.kirigami 2.19 as Kirigami
 import org.kde.khealthcertificate 1.0 as KHC
 
@@ -36,16 +36,14 @@ Kirigami.Page {
         }
     }
 
-    actions {
-        contextualActions: [
-            Kirigami.Action {
-                iconName: "edit-delete"
-                text: i18n("Delete")
-                onTriggered: deleteWarningDialog.open()
-                enabled: root.hasValidCertificate
-            }
-        ]
-    }
+    actions: [
+        Kirigami.Action {
+            icon.name: "edit-delete"
+            text: i18n("Delete")
+            onTriggered: deleteWarningDialog.open()
+            enabled: root.hasValidCertificate
+        }
+    ]
 
     Kirigami.PromptDialog {
         id: deleteWarningDialog
@@ -68,6 +66,7 @@ Kirigami.Page {
         spacing: 0
         Kirigami.InlineMessage {
             id: importError
+            Layout.fillWidth: true
 
             property string error
 

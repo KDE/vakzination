@@ -5,7 +5,7 @@ add_definitions(-DTRANSLATION_DOMAIN=\"vakzination\")
 
 add_library(vakzinationstatic STATIC)
 target_sources(vakzinationstatic PRIVATE certificatesmodel.cpp)
-target_link_libraries(vakzinationstatic PUBLIC Qt::Core Qt::Gui KF${KF_MAJOR_VERSION}::ConfigCore KHealthCertificate PRIVATE KF${KF_MAJOR_VERSION}::I18n KPim${KF_MAJOR_VERSION}::Itinerary)
+target_link_libraries(vakzinationstatic PUBLIC Qt::Core Qt::Gui KF6::ConfigCore KHealthCertificate PRIVATE KF6::I18n KPim6::Itinerary)
 
 add_executable(vakzination main.cpp resources.qrc)
 target_include_directories(vakzination PRIVATE ${CMAKE_BINARY_DIR})
@@ -16,9 +16,9 @@ target_link_libraries(vakzination
     Qt::Quick
     Qt::QuickControls2
     Qt::Svg
-    KF${KF_MAJOR_VERSION}::I18n
-    KF${KF_MAJOR_VERSION}::ConfigCore
-    KF${KF_MAJOR_VERSION}::CoreAddons
+    KF6::I18n
+    KF6::ConfigCore
+    KF6::CoreAddons
     vakzinationstatic
 )
 
@@ -34,6 +34,7 @@ if (ANDROID)
         view-barcode-qr
         view-list-details
     )
+    ecm_add_android_apk(vakzination ANDROID_DIR ${CMAKE_SOURCE_DIR}/android)
 else()
     target_link_libraries(vakzination Qt::Widgets)
 endif()

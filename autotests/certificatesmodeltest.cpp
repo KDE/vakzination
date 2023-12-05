@@ -181,7 +181,6 @@ private Q_SLOTS:
             QCOMPARE(model.rowCount({}), 1);
         }
     }
-#if KHEALTHCERTIFICATE_VERSION >= QT_VERSION_CHECK(22, 11, 40)
     void testDeduplication()
     {
         CertificatesModel model(true);
@@ -191,7 +190,6 @@ private Q_SLOTS:
         model.importCertificate(QUrl::fromLocalFile(QFINDTESTDATA("full-vaccination.txt")));
         QCOMPARE(model.rowCount({}), 5);
     }
-#endif
 };
 
 QTEST_MAIN(CertificatesModelTest)
