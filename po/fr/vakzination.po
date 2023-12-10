@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-05 12:35+0000\n"
+"POT-Creation-Date: 2023-12-10 00:42+0000\n"
 "PO-Revision-Date: 2023-04-18 07:07+0200\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard]neuf.fr>\n"
 "Language-Team: fr\n"
@@ -35,37 +35,37 @@ msgstr "Test %1 (%2)"
 msgid "Recovery (%1)"
 msgstr "Récupération (%1)"
 
-#: certificatesmodel.cpp:198
+#: certificatesmodel.cpp:196
 #, kde-format
 msgid "Empty file url"
 msgstr "URL de fichier vide"
 
-#: certificatesmodel.cpp:202
+#: certificatesmodel.cpp:200
 #, kde-format
 msgid "File URL not valid: %1"
 msgstr "URL de fichier non valable : %1"
 
-#: certificatesmodel.cpp:210
+#: certificatesmodel.cpp:208
 #, kde-format
 msgid "Could not open file: %1"
 msgstr "Impossible d'ouvrir le fichier : %1"
 
-#: certificatesmodel.cpp:232
+#: certificatesmodel.cpp:228
 #, kde-format
 msgid "No certificate found in %1"
 msgstr "Aucun certificat trouvé dans %1."
 
-#: certificatesmodel.cpp:294
+#: certificatesmodel.cpp:290
 #, kde-format
 msgid "No certificate in clipboard"
 msgstr "Aucun certificat dans le presse-papier."
 
-#: main.cpp:46
+#: main.cpp:43
 #, kde-format
 msgid "Vakzination"
 msgstr "Vakzination"
 
-#: main.cpp:48
+#: main.cpp:45
 #, kde-format
 msgid ""
 "Vakzination manages your health certificates like vaccination, test, and "
@@ -74,39 +74,39 @@ msgstr ""
 "Vakzination gère vos certificats de santé comme les certificats de "
 "vaccination, de test et de rétablissement."
 
-#: main.cpp:50
+#: main.cpp:47
 #, kde-format
 msgid "© 2021-2022 KDE Community"
 msgstr "© 2021 - 2022 Communauté de KDE"
 
-#: main.cpp:52
+#: main.cpp:49
 #, kde-format
 msgid "Nicolas Fella"
 msgstr "Nicolas Fella"
 
-#: main.cpp:52
+#: main.cpp:49
 #, kde-format
 msgid "Maintainer"
 msgstr "Mainteneur"
 
-#: main.cpp:53
+#: main.cpp:50
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Xavier Besnard"
 
-#: main.cpp:53
+#: main.cpp:50
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "xavier.besnard@neuf.fr"
 
-#: main.cpp:59
+#: main.cpp:56
 #, kde-format
 msgid "Show with test data"
 msgstr "Afficher avec les données de tests"
 
-#: main.cpp:62
+#: main.cpp:59
 #, kde-format
 msgid "File to import."
 msgstr "Fichier à importer."
@@ -131,47 +131,47 @@ msgstr "Récupération %1"
 msgid "Your certificates"
 msgstr "Vos certificats"
 
-#: qml/CertificatesPage.qml:43 qml/CertificatesPage.qml:57
+#: qml/CertificatesPage.qml:42 qml/CertificatesPage.qml:55
 #, kde-format
 msgid "Delete"
 msgstr "Supprimer"
 
-#: qml/CertificatesPage.qml:52
+#: qml/CertificatesPage.qml:50
 #, kde-format
 msgid "Delete Certificate"
 msgstr "Supprimer un certificat"
 
-#: qml/CertificatesPage.qml:53
+#: qml/CertificatesPage.qml:51
 #, kde-format
 msgid "Do you really want to delete this certificate?"
 msgstr "Voulez-vous vraiment supprimer ce certificat ?"
 
-#: qml/CertificatesPage.qml:75
+#: qml/CertificatesPage.qml:74
 #, kde-format
 msgid "Certificate could not be imported: %1"
 msgstr "Le certificat ne peut être importé : %1"
 
-#: qml/CertificatesPage.qml:160
+#: qml/CertificatesPage.qml:159
 #, kde-format
 msgid "No certificates saved"
 msgstr "Aucun certificat enregistré."
 
-#: qml/main.qml:17
+#: qml/main.qml:18
 #, kde-format
 msgid "Your Certificates"
 msgstr "Vos certificats"
 
-#: qml/main.qml:23
+#: qml/main.qml:24
 #, kde-format
 msgid "Import from file"
 msgstr "Importer depuis un fichier"
 
-#: qml/main.qml:28
+#: qml/main.qml:29
 #, kde-format
 msgid "Import from clipboard"
 msgstr "Importer à partir du presse-papier"
 
-#: qml/main.qml:33 qml/ScanBarcodePage.qml:16
+#: qml/main.qml:34 qml/ScanBarcodePage.qml:16
 #, kde-format
 msgid "Scan QR code"
 msgstr "Lire un code « QR »"
@@ -256,12 +256,12 @@ msgstr "Expire le :"
 msgid "Signature:"
 msgstr "Signature :"
 
-#: qml/ScanBarcodePage.qml:25
+#: qml/ScanBarcodePage.qml:26
 #, kde-format
 msgid "Light"
 msgstr "Léger"
 
-#: qml/ScanBarcodePage.qml:78
+#: qml/ScanBarcodePage.qml:79
 #, kde-format
 msgid "No camera available."
 msgstr "Aucun appareil photo disponible."

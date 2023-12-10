@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-05 12:35+0000\n"
+"POT-Creation-Date: 2023-12-10 00:42+0000\n"
 "PO-Revision-Date: 2023-07-22 16:33+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -41,37 +41,37 @@ msgstr "Proba %1 (%2)"
 msgid "Recovery (%1)"
 msgstr "Osatzea (%1)"
 
-#: certificatesmodel.cpp:198
+#: certificatesmodel.cpp:196
 #, kde-format
 msgid "Empty file url"
 msgstr "Fitxategiaren URL hutsa"
 
-#: certificatesmodel.cpp:202
+#: certificatesmodel.cpp:200
 #, kde-format
 msgid "File URL not valid: %1"
 msgstr "Fitxategiaren URLa ez da baliozkoa: %1"
 
-#: certificatesmodel.cpp:210
+#: certificatesmodel.cpp:208
 #, kde-format
 msgid "Could not open file: %1"
 msgstr "Ezin izan da %1 fitxategia zabaldu"
 
-#: certificatesmodel.cpp:232
+#: certificatesmodel.cpp:228
 #, kde-format
 msgid "No certificate found in %1"
 msgstr "Ez da aurkitu ziurtagiririk %1(e)an"
 
-#: certificatesmodel.cpp:294
+#: certificatesmodel.cpp:290
 #, kde-format
 msgid "No certificate in clipboard"
 msgstr "Ez dago ziurtagiririk arbelean"
 
-#: main.cpp:46
+#: main.cpp:43
 #, kde-format
 msgid "Vakzination"
 msgstr "Vakzination"
 
-#: main.cpp:48
+#: main.cpp:45
 #, kde-format
 msgid ""
 "Vakzination manages your health certificates like vaccination, test, and "
@@ -80,39 +80,39 @@ msgstr ""
 "«Vakzination»ek zure osasun ziurtagiriak kudeatzen ditu, txertaketa, froga, "
 "eta osatze ziurtagiriak esaterako."
 
-#: main.cpp:50
+#: main.cpp:47
 #, kde-format
 msgid "© 2021-2022 KDE Community"
 msgstr "© 2021-2022 KDE komunitatea"
 
-#: main.cpp:52
+#: main.cpp:49
 #, kde-format
 msgid "Nicolas Fella"
 msgstr "Nicolas Fella"
 
-#: main.cpp:52
+#: main.cpp:49
 #, kde-format
 msgid "Maintainer"
 msgstr "Arduraduna"
 
-#: main.cpp:53
+#: main.cpp:50
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Jon Intxaurbe,Iñigo Salvador Azurmendi"
 
-#: main.cpp:53
+#: main.cpp:50
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "joinzar@gmail.com,xalba@ni.eus"
 
-#: main.cpp:59
+#: main.cpp:56
 #, kde-format
 msgid "Show with test data"
 msgstr "Erakutsi probako datuekin"
 
-#: main.cpp:62
+#: main.cpp:59
 #, kde-format
 msgid "File to import."
 msgstr "Inportatuko den fitxategia."
@@ -137,47 +137,47 @@ msgstr "Osatzea %1"
 msgid "Your certificates"
 msgstr "Zure ziurtagiriak"
 
-#: qml/CertificatesPage.qml:43 qml/CertificatesPage.qml:57
+#: qml/CertificatesPage.qml:42 qml/CertificatesPage.qml:55
 #, kde-format
 msgid "Delete"
 msgstr "Ezabatu"
 
-#: qml/CertificatesPage.qml:52
+#: qml/CertificatesPage.qml:50
 #, kde-format
 msgid "Delete Certificate"
 msgstr "Ezabatu ziurtagiria"
 
-#: qml/CertificatesPage.qml:53
+#: qml/CertificatesPage.qml:51
 #, kde-format
 msgid "Do you really want to delete this certificate?"
 msgstr "Benetan ezabatu nahi duzu ziurtagiri hau?"
 
-#: qml/CertificatesPage.qml:75
+#: qml/CertificatesPage.qml:74
 #, kde-format
 msgid "Certificate could not be imported: %1"
 msgstr "Ezin izan da ziurtagiria inportatu: %1"
 
-#: qml/CertificatesPage.qml:160
+#: qml/CertificatesPage.qml:159
 #, kde-format
 msgid "No certificates saved"
 msgstr "Ez dira ziurtagiriak gorde"
 
-#: qml/main.qml:17
+#: qml/main.qml:18
 #, kde-format
 msgid "Your Certificates"
 msgstr "Zure ziurtagiriak"
 
-#: qml/main.qml:23
+#: qml/main.qml:24
 #, kde-format
 msgid "Import from file"
 msgstr "Fitxategitik inportatu"
 
-#: qml/main.qml:28
+#: qml/main.qml:29
 #, kde-format
 msgid "Import from clipboard"
 msgstr "Arbeletik inportatu"
 
-#: qml/main.qml:33 qml/ScanBarcodePage.qml:16
+#: qml/main.qml:34 qml/ScanBarcodePage.qml:16
 #, kde-format
 msgid "Scan QR code"
 msgstr "Eskaneatu QR kodea"
@@ -262,12 +262,12 @@ msgstr "Iraungitze-data:"
 msgid "Signature:"
 msgstr "Sinadura:"
 
-#: qml/ScanBarcodePage.qml:25
+#: qml/ScanBarcodePage.qml:26
 #, kde-format
 msgid "Light"
 msgstr "Argia"
 
-#: qml/ScanBarcodePage.qml:78
+#: qml/ScanBarcodePage.qml:79
 #, kde-format
 msgid "No camera available."
 msgstr "Ez dago kamerarik erabilgarri."

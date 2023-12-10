@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-05 12:35+0000\n"
+"POT-Creation-Date: 2023-12-10 00:42+0000\n"
 "PO-Revision-Date: 2023-04-17 06:32+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -38,37 +38,37 @@ msgstr "ტესტი %1 (%2)"
 msgid "Recovery (%1)"
 msgstr "გამოკეთება (%1)"
 
-#: certificatesmodel.cpp:198
+#: certificatesmodel.cpp:196
 #, kde-format
 msgid "Empty file url"
 msgstr "ფაილის URL ცარიელია"
 
-#: certificatesmodel.cpp:202
+#: certificatesmodel.cpp:200
 #, kde-format
 msgid "File URL not valid: %1"
 msgstr "ფაილის URL არასწორია: %1"
 
-#: certificatesmodel.cpp:210
+#: certificatesmodel.cpp:208
 #, kde-format
 msgid "Could not open file: %1"
 msgstr "ფაილის გახსნის შეცდომა: %1"
 
-#: certificatesmodel.cpp:232
+#: certificatesmodel.cpp:228
 #, kde-format
 msgid "No certificate found in %1"
 msgstr "%1-ში სერტიფიკატები ვერ ვიპოვე"
 
-#: certificatesmodel.cpp:294
+#: certificatesmodel.cpp:290
 #, kde-format
 msgid "No certificate in clipboard"
 msgstr "ბუფერში სერტიფიკატი ვერ ვიპოვე"
 
-#: main.cpp:46
+#: main.cpp:43
 #, kde-format
 msgid "Vakzination"
 msgstr "Vakzination"
 
-#: main.cpp:48
+#: main.cpp:45
 #, kde-format
 msgid ""
 "Vakzination manages your health certificates like vaccination, test, and "
@@ -77,39 +77,39 @@ msgstr ""
 "Vakzination მართავს თქვენი ჯანმრთელობის ისეთ სერტიფიკატებს, როგორიცაა "
 "ვაქცინაციის, ტესტირების და გამოკეთების სერტიფიკატები."
 
-#: main.cpp:50
+#: main.cpp:47
 #, kde-format
 msgid "© 2021-2022 KDE Community"
 msgstr "© 2021-2022 KDE -ის საზოგადოება"
 
-#: main.cpp:52
+#: main.cpp:49
 #, kde-format
 msgid "Nicolas Fella"
 msgstr "Nicolas Fella"
 
-#: main.cpp:52
+#: main.cpp:49
 #, kde-format
 msgid "Maintainer"
 msgstr "წამყვანი პროგრამისტი"
 
-#: main.cpp:53
+#: main.cpp:50
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Temuri Doghonadze"
 
-#: main.cpp:53
+#: main.cpp:50
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Temuri.doghonadze@gmail.com"
 
-#: main.cpp:59
+#: main.cpp:56
 #, kde-format
 msgid "Show with test data"
 msgstr "ტესტის მონაცემებთან ერთად ჩვენება"
 
-#: main.cpp:62
+#: main.cpp:59
 #, kde-format
 msgid "File to import."
 msgstr "შემოსატანი ფაილი."
@@ -134,47 +134,47 @@ msgstr "გამოკეთება %1"
 msgid "Your certificates"
 msgstr "თქვენი სერტიფიკატები"
 
-#: qml/CertificatesPage.qml:43 qml/CertificatesPage.qml:57
+#: qml/CertificatesPage.qml:42 qml/CertificatesPage.qml:55
 #, kde-format
 msgid "Delete"
 msgstr "წაშლა"
 
-#: qml/CertificatesPage.qml:52
+#: qml/CertificatesPage.qml:50
 #, kde-format
 msgid "Delete Certificate"
 msgstr "სერტიფიკატის წაშლა"
 
-#: qml/CertificatesPage.qml:53
+#: qml/CertificatesPage.qml:51
 #, kde-format
 msgid "Do you really want to delete this certificate?"
 msgstr "ნამდვილად გსურთ ამ სერტიფიკატის წაშლა?"
 
-#: qml/CertificatesPage.qml:75
+#: qml/CertificatesPage.qml:74
 #, kde-format
 msgid "Certificate could not be imported: %1"
 msgstr "სერტიფიკატის შემოტანა შეუძლებელია: %1"
 
-#: qml/CertificatesPage.qml:160
+#: qml/CertificatesPage.qml:159
 #, kde-format
 msgid "No certificates saved"
 msgstr "სერტიფიკატი არ შენახულა"
 
-#: qml/main.qml:17
+#: qml/main.qml:18
 #, kde-format
 msgid "Your Certificates"
 msgstr "თქვენი სერტიფიკატები"
 
-#: qml/main.qml:23
+#: qml/main.qml:24
 #, kde-format
 msgid "Import from file"
 msgstr "ფაილიდან შემოტანა"
 
-#: qml/main.qml:28
+#: qml/main.qml:29
 #, kde-format
 msgid "Import from clipboard"
 msgstr "გაცვლის ბუფერიდან შემოტანა"
 
-#: qml/main.qml:33 qml/ScanBarcodePage.qml:16
+#: qml/main.qml:34 qml/ScanBarcodePage.qml:16
 #, kde-format
 msgid "Scan QR code"
 msgstr "QR კოდის სკანირება"
@@ -259,12 +259,12 @@ msgstr "იწურება:"
 msgid "Signature:"
 msgstr "ხელმოწერა :"
 
-#: qml/ScanBarcodePage.qml:25
+#: qml/ScanBarcodePage.qml:26
 #, kde-format
 msgid "Light"
 msgstr "სინათლე"
 
-#: qml/ScanBarcodePage.qml:78
+#: qml/ScanBarcodePage.qml:79
 #, kde-format
 msgid "No camera available."
 msgstr "კამერა მიუწვდომელია."

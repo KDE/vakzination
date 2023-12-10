@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-05 12:35+0000\n"
+"POT-Creation-Date: 2023-12-10 00:42+0000\n"
 "PO-Revision-Date: 2023-04-16 10:53+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -37,37 +37,37 @@ msgstr "Sınama %1 (%2)"
 msgid "Recovery (%1)"
 msgstr "İyileşme (%1)"
 
-#: certificatesmodel.cpp:198
+#: certificatesmodel.cpp:196
 #, kde-format
 msgid "Empty file url"
 msgstr "Boş dosya URL'si"
 
-#: certificatesmodel.cpp:202
+#: certificatesmodel.cpp:200
 #, kde-format
 msgid "File URL not valid: %1"
 msgstr "Dosya URL'si geçerli değil: %1"
 
-#: certificatesmodel.cpp:210
+#: certificatesmodel.cpp:208
 #, kde-format
 msgid "Could not open file: %1"
 msgstr "Dosya açılamadı: %1"
 
-#: certificatesmodel.cpp:232
+#: certificatesmodel.cpp:228
 #, kde-format
 msgid "No certificate found in %1"
 msgstr "%1 içinde sertifika bulunamadı"
 
-#: certificatesmodel.cpp:294
+#: certificatesmodel.cpp:290
 #, kde-format
 msgid "No certificate in clipboard"
 msgstr "Panoda sertifika yok"
 
-#: main.cpp:46
+#: main.cpp:43
 #, kde-format
 msgid "Vakzination"
 msgstr "Vakzination"
 
-#: main.cpp:48
+#: main.cpp:45
 #, kde-format
 msgid ""
 "Vakzination manages your health certificates like vaccination, test, and "
@@ -76,39 +76,39 @@ msgstr ""
 "Vakzination, aşı, sınama ve iyileşme sertifikaları gibi sağlık "
 "sertifikalarınızı yönetir."
 
-#: main.cpp:50
+#: main.cpp:47
 #, kde-format
 msgid "© 2021-2022 KDE Community"
 msgstr "© 2021-2022 KDE Topluluğu"
 
-#: main.cpp:52
+#: main.cpp:49
 #, kde-format
 msgid "Nicolas Fella"
 msgstr "Nicolas Fella"
 
-#: main.cpp:52
+#: main.cpp:49
 #, kde-format
 msgid "Maintainer"
 msgstr "Bakımcı"
 
-#: main.cpp:53
+#: main.cpp:50
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Emir SARI"
 
-#: main.cpp:53
+#: main.cpp:50
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "emir_sari@icloud.com"
 
-#: main.cpp:59
+#: main.cpp:56
 #, kde-format
 msgid "Show with test data"
 msgstr "Sınama verisi ile göster"
 
-#: main.cpp:62
+#: main.cpp:59
 #, kde-format
 msgid "File to import."
 msgstr "İçe aktarılacak dosya."
@@ -133,47 +133,47 @@ msgstr "İyileşme %1"
 msgid "Your certificates"
 msgstr "Sertifikalarınız"
 
-#: qml/CertificatesPage.qml:43 qml/CertificatesPage.qml:57
+#: qml/CertificatesPage.qml:42 qml/CertificatesPage.qml:55
 #, kde-format
 msgid "Delete"
 msgstr "Sil"
 
-#: qml/CertificatesPage.qml:52
+#: qml/CertificatesPage.qml:50
 #, kde-format
 msgid "Delete Certificate"
 msgstr "Sertifikayı Sil"
 
-#: qml/CertificatesPage.qml:53
+#: qml/CertificatesPage.qml:51
 #, kde-format
 msgid "Do you really want to delete this certificate?"
 msgstr "Bu sertifikayı silmeyi gerçekten istiyor musunuz?"
 
-#: qml/CertificatesPage.qml:75
+#: qml/CertificatesPage.qml:74
 #, kde-format
 msgid "Certificate could not be imported: %1"
 msgstr "Sertifika içe aktarılamadı: %1"
 
-#: qml/CertificatesPage.qml:160
+#: qml/CertificatesPage.qml:159
 #, kde-format
 msgid "No certificates saved"
 msgstr "Kayıtlı sertifika yok"
 
-#: qml/main.qml:17
+#: qml/main.qml:18
 #, kde-format
 msgid "Your Certificates"
 msgstr "Sertifikalarınız"
 
-#: qml/main.qml:23
+#: qml/main.qml:24
 #, kde-format
 msgid "Import from file"
 msgstr "Dosyadan içe aktar"
 
-#: qml/main.qml:28
+#: qml/main.qml:29
 #, kde-format
 msgid "Import from clipboard"
 msgstr "Panodan içe aktar"
 
-#: qml/main.qml:33 qml/ScanBarcodePage.qml:16
+#: qml/main.qml:34 qml/ScanBarcodePage.qml:16
 #, kde-format
 msgid "Scan QR code"
 msgstr "Kare Kodu Tara"
@@ -258,12 +258,12 @@ msgstr "Süre dolumu:"
 msgid "Signature:"
 msgstr "İmza:"
 
-#: qml/ScanBarcodePage.qml:25
+#: qml/ScanBarcodePage.qml:26
 #, kde-format
 msgid "Light"
 msgstr "Açık"
 
-#: qml/ScanBarcodePage.qml:78
+#: qml/ScanBarcodePage.qml:79
 #, kde-format
 msgid "No camera available."
 msgstr "Kullanılabilir kamera yok."

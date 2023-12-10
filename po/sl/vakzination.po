@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-05 12:35+0000\n"
+"POT-Creation-Date: 2023-12-10 00:42+0000\n"
 "PO-Revision-Date: 2023-04-16 08:25+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -38,37 +38,37 @@ msgstr "Test %1 (%2)"
 msgid "Recovery (%1)"
 msgstr "Ozdravljenje (%1)"
 
-#: certificatesmodel.cpp:198
+#: certificatesmodel.cpp:196
 #, kde-format
 msgid "Empty file url"
 msgstr "Spletni naslov prazne datoteke"
 
-#: certificatesmodel.cpp:202
+#: certificatesmodel.cpp:200
 #, kde-format
 msgid "File URL not valid: %1"
 msgstr "Spletni naslov datoteke ni veljaven: %1"
 
-#: certificatesmodel.cpp:210
+#: certificatesmodel.cpp:208
 #, kde-format
 msgid "Could not open file: %1"
 msgstr "Ni bilo mogoče odpreti datoteke: %1"
 
-#: certificatesmodel.cpp:232
+#: certificatesmodel.cpp:228
 #, kde-format
 msgid "No certificate found in %1"
 msgstr "Ni mogoče najti potrdila v %1"
 
-#: certificatesmodel.cpp:294
+#: certificatesmodel.cpp:290
 #, kde-format
 msgid "No certificate in clipboard"
 msgstr "Ni potrdila na odložišču"
 
-#: main.cpp:46
+#: main.cpp:43
 #, kde-format
 msgid "Vakzination"
 msgstr "Vakzination"
 
-#: main.cpp:48
+#: main.cpp:45
 #, kde-format
 msgid ""
 "Vakzination manages your health certificates like vaccination, test, and "
@@ -77,39 +77,39 @@ msgstr ""
 "Vakzination upravlja vaša zdravstvena potrdila kot so cepljenja, testi in "
 "potrdila o prebolelosti."
 
-#: main.cpp:50
+#: main.cpp:47
 #, kde-format
 msgid "© 2021-2022 KDE Community"
 msgstr "© 2021-2022 Skupnost KDE"
 
-#: main.cpp:52
+#: main.cpp:49
 #, kde-format
 msgid "Nicolas Fella"
 msgstr "Nicolas Fella"
 
-#: main.cpp:52
+#: main.cpp:49
 #, kde-format
 msgid "Maintainer"
 msgstr "Vzdrževalec"
 
-#: main.cpp:53
+#: main.cpp:50
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Matjaž Jeran"
 
-#: main.cpp:53
+#: main.cpp:50
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "matjaz.jeran@amis.net"
 
-#: main.cpp:59
+#: main.cpp:56
 #, kde-format
 msgid "Show with test data"
 msgstr "Prikaži s testnimi podatki"
 
-#: main.cpp:62
+#: main.cpp:59
 #, kde-format
 msgid "File to import."
 msgstr "Datoteka za uvoz."
@@ -134,47 +134,47 @@ msgstr "Ozdravljenje %1"
 msgid "Your certificates"
 msgstr "Vaša potrdila"
 
-#: qml/CertificatesPage.qml:43 qml/CertificatesPage.qml:57
+#: qml/CertificatesPage.qml:42 qml/CertificatesPage.qml:55
 #, kde-format
 msgid "Delete"
 msgstr "Zbriši"
 
-#: qml/CertificatesPage.qml:52
+#: qml/CertificatesPage.qml:50
 #, kde-format
 msgid "Delete Certificate"
 msgstr "Zbriši potrdilo"
 
-#: qml/CertificatesPage.qml:53
+#: qml/CertificatesPage.qml:51
 #, kde-format
 msgid "Do you really want to delete this certificate?"
 msgstr "Ali zares želite zbrisati to potrdilo?"
 
-#: qml/CertificatesPage.qml:75
+#: qml/CertificatesPage.qml:74
 #, kde-format
 msgid "Certificate could not be imported: %1"
 msgstr "Potrdila in bilo mogoče uvoziti: %1"
 
-#: qml/CertificatesPage.qml:160
+#: qml/CertificatesPage.qml:159
 #, kde-format
 msgid "No certificates saved"
 msgstr "Ni shranjenih potrdil"
 
-#: qml/main.qml:17
+#: qml/main.qml:18
 #, kde-format
 msgid "Your Certificates"
 msgstr "Vaša potrdila"
 
-#: qml/main.qml:23
+#: qml/main.qml:24
 #, kde-format
 msgid "Import from file"
 msgstr "Uvozi iz datoteke"
 
-#: qml/main.qml:28
+#: qml/main.qml:29
 #, kde-format
 msgid "Import from clipboard"
 msgstr "Uvozi iz odložišča"
 
-#: qml/main.qml:33 qml/ScanBarcodePage.qml:16
+#: qml/main.qml:34 qml/ScanBarcodePage.qml:16
 #, kde-format
 msgid "Scan QR code"
 msgstr "Optično preberi kodo QR"
@@ -259,12 +259,12 @@ msgstr "Poteče:"
 msgid "Signature:"
 msgstr "Podpis:"
 
-#: qml/ScanBarcodePage.qml:25
+#: qml/ScanBarcodePage.qml:26
 #, kde-format
 msgid "Light"
 msgstr "Svetilka"
 
-#: qml/ScanBarcodePage.qml:78
+#: qml/ScanBarcodePage.qml:79
 #, kde-format
 msgid "No camera available."
 msgstr "Kamere ni na voljo."
