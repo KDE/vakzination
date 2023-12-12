@@ -3,6 +3,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
+import QtCore
 import QtQuick 2.15
 import QtQuick.Layouts 1.15
 import QtQuick.Controls 2.15 as QQC2
@@ -30,6 +31,15 @@ Kirigami.Page {
             onTriggered: camera.torchMode = (camera.torchMode == Camera.TorchOn ? Camera.TorchOff : Camera.TorchOn)
         }
     ]
+
+    CameraPermission {
+        id: permission
+        onStatusChanged: {
+            if (status == Qt.PermissionStatus.Granted) {
+                camera.start();
+            }
+        }
+    }
 
     VideoOutput {
         id: viewFinder
@@ -78,5 +88,10 @@ Kirigami.Page {
         anchors.fill: parent
         text: i18n("No camera available.")
         visible: camera.error != Camera.NoError
+    }
+
+    Component.onCompleted: {
+        if (permission.status == Qt.PermissionStatus.Undetermined)
+            permission.request()
     }
 }
