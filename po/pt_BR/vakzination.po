@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-10 00:42+0000\n"
+"POT-Creation-Date: 2023-12-14 00:42+0000\n"
 "PO-Revision-Date: 2023-05-31 14:33-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -173,7 +173,7 @@ msgstr "Importar do arquivo"
 msgid "Import from clipboard"
 msgstr "Importar da área de transferência"
 
-#: qml/main.qml:34 qml/ScanBarcodePage.qml:16
+#: qml/main.qml:34 qml/ScanBarcodePage.qml:17
 #, kde-format
 msgid "Scan QR code"
 msgstr "Escanear código QR"
@@ -258,12 +258,12 @@ msgstr "Expira em:"
 msgid "Signature:"
 msgstr "Assinatura:"
 
-#: qml/ScanBarcodePage.qml:26
+#: qml/ScanBarcodePage.qml:27
 #, kde-format
 msgid "Light"
 msgstr "Claro"
 
-#: qml/ScanBarcodePage.qml:79
+#: qml/ScanBarcodePage.qml:89
 #, kde-format
 msgid "No camera available."
 msgstr "Não há câmera disponível."

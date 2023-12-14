@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-10 00:42+0000\n"
+"POT-Creation-Date: 2023-12-14 00:42+0000\n"
 "PO-Revision-Date: 2023-07-31 11:41+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -173,7 +173,7 @@ msgstr "Importera från fil"
 msgid "Import from clipboard"
 msgstr "Importera från klippbordet"
 
-#: qml/main.qml:34 qml/ScanBarcodePage.qml:16
+#: qml/main.qml:34 qml/ScanBarcodePage.qml:17
 #, kde-format
 msgid "Scan QR code"
 msgstr "Läs QR-kod"
@@ -258,12 +258,12 @@ msgstr "Utgår:"
 msgid "Signature:"
 msgstr "Signatur:"
 
-#: qml/ScanBarcodePage.qml:26
+#: qml/ScanBarcodePage.qml:27
 #, kde-format
 msgid "Light"
 msgstr "Ljus"
 
-#: qml/ScanBarcodePage.qml:79
+#: qml/ScanBarcodePage.qml:89
 #, kde-format
 msgid "No camera available."
 msgstr "Ingen kamera tillgänglig."

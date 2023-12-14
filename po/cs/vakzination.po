@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-10 00:42+0000\n"
+"POT-Creation-Date: 2023-12-14 00:42+0000\n"
 "PO-Revision-Date: 2023-01-31 14:50+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -173,7 +173,7 @@ msgstr "Importovat ze souboru"
 msgid "Import from clipboard"
 msgstr "Importovat ze schránky"
 
-#: qml/main.qml:34 qml/ScanBarcodePage.qml:16
+#: qml/main.qml:34 qml/ScanBarcodePage.qml:17
 #, kde-format
 msgid "Scan QR code"
 msgstr "Skenovat kód QR"
@@ -258,12 +258,12 @@ msgstr "Vyprší:"
 msgid "Signature:"
 msgstr "Podpis:"
 
-#: qml/ScanBarcodePage.qml:26
+#: qml/ScanBarcodePage.qml:27
 #, kde-format
 msgid "Light"
 msgstr "Lehce"
 
-#: qml/ScanBarcodePage.qml:79
+#: qml/ScanBarcodePage.qml:89
 #, kde-format
 msgid "No camera available."
 msgstr "Není dostupný fotoaparát."

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-10 00:42+0000\n"
+"POT-Creation-Date: 2023-12-14 00:42+0000\n"
 "PO-Revision-Date: 2023-07-22 16:33+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -177,7 +177,7 @@ msgstr "Fitxategitik inportatu"
 msgid "Import from clipboard"
 msgstr "Arbeletik inportatu"
 
-#: qml/main.qml:34 qml/ScanBarcodePage.qml:16
+#: qml/main.qml:34 qml/ScanBarcodePage.qml:17
 #, kde-format
 msgid "Scan QR code"
 msgstr "Eskaneatu QR kodea"
@@ -262,12 +262,12 @@ msgstr "Iraungitze-data:"
 msgid "Signature:"
 msgstr "Sinadura:"
 
-#: qml/ScanBarcodePage.qml:26
+#: qml/ScanBarcodePage.qml:27
 #, kde-format
 msgid "Light"
 msgstr "Argia"
 
-#: qml/ScanBarcodePage.qml:79
+#: qml/ScanBarcodePage.qml:89
 #, kde-format
 msgid "No camera available."
 msgstr "Ez dago kamerarik erabilgarri."

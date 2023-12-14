@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-10 00:42+0000\n"
+"POT-Creation-Date: 2023-12-14 00:42+0000\n"
 "PO-Revision-Date: 2022-01-03 11:03-0800\n"
 "Last-Translator: A S Alam <aalam@satluj.org>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
@@ -177,7 +177,7 @@ msgstr "ਫਾਇਲ ਤੋਂ ਇੰਪੋਰਟ ਕਰੋ"
 msgid "Import from clipboard"
 msgstr "ਕਲਿੱਪਬੋਰਡ ਤੋਂ ਇੰਪੋਰਟ ਕਰੋ"
 
-#: qml/main.qml:34 qml/ScanBarcodePage.qml:16
+#: qml/main.qml:34 qml/ScanBarcodePage.qml:17
 #, kde-format
 msgid "Scan QR code"
 msgstr ""
@@ -262,12 +262,12 @@ msgstr "ਮਿਆਦ:"
 msgid "Signature:"
 msgstr "ਦਸਤਖਤ:"
 
-#: qml/ScanBarcodePage.qml:26
+#: qml/ScanBarcodePage.qml:27
 #, kde-format
 msgid "Light"
 msgstr ""
 
-#: qml/ScanBarcodePage.qml:79
+#: qml/ScanBarcodePage.qml:89
 #, kde-format
 msgid "No camera available."
 msgstr ""
