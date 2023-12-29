@@ -2,7 +2,7 @@
     "id": "org.kde.vakzination",
     "branch": "master",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-22.08",
+    "runtime-version": "6.6-kf6preview",
     "sdk": "org.kde.Sdk",
     "command": "vakzination",
     "tags": ["nightly"],
@@ -89,7 +89,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/pim/kpkpass",
-                    "branch": "release/23.08"
+                    "branch": "master"
                 }
             ],
             "cleanup": [
@@ -112,7 +112,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/pim/kmime",
-                    "branch": "release/23.08"
+                    "branch": "master"
                 }
             ],
             "cleanup": [
@@ -160,7 +160,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/pim/kitinerary",
-                    "branch": "release/23.08"
+                    "branch": "master"
                 }
             ],
             "cleanup": [
@@ -175,7 +175,8 @@
         {
             "name": "khealthcertificate",
             "config-opts": [
-                "-DBUILD_TESTING=OFF"
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_WITH_QT6=ON"
             ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
