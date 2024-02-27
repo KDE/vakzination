@@ -1,69 +1,67 @@
-# Chinese translations for vakzination package
-# vakzination 套件的正體中文翻譯.
-# Copyright (C) 2022 This file is copyright:
+# translation of vakzination.pot to Esperanto
+# Copyright (C) 2024 Free Software Foundation, Inc.
 # This file is distributed under the same license as the vakzination package.
-# Automatically generated, 2022.
+# Oliver Kellogg <okellogg@users.sourceforge.net>, 2024.
 #
-# SPDX-FileCopyrightText: 2024 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-14 00:42+0000\n"
-"PO-Revision-Date: 2024-02-27 06:43+0900\n"
-"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
-"Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
-"Language: zh_TW\n"
+"PO-Revision-Date: 2024-02-26 21:16+0100\n"
+"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
+"Language-Team: Esperanto <kde-i18n-eo.org>\n"
+"Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 24.04.70\n"
+"X-Generator: translate-po (https://github.com/zcribe/translate-po)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: certificatesmodel.cpp:112
 #, kde-format
 msgid "Vaccination %1/%2 (%3)"
-msgstr "疫苗 %1/%2 (%3)"
+msgstr "Vakcinado %1/%2 (%3)"
 
 #: certificatesmodel.cpp:114
 #, kde-format
 msgid "Vaccination (%1)"
-msgstr "疫苗 (%1)"
+msgstr "Vakcinado (%1)"
 
 #: certificatesmodel.cpp:118
 #, kde-format
 msgid "Test %1 (%2)"
-msgstr "檢驗 %1 (%2)"
+msgstr "Testo %1 (%2)"
 
 #: certificatesmodel.cpp:124
 #, kde-format
 msgid "Recovery (%1)"
-msgstr "復原 (%1)"
+msgstr "Reakiro (%1)"
 
 #: certificatesmodel.cpp:196
 #, kde-format
 msgid "Empty file url"
-msgstr "空白的檔案 URL"
+msgstr ""
 
 #: certificatesmodel.cpp:200
 #, kde-format
 msgid "File URL not valid: %1"
-msgstr "檔案 URL 無效：%1"
+msgstr ""
 
 #: certificatesmodel.cpp:208
 #, kde-format
 msgid "Could not open file: %1"
-msgstr "無法開啟檔案：%1"
+msgstr "Ne eblis malfermi dosieron: %1"
 
 #: certificatesmodel.cpp:228
 #, kde-format
 msgid "No certificate found in %1"
-msgstr "%1 中找不到憑證"
+msgstr ""
 
 #: certificatesmodel.cpp:290
 #, kde-format
 msgid "No certificate in clipboard"
-msgstr "剪貼簿中找不到憑證"
+msgstr ""
 
 #: main.cpp:43
 #, kde-format
@@ -75,12 +73,12 @@ msgstr "Vakzination"
 msgid ""
 "Vakzination manages your health certificates like vaccination, test, and "
 "recovery certificates."
-msgstr "Vakzination 可以管理您的健康憑證，例如疫苗、檢驗、及復原憑證。"
+msgstr ""
 
 #: main.cpp:47
 #, kde-format
 msgid "© 2021-2022 KDE Community"
-msgstr "© 2021-2022 KDE 社群"
+msgstr ""
 
 #: main.cpp:49
 #, kde-format
@@ -90,214 +88,214 @@ msgstr "Nicolas Fella"
 #: main.cpp:49
 #, kde-format
 msgid "Maintainer"
-msgstr "維護者"
+msgstr "Prizorganto"
 
 #: main.cpp:50
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Kisaragi Hiu"
+msgstr "Oliver Kellogg"
 
 #: main.cpp:50
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "mail@kisaragi-hiu.com"
+msgstr "okellogg@users.sourceforge.net"
 
 #: main.cpp:56
 #, kde-format
 msgid "Show with test data"
-msgstr "顯示時包含檢驗資料"
+msgstr ""
 
 #: main.cpp:59
 #, kde-format
 msgid "File to import."
-msgstr "要匯入的檔案。"
+msgstr ""
 
 #: qml/CertificateDelegate.qml:29
 #, kde-format
 msgid "Vaccination %1 (%2/%3)"
-msgstr "疫苗 %1 (%2/%3)"
+msgstr ""
 
 #: qml/CertificateDelegate.qml:33
 #, kde-format
 msgid "Test %1"
-msgstr "檢驗 %1"
+msgstr ""
 
 #: qml/CertificateDelegate.qml:37
 #, kde-format
 msgid "Recovery %1"
-msgstr "復原 %1"
+msgstr ""
 
 #: qml/CertificatesPage.qml:17
 #, kde-format
 msgid "Your certificates"
-msgstr "您的憑證"
+msgstr ""
 
 #: qml/CertificatesPage.qml:42 qml/CertificatesPage.qml:55
 #, kde-format
 msgid "Delete"
-msgstr "刪除"
+msgstr "Forigi"
 
 #: qml/CertificatesPage.qml:50
 #, kde-format
 msgid "Delete Certificate"
-msgstr "刪除憑證"
+msgstr "Forigi Atestilon"
 
 #: qml/CertificatesPage.qml:51
 #, kde-format
 msgid "Do you really want to delete this certificate?"
-msgstr "您確定要刪除這個憑證嗎？"
+msgstr "Ĉu vi vere volas forigi ĉi tiun atestilon?"
 
 #: qml/CertificatesPage.qml:74
 #, kde-format
 msgid "Certificate could not be imported: %1"
-msgstr "無法匯入憑證：%1"
+msgstr ""
 
 #: qml/CertificatesPage.qml:159
 #, kde-format
 msgid "No certificates saved"
-msgstr "沒有已儲存的憑證"
+msgstr ""
 
 #: qml/main.qml:18
 #, kde-format
 msgid "Your Certificates"
-msgstr "您的憑證"
+msgstr ""
 
 #: qml/main.qml:24
 #, kde-format
 msgid "Import from file"
-msgstr "從檔案匯入"
+msgstr ""
 
 #: qml/main.qml:29
 #, kde-format
 msgid "Import from clipboard"
-msgstr "從剪貼簿匯入"
+msgstr ""
 
 #: qml/main.qml:34 qml/ScanBarcodePage.qml:17
 #, kde-format
 msgid "Scan QR code"
-msgstr "掃描 QR 碼"
+msgstr ""
 
 #: qml/RecoveryDetailsSheet.qml:24 qml/TestDetailsSheet.qml:25
 #: qml/VaccinationDetailsSheet.qml:25
 #, kde-format
 msgid "Person"
-msgstr "人物"
+msgstr "Persono"
 
 #: qml/RecoveryDetailsSheet.qml:29 qml/TestDetailsSheet.qml:30
 #: qml/VaccinationDetailsSheet.qml:30
 #, kde-format
 msgid "Name:"
-msgstr "名稱："
+msgstr "Nomo:"
 
 #: qml/RecoveryDetailsSheet.qml:34 qml/TestDetailsSheet.qml:35
 #: qml/VaccinationDetailsSheet.qml:35
 #, kde-format
 msgid "Date of birth:"
-msgstr "出生日期："
+msgstr "Naskiĝdato:"
 
 #: qml/RecoveryDetailsSheet.qml:39
 #, kde-format
 msgid "Recovery"
-msgstr "復原"
+msgstr "Retrovo"
 
 #: qml/RecoveryDetailsSheet.qml:44
 #, kde-format
 msgid "Positive test:"
-msgstr "陽性檢驗："
+msgstr "Pozitiva testo:"
 
 #: qml/RecoveryDetailsSheet.qml:48 qml/TestDetailsSheet.qml:51
 #: qml/VaccinationDetailsSheet.qml:59
 #, kde-format
 msgid "Disease:"
-msgstr "疾病："
+msgstr "Malsano:"
 
 #: qml/RecoveryDetailsSheet.qml:52
 #, kde-format
 msgid "Valid from:"
-msgstr "有效自："
+msgstr "Valida de:"
 
 #: qml/RecoveryDetailsSheet.qml:56
 #, kde-format
 msgid "Valid until:"
-msgstr "有效期限："
+msgstr "Valida ĝis:"
 
 #: qml/RecoveryDetailsSheet.qml:61 qml/TestDetailsSheet.qml:93
 #: qml/VaccinationDetailsSheet.qml:93
 #, kde-format
 msgid "Certificate"
-msgstr "憑證"
+msgstr "Atestilo"
 
 #: qml/RecoveryDetailsSheet.qml:66 qml/TestDetailsSheet.qml:98
 #: qml/VaccinationDetailsSheet.qml:98
 #, kde-format
 msgid "Issuer:"
-msgstr "發行者："
+msgstr "Eldonanto:"
 
 #: qml/RecoveryDetailsSheet.qml:71 qml/TestDetailsSheet.qml:103
 #: qml/VaccinationDetailsSheet.qml:103
 #, kde-format
 msgid "Identifier:"
-msgstr "識別子："
+msgstr "Identigilo:"
 
 #: qml/RecoveryDetailsSheet.qml:76 qml/TestDetailsSheet.qml:109
 #: qml/VaccinationDetailsSheet.qml:109
 #, kde-format
 msgid "Issued:"
-msgstr "發行時間："
+msgstr "Eldonita:"
 
 #: qml/RecoveryDetailsSheet.qml:81 qml/TestDetailsSheet.qml:114
 #: qml/VaccinationDetailsSheet.qml:114
 #, kde-format
 msgid "Expires:"
-msgstr "過期："
+msgstr "Eksvalidiĝas:"
 
 #: qml/RecoveryDetailsSheet.qml:96 qml/TestDetailsSheet.qml:129
 #: qml/VaccinationDetailsSheet.qml:129
 #, kde-format
 msgid "Signature:"
-msgstr "簽章："
+msgstr "Subskribo:"
 
 #: qml/ScanBarcodePage.qml:27
 #, kde-format
 msgid "Light"
-msgstr "亮光"
+msgstr "Lumo"
 
 #: qml/ScanBarcodePage.qml:89
 #, kde-format
 msgid "No camera available."
-msgstr "沒有可用的相機。"
+msgstr "Neniu fotilo disponebla."
 
 #: qml/TestDetailsSheet.qml:40
 #, kde-format
 msgid "Test"
-msgstr "檢驗"
+msgstr "Testi"
 
 #: qml/TestDetailsSheet.qml:45 qml/VaccinationDetailsSheet.qml:52
 #, kde-format
 msgid "Date:"
-msgstr "日期："
+msgstr "Dato:"
 
 #: qml/TestDetailsSheet.qml:56 qml/VaccinationDetailsSheet.qml:64
 #, kde-format
 msgid "Type:"
-msgstr "類型："
+msgstr "Tipo:"
 
 #: qml/TestDetailsSheet.qml:62
 #, kde-format
 msgid "Test:"
-msgstr "檢驗："
+msgstr "Testo:"
 
 #: qml/TestDetailsSheet.qml:77
 #, kde-format
 msgid "Result:"
-msgstr "結果："
+msgstr "Rezulto:"
 
 #: qml/TestDetailsSheet.qml:82
 #, kde-format
 msgid "Test Center:"
-msgstr "檢驗中心："
+msgstr "Testa Centro:"
 
 #: qml/TestDetailsSheet.qml:86 qml/VaccinationDetailsSheet.qml:86
 #, kde-format
@@ -308,28 +306,29 @@ msgstr "%1 %2"
 #: qml/TestDetailsSheet.qml:87 qml/VaccinationDetailsSheet.qml:87
 #, kde-format
 msgid "Country:"
-msgstr "國家："
+msgstr "Lando:"
 
 #: qml/VaccinationDetailsSheet.qml:40
 #, kde-format
 msgid "Vaccination"
-msgstr "疫苗"
+msgstr "Vakcinado"
 
 #: qml/VaccinationDetailsSheet.qml:48
 #, kde-format
 msgid "%2 (%1 day ago)"
 msgid_plural "%2 (%1 days ago)"
-msgstr[0] "%2 (%1 天前)"
+msgstr[0] ""
+msgstr[1] ""
 
 #: qml/VaccinationDetailsSheet.qml:69
 #, kde-format
 msgid "Vaccine:"
-msgstr "疫苗："
+msgstr "Vakcino:"
 
 #: qml/VaccinationDetailsSheet.qml:75
 #, kde-format
 msgid "Manufacturer:"
-msgstr "製造商："
+msgstr "Fabrikisto:"
 
 #: qml/VaccinationDetailsSheet.qml:79
 #, kde-format
@@ -339,4 +338,4 @@ msgstr "%1/%2"
 #: qml/VaccinationDetailsSheet.qml:80
 #, kde-format
 msgid "Dose:"
-msgstr "劑量："
+msgstr "Dozo:"
