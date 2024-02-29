@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-14 00:42+0000\n"
-"PO-Revision-Date: 2024-02-26 21:16+0100\n"
+"PO-Revision-Date: 2024-02-28 22:58+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo.org>\n"
 "Language: eo\n"
@@ -105,32 +105,32 @@ msgstr "okellogg@users.sourceforge.net"
 #: main.cpp:56
 #, kde-format
 msgid "Show with test data"
-msgstr ""
+msgstr "Montri kun testdatumoj"
 
 #: main.cpp:59
 #, kde-format
 msgid "File to import."
-msgstr ""
+msgstr "Dosiero importenda."
 
 #: qml/CertificateDelegate.qml:29
 #, kde-format
 msgid "Vaccination %1 (%2/%3)"
-msgstr ""
+msgstr "Vakcinado %1 (%2/%3)"
 
 #: qml/CertificateDelegate.qml:33
 #, kde-format
 msgid "Test %1"
-msgstr ""
+msgstr "Testo %1"
 
 #: qml/CertificateDelegate.qml:37
 #, kde-format
 msgid "Recovery %1"
-msgstr ""
+msgstr "Resaniĝo %1"
 
 #: qml/CertificatesPage.qml:17
 #, kde-format
 msgid "Your certificates"
-msgstr ""
+msgstr "Viaj atestiloj"
 
 #: qml/CertificatesPage.qml:42 qml/CertificatesPage.qml:55
 #, kde-format
@@ -150,32 +150,32 @@ msgstr "Ĉu vi vere volas forigi ĉi tiun atestilon?"
 #: qml/CertificatesPage.qml:74
 #, kde-format
 msgid "Certificate could not be imported: %1"
-msgstr ""
+msgstr "Ne eblis importi atestilojn: %1"
 
 #: qml/CertificatesPage.qml:159
 #, kde-format
 msgid "No certificates saved"
-msgstr ""
+msgstr "Konservis neniujn atestilojn"
 
 #: qml/main.qml:18
 #, kde-format
 msgid "Your Certificates"
-msgstr ""
+msgstr "Viaj Atestiloj"
 
 #: qml/main.qml:24
 #, kde-format
 msgid "Import from file"
-msgstr ""
+msgstr "Importi el dosiero"
 
 #: qml/main.qml:29
 #, kde-format
 msgid "Import from clipboard"
-msgstr ""
+msgstr "Importi el tondujo"
 
 #: qml/main.qml:34 qml/ScanBarcodePage.qml:17
 #, kde-format
 msgid "Scan QR code"
-msgstr ""
+msgstr "Skani QR-Kodon"
 
 #: qml/RecoveryDetailsSheet.qml:24 qml/TestDetailsSheet.qml:25
 #: qml/VaccinationDetailsSheet.qml:25
@@ -317,8 +317,8 @@ msgstr "Vakcinado"
 #, kde-format
 msgid "%2 (%1 day ago)"
 msgid_plural "%2 (%1 days ago)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%2 (antaŭ %1 tago)"
+msgstr[1] "%2 (antaŭ %1 tagoj)"
 
 #: qml/VaccinationDetailsSheet.qml:69
 #, kde-format
