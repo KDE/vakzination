@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the vakzination package.
 #
-# Kristof Kiszel <ulysses@fsf.hu>, 2021.
+# SPDX-FileCopyrightText: 2021, 2024 Kristof Kiszel <ulysses@fsf.hu>
 msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-14 00:42+0000\n"
-"PO-Revision-Date: 2021-12-31 15:47+0100\n"
+"PO-Revision-Date: 2024-02-29 21:50+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -15,31 +15,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 21.12.0\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: certificatesmodel.cpp:112
-#, fuzzy, kde-format
-#| msgid "Vaccination %1 (%2/%3)"
+#, kde-format
 msgid "Vaccination %1/%2 (%3)"
-msgstr "%1. oltás (%2/%3)"
+msgstr "%1/%2. oltás (%3)"
 
 #: certificatesmodel.cpp:114
-#, fuzzy, kde-format
-#| msgid "Vaccination"
+#, kde-format
 msgid "Vaccination (%1)"
-msgstr "Oltás"
+msgstr "Oltás (%1)"
 
 #: certificatesmodel.cpp:118
-#, fuzzy, kde-format
-#| msgid "Test %1"
+#, kde-format
 msgid "Test %1 (%2)"
-msgstr "%1. teszt"
+msgstr "%1. teszt (%2)"
 
 #: certificatesmodel.cpp:124
-#, fuzzy, kde-format
-#| msgid "Recovery %1"
+#, kde-format
 msgid "Recovery (%1)"
-msgstr "%1. felépülés"
+msgstr "Felépülés (%1)"
 
 #: certificatesmodel.cpp:196
 #, kde-format
@@ -67,10 +63,9 @@ msgid "No certificate in clipboard"
 msgstr "Nincs tanúsítvány a vágólapon"
 
 #: main.cpp:43
-#, fuzzy, kde-format
-#| msgid "Vaccination"
+#, kde-format
 msgid "Vakzination"
-msgstr "Oltás"
+msgstr "Vakzination"
 
 #: main.cpp:45
 #, kde-format
@@ -78,33 +73,35 @@ msgid ""
 "Vakzination manages your health certificates like vaccination, test, and "
 "recovery certificates."
 msgstr ""
+"A Vakzination kezeli az egészségügyi tanúsítványokat, mint például az "
+"oltási, a teszt- és a felépülési igazolásokat."
 
 #: main.cpp:47
 #, kde-format
 msgid "© 2021-2022 KDE Community"
-msgstr ""
+msgstr "© A KDE közösség, 2021-2022."
 
 #: main.cpp:49
 #, kde-format
 msgid "Nicolas Fella"
-msgstr ""
+msgstr "Nicolas Fella"
 
 #: main.cpp:49
 #, kde-format
 msgid "Maintainer"
-msgstr ""
+msgstr "Karbantartó"
 
 #: main.cpp:50
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Kiszel Kristóf"
 
 #: main.cpp:50
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "ulysses@fsf.hu"
 
 #: main.cpp:56
 #, kde-format
@@ -139,18 +136,17 @@ msgstr "Az Ön tanúsítványai"
 #: qml/CertificatesPage.qml:42 qml/CertificatesPage.qml:55
 #, kde-format
 msgid "Delete"
-msgstr ""
+msgstr "Törlés"
 
 #: qml/CertificatesPage.qml:50
-#, fuzzy, kde-format
-#| msgid "Certificate"
+#, kde-format
 msgid "Delete Certificate"
-msgstr "Tanúsítvány"
+msgstr "Tanúsítvány törlése"
 
 #: qml/CertificatesPage.qml:51
 #, kde-format
 msgid "Do you really want to delete this certificate?"
-msgstr ""
+msgstr "Biztosan törölni szeretné ezt a tanúsítványt?"
 
 #: qml/CertificatesPage.qml:74
 #, kde-format
@@ -180,7 +176,7 @@ msgstr "Importálás a vágólapról"
 #: qml/main.qml:34 qml/ScanBarcodePage.qml:17
 #, kde-format
 msgid "Scan QR code"
-msgstr ""
+msgstr "QR-kód beolvasása"
 
 #: qml/RecoveryDetailsSheet.qml:24 qml/TestDetailsSheet.qml:25
 #: qml/VaccinationDetailsSheet.qml:25
@@ -265,12 +261,12 @@ msgstr "Aláírás:"
 #: qml/ScanBarcodePage.qml:27
 #, kde-format
 msgid "Light"
-msgstr ""
+msgstr "Világos"
 
 #: qml/ScanBarcodePage.qml:89
 #, kde-format
 msgid "No camera available."
-msgstr ""
+msgstr "Nem érhető el kamera."
 
 #: qml/TestDetailsSheet.qml:40
 #, kde-format
@@ -306,7 +302,7 @@ msgstr "Tesztközpont:"
 #, kde-format
 msgctxt "%1 a flag emoji, %2 is a country name"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: qml/TestDetailsSheet.qml:87 qml/VaccinationDetailsSheet.qml:87
 #, kde-format
@@ -322,8 +318,8 @@ msgstr "Oltás"
 #, kde-format
 msgid "%2 (%1 day ago)"
 msgid_plural "%2 (%1 days ago)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%2 (%1 nappal ezelőtt)"
+msgstr[1] "%2 (%1 nappal ezelőtt)"
 
 #: qml/VaccinationDetailsSheet.qml:69
 #, kde-format
