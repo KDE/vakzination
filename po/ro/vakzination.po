@@ -1,0 +1,344 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the vakzination package.
+# Sergiu Bivol <sergiu@cip.md>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vakzination\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-12-14 00:42+0000\n"
+"PO-Revision-Date: 2024-03-02 15:47+0000\n"
+"Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
+"Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Lokalize 21.12.3\n"
+
+#: certificatesmodel.cpp:112
+#, kde-format
+msgid "Vaccination %1/%2 (%3)"
+msgstr "Vaccinare %1/%2 (%3)"
+
+#: certificatesmodel.cpp:114
+#, kde-format
+msgid "Vaccination (%1)"
+msgstr "Vaccinare (%1)"
+
+#: certificatesmodel.cpp:118
+#, kde-format
+msgid "Test %1 (%2)"
+msgstr "Test %1 (%2)"
+
+#: certificatesmodel.cpp:124
+#, kde-format
+msgid "Recovery (%1)"
+msgstr "Însănătoșire (%1)"
+
+#: certificatesmodel.cpp:196
+#, kde-format
+msgid "Empty file url"
+msgstr "URL gol de fișier"
+
+#: certificatesmodel.cpp:200
+#, kde-format
+msgid "File URL not valid: %1"
+msgstr "URL nevalid de fișier: %1"
+
+#: certificatesmodel.cpp:208
+#, kde-format
+msgid "Could not open file: %1"
+msgstr "Fișierul nu poate fi deschis: %1"
+
+#: certificatesmodel.cpp:228
+#, kde-format
+msgid "No certificate found in %1"
+msgstr "Niciun certificat găsit în %1"
+
+#: certificatesmodel.cpp:290
+#, kde-format
+msgid "No certificate in clipboard"
+msgstr "Niciun certificat în clipboard"
+
+#: main.cpp:43
+#, kde-format
+msgid "Vakzination"
+msgstr "Vakzination"
+
+#: main.cpp:45
+#, kde-format
+msgid ""
+"Vakzination manages your health certificates like vaccination, test, and "
+"recovery certificates."
+msgstr ""
+"Vakzination gestionează certificate medicale pentru vaccinări, teste, și "
+"însănătoșiri."
+
+#: main.cpp:47
+#, kde-format
+msgid "© 2021-2022 KDE Community"
+msgstr "© 2021-2022 Comunitatea KDE"
+
+#: main.cpp:49
+#, kde-format
+msgid "Nicolas Fella"
+msgstr "Nicolas Fella"
+
+#: main.cpp:49
+#, kde-format
+msgid "Maintainer"
+msgstr "Responsabil"
+
+#: main.cpp:50
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Sergiu Bivol"
+
+#: main.cpp:50
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sergiu@cip.md"
+
+#: main.cpp:56
+#, kde-format
+msgid "Show with test data"
+msgstr "Arată cu date de test"
+
+#: main.cpp:59
+#, kde-format
+msgid "File to import."
+msgstr "Fișier de importat."
+
+#: qml/CertificateDelegate.qml:29
+#, kde-format
+msgid "Vaccination %1 (%2/%3)"
+msgstr "Vaccinare %1 (%2/%3)"
+
+#: qml/CertificateDelegate.qml:33
+#, kde-format
+msgid "Test %1"
+msgstr "Test %1"
+
+#: qml/CertificateDelegate.qml:37
+#, kde-format
+msgid "Recovery %1"
+msgstr "Însănătoșire %1"
+
+#: qml/CertificatesPage.qml:17
+#, kde-format
+msgid "Your certificates"
+msgstr "Certificatele dumneavoastră"
+
+#: qml/CertificatesPage.qml:42 qml/CertificatesPage.qml:55
+#, kde-format
+msgid "Delete"
+msgstr "Șterge"
+
+#: qml/CertificatesPage.qml:50
+#, kde-format
+msgid "Delete Certificate"
+msgstr "Șterge certificatul"
+
+#: qml/CertificatesPage.qml:51
+#, kde-format
+msgid "Do you really want to delete this certificate?"
+msgstr "Sigur doriți să ștergeți acest certificat?"
+
+#: qml/CertificatesPage.qml:74
+#, kde-format
+msgid "Certificate could not be imported: %1"
+msgstr "Certificatul nu a putut fi importat: %1"
+
+#: qml/CertificatesPage.qml:159
+#, kde-format
+msgid "No certificates saved"
+msgstr "Niciun certificat salvat"
+
+#: qml/main.qml:18
+#, kde-format
+msgid "Your Certificates"
+msgstr "Certificatele dumneavoastră"
+
+#: qml/main.qml:24
+#, kde-format
+msgid "Import from file"
+msgstr "Importă din fișier"
+
+#: qml/main.qml:29
+#, kde-format
+msgid "Import from clipboard"
+msgstr "Importă din clipboard"
+
+#: qml/main.qml:34 qml/ScanBarcodePage.qml:17
+#, kde-format
+msgid "Scan QR code"
+msgstr "Scanează cod QR"
+
+#: qml/RecoveryDetailsSheet.qml:24 qml/TestDetailsSheet.qml:25
+#: qml/VaccinationDetailsSheet.qml:25
+#, kde-format
+msgid "Person"
+msgstr "Persoană"
+
+#: qml/RecoveryDetailsSheet.qml:29 qml/TestDetailsSheet.qml:30
+#: qml/VaccinationDetailsSheet.qml:30
+#, kde-format
+msgid "Name:"
+msgstr "Nume:"
+
+#: qml/RecoveryDetailsSheet.qml:34 qml/TestDetailsSheet.qml:35
+#: qml/VaccinationDetailsSheet.qml:35
+#, kde-format
+msgid "Date of birth:"
+msgstr "Data nașterii:"
+
+#: qml/RecoveryDetailsSheet.qml:39
+#, kde-format
+msgid "Recovery"
+msgstr "Însănătoșire"
+
+#: qml/RecoveryDetailsSheet.qml:44
+#, kde-format
+msgid "Positive test:"
+msgstr "Test pozitiv:"
+
+#: qml/RecoveryDetailsSheet.qml:48 qml/TestDetailsSheet.qml:51
+#: qml/VaccinationDetailsSheet.qml:59
+#, kde-format
+msgid "Disease:"
+msgstr "Maladie:"
+
+#: qml/RecoveryDetailsSheet.qml:52
+#, kde-format
+msgid "Valid from:"
+msgstr "Valabil din:"
+
+#: qml/RecoveryDetailsSheet.qml:56
+#, kde-format
+msgid "Valid until:"
+msgstr "Valabil până la:"
+
+#: qml/RecoveryDetailsSheet.qml:61 qml/TestDetailsSheet.qml:93
+#: qml/VaccinationDetailsSheet.qml:93
+#, kde-format
+msgid "Certificate"
+msgstr "Certificat"
+
+#: qml/RecoveryDetailsSheet.qml:66 qml/TestDetailsSheet.qml:98
+#: qml/VaccinationDetailsSheet.qml:98
+#, kde-format
+msgid "Issuer:"
+msgstr "Emitent:"
+
+#: qml/RecoveryDetailsSheet.qml:71 qml/TestDetailsSheet.qml:103
+#: qml/VaccinationDetailsSheet.qml:103
+#, kde-format
+msgid "Identifier:"
+msgstr "Identificator:"
+
+#: qml/RecoveryDetailsSheet.qml:76 qml/TestDetailsSheet.qml:109
+#: qml/VaccinationDetailsSheet.qml:109
+#, kde-format
+msgid "Issued:"
+msgstr "Emis:"
+
+#: qml/RecoveryDetailsSheet.qml:81 qml/TestDetailsSheet.qml:114
+#: qml/VaccinationDetailsSheet.qml:114
+#, kde-format
+msgid "Expires:"
+msgstr "Expiră:"
+
+#: qml/RecoveryDetailsSheet.qml:96 qml/TestDetailsSheet.qml:129
+#: qml/VaccinationDetailsSheet.qml:129
+#, kde-format
+msgid "Signature:"
+msgstr "Semnătură:"
+
+#: qml/ScanBarcodePage.qml:27
+#, kde-format
+msgid "Light"
+msgstr "Lumină"
+
+#: qml/ScanBarcodePage.qml:89
+#, kde-format
+msgid "No camera available."
+msgstr "Niciun aparat foto disponibil."
+
+#: qml/TestDetailsSheet.qml:40
+#, kde-format
+msgid "Test"
+msgstr "Test"
+
+#: qml/TestDetailsSheet.qml:45 qml/VaccinationDetailsSheet.qml:52
+#, kde-format
+msgid "Date:"
+msgstr "Dată:"
+
+#: qml/TestDetailsSheet.qml:56 qml/VaccinationDetailsSheet.qml:64
+#, kde-format
+msgid "Type:"
+msgstr "Tip:"
+
+#: qml/TestDetailsSheet.qml:62
+#, kde-format
+msgid "Test:"
+msgstr "Test:"
+
+#: qml/TestDetailsSheet.qml:77
+#, kde-format
+msgid "Result:"
+msgstr "Rezultat:"
+
+#: qml/TestDetailsSheet.qml:82
+#, kde-format
+msgid "Test Center:"
+msgstr "Centru de testare:"
+
+#: qml/TestDetailsSheet.qml:86 qml/VaccinationDetailsSheet.qml:86
+#, kde-format
+msgctxt "%1 a flag emoji, %2 is a country name"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: qml/TestDetailsSheet.qml:87 qml/VaccinationDetailsSheet.qml:87
+#, kde-format
+msgid "Country:"
+msgstr "Țară:"
+
+#: qml/VaccinationDetailsSheet.qml:40
+#, kde-format
+msgid "Vaccination"
+msgstr "Vaccinare"
+
+#: qml/VaccinationDetailsSheet.qml:48
+#, kde-format
+msgid "%2 (%1 day ago)"
+msgid_plural "%2 (%1 days ago)"
+msgstr[0] "%2 (acum %1 zi)"
+msgstr[1] "%2 (acum %1 zile)"
+msgstr[2] "%2 (acum %1 de zile)"
+
+#: qml/VaccinationDetailsSheet.qml:69
+#, kde-format
+msgid "Vaccine:"
+msgstr "Vaccin:"
+
+#: qml/VaccinationDetailsSheet.qml:75
+#, kde-format
+msgid "Manufacturer:"
+msgstr "Producător:"
+
+#: qml/VaccinationDetailsSheet.qml:79
+#, kde-format
+msgid "%1/%2"
+msgstr "%1/%2"
+
+#: qml/VaccinationDetailsSheet.qml:80
+#, kde-format
+msgid "Dose:"
+msgstr "Doză:"
