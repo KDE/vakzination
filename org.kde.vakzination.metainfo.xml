@@ -26,6 +26,7 @@
   <name xml:lang="pl">Vakzination</name>
   <name xml:lang="pt">Vakzination</name>
   <name xml:lang="pt-BR">Vakzination</name>
+  <name xml:lang="ro">Vakzination</name>
   <name xml:lang="sk">Vakzination</name>
   <name xml:lang="sl">Vakzination</name>
   <name xml:lang="sv">Vakzination</name>
@@ -55,6 +56,7 @@
   <summary xml:lang="pl">Zarządzaj swoimi certyfikatami szczepień</summary>
   <summary xml:lang="pt">Gerir os seus certificados de vacinação</summary>
   <summary xml:lang="pt-BR">Gerencie seus certificados de vacinação</summary>
+  <summary xml:lang="ro">Gestionează certificate de vaccinare</summary>
   <summary xml:lang="sl">Upravlja vaša potrdila o cepljenju</summary>
   <summary xml:lang="sv">Hantera dina vaccinationsbevis</summary>
   <summary xml:lang="tr">Aşı Sertifikası Yöneticisi</summary>
@@ -86,6 +88,7 @@
   <developer_name xml:lang="pl">Społeczność KDE</developer_name>
   <developer_name xml:lang="pt">Comunidade do KDE</developer_name>
   <developer_name xml:lang="pt-BR">Comunidade KDE</developer_name>
+  <developer_name xml:lang="ro">Comunitatea KDE</developer_name>
   <developer_name xml:lang="sk">KDE komunita</developer_name>
   <developer_name xml:lang="sl">Skupnost KDE</developer_name>
   <developer_name xml:lang="sv">KDE-gemenskapen</developer_name>
@@ -146,6 +149,7 @@
     <p xml:lang="pl">Zarządzaj swoimi cyfrowymi certyfikatami od szczepień, testów i z ośrodków leczniczych.</p>
     <p xml:lang="pt">Faça a gestão de certificados digitais de saúde, como os de vacinação, de testes e de recuperação.</p>
     <p xml:lang="pt-BR">Gerencie seus certificados de saúde digitais, como certificados de vacinação, teste e recuperação.</p>
+    <p xml:lang="ro">Gestionați certificate medicale digitale pentru vaccinări, teste, și însănătoșiri.</p>
     <p xml:lang="sl">Upravlja vaša digitalna zdravstvena potrdila o cepljenjih, testih in potrdila o ozdravljenju.</p>
     <p xml:lang="sv">Hantera dina digitala hälsointyg såsom vaccinations-, test- och tillfrisknandebevis.</p>
     <p xml:lang="tr">Aşı, sınama veya iyileşme sertifikaları gibi sayısal sağlık sertifikalarınızı yönetin.</p>
