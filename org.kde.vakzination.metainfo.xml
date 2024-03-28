@@ -6,6 +6,7 @@
 <component type="desktop-application">
   <id>org.kde.vakzination</id>
   <name>Vakzination</name>
+  <name xml:lang="ast">Vakzination</name>
   <name xml:lang="ca">Vakzination</name>
   <name xml:lang="ca-valencia">Vakzination</name>
   <name xml:lang="cs">Vakzination</name>
