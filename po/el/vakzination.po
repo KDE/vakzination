@@ -36,10 +36,9 @@ msgid "Test %1 (%2)"
 msgstr "Τεστ %1"
 
 #: certificatesmodel.cpp:124
-#, fuzzy, kde-format
-#| msgid "Recovery %1"
+#, kde-format
 msgid "Recovery (%1)"
-msgstr "Ανάρρωση %1"
+msgstr "Ανάρρωση (%1)"
 
 #: certificatesmodel.cpp:196
 #, kde-format
