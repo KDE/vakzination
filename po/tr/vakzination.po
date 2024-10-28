@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-14 00:42+0000\n"
-"PO-Revision-Date: 2024-08-06 11:40+0300\n"
+"PO-Revision-Date: 2024-10-27 19:17+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.11.70\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #: certificatesmodel.cpp:112
 #, kde-format
@@ -30,7 +30,7 @@ msgstr "Aşılanma (%1)"
 #: certificatesmodel.cpp:118
 #, kde-format
 msgid "Test %1 (%2)"
-msgstr "Sınama %1 (%2)"
+msgstr "Test %1 (%2)"
 
 #: certificatesmodel.cpp:124
 #, kde-format
@@ -73,7 +73,7 @@ msgid ""
 "Vakzination manages your health certificates like vaccination, test, and "
 "recovery certificates."
 msgstr ""
-"Vakzination, aşı, sınama ve iyileşme sertifikaları gibi sağlık "
+"Vakzination, aşı, test ve iyileşme sertifikaları gibi sağlık "
 "sertifikalarınızı yönetir."
 
 #: main.cpp:47
@@ -106,7 +106,7 @@ msgstr "emir_sari@icloud.com"
 #: main.cpp:56
 #, kde-format
 msgid "Show with test data"
-msgstr "Sınama verisi ile göster"
+msgstr "Test verisi ile göster"
 
 #: main.cpp:59
 #, kde-format
@@ -121,7 +121,7 @@ msgstr "Aşılanma %1 (%2/%3)"
 #: qml/CertificateDelegate.qml:33
 #, kde-format
 msgid "Test %1"
-msgstr "Sınama %1"
+msgstr "Test %1"
 
 #: qml/CertificateDelegate.qml:37
 #, kde-format
@@ -204,7 +204,7 @@ msgstr "İyileşme"
 #: qml/RecoveryDetailsSheet.qml:44
 #, kde-format
 msgid "Positive test:"
-msgstr "Pozitif sınama:"
+msgstr "Pozitif test:"
 
 #: qml/RecoveryDetailsSheet.qml:48 qml/TestDetailsSheet.qml:51
 #: qml/VaccinationDetailsSheet.qml:59
@@ -271,7 +271,7 @@ msgstr "Kullanılabilir kamera yok."
 #: qml/TestDetailsSheet.qml:40
 #, kde-format
 msgid "Test"
-msgstr "Sınama"
+msgstr "Test"
 
 #: qml/TestDetailsSheet.qml:45 qml/VaccinationDetailsSheet.qml:52
 #, kde-format
@@ -286,7 +286,7 @@ msgstr "Tür:"
 #: qml/TestDetailsSheet.qml:62
 #, kde-format
 msgid "Test:"
-msgstr "Sınama:"
+msgstr "Test:"
 
 #: qml/TestDetailsSheet.qml:77
 #, kde-format
@@ -296,7 +296,7 @@ msgstr "Sonuç:"
 #: qml/TestDetailsSheet.qml:82
 #, kde-format
 msgid "Test Center:"
-msgstr "Sınama Merkezi:"
+msgstr "Test merkezi:"
 
 #: qml/TestDetailsSheet.qml:86 qml/VaccinationDetailsSheet.qml:86
 #, kde-format
