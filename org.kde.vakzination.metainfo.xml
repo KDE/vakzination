@@ -31,6 +31,7 @@
   <name xml:lang="pt">Vakzination</name>
   <name xml:lang="pt-BR">Vakzination</name>
   <name xml:lang="ro">Vakzination</name>
+  <name xml:lang="sa">वाक्जिनेशन</name>
   <name xml:lang="sk">Vakzination</name>
   <name xml:lang="sl">Vakzination</name>
   <name xml:lang="sv">Vakzination</name>
@@ -64,6 +65,7 @@
   <summary xml:lang="pt">Gerir os seus certificados de vacinação</summary>
   <summary xml:lang="pt-BR">Gerencie seus certificados de vacinação</summary>
   <summary xml:lang="ro">Gestionează certificate de vaccinare</summary>
+  <summary xml:lang="sa">स्वस्य टीकाकरणप्रमाणपत्राणि प्रबन्धयन्तु</summary>
   <summary xml:lang="sl">Upravlja vaša potrdila o cepljenju</summary>
   <summary xml:lang="sv">Hantera dina vaccinationsbevis</summary>
   <summary xml:lang="tr">Aşı Sertifikası Yöneticisi</summary>
@@ -133,6 +135,7 @@
     <p xml:lang="pt">Faça a gestão de certificados digitais de saúde, como os de vacinação, de testes e de recuperação.</p>
     <p xml:lang="pt-BR">Gerencie seus certificados de saúde digitais, como certificados de vacinação, teste e recuperação.</p>
     <p xml:lang="ro">Gestionați certificate medicale digitale pentru vaccinări, teste, și însănătoșiri.</p>
+    <p xml:lang="sa">टीकाकरणं, परीक्षणं, पुनर्प्राप्तिप्रमाणपत्राणि च इत्यादीनि स्वस्य डिजिटलस्वास्थ्यप्रमाणपत्राणि प्रबन्धयन्तु।</p>
     <p xml:lang="sl">Upravlja vaša digitalna zdravstvena potrdila o cepljenjih, testih in potrdila o ozdravljenju.</p>
     <p xml:lang="sv">Hantera dina digitala hälsointyg såsom vaccinations-, test- och tillfrisknandebevis.</p>
     <p xml:lang="tr">Aşı, test veya iyileşme sertifikaları gibi sayısal sağlık sertifikalarınızı yönetin.</p>
