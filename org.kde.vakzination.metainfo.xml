@@ -19,6 +19,7 @@
   <name xml:lang="fr">Vakzination</name>
   <name xml:lang="gl">Vakzination</name>
   <name xml:lang="he">Vakzination</name>
+  <name xml:lang="hi">वैक्सीनेशन</name>
   <name xml:lang="hu">Vakzination</name>
   <name xml:lang="ia">Vakzination</name>
   <name xml:lang="it">Vakzination</name>
@@ -53,6 +54,7 @@
   <summary xml:lang="fr">Gérer vos certificats de vaccination</summary>
   <summary xml:lang="gl">Xestione os seus certificados de vacinación.</summary>
   <summary xml:lang="he">ניהול תעודות ההתחסנות שלך</summary>
+  <summary xml:lang="hi">अपने टीकाकरण प्रमाणपत्र प्रबंधित करें</summary>
   <summary xml:lang="hu">Oltási igazolványok kezelése</summary>
   <summary xml:lang="ia">Gere tu certificatos de vaccination</summary>
   <summary xml:lang="it">Gestisci i tuoi certificati di vaccinazione</summary>
@@ -124,6 +126,7 @@
     <p xml:lang="fr">Gérer vos certificats numériques de santé comme les certificats de vaccination, de tests et de retour à la santé.</p>
     <p xml:lang="gl">Xestione os seus certificados dixitais de saúde, como os de vacinación, os de probas, ou os de recuperación.</p>
     <p xml:lang="he">ניהול תעודות הבריאות הדיגיטליות שלך כגון חיסונים, בדיקות והחלמה.</p>
+    <p xml:lang="hi">अपने डिजिटल स्वास्थ्य प्रमाणपत्रों जैसे टीकाकरण, परीक्षण और पुनर्प्राप्ति प्रमाणपत्रों का प्रबंधन करें।</p>
     <p xml:lang="hu">Kezelje digitális egészségügyi tanúsítványait, például oltási, teszt- és felépülési igazolásait.</p>
     <p xml:lang="ia">Vakzination gere tu certificatos digital  de sanitate como vaccination, test, e certificatos de recuperation.</p>
     <p xml:lang="it">Gestisci i tuoi certificati sanitari digitali come certificati di vaccinazione, esami e guarigione.</p>
