@@ -1,0 +1,342 @@
+# Hindi translations for vakzination package.
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the vakzination package.
+# Kali <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vakzination\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-12-14 00:42+0000\n"
+"PO-Revision-Date: 2024-12-15 17:36+0530\n"
+"Last-Translator: Kali <EMAIL@ADDRESS>\n"
+"Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1)\n"
+
+#: certificatesmodel.cpp:112
+#, kde-format
+msgid "Vaccination %1/%2 (%3)"
+msgstr "टीकाकरण %1/%2 (%3)"
+
+#: certificatesmodel.cpp:114
+#, kde-format
+msgid "Vaccination (%1)"
+msgstr "टीकाकरण (%1)"
+
+#: certificatesmodel.cpp:118
+#, kde-format
+msgid "Test %1 (%2)"
+msgstr "परीक्षण %1 (%2)"
+
+#: certificatesmodel.cpp:124
+#, kde-format
+msgid "Recovery (%1)"
+msgstr "रिकवरी (%1)"
+
+#: certificatesmodel.cpp:196
+#, kde-format
+msgid "Empty file url"
+msgstr "खाली फ़ाइल यूआरएल"
+
+#: certificatesmodel.cpp:200
+#, kde-format
+msgid "File URL not valid: %1"
+msgstr "फ़ाइल यूआरएल मान्य नहीं है: %1"
+
+#: certificatesmodel.cpp:208
+#, kde-format
+msgid "Could not open file: %1"
+msgstr "फ़ाइल नहीं खोली जा सकी: %1"
+
+#: certificatesmodel.cpp:228
+#, kde-format
+msgid "No certificate found in %1"
+msgstr "%1 में कोई प्रमाणपत्र नहीं मिला"
+
+#: certificatesmodel.cpp:290
+#, kde-format
+msgid "No certificate in clipboard"
+msgstr "क्लिपबोर्ड में कोई प्रमाणपत्र नहीं है"
+
+#: main.cpp:43
+#, kde-format
+msgid "Vakzination"
+msgstr "वैक्सीनेशन"
+
+#: main.cpp:45
+#, kde-format
+msgid ""
+"Vakzination manages your health certificates like vaccination, test, and "
+"recovery certificates."
+msgstr ""
+"वैक्सिनेशन आपके स्वास्थ्य प्रमाणपत्रों जैसे टीकाकरण, परीक्षण और रिकवरी प्रमाणपत्रों का प्रबंधन "
+"करता है।"
+
+#: main.cpp:47
+#, kde-format
+msgid "© 2021-2022 KDE Community"
+msgstr "© 2021-2022 केडीई समुदाय"
+
+#: main.cpp:49
+#, kde-format
+msgid "Nicolas Fella"
+msgstr "निकोलस फेल्ला"
+
+#: main.cpp:49
+#, kde-format
+msgid "Maintainer"
+msgstr "मेंटेनर"
+
+#: main.cpp:50
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "तुम्हारे नाम"
+
+#: main.cpp:50
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "आपके ईमेल"
+
+#: main.cpp:56
+#, kde-format
+msgid "Show with test data"
+msgstr "परीक्षण डेटा के साथ दिखाएं"
+
+#: main.cpp:59
+#, kde-format
+msgid "File to import."
+msgstr "आयात करने हेतु फ़ाइल."
+
+#: qml/CertificateDelegate.qml:29
+#, kde-format
+msgid "Vaccination %1 (%2/%3)"
+msgstr "टीकाकरण %1 (%2/%3)"
+
+#: qml/CertificateDelegate.qml:33
+#, kde-format
+msgid "Test %1"
+msgstr "परीक्षण %1"
+
+#: qml/CertificateDelegate.qml:37
+#, kde-format
+msgid "Recovery %1"
+msgstr "रिकवरी %1"
+
+#: qml/CertificatesPage.qml:17
+#, kde-format
+msgid "Your certificates"
+msgstr "आपके प्रमाण पत्र"
+
+#: qml/CertificatesPage.qml:42 qml/CertificatesPage.qml:55
+#, kde-format
+msgid "Delete"
+msgstr "मिटाना"
+
+#: qml/CertificatesPage.qml:50
+#, kde-format
+msgid "Delete Certificate"
+msgstr "प्रमाणपत्र हटाएं"
+
+#: qml/CertificatesPage.qml:51
+#, kde-format
+msgid "Do you really want to delete this certificate?"
+msgstr "क्या आप सचमुच इस प्रमाणपत्र को हटाना चाहते हैं?"
+
+#: qml/CertificatesPage.qml:74
+#, kde-format
+msgid "Certificate could not be imported: %1"
+msgstr "प्रमाणपत्र आयात नहीं किया जा सका: %1"
+
+#: qml/CertificatesPage.qml:159
+#, kde-format
+msgid "No certificates saved"
+msgstr "कोई प्रमाणपत्र सहेजा नहीं गया"
+
+#: qml/main.qml:18
+#, kde-format
+msgid "Your Certificates"
+msgstr "आपके प्रमाण पत्र"
+
+#: qml/main.qml:24
+#, kde-format
+msgid "Import from file"
+msgstr "फ़ाइल से आयात करें"
+
+#: qml/main.qml:29
+#, kde-format
+msgid "Import from clipboard"
+msgstr "क्लिपबोर्ड से आयात करें"
+
+#: qml/main.qml:34 qml/ScanBarcodePage.qml:17
+#, kde-format
+msgid "Scan QR code"
+msgstr "स्कैन क्यू आर कोड"
+
+#: qml/RecoveryDetailsSheet.qml:24 qml/TestDetailsSheet.qml:25
+#: qml/VaccinationDetailsSheet.qml:25
+#, kde-format
+msgid "Person"
+msgstr "व्यक्ति"
+
+#: qml/RecoveryDetailsSheet.qml:29 qml/TestDetailsSheet.qml:30
+#: qml/VaccinationDetailsSheet.qml:30
+#, kde-format
+msgid "Name:"
+msgstr "नाम:"
+
+#: qml/RecoveryDetailsSheet.qml:34 qml/TestDetailsSheet.qml:35
+#: qml/VaccinationDetailsSheet.qml:35
+#, kde-format
+msgid "Date of birth:"
+msgstr "जन्म तिथि:"
+
+#: qml/RecoveryDetailsSheet.qml:39
+#, kde-format
+msgid "Recovery"
+msgstr "वसूली"
+
+#: qml/RecoveryDetailsSheet.qml:44
+#, kde-format
+msgid "Positive test:"
+msgstr "सकारात्मक परीक्षण:"
+
+#: qml/RecoveryDetailsSheet.qml:48 qml/TestDetailsSheet.qml:51
+#: qml/VaccinationDetailsSheet.qml:59
+#, kde-format
+msgid "Disease:"
+msgstr "बीमारी:"
+
+#: qml/RecoveryDetailsSheet.qml:52
+#, kde-format
+msgid "Valid from:"
+msgstr "मान्य:"
+
+#: qml/RecoveryDetailsSheet.qml:56
+#, kde-format
+msgid "Valid until:"
+msgstr "तब तक वैध:"
+
+#: qml/RecoveryDetailsSheet.qml:61 qml/TestDetailsSheet.qml:93
+#: qml/VaccinationDetailsSheet.qml:93
+#, kde-format
+msgid "Certificate"
+msgstr "प्रमाणपत्र"
+
+#: qml/RecoveryDetailsSheet.qml:66 qml/TestDetailsSheet.qml:98
+#: qml/VaccinationDetailsSheet.qml:98
+#, kde-format
+msgid "Issuer:"
+msgstr "जारीकर्ता:"
+
+#: qml/RecoveryDetailsSheet.qml:71 qml/TestDetailsSheet.qml:103
+#: qml/VaccinationDetailsSheet.qml:103
+#, kde-format
+msgid "Identifier:"
+msgstr "पहचानकर्ता:"
+
+#: qml/RecoveryDetailsSheet.qml:76 qml/TestDetailsSheet.qml:109
+#: qml/VaccinationDetailsSheet.qml:109
+#, kde-format
+msgid "Issued:"
+msgstr "जारी किए गए:"
+
+#: qml/RecoveryDetailsSheet.qml:81 qml/TestDetailsSheet.qml:114
+#: qml/VaccinationDetailsSheet.qml:114
+#, kde-format
+msgid "Expires:"
+msgstr "समय सीमा समाप्त:"
+
+#: qml/RecoveryDetailsSheet.qml:96 qml/TestDetailsSheet.qml:129
+#: qml/VaccinationDetailsSheet.qml:129
+#, kde-format
+msgid "Signature:"
+msgstr "हस्ताक्षर:"
+
+#: qml/ScanBarcodePage.qml:27
+#, kde-format
+msgid "Light"
+msgstr "रोशनी"
+
+#: qml/ScanBarcodePage.qml:89
+#, kde-format
+msgid "No camera available."
+msgstr "कोई कैमरा उपलब्ध नहीं है."
+
+#: qml/TestDetailsSheet.qml:40
+#, kde-format
+msgid "Test"
+msgstr "परीक्षा"
+
+#: qml/TestDetailsSheet.qml:45 qml/VaccinationDetailsSheet.qml:52
+#, kde-format
+msgid "Date:"
+msgstr "तारीख:"
+
+#: qml/TestDetailsSheet.qml:56 qml/VaccinationDetailsSheet.qml:64
+#, kde-format
+msgid "Type:"
+msgstr "प्रकार:"
+
+#: qml/TestDetailsSheet.qml:62
+#, kde-format
+msgid "Test:"
+msgstr "परीक्षा:"
+
+#: qml/TestDetailsSheet.qml:77
+#, kde-format
+msgid "Result:"
+msgstr "परिणाम:"
+
+#: qml/TestDetailsSheet.qml:82
+#, kde-format
+msgid "Test Center:"
+msgstr "परीक्षण केंद्र:"
+
+#: qml/TestDetailsSheet.qml:86 qml/VaccinationDetailsSheet.qml:86
+#, kde-format
+msgctxt "%1 a flag emoji, %2 is a country name"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: qml/TestDetailsSheet.qml:87 qml/VaccinationDetailsSheet.qml:87
+#, kde-format
+msgid "Country:"
+msgstr "देश:"
+
+#: qml/VaccinationDetailsSheet.qml:40
+#, kde-format
+msgid "Vaccination"
+msgstr "टीकाकरण"
+
+#: qml/VaccinationDetailsSheet.qml:48
+#, kde-format
+msgid "%2 (%1 day ago)"
+msgid_plural "%2 (%1 days ago)"
+msgstr[0] "%2 (%1 दिन पहले)"
+msgstr[1] "%2 (%1 दिन पहले)"
+
+#: qml/VaccinationDetailsSheet.qml:69
+#, kde-format
+msgid "Vaccine:"
+msgstr "टीका:"
+
+#: qml/VaccinationDetailsSheet.qml:75
+#, kde-format
+msgid "Manufacturer:"
+msgstr "निर्माता:"
+
+#: qml/VaccinationDetailsSheet.qml:79
+#, kde-format
+msgid "%1/%2"
+msgstr "%1/%2"
+
+#: qml/VaccinationDetailsSheet.qml:80
+#, kde-format
+msgid "Dose:"
+msgstr "खुराक:"
