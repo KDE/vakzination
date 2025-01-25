@@ -112,6 +112,9 @@
       <url>https://www.plasma-mobile.org/2021/12/07/plasma-mobile-gear-21-12/</url>
     </release>
   </releases>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
   <description>
     <p>Manage your digital health certificates like vaccination, test, and recovery certificates.</p>
     <p xml:lang="ca">Gestioneu els vostres certificats digitals de salut, com els certificats de vaccinació, proves i recuperació.</p>
