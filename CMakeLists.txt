@@ -12,7 +12,7 @@ set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_
 project(vakzination VERSION ${RELEASE_SERVICE_VERSION})
 
 set(QT_MIN_VERSION 6.6)
-set(KF_MIN_VERSION 6.3.0)
+set(KF_MIN_VERSION 6.12.0)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -45,9 +45,7 @@ find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 I18n Config Pri
 find_package(KHealthCertificate REQUIRED)
 find_package(KPim6Itinerary 6.1.0 REQUIRED)
 
-if(ANDROID)
-    configure_file(${CMAKE_CURRENT_SOURCE_DIR}/android/version.gradle.in ${CMAKE_BINARY_DIR}/version.gradle)
-else()
+if(NOT ANDROID)
     find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Widgets)
 endif()
 
