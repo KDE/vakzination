@@ -40,38 +40,6 @@
                     "branch": "master"
                 }
             ],
-            "modules": [
-                {
-                    "name": "openjpeg",
-                    "buildsystem": "cmake-ninja",
-                    "builddir": true,
-                    "config-opts": [
-                        "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
-                        "-DBUILD_STATIC_LIBS=OFF",
-                        "-DBUILD_CODEC=OFF"
-                    ],
-                    "cleanup": [
-                        "/bin",
-                        "/include",
-                        "/lib/*.a",
-                        "/lib/openjpeg-*",
-                        "/lib/pkgconfig"
-                    ],
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://github.com/uclouvain/openjpeg/archive/v2.5.0.tar.gz",
-                            "sha256": "0333806d6adecc6f7a91243b2b839ff4d2053823634d4f6ed7a59bc87409122a",
-                            "x-checker-data": {
-                                "type": "anitya",
-                                "project-id": 2550,
-                                "stable-only": true,
-                                "url-template": "https://github.com/uclouvain/openjpeg/archive/v$version.tar.gz"
-                            }
-                        }
-                    ]
-                }
-            ],
             "cleanup": [
                 "/include",
                 "/lib/pkgconfig"
