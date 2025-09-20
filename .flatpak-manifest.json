@@ -5,7 +5,9 @@
     "runtime-version": "6.9",
     "sdk": "org.kde.Sdk",
     "command": "vakzination",
-    "tags": ["nightly"],
+    "tags": [
+        "nightly"
+    ],
     "desktop-file-name-suffix": " (Nightly)",
     "finish-args": [
         "--device=dri",
@@ -158,7 +160,13 @@
             ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/pim/khealthcertificate.git", "branch": "master"} ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/pim/khealthcertificate.git",
+                    "branch": "master"
+                }
+            ],
             "cleanup": [
                 "/include",
                 "/lib/cmake",
