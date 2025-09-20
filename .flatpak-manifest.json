@@ -96,7 +96,7 @@
             ]
         },
         {
-            "name": "zxing",
+            "name": "zxing-cpp",
             "config-opts": [
                 "-DBUILD_DEPENDENCIES=LOCAL",
                 "-DBUILD_SHARED_LIBS=ON",
