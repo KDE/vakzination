@@ -169,7 +169,7 @@ msgstr "从文件导入"
 #: qml/main.qml:29
 #, kde-format
 msgid "Import from clipboard"
-msgstr "从剪切板导入"
+msgstr "从剪贴板导入"
 
 #: qml/main.qml:34 qml/ScanBarcodePage.qml:17
 #, kde-format
