@@ -2,6 +2,7 @@
 # SPDX-FileCopyrightText: 2021 Nicolas Fella <nicolas.fella@gmx.de>
 [Desktop Entry]
 Name=Vakzination
+Name[ar]=التحصين
 Name[ast]=Vakzination
 Name[ca]=Vakzination
 Name[ca@valencia]=Vakzination
@@ -37,6 +38,7 @@ Name[uk]=Vakzination
 Name[zh_CN]=Vakzination
 Name[zh_TW]=Vakzination
 Comment=Vaccination Certificate Manager
+Comment[ar]=مدير شهادات التطعيم
 Comment[ca]=Obre el gestor de certificats de vaccinació
 Comment[ca@valencia]=Obri el gestor de certificats de vaccinació
 Comment[cs]=Správce certifikátů očkování
