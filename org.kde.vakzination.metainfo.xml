@@ -6,6 +6,7 @@
 <component type="desktop-application">
   <id>org.kde.vakzination</id>
   <name>Vakzination</name>
+  <name xml:lang="ar">التحصين</name>
   <name xml:lang="ast">Vakzination</name>
   <name xml:lang="ca">Vakzination</name>
   <name xml:lang="ca-valencia">Vakzination</name>
@@ -41,6 +42,7 @@
   <name xml:lang="zh-CN">Vakzination</name>
   <name xml:lang="zh-TW">Vakzination</name>
   <summary>Manage your vaccination certificates</summary>
+  <summary xml:lang="ar">أدِر شهادات تطعيمك</summary>
   <summary xml:lang="ca">Gestioneu els vostres certificats de vaccinació</summary>
   <summary xml:lang="ca-valencia">Gestioneu els vostres certificats de vaccinació</summary>
   <summary xml:lang="cs">Spravujte svoje očkovací certifikáty</summary>
@@ -115,6 +117,7 @@
   </requires>
   <description>
     <p>Manage your digital health certificates like vaccination, test, and recovery certificates.</p>
+    <p xml:lang="ar">أدِر شهاداتك الصحية الرقمية مثل شهادات التطعيم والاختبار والشفاء.</p>
     <p xml:lang="ca">Gestioneu els vostres certificats digitals de salut, com els certificats de vaccinació, proves i recuperació.</p>
     <p xml:lang="ca-valencia">Gestioneu els vostres certificats digitals de salut, com els certificats de vaccinació, proves i recuperació.</p>
     <p xml:lang="cs">Spravujte svoje zdravotní certifikáty jako očkování, testy a zotavení.</p>
