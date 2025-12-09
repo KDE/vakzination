@@ -1,15 +1,15 @@
 # Spanish translations for vakzination.po package.
-# Copyright (C) 2021 This file is copyright:
+# Copyright (C) 2021-2025 This file is copyright:
 # This file is distributed under the same license as the vakzination package.
-#
 # Automatically generated, 2021.
-# Eloy Cuadra <ecuadra@eloihr.net>, 2021, 2022, 2023.
+#
+# SPDX-FileCopyrightText: 2021, 2022, 2023, 2025 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:53+0000\n"
-"PO-Revision-Date: 2023-04-16 12:14+0200\n"
+"PO-Revision-Date: 2025-12-08 11:56+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -342,19 +342,3 @@ msgstr "%1/%2"
 #, kde-format
 msgid "Dose:"
 msgstr "Dosis:"
-
-#~ msgid "Details"
-#~ msgstr "Detalles"
-
-#~ msgid "Importing certificates from PDF is not supported in this build"
-#~ msgstr ""
-#~ "La importación de certificados de PDF no está permitida en esta "
-#~ "compilación"
-
-#~ msgid "Importing certificates from images is not supported in this build"
-#~ msgstr ""
-#~ "La importación de certificados de imágenes no está permitida en esta "
-#~ "compilación"
-
-#~ msgid "Your vaccinations"
-#~ msgstr "Sus vacunas"
