@@ -4,13 +4,13 @@
 */
 
 import QtCore
-import QtQuick 2.15
-import QtQuick.Layouts 1.15
-import QtQuick.Controls 2.15 as QQC2
+import QtQuick
+import QtQuick.Layouts
+import QtQuick.Controls as QQC2
 import QtMultimedia
-import org.kde.kirigami 2.17 as Kirigami
-import org.kde.prison.scanner 1.0 as Prison
-import org.kde.vakzination 1.0
+import org.kde.kirigami as Kirigami
+import org.kde.prison.scanner as Prison
+import org.kde.vakzination
 
 Kirigami.Page {
     id: root

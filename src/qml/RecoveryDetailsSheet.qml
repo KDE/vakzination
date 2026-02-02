@@ -3,11 +3,11 @@
     SPDX-FileCopyrightText: 2021 Nicolas Fella <nicolas.fella@gmx.de>
 */
 
-import QtQuick 2.15
-import QtQuick.Controls 2.15 as QQC2
-import QtQuick.Layouts 1.2
-import org.kde.kirigami 2.15 as Kirigami
-import org.kde.khealthcertificate 1.0 as KHC
+import QtQuick
+import QtQuick.Controls as QQC2
+import QtQuick.Layouts
+import org.kde.kirigami as Kirigami
+import org.kde.khealthcertificate as KHC
 
 ColumnLayout {
 
