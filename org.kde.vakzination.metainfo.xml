@@ -102,6 +102,12 @@
       <description>
         <ul>
           <li>Fix importing Danish COVID certificates</li>
+          <li xml:lang="ca">Corregeix la importació de certificats COVID danesos</li>
+          <li xml:lang="he">תוקן ייבוא תעודות קורונה דניות</li>
+          <li xml:lang="ka">გასწორდა დანიური COVID სერტიფიკატების შემოტანა</li>
+          <li xml:lang="pt-BR">Corrigido problema na importação de certificados dinamarqueses de COVID</li>
+          <li xml:lang="sl">Popravi uvoz danskih potrdil o COVID-u</li>
+          <li xml:lang="uk">Виправлено імпортування данських сертифікатів COVID</li>
         </ul>
       </description>
     </release>
