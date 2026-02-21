@@ -107,10 +107,12 @@
           <li xml:lang="ca-valencia">Corregix la importació de certificats COVID danesos</li>
           <li xml:lang="es">Se ha corregido la importación de certificados de COVID daneses</li>
           <li xml:lang="he">תוקן ייבוא תעודות קורונה דניות</li>
+          <li xml:lang="ia">Corrige Importar certificatos Danese de COVID</li>
           <li xml:lang="ka">გასწორდა დანიური COVID სერტიფიკატების შემოტანა</li>
           <li xml:lang="nl">Importeren van Deense COVID-certificaten gerepareerd</li>
           <li xml:lang="pt-BR">Corrigido problema na importação de certificados dinamarqueses de COVID</li>
           <li xml:lang="sl">Popravi uvoz danskih potrdil o COVID-u</li>
+          <li xml:lang="tr">Danimarka COVID sertifikalarını içe aktarmayı onar</li>
           <li xml:lang="uk">Виправлено імпортування данських сертифікатів COVID</li>
         </ul>
       </description>
