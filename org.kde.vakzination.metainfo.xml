@@ -17,6 +17,7 @@
   <name xml:lang="eo">Vakzination</name>
   <name xml:lang="es">Vakzination</name>
   <name xml:lang="eu">Vakzination</name>
+  <name xml:lang="fi">Vakzination</name>
   <name xml:lang="fr">Vakzination</name>
   <name xml:lang="gl">Vakzination</name>
   <name xml:lang="he">Vakzination</name>
@@ -52,6 +53,7 @@
   <summary xml:lang="eo">Administru viajn atestilojn de vakcinado</summary>
   <summary xml:lang="es">Gestione sus certificados de vacunación</summary>
   <summary xml:lang="eu">Kudeatu zure txertaketa-ziurtagiriak</summary>
+  <summary xml:lang="fi">Hallinnoi rokotustodistuksia</summary>
   <summary xml:lang="fr">Gérer vos certificats de vaccination</summary>
   <summary xml:lang="gl">Xestione os seus certificados de vacinación</summary>
   <summary xml:lang="he">ניהול תעודות ההתחסנות שלך</summary>
@@ -106,6 +108,7 @@
           <li xml:lang="ca">Corregeix la importació de certificats COVID danesos</li>
           <li xml:lang="ca-valencia">Corregix la importació de certificats COVID danesos</li>
           <li xml:lang="es">Se ha corregido la importación de certificados de COVID daneses</li>
+          <li xml:lang="fr">Correction de l'importation de certificats COVID du Danemark</li>
           <li xml:lang="he">תוקן ייבוא תעודות קורונה דניות</li>
           <li xml:lang="ia">Corrige Importar certificatos Danese de COVID</li>
           <li xml:lang="ka">გასწორდა დანიური COVID სერტიფიკატების შემოტანა</li>
@@ -139,6 +142,7 @@
     <p xml:lang="eo">Administru viajn ciferecajn san-atestojn kiel pri vakcinado, testo kaj resaniĝo.</p>
     <p xml:lang="es">Gestione sus certificados digitales de salud, como los de vacunación, pruebas y recuperación.</p>
     <p xml:lang="eu">Kudeatu zure osasun ziurtagiri digitalak, hala nola txertaketa, proba eta osatze-ziurtagiriak.</p>
+    <p xml:lang="fi">Hallinnoi terveystodistuksia kuten rokotus-, testi- ja toipumistodistuksia.</p>
     <p xml:lang="fr">Gérer vos certificats numériques de santé comme les certificats de vaccination, de tests et de retour à la santé.</p>
     <p xml:lang="gl">Xestione os seus certificados dixitais de saúde, como os de vacinación, os de probas, ou os de recuperación.</p>
     <p xml:lang="he">ניהול תעודות הבריאות הדיגיטליות שלך כגון חיסונים, בדיקות והחלמה.</p>
