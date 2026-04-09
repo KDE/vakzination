@@ -12,8 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.08.3\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 23.08.3\n"
 
 #: certificatesmodel.cpp:112
 #, kde-format
@@ -38,7 +38,7 @@ msgstr "Obnova (%1)"
 #: certificatesmodel.cpp:196
 #, kde-format
 msgid "Empty file url"
-msgstr ""
+msgstr "Prázdne súbor URL"
 
 #: certificatesmodel.cpp:200
 #, kde-format
@@ -142,7 +142,7 @@ msgstr "Vymazať certifikát"
 #: qml/CertificatesPage.qml:51
 #, kde-format
 msgid "Do you really want to delete this certificate?"
-msgstr ""
+msgstr "Naozaj chcete odstrániť túto udalosť?"
 
 #: qml/CertificatesPage.qml:74
 #, kde-format
@@ -172,7 +172,7 @@ msgstr "Importovať zo schránky"
 #: qml/main.qml:34 qml/ScanBarcodePage.qml:17
 #, kde-format
 msgid "Scan QR code"
-msgstr ""
+msgstr "Skenovať QR kód"
 
 #: qml/RecoveryDetailsSheet.qml:24 qml/TestDetailsSheet.qml:25
 #: qml/VaccinationDetailsSheet.qml:25
@@ -262,7 +262,7 @@ msgstr "Svetlo"
 #: qml/ScanBarcodePage.qml:89
 #, kde-format
 msgid "No camera available."
-msgstr ""
+msgstr "No camera available."
 
 #: qml/TestDetailsSheet.qml:40
 #, kde-format
@@ -311,12 +311,12 @@ msgid "Vaccination"
 msgstr "Vakcinácia"
 
 #: qml/VaccinationDetailsSheet.qml:48
-#, fuzzy, kde-format
+#, kde-format
 msgid "%2 (%1 day ago)"
 msgid_plural "%2 (%1 days ago)"
-msgstr[0] "Pred 1 dňom"
-msgstr[1] "Pred %1 dňami"
-msgstr[2] "Pred %1 dňami"
+msgstr[0] "%2 (%1 day ago)"
+msgstr[1] "%2 (%1 days ago)"
+msgstr[2] "%2 (%1 days ago)"
 
 #: qml/VaccinationDetailsSheet.qml:69
 #, kde-format
