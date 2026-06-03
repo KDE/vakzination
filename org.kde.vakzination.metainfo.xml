@@ -39,6 +39,7 @@
   <name xml:lang="sl">Vakzination</name>
   <name xml:lang="sv">Vakzination</name>
   <name xml:lang="tr">Aşıcı</name>
+  <name xml:lang="ug">Vakzination</name>
   <name xml:lang="uk">Vakzination</name>
   <name xml:lang="zh-CN">Vakzination</name>
   <name xml:lang="zh-TW">Vakzination</name>
@@ -75,6 +76,7 @@
   <summary xml:lang="sl">Upravlja vaša potrdila o cepljenju</summary>
   <summary xml:lang="sv">Hantera dina vaccinationsbevis</summary>
   <summary xml:lang="tr">Aşı Sertifikası Yöneticisi</summary>
+  <summary xml:lang="ug">ۋاكسىنا گۇۋاھنامىسىنى باشقۇرىدۇ</summary>
   <summary xml:lang="uk">Керування вашими сертифікатами вакцинації</summary>
   <summary xml:lang="zh-CN">管理您的疫苗接种证明</summary>
   <summary xml:lang="zh-TW">管理您的疫苗憑證</summary>
