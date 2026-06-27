@@ -71,29 +71,6 @@
             ]
         },
         {
-            "name": "kmime",
-            "config-opts": [
-                "-DBUILD_TESTING=OFF",
-                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
-            ],
-            "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://invent.kde.org/pim/kmime",
-                    "branch": "master"
-                }
-            ],
-            "cleanup": [
-                "/include",
-                "/lib/cmake",
-                "/mkspecs",
-                "/etc/xdg/*categories",
-                "/share/qlogging-categories5"
-            ]
-        },
-        {
             "name": "zxing",
             "config-opts": [
                 "-DZXING_DEPENDENCIES=LOCAL",
@@ -101,15 +78,28 @@
                 "-DZXING_UNIT_TESTS=OFF",
                 "-DZXING_EXAMPLES=OFF",
                 "-DZXING_C_API=OFF",
+                "-DZXING_WRITERS=OLD",
                 "-DCMAKE_DISABLE_FIND_PACKAGE_Doxygen=TRUE"
             ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
+            "cleanup": [
+                "/include",
+                "*.pc",
+                "/lib/cmake",
+                "libZXing.a"
+            ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/zxing-cpp/zxing-cpp.git",
-                    "branch": "master"
+                    "type": "archive",
+                    "url": "https://github.com/zxing-cpp/zxing-cpp/archive/v3.0.2.tar.gz",
+                    "sha256": "b063dacf384c7bb93ab2c3eea247cc06b4525330f0efa631907aa3029f7e2144",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 101246,
+                        "stable-only": true,
+                        "url-template": "https://github.com/zxing-cpp/zxing-cpp/archive/v$version.tar.gz"
+                    }
                 }
             ]
         },
