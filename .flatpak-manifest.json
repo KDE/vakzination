@@ -73,13 +73,13 @@
         {
             "name": "zxing",
             "config-opts": [
-                "-DZXING_DEPENDENCIES=LOCAL",
                 "-DBUILD_SHARED_LIBS=OFF",
-                "-DZXING_UNIT_TESTS=OFF",
-                "-DZXING_EXAMPLES=OFF",
+                "-DCMAKE_DISABLE_FIND_PACKAGE_Doxygen=TRUE",
                 "-DZXING_C_API=OFF",
-                "-DZXING_WRITERS=OLD",
-                "-DCMAKE_DISABLE_FIND_PACKAGE_Doxygen=TRUE"
+                "-DZXING_DEPENDENCIES=LOCAL",
+                "-DZXING_EXAMPLES=OFF",
+                "-DZXING_UNIT_TESTS=OFF",
+                "-DZXING_WRITERS=OLD"
             ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
