@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: vakzination\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:53+0000\n"
-"PO-Revision-Date: 2026-06-01 18:57-0400\n"
+"PO-Revision-Date: 2026-09-22 18:03+0900\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
 "Language: ug\n"
@@ -66,7 +66,7 @@ msgstr ""
 #: main.cpp:43
 #, kde-format
 msgid "Vakzination"
-msgstr "Vakzination"
+msgstr ""
 
 #: main.cpp:45
 #, kde-format
@@ -83,7 +83,7 @@ msgstr ""
 #: main.cpp:49
 #, kde-format
 msgid "Nicolas Fella"
-msgstr "Nicolas Fella"
+msgstr ""
 
 #: main.cpp:49
 #, kde-format
@@ -301,7 +301,7 @@ msgstr ""
 #, kde-format
 msgctxt "%1 a flag emoji, %2 is a country name"
 msgid "%1 %2"
-msgstr "%1 %2"
+msgstr ""
 
 #: qml/TestDetailsSheet.qml:87 qml/VaccinationDetailsSheet.qml:87
 #, kde-format
